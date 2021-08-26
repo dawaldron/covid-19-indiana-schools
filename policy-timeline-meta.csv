@@ -1,0 +1,7 @@
+name,type,description
+ncesID,character,NCES District ID
+corpName,character,Corporation Name
+effectiveDate,Date,Effective date of policy change
+masksRequired,character,Indicator (Yes/No) of a student mask mandate policy
+masksRequiredNotes,character,Notes about the language of the mask mandate policy
+virtualSchool,character,Indication of any virtual school implementation

@@ -1,0 +1,871 @@
+ncesID,corpID,corpName,downloadDate,studentCasesTot,studentCasesNew
+1800008,2980,White River Valley School District,20210812,33,
+1800008,2980,White River Valley School District,20210816,35,2
+1800008,2980,White River Valley School District,20210823,40,5
+1800030,0125,MSD Southwest Allen County Schls,20210812,142,
+1800030,0125,MSD Southwest Allen County Schls,20210816,144,2
+1800030,0125,MSD Southwest Allen County Schls,20210823,162,18
+1800060,0015,Adams Central Community Schools,20210812,75,
+1800060,0015,Adams Central Community Schools,20210816,75,0
+1800060,0015,Adams Central Community Schools,20210823,78,3
+1800107,4915,Tri-Township Cons School Corp,20210812,14,
+1800107,4915,Tri-Township Cons School Corp,20210816,14,0
+1800107,4915,Tri-Township Cons School Corp,20210823,14,0
+1800118,6375,North Central Parke Comm Schl Corp,20210812,24,
+1800118,6375,North Central Parke Comm Schl Corp,20210816,24,0
+1800118,6375,North Central Parke Comm Schl Corp,20210823,47,23
+1800120,5265,Alexandria Community School Corp,20210812,78,
+1800120,5265,Alexandria Community School Corp,20210816,93,15
+1800120,5265,Alexandria Community School Corp,20210823,106,13
+1800150,5275,Anderson Community School Corp,20210812,70,
+1800150,5275,Anderson Community School Corp,20210816,116,46
+1800150,5275,Anderson Community School Corp,20210823,156,40
+1800180,5470,Argos Community Schools,20210812,31,
+1800180,5470,Argos Community Schools,20210816,31,0
+1800180,5470,Argos Community Schools,20210823,31,0
+1800210,2435,Attica Consolidated School Corp,20210812,44,
+1800210,2435,Attica Consolidated School Corp,20210816,46,2
+1800210,2435,Attica Consolidated School Corp,20210823,56,10
+1800212,0935,Borden-Henryville School Corporation,20210812,40,
+1800212,0935,Borden-Henryville School Corporation,20210816,52,12
+1800212,0935,Borden-Henryville School Corporation,20210823,73,21
+1800213,0945,Silver Creek School Corporation,20210812,95,
+1800213,0945,Silver Creek School Corporation,20210816,120,25
+1800213,0945,Silver Creek School Corporation,20210823,146,26
+1800240,1600,South Dearborn Community Sch Corp,20210812,77,
+1800240,1600,South Dearborn Community Sch Corp,20210816,77,0
+1800240,1600,South Dearborn Community Sch Corp,20210823,77,0
+1800270,3315,Avon Community School Corp,20210812,364,
+1800270,3315,Avon Community School Corp,20210816,366,2
+1800270,3315,Avon Community School Corp,20210823,366,0
+1800330,1315,Barr-Reeve Community Schools Inc,20210812,27,
+1800330,1315,Barr-Reeve Community Schools Inc,20210816,27,0
+1800330,1315,Barr-Reeve Community Schools Inc,20210823,27,0
+1800360,0365,Bartholomew Con School Corp,20210812,166,
+1800360,0365,Bartholomew Con School Corp,20210816,189,23
+1800360,0365,Bartholomew Con School Corp,20210823,211,22
+1800390,6895,Batesville Community School Corp,20210812,89,
+1800390,6895,Batesville Community School Corp,20210816,96,7
+1800390,6895,Batesville Community School Corp,20210823,105,9
+1800420,2260,Baugo Community Schools,20210812,95,
+1800420,2260,Baugo Community Schools,20210816,96,1
+1800420,2260,Baugo Community Schools,20210823,104,8
+1800450,5380,Beech Grove City Schools,20210812,77,
+1800450,5380,Beech Grove City Schools,20210816,98,21
+1800450,5380,Beech Grove City Schools,20210823,135,37
+1800480,0395,Benton Community School Corp,20210812,114,
+1800480,0395,Benton Community School Corp,20210816,116,2
+1800480,0395,Benton Community School Corp,20210823,123,7
+1800570,0515,Blackford County Schools,20210812,64,
+1800570,0515,Blackford County Schools,20210816,64,0
+1800570,0515,Blackford County Schools,20210823,64,0
+1800600,2920,Bloomfield School District,20210812,33,
+1800600,2920,Bloomfield School District,20210816,33,0
+1800600,2920,Bloomfield School District,20210823,35,2
+1800630,5740,Monroe County Community Sch Corp,20210812,224,
+1800630,5740,Monroe County Community Sch Corp,20210816,226,2
+1800630,5740,Monroe County Community Sch Corp,20210823,250,24
+1800660,3405,Blue River Valley Schools,20210812,20,
+1800660,3405,Blue River Valley Schools,20210816,23,3
+1800660,3405,Blue River Valley Schools,20210823,48,25
+1800690,3180,North Harrison Com School Corp,20210812,72,
+1800690,3180,North Harrison Com School Corp,20210816,72,0
+1800690,3180,North Harrison Com School Corp,20210823,101,29
+1800720,8445,MSD Bluffton-Harrison,20210812,89,
+1800720,8445,MSD Bluffton-Harrison,20210816,91,2
+1800720,8445,MSD Bluffton-Harrison,20210823,109,18
+1800750,6460,MSD Boone Township,20210812,52,
+1800750,6460,MSD Boone Township,20210816,52,0
+1800750,6460,MSD Boone Township,20210823,56,4
+1800840,1125,Clay Community Schools,20210812,102,
+1800840,1125,Clay Community Schools,20210816,117,15
+1800840,1125,Clay Community Schools,20210823,178,61
+1800900,5480,Bremen Public Schools,20210812,49,
+1800900,5480,Bremen Public Schools,20210816,49,0
+1800900,5480,Bremen Public Schools,20210823,58,9
+1800960,0670,Brown County School Corporation,20210812,42,
+1800960,0670,Brown County School Corporation,20210816,46,4
+1800960,0670,Brown County School Corporation,20210823,49,3
+1801020,3305,Brownsburg Community School Corp,20210812,407,
+1801020,3305,Brownsburg Community School Corp,20210816,451,44
+1801020,3305,Brownsburg Community School Corp,20210823,511,60
+1801050,3695,Brownstown Cnt Com Sch Corp,20210812,53,
+1801050,3695,Brownstown Cnt Com Sch Corp,20210816,53,0
+1801050,3695,Brownstown Cnt Com Sch Corp,20210823,54,1
+1801060,3455,C A Beard Memorial School Corp,20210812,61,
+1801060,3455,C A Beard Memorial School Corp,20210816,68,7
+1801060,3455,C A Beard Memorial School Corp,20210823,69,1
+1801170,6340,Cannelton City Schools,20210812,2,
+1801170,6340,Cannelton City Schools,20210816,2,0
+1801170,6340,Cannelton City Schools,20210823,2,0
+1801200,3060,Carmel Clay Schools,20210812,655,
+1801200,3060,Carmel Clay Schools,20210816,655,0
+1801200,3060,Carmel Clay Schools,20210823,673,18
+1801230,3640,Medora Community School Corp,20210812,4,
+1801230,3640,Medora Community School Corp,20210816,4,0
+1801230,3640,Medora Community School Corp,20210823,4,0
+1801290,0750,Carroll Consolidated School Corp,20210812,58,
+1801290,0750,Carroll Consolidated School Corp,20210816,58,0
+1801290,0750,Carroll Consolidated School Corp,20210823,69,11
+1801410,2650,Caston School Corporation,20210812,39,
+1801410,2650,Caston School Corporation,20210816,39,0
+1801410,2650,Caston School Corporation,20210823,40,1
+1801440,4205,Center Grove Community School Corp,20210812,595,
+1801440,4205,Center Grove Community School Corp,20210816,620,25
+1801440,4205,Center Grove Community School Corp,20210823,653,33
+1801560,8360,Centerville-Abington Com Schs,20210812,107,
+1801560,8360,Centerville-Abington Com Schs,20210816,107,0
+1801560,8360,Centerville-Abington Com Schs,20210823,141,34
+1801590,1835,DeKalb Co Ctl United Sch Dist,20210812,129,
+1801590,1835,DeKalb Co Ctl United Sch Dist,20210816,129,0
+1801590,1835,DeKalb Co Ctl United Sch Dist,20210823,156,27
+1801710,6055,Central Noble Com School Corp,20210812,30,
+1801710,6055,Central Noble Com School Corp,20210816,30,0
+1801710,6055,Central Noble Com School Corp,20210823,32,2
+1801740,6325,Perry Central Com Schools Corp,20210812,68,
+1801740,6325,Perry Central Com Schools Corp,20210816,72,4
+1801740,6325,Perry Central Com Schools Corp,20210823,88,16
+1801770,6825,Randolph Central School Corp,20210812,48,
+1801770,6825,Randolph Central School Corp,20210816,48,0
+1801770,6825,Randolph Central School Corp,20210823,56,8
+1801890,4145,Clark-Pleasant Community Sch Corp,20210812,350,
+1801890,4145,Clark-Pleasant Community Sch Corp,20210816,426,76
+1801890,4145,Clark-Pleasant Community Sch Corp,20210823,448,22
+1801920,1000,Clarksville Community School Corp,20210812,24,
+1801920,1000,Clarksville Community School Corp,20210816,26,2
+1801920,1000,Clarksville Community School Corp,20210823,36,10
+1802040,3470,Northwestern School Corp,20210812,102,
+1802040,3470,Northwestern School Corp,20210816,109,7
+1802040,3470,Northwestern School Corp,20210823,116,7
+1802130,1150,Clinton Central School Corporation,20210812,54,
+1802130,1150,Clinton Central School Corporation,20210816,54,0
+1802130,1150,Clinton Central School Corporation,20210823,55,1
+1802160,1160,Clinton Prairie School Corporation,20210812,47,
+1802160,1160,Clinton Prairie School Corporation,20210816,47,0
+1802160,1160,Clinton Prairie School Corporation,20210823,48,1
+1802190,4940,South Central Com School Corp,20210812,20,
+1802190,4940,South Central Com School Corp,20210816,20,0
+1802190,4940,South Central Com School Corp,20210823,20,0
+1802220,6750,Cloverdale Community Schools,20210812,25,
+1802220,6750,Cloverdale Community Schools,20210816,26,1
+1802220,6750,Cloverdale Community Schools,20210823,35,9
+1802280,8665,Whitley County Con Schools,20210812,267,
+1802280,8665,Whitley County Con Schools,20210816,267,0
+1802280,8665,Whitley County Con Schools,20210823,268,1
+1802400,2270,Concord Community Schools,20210812,274,
+1802400,2270,Concord Community Schools,20210816,277,3
+1802400,2270,Concord Community Schools,20210823,287,10
+1802430,2440,Covington Community School Corp,20210812,95,
+1802430,2440,Covington Community School Corp,20210816,95,0
+1802430,2440,Covington Community School Corp,20210823,108,13
+1802440,1300,Crawford County Community Sch Corp,20210812,41,
+1802440,1300,Crawford County Community Sch Corp,20210816,41,0
+1802440,1300,Crawford County Community Sch Corp,20210823,50,9
+1802460,5855,Crawfordsville Community Schools,20210812,177,
+1802460,5855,Crawfordsville Community Schools,20210816,182,5
+1802460,5855,Crawfordsville Community Schools,20210823,221,39
+1802490,4660,Crown Point Community School Corp,20210812,258,
+1802490,4660,Crown Point Community School Corp,20210816,258,0
+1802490,4660,Crown Point Community School Corp,20210823,261,3
+1802520,5455,Culver Community Schools Corp,20210812,30,
+1802520,5455,Culver Community Schools Corp,20210816,30,0
+1802520,5455,Culver Community Schools Corp,20210823,30,0
+1802550,3325,Danville Community School Corp,20210812,128,
+1802550,3325,Danville Community School Corp,20210816,129,1
+1802550,3325,Danville Community School Corp,20210823,136,7
+1802610,1655,Decatur County Community Schools,20210812,71,
+1802610,1655,Decatur County Community Schools,20210816,83,12
+1802610,1655,Decatur County Community Schools,20210823,99,16
+1802640,5300,MSD Decatur Township,20210812,139,
+1802640,5300,MSD Decatur Township,20210816,140,1
+1802640,5300,MSD Decatur Township,20210823,198,58
+1802660,1875,Delaware Community School Corp,20210812,14,
+1802660,1875,Delaware Community School Corp,20210816,14,0
+1802660,1875,Delaware Community School Corp,20210823,14,0
+1802700,0755,Delphi Community School Corp,20210812,84,
+1802700,0755,Delphi Community School Corp,20210816,84,0
+1802700,0755,Delphi Community School Corp,20210823,92,8
+1802800,6470,Duneland School Corporation,20210812,235,
+1802800,6470,Duneland School Corporation,20210816,240,5
+1802800,6470,Duneland School Corporation,20210823,255,15
+1802830,0630,Zionsville Community Schools,20210812,431,
+1802830,0630,Zionsville Community Schools,20210816,449,18
+1802830,0630,Zionsville Community Schools,20210823,475,26
+1802850,0255,East Allen County Schools,20210812,239,
+1802850,0255,East Allen County Schools,20210816,244,5
+1802850,0255,East Allen County Schools,20210823,256,12
+1802880,4670,School City of East Chicago,20210812,0,
+1802880,4670,School City of East Chicago,20210816,0,0
+1802880,4670,School City of East Chicago,20210823,0,0
+1802910,4680,Lake Station Community Schools,20210812,22,
+1802910,4680,Lake Station Community Schools,20210816,22,0
+1802910,4680,Lake Station Community Schools,20210823,22,0
+1802940,2725,East Gibson School Corporation,20210812,31,
+1802940,2725,East Gibson School Corporation,20210816,31,0
+1802940,2725,East Gibson School Corporation,20210823,31,0
+1802970,6060,East Noble School Corporation,20210812,175,
+1802970,6060,East Noble School Corporation,20210816,181,6
+1802970,6060,East Noble School Corporation,20210823,214,33
+1803000,8215,East Washington School Corp,20210812,18,
+1803000,8215,East Washington School Corp,20210816,19,1
+1803000,8215,East Washington School Corp,20210823,19,0
+1803030,2815,Eastbrook Community Sch Corp,20210812,48,
+1803030,2815,Eastbrook Community Sch Corp,20210816,48,0
+1803030,2815,Eastbrook Community Sch Corp,20210823,53,5
+1803060,1805,DeKalb Co Eastern Com Sch Dist,20210812,35,
+1803060,1805,DeKalb Co Eastern Com Sch Dist,20210816,37,2
+1803060,1805,DeKalb Co Eastern Com Sch Dist,20210823,37,0
+1803090,2940,Eastern Greene Schools,20210812,21,
+1803090,2940,Eastern Greene Schools,20210816,22,1
+1803090,2940,Eastern Greene Schools,20210823,29,7
+1803120,3145,Eastern Hancock Co Com Sch Corp,20210812,63,
+1803120,3145,Eastern Hancock Co Com Sch Corp,20210816,64,1
+1803120,3145,Eastern Hancock Co Com Sch Corp,20210823,68,4
+1803150,3480,Eastern Howard School Corporation,20210812,126,
+1803150,3480,Eastern Howard School Corporation,20210816,138,12
+1803150,3480,Eastern Howard School Corporation,20210823,157,19
+1803180,6835,Randolph Eastern School Corp,20210812,33,
+1803180,6835,Randolph Eastern School Corp,20210816,34,1
+1803180,6835,Randolph Eastern School Corp,20210823,35,1
+1803210,7285,Shelby Eastern Schools,20210812,66,
+1803210,7285,Shelby Eastern Schools,20210816,69,3
+1803210,7285,Shelby Eastern Schools,20210823,75,6
+1803240,4215,Edinburgh Community School Corp,20210812,48,
+1803240,4215,Edinburgh Community School Corp,20210816,48,0
+1803240,4215,Edinburgh Community School Corp,20210823,51,3
+1803270,2305,Elkhart Community Schools,20210812,554,
+1803270,2305,Elkhart Community Schools,20210816,558,4
+1803270,2305,Elkhart Community Schools,20210823,575,17
+1803300,5280,Elwood Community School Corp,20210812,53,
+1803300,5280,Elwood Community School Corp,20210816,53,0
+1803300,5280,Elwood Community School Corp,20210823,53,0
+1803330,5910,Eminence Community School Corp,20210812,21,
+1803330,5910,Eminence Community School Corp,20210816,22,1
+1803330,5910,Eminence Community School Corp,20210823,22,0
+1803450,7995,Evansville Vanderburgh School Corp,20210812,1091,
+1803450,7995,Evansville Vanderburgh School Corp,20210816,1107,16
+1803450,7995,Evansville Vanderburgh School Corp,20210823,1189,82
+1803480,2155,Fairfield Community Schools,20210812,80,
+1803480,2155,Fairfield Community Schools,20210816,80,0
+1803480,2155,Fairfield Community Schools,20210823,80,0
+1803510,2395,Fayette County School Corporation,20210812,80,
+1803510,2395,Fayette County School Corporation,20210816,81,1
+1803510,2395,Fayette County School Corporation,20210823,102,21
+1803570,0370,Flat Rock-Hawcreek School Corp,20210812,46,
+1803570,0370,Flat Rock-Hawcreek School Corp,20210816,46,0
+1803570,0370,Flat Rock-Hawcreek School Corp,20210823,53,7
+1803630,0235,Fort Wayne Community Schools,20210812,440,
+1803630,0235,Fort Wayne Community Schools,20210816,447,7
+1803630,0235,Fort Wayne Community Schools,20210823,482,35
+1803660,1170,Community Schools of Frankfort,20210812,147,
+1803660,1170,Community Schools of Frankfort,20210816,149,2
+1803660,1170,Community Schools of Frankfort,20210823,150,1
+1803690,4225,Franklin Community School Corp,20210812,275,
+1803690,4225,Franklin Community School Corp,20210816,306,31
+1803690,4225,Franklin Community School Corp,20210823,346,40
+1803700,2475,Franklin County Community Sch Corp,20210812,57,
+1803700,2475,Franklin County Community Sch Corp,20210816,57,0
+1803700,2475,Franklin County Community Sch Corp,20210823,94,37
+1803720,3160,Lanesville Community School Corp,20210812,32,
+1803720,3160,Lanesville Community School Corp,20210816,41,9
+1803720,3160,Lanesville Community School Corp,20210823,52,11
+1803750,5310,Franklin Township Com Sch Corp,20210812,370,
+1803750,5310,Franklin Township Com Sch Corp,20210816,397,27
+1803750,5310,Franklin Township Com Sch Corp,20210823,438,41
+1803780,7605,Fremont Community Schools,20210812,11,
+1803780,7605,Fremont Community Schools,20210816,11,0
+1803780,7605,Fremont Community Schools,20210823,11,0
+1803810,8525,Frontier School Corporation,20210812,43,
+1803810,8525,Frontier School Corporation,20210816,43,0
+1803810,8525,Frontier School Corporation,20210823,44,1
+1803840,1820,Garrett-Keyser-Butler Com Sch Corp,20210812,41,
+1803840,1820,Garrett-Keyser-Butler Com Sch Corp,20210816,43,2
+1803840,1820,Garrett-Keyser-Butler Com Sch Corp,20210823,45,2
+1803870,4690,Gary Community School Corp,20210812,0,
+1803870,4690,Gary Community School Corp,20210816,0,0
+1803870,4690,Gary Community School Corp,20210823,0,0
+1803930,2315,Goshen Community Schools,20210812,99,
+1803930,2315,Goshen Community Schools,20210816,100,1
+1803930,2315,Goshen Community Schools,20210823,103,3
+1803940,1010,Greater Clark County Schools,20210812,134,
+1803940,1010,Greater Clark County Schools,20210816,134,0
+1803940,1010,Greater Clark County Schools,20210823,134,0
+1803960,2120,Greater Jasper Consolidated Schs,20210812,114,
+1803960,2120,Greater Jasper Consolidated Schs,20210816,116,2
+1803960,2120,Greater Jasper Consolidated Schs,20210823,131,15
+1803990,6755,Greencastle Community School Corp,20210812,71,
+1803990,6755,Greencastle Community School Corp,20210816,71,0
+1803990,6755,Greencastle Community School Corp,20210823,71,0
+1804050,3125,Greenfield-Central Com Schools,20210812,289,
+1804050,3125,Greenfield-Central Com Schools,20210816,314,25
+1804050,3125,Greenfield-Central Com Schools,20210823,341,27
+1804080,1730,Greensburg Community Schools,20210812,117,
+1804080,1730,Greensburg Community Schools,20210816,126,9
+1804080,1730,Greensburg Community Schools,20210823,154,28
+1804110,4245,Greenwood Community Sch Corp,20210812,217,
+1804110,4245,Greenwood Community Sch Corp,20210816,228,11
+1804110,4245,Greenwood Community Sch Corp,20210823,247,19
+1804140,5900,Monroe-Gregg School District,20210812,61,
+1804140,5900,Monroe-Gregg School District,20210816,63,2
+1804140,5900,Monroe-Gregg School District,20210823,66,3
+1804170,4700,Griffith Public Schools,20210812,44,
+1804170,4700,Griffith Public Schools,20210816,44,0
+1804170,4700,Griffith Public Schools,20210823,55,11
+1804230,7610,Hamilton Community Schools,20210812,9,
+1804230,7610,Hamilton Community Schools,20210816,9,0
+1804230,7610,Hamilton Community Schools,20210823,10,1
+1804260,3025,Hamilton Heights School Corp,20210812,97,
+1804260,3025,Hamilton Heights School Corp,20210816,97,0
+1804260,3025,Hamilton Heights School Corp,20210823,106,9
+1804320,4710,School City of Hammond,20210812,33,
+1804320,4710,School City of Hammond,20210816,33,0
+1804320,4710,School City of Hammond,20210823,37,4
+1804350,4580,Hanover Community School Corp,20210812,128,
+1804350,4580,Hanover Community School Corp,20210816,128,0
+1804350,4580,Hanover Community School Corp,20210823,128,0
+1804470,3490,Western School Corporation,20210812,158,
+1804470,3490,Western School Corporation,20210816,160,2
+1804470,3490,Western School Corporation,20210823,200,40
+1804500,1885,Wes-Del Community Schools,20210812,8,
+1804500,1885,Wes-Del Community Schools,20210816,8,0
+1804500,1885,Wes-Del Community Schools,20210823,8,0
+1804560,4720,School Town of Highland,20210812,118,
+1804560,4720,School Town of Highland,20210816,118,0
+1804560,4720,School Town of Highland,20210823,120,2
+1804590,4730,School City of Hobart,20210812,202,
+1804590,4730,School City of Hobart,20210816,203,1
+1804590,4730,School City of Hobart,20210823,203,0
+1804620,4590,River Forest Community Sch Corp,20210812,28,
+1804620,4590,River Forest Community Sch Corp,20210816,28,0
+1804620,4590,River Forest Community Sch Corp,20210823,29,1
+1804710,3625,Huntington Co Com Sch Corp,20210812,244,
+1804710,3625,Huntington Co Com Sch Corp,20210816,257,13
+1804710,3625,Huntington Co Com Sch Corp,20210823,286,29
+1804770,5385,Indianapolis Public Schools,20210812,22,
+1804770,5385,Indianapolis Public Schools,20210816,23,1
+1804770,5385,Indianapolis Public Schools,20210823,24,1
+1804800,6900,Jac-Cen-Del Community Sch Corp,20210812,15,
+1804800,6900,Jac-Cen-Del Community Sch Corp,20210816,16,1
+1804800,6900,Jac-Cen-Del Community Sch Corp,20210823,16,0
+1804980,3945,Jay School Corporation,20210812,143,
+1804980,3945,Jay School Corporation,20210816,145,2
+1804980,3945,Jay School Corporation,20210823,163,18
+1805190,4015,Jennings County School Corporation,20210812,91,
+1805190,4015,Jennings County School Corporation,20210816,107,16
+1805190,4015,Jennings County School Corporation,20210823,138,31
+1805280,3785,Kankakee Valley School Corp,20210812,123,
+1805280,3785,Kankakee Valley School Corp,20210816,125,2
+1805280,3785,Kankakee Valley School Corp,20210823,127,2
+1805340,7525,Knox Community School Corp,20210812,44,
+1805340,7525,Knox Community School Corp,20210816,45,1
+1805340,7525,Knox Community School Corp,20210823,45,0
+1805370,3500,Kokomo School Corporation,20210812,131,
+1805370,3500,Kokomo School Corporation,20210816,141,10
+1805370,3500,Kokomo School Corporation,20210823,171,30
+1805400,7855,Lafayette School Corporation,20210812,395,
+1805400,7855,Lafayette School Corporation,20210816,398,3
+1805400,7855,Lafayette School Corporation,20210823,413,15
+1805450,4615,Lake Central School Corporation,20210812,407,
+1805450,4615,Lake Central School Corporation,20210816,420,13
+1805450,4615,Lake Central School Corporation,20210823,435,15
+1805460,4650,Lake Ridge New Tech Schools,20210812,19,
+1805460,4650,Lake Ridge New Tech Schools,20210816,19,0
+1805460,4650,Lake Ridge New Tech Schools,20210823,20,1
+1805520,4535,Lakeland School Corporation,20210812,55,
+1805520,4535,Lakeland School Corporation,20210816,55,0
+1805520,4535,Lakeland School Corporation,20210823,57,2
+1805550,4345,Wawasee Community School Corp,20210812,186,
+1805550,4345,Wawasee Community School Corp,20210816,189,3
+1805550,4345,Wawasee Community School Corp,20210823,191,2
+1805580,4945,LaPorte Community School Corp,20210812,159,
+1805580,4945,LaPorte Community School Corp,20210816,159,0
+1805580,4945,LaPorte Community School Corp,20210823,168,9
+1805670,5330,MSD Lawrence Township,20210812,217,
+1805670,5330,MSD Lawrence Township,20210816,260,43
+1805670,5330,MSD Lawrence Township,20210823,370,110
+1805700,1620,Lawrenceburg Community School Corp,20210812,147,
+1805700,1620,Lawrenceburg Community School Corp,20210816,150,3
+1805700,1620,Lawrenceburg Community School Corp,20210823,171,21
+1805790,0665,Lebanon Community School Corp,20210812,114,
+1805790,0665,Lebanon Community School Corp,20210816,116,2
+1805790,0665,Lebanon Community School Corp,20210823,121,5
+1805880,1895,Liberty-Perry Community Sch Corp,20210812,82,
+1805880,1895,Liberty-Perry Community Sch Corp,20210816,82,0
+1805880,1895,Liberty-Perry Community Sch Corp,20210823,86,4
+1805910,2950,Linton-Stockton School Corporation,20210812,25,
+1805910,2950,Linton-Stockton School Corporation,20210816,25,0
+1805910,2950,Linton-Stockton School Corporation,20210823,25,0
+1806030,0875,Logansport Community Sch Corp,20210812,154,
+1806030,0875,Logansport Community Sch Corp,20210816,154,0
+1806030,0875,Logansport Community Sch Corp,20210823,154,0
+1806060,5525,Loogootee Community Sch Corp,20210812,42,
+1806060,5525,Loogootee Community Sch Corp,20210816,42,0
+1806060,5525,Loogootee Community Sch Corp,20210823,57,15
+1806080,8115,MSD Warren County,20210812,96,
+1806080,8115,MSD Warren County,20210816,96,0
+1806080,8115,MSD Warren County,20210823,105,9
+1806090,5615,Maconaquah School Corp,20210812,135,
+1806090,5615,Maconaquah School Corp,20210816,171,36
+1806090,5615,Maconaquah School Corp,20210823,226,55
+1806120,3995,Madison Consolidated Schools,20210812,66,
+1806120,3995,Madison Consolidated Schools,20210816,66,0
+1806120,3995,Madison Consolidated Schools,20210823,76,10
+1806240,2825,Madison-Grant United School Corp,20210812,53,
+1806240,2825,Madison-Grant United School Corp,20210816,53,0
+1806240,2825,Madison-Grant United School Corp,20210823,53,0
+1806270,8045,Manchester Community Schools,20210812,79,
+1806270,8045,Manchester Community Schools,20210816,82,3
+1806270,8045,Manchester Community Schools,20210823,86,4
+1806390,2865,Marion Community Schools,20210812,62,
+1806390,2865,Marion Community Schools,20210816,63,1
+1806390,2865,Marion Community Schools,20210823,64,1
+1806480,3055,Sheridan Community Schools,20210812,66,
+1806480,3055,Sheridan Community Schools,20210816,67,1
+1806480,3055,Sheridan Community Schools,20210823,71,4
+1806510,5925,MSD Martinsville Schools,20210812,103,
+1806510,5925,MSD Martinsville Schools,20210816,112,9
+1806510,5925,MSD Martinsville Schools,20210823,148,36
+1806570,4925,Michigan City Area Schools,20210812,208,
+1806570,4925,Michigan City Area Schools,20210816,208,0
+1806570,4925,Michigan City Area Schools,20210823,210,2
+1806600,2275,Middlebury Community Schools,20210812,174,
+1806600,2275,Middlebury Community Schools,20210816,174,0
+1806600,2275,Middlebury Community Schools,20210823,174,0
+1806630,6910,Milan Community Schools,20210812,19,
+1806630,6910,Milan Community Schools,20210816,19,0
+1806630,6910,Milan Community Schools,20210823,20,1
+1806660,3335,Mill Creek Community Sch Corp,20210812,32,
+1806660,3335,Mill Creek Community Sch Corp,20210816,38,6
+1806660,3335,Mill Creek Community Sch Corp,20210823,47,9
+1806840,7200,School City of Mishawaka,20210812,128,
+1806840,7200,School City of Mishawaka,20210816,130,2
+1806840,7200,School City of Mishawaka,20210823,159,29
+1806870,2855,Mississinewa Community School Corp,20210812,88,
+1806870,2855,Mississinewa Community School Corp,20210816,89,1
+1806870,2855,Mississinewa Community School Corp,20210823,95,6
+1806900,5085,Mitchell Community Schools,20210812,33,
+1806900,5085,Mitchell Community Schools,20210816,52,19
+1806900,5085,Mitchell Community Schools,20210823,61,9
+1807020,1900,Cowan Community School Corp,20210812,60,
+1807020,1900,Cowan Community School Corp,20210816,61,1
+1807020,1900,Cowan Community School Corp,20210823,67,6
+1807080,6820,Monroe Central School Corp,20210812,53,
+1807080,6820,Monroe Central School Corp,20210816,53,0
+1807080,6820,Monroe Central School Corp,20210823,53,0
+1807110,6620,Eastern Pulaski Community Sch Corp,20210812,40,
+1807110,6620,Eastern Pulaski Community Sch Corp,20210816,41,1
+1807110,6620,Eastern Pulaski Community Sch Corp,20210823,42,1
+1807140,5930,Mooresville Con School Corp,20210812,111,
+1807140,5930,Mooresville Con School Corp,20210816,124,13
+1807140,5930,Mooresville Con School Corp,20210823,124,0
+1807230,1910,Yorktown Community Schools,20210812,97,
+1807230,1910,Yorktown Community Schools,20210816,106,9
+1807230,1910,Yorktown Community Schools,20210823,131,25
+1807260,3135,Mt Vernon Community School Corp,20210812,202,
+1807260,3135,Mt Vernon Community School Corp,20210816,213,11
+1807260,3135,Mt Vernon Community School Corp,20210823,244,31
+1807290,6590,MSD Mount Vernon,20210812,58,
+1807290,6590,MSD Mount Vernon,20210816,58,0
+1807290,6590,MSD Mount Vernon,20210823,60,2
+1807320,1970,Muncie Community Schools,20210812,120,
+1807320,1970,Muncie Community Schools,20210816,131,11
+1807320,1970,Muncie Community Schools,20210823,149,18
+1807350,4740,School Town of Munster,20210812,121,
+1807350,4740,School Town of Munster,20210816,122,1
+1807350,4740,School Town of Munster,20210823,132,10
+1807380,8305,Nettle Creek School Corporation,20210812,38,
+1807380,8305,Nettle Creek School Corporation,20210816,39,1
+1807380,8305,Nettle Creek School Corporation,20210823,42,3
+1807410,2400,New Albany-Floyd Co Con Sch,20210812,206,
+1807410,2400,New Albany-Floyd Co Con Sch,20210816,239,33
+1807410,2400,New Albany-Floyd Co Con Sch,20210823,358,119
+1807440,3445,New Castle Community School Corp,20210812,72,
+1807440,3445,New Castle Community School Corp,20210816,84,12
+1807440,3445,New Castle Community School Corp,20210823,96,12
+1807470,4860,MSD of New Durham Township,20210812,23,
+1807470,4860,MSD of New Durham Township,20210816,23,0
+1807470,4860,MSD of New Durham Township,20210823,25,2
+1807560,4805,New Prairie United School Corp,20210812,155,
+1807560,4805,New Prairie United School Corp,20210816,156,1
+1807560,4805,New Prairie United School Corp,20210823,162,6
+1807620,4255,Nineveh-Hensley-Jackson United,20210812,105,
+1807620,4255,Nineveh-Hensley-Jackson United,20210816,105,0
+1807620,4255,Nineveh-Hensley-Jackson United,20210823,105,0
+1807650,3070,Noblesville Schools,20210812,378,
+1807650,3070,Noblesville Schools,20210816,429,51
+1807650,3070,Noblesville Schools,20210823,499,70
+1807680,0025,North Adams Community Schools,20210812,16,
+1807680,0025,North Adams Community Schools,20210816,23,7
+1807680,0025,North Adams Community Schools,20210823,39,16
+1807710,1375,North Daviess Com Schools,20210812,31,
+1807710,1375,North Daviess Com Schools,20210816,31,0
+1807710,1375,North Daviess Com Schools,20210823,31,0
+1807770,2735,North Gibson School Corporation,20210812,156,
+1807770,2735,North Gibson School Corporation,20210816,168,12
+1807770,2735,North Gibson School Corporation,20210823,194,26
+1807800,7515,North Judson-San Pierre Sch Corp,20210812,37,
+1807800,7515,North Judson-San Pierre Sch Corp,20210816,37,0
+1807800,7515,North Judson-San Pierre Sch Corp,20210823,38,1
+1807830,4315,North Knox School Corp,20210812,18,
+1807830,4315,North Knox School Corp,20210816,18,0
+1807830,4315,North Knox School Corp,20210823,19,1
+1807860,5075,North Lawrence Com Schools,20210812,119,
+1807860,5075,North Lawrence Com Schools,20210816,121,2
+1807860,5075,North Lawrence Com Schools,20210823,143,22
+1807890,5620,North Miami Community Schools,20210812,38,
+1807890,5620,North Miami Community Schools,20210816,38,0
+1807890,5620,North Miami Community Schools,20210823,39,1
+1807900,5835,North Montgomery Com Sch Corp,20210812,101,
+1807900,5835,North Montgomery Com Sch Corp,20210816,104,3
+1807900,5835,North Montgomery Com Sch Corp,20210823,120,16
+1807920,5945,North Newton School Corp,20210812,54,
+1807920,5945,North Newton School Corp,20210816,56,2
+1807920,5945,North Newton School Corp,20210823,57,1
+1807950,6600,MSD North Posey Co Schools,20210812,64,
+1807950,6600,MSD North Posey Co Schools,20210816,65,1
+1807950,6600,MSD North Posey Co Schools,20210823,74,9
+1807980,6715,North Putnam Community Schools,20210812,61,
+1807980,6715,North Putnam Community Schools,20210816,63,2
+1807980,6715,North Putnam Community Schools,20210823,66,3
+1808010,7385,North Spencer County Sch Corp,20210812,126,
+1808010,7385,North Spencer County Sch Corp,20210816,126,0
+1808010,7385,North Spencer County Sch Corp,20210823,134,8
+1808040,7935,Tri-Central Community Schools,20210812,33,
+1808040,7935,Tri-Central Community Schools,20210816,36,3
+1808040,7935,Tri-Central Community Schools,20210823,39,3
+1808070,8010,North Vermillion Com Sch Corp,20210812,33,
+1808070,8010,North Vermillion Com Sch Corp,20210816,34,1
+1808070,8010,North Vermillion Com Sch Corp,20210823,39,5
+1808100,3295,North West Hendricks Schools,20210812,127,
+1808100,3295,North West Hendricks Schools,20210816,129,2
+1808100,3295,North West Hendricks Schools,20210823,137,8
+1808120,2040,Northeast Dubois Co Sch Corp,20210812,72,
+1808120,2040,Northeast Dubois Co Sch Corp,20210816,72,0
+1808120,2040,Northeast Dubois Co Sch Corp,20210823,72,0
+1808130,8515,North White School Corp,20210812,14,
+1808130,8515,North White School Corp,20210816,14,0
+1808130,8515,North White School Corp,20210823,18,4
+1808160,7645,Northeast School Corp,20210812,30,
+1808160,7645,Northeast School Corp,20210816,33,3
+1808160,7645,Northeast School Corp,20210823,35,2
+1808190,8375,Northeastern Wayne Schools,20210812,61,
+1808190,8375,Northeastern Wayne Schools,20210816,62,1
+1808190,8375,Northeastern Wayne Schools,20210823,67,5
+1808220,8435,Northern Wells Community Schools,20210812,111,
+1808220,8435,Northern Wells Community Schools,20210816,112,1
+1808220,8435,Northern Wells Community Schools,20210823,117,5
+1808250,0225,Northwest Allen County Schools,20210812,238,
+1808250,0225,Northwest Allen County Schools,20210816,238,0
+1808250,0225,Northwest Allen County Schools,20210823,269,31
+1808280,3435,Shenandoah School Corporation,20210812,57,
+1808280,3435,Shenandoah School Corporation,20210816,58,1
+1808280,3435,Shenandoah School Corporation,20210823,89,31
+1808310,7350,Northwestern Con School Corp,20210812,60,
+1808310,7350,Northwestern Con School Corp,20210816,69,9
+1808310,7350,Northwestern Con School Corp,20210823,83,14
+1808340,5625,Oak Hill United School Corp,20210812,103,
+1808340,5625,Oak Hill United School Corp,20210816,103,0
+1808340,5625,Oak Hill United School Corp,20210823,105,2
+1808460,7495,Oregon-Davis School Corp,20210812,23,
+1808460,7495,Oregon-Davis School Corp,20210816,23,0
+1808460,7495,Oregon-Davis School Corp,20210823,24,1
+1808490,6145,Orleans Community Schools,20210812,38,
+1808490,6145,Orleans Community Schools,20210816,57,19
+1808490,6145,Orleans Community Schools,20210823,72,15
+1808640,6155,Paoli Community School Corp,20210812,44,
+1808640,6155,Paoli Community School Corp,20210816,54,10
+1808640,6155,Paoli Community School Corp,20210823,67,13
+1808760,7175,Penn-Harris-Madison School Corp,20210812,437,
+1808760,7175,Penn-Harris-Madison School Corp,20210816,437,0
+1808760,7175,Penn-Harris-Madison School Corp,20210823,439,2
+1808820,5340,Perry Township Schools,20210812,672,
+1808820,5340,Perry Township Schools,20210816,717,45
+1808820,5340,Perry Township Schools,20210823,760,43
+1808850,5635,Peru Community Schools,20210812,111,
+1808850,5635,Peru Community Schools,20210816,117,6
+1808850,5635,Peru Community Schools,20210823,136,19
+1808900,6445,Pike County School Corp,20210812,55,
+1808900,6445,Pike County School Corp,20210816,55,0
+1808900,6445,Pike County School Corp,20210823,69,14
+1808910,5350,MSD Pike Township,20210812,93,
+1808910,5350,MSD Pike Township,20210816,105,12
+1808910,5350,MSD Pike Township,20210823,124,19
+1808940,0775,Pioneer Regional School Corp,20210812,37,
+1808940,0775,Pioneer Regional School Corp,20210816,37,0
+1808940,0775,Pioneer Regional School Corp,20210823,37,0
+1808970,3330,Plainfield Community School Corp,20210812,225,
+1808970,3330,Plainfield Community School Corp,20210816,235,10
+1808970,3330,Plainfield Community School Corp,20210823,250,15
+1809000,6510,East Porter County School Corp,20210812,119,
+1809000,6510,East Porter County School Corp,20210816,120,1
+1809000,6510,East Porter County School Corp,20210823,126,6
+1809060,5485,Plymouth Community School Corp,20210812,187,
+1809060,5485,Plymouth Community School Corp,20210816,187,0
+1809060,5485,Plymouth Community School Corp,20210823,196,9
+1809120,7150,John Glenn School Corporation,20210812,111,
+1809120,7150,John Glenn School Corporation,20210816,115,4
+1809120,7150,John Glenn School Corporation,20210823,119,4
+1809150,6550,Portage Township Schools,20210812,173,
+1809150,6550,Portage Township Schools,20210816,173,0
+1809150,6550,Portage Township Schools,20210823,182,9
+1809180,6520,Porter Township School Corp,20210812,70,
+1809180,6520,Porter Township School Corp,20210816,70,0
+1809180,6520,Porter Township School Corp,20210823,71,1
+1809300,4515,Prairie Heights Community Sch Corp,20210812,47,
+1809300,4515,Prairie Heights Community Sch Corp,20210816,48,1
+1809300,4515,Prairie Heights Community Sch Corp,20210823,49,1
+1809360,6630,West Central School Corp,20210812,23,
+1809360,6630,West Central School Corp,20210816,23,0
+1809360,6630,West Central School Corp,20210823,23,0
+1809420,3815,Rensselaer Central School Corp,20210812,51,
+1809420,3815,Rensselaer Central School Corp,20210816,51,0
+1809420,3815,Rensselaer Central School Corp,20210823,51,0
+1809480,5705,Richland-Bean Blossom C S C,20210812,68,
+1809480,5705,Richland-Bean Blossom C S C,20210816,70,2
+1809480,5705,Richland-Bean Blossom C S C,20210823,72,2
+1809510,8385,Richmond Community Schools,20210812,139,
+1809510,8385,Richmond Community Schools,20210816,141,2
+1809510,8385,Richmond Community Schools,20210823,151,10
+1809600,6080,Rising Sun-Ohio Co Com,20210812,12,
+1809600,6080,Rising Sun-Ohio Co Com,20210816,27,15
+1809600,6080,Rising Sun-Ohio Co Com,20210823,61,34
+1809630,2645,Rochester Community School Corp,20210812,34,
+1809630,2645,Rochester Community School Corp,20210816,34,0
+1809630,2645,Rochester Community School Corp,20210823,47,13
+1809690,4600,Merrillville Community School Corp,20210812,36,
+1809690,4600,Merrillville Community School Corp,20210816,36,0
+1809690,4600,Merrillville Community School Corp,20210823,36,0
+1809720,1180,Rossville Con School District,20210812,54,
+1809720,1180,Rossville Con School District,20210816,55,1
+1809720,1180,Rossville Con School District,20210823,58,3
+1809750,6995,Rush County Schools,20210812,84,
+1809750,6995,Rush County Schools,20210816,87,3
+1809750,6995,Rush County Schools,20210823,97,10
+1809810,8205,Salem Community Schools,20210812,11,
+1809810,8205,Salem Community Schools,20210816,11,0
+1809810,8205,Salem Community Schools,20210823,11,0
+1809840,1940,Daleville Community Schools,20210812,44,
+1809840,1940,Daleville Community Schools,20210816,46,2
+1809840,1940,Daleville Community Schools,20210823,51,5
+1809990,7230,Scott County School District 1,20210812,29,
+1809990,7230,Scott County School District 1,20210816,53,24
+1809990,7230,Scott County School District 1,20210823,53,0
+1810020,7255,Scott County School District 2,20210812,87,
+1810020,7255,Scott County School District 2,20210816,93,6
+1810020,7255,Scott County School District 2,20210823,122,29
+1810080,3675,Seymour Community Schools,20210812,123,
+1810080,3675,Seymour Community Schools,20210816,129,6
+1810080,3675,Seymour Community Schools,20210823,150,21
+1810110,2960,MSD Shakamak Schools,20210812,10,
+1810110,2960,MSD Shakamak Schools,20210816,10,0
+1810110,2960,MSD Shakamak Schools,20210823,13,3
+1810140,7365,Shelbyville Central Schools,20210812,99,
+1810140,7365,Shelbyville Central Schools,20210816,102,3
+1810140,7365,Shelbyville Central Schools,20210823,114,12
+1810170,5520,Shoals Community School Corp,20210812,22,
+1810170,5520,Shoals Community School Corp,20210816,27,5
+1810170,5520,Shoals Community School Corp,20210823,30,3
+1810230,8625,Smith-Green Community Schools,20210812,31,
+1810230,8625,Smith-Green Community Schools,20210816,31,0
+1810230,8625,Smith-Green Community Schools,20210823,44,13
+1810260,0035,South Adams Schools,20210812,29,
+1810260,0035,South Adams Schools,20210816,29,0
+1810260,0035,South Adams Schools,20210823,29,0
+1810290,7205,South Bend Community School Corp,20210812,202,
+1810290,7205,South Bend Community School Corp,20210816,202,0
+1810290,7205,South Bend Community School Corp,20210823,225,23
+1810350,2765,South Gibson School Corporation,20210812,159,
+1810350,2765,South Gibson School Corporation,20210816,159,0
+1810350,2765,South Gibson School Corporation,20210823,169,10
+1810360,3190,South Harrison Com Schools,20210812,294,
+1810360,3190,South Harrison Com Schools,20210816,336,42
+1810360,3190,South Harrison Com Schools,20210823,402,66
+1810380,3415,South Henry School Corp,20210812,38,
+1810380,3415,South Henry School Corp,20210816,39,1
+1810380,3415,South Henry School Corp,20210823,46,7
+1810410,4325,South Knox School Corp,20210812,0,
+1810410,4325,South Knox School Corp,20210816,0,0
+1810410,4325,South Knox School Corp,20210823,0,0
+1810440,5255,South Madison Com Sch Corp,20210812,177,
+1810440,5255,South Madison Com Sch Corp,20210816,199,22
+1810440,5255,South Madison Com Sch Corp,20210823,235,36
+1810450,5845,South Montgomery Com Sch Corp,20210812,76,
+1810450,5845,South Montgomery Com Sch Corp,20210816,77,1
+1810450,5845,South Montgomery Com Sch Corp,20210823,88,11
+1810470,5995,South Newton School Corp,20210812,47,
+1810470,5995,South Newton School Corp,20210816,47,0
+1810470,5995,South Newton School Corp,20210823,47,0
+1810500,6705,South Putnam Community Schools,20210812,29,
+1810500,6705,South Putnam Community Schools,20210816,29,0
+1810500,6705,South Putnam Community Schools,20210823,35,6
+1810530,6865,South Ripley Com Sch Corp,20210812,45,
+1810530,6865,South Ripley Com Sch Corp,20210816,45,0
+1810530,6865,South Ripley Com Sch Corp,20210823,55,10
+1810560,7445,South Spencer County Sch Corp,20210812,75,
+1810560,7445,South Spencer County Sch Corp,20210816,75,0
+1810560,7445,South Spencer County Sch Corp,20210823,75,0
+1810590,8020,South Vermillion Com Sch Corp,20210812,49,
+1810590,8020,South Vermillion Com Sch Corp,20210816,54,5
+1810590,8020,South Vermillion Com Sch Corp,20210823,60,6
+1810620,2455,Southeast Fountain School Corp,20210812,54,
+1810620,2455,Southeast Fountain School Corp,20210816,54,0
+1810620,2455,Southeast Fountain School Corp,20210823,58,4
+1810640,2100,Southeast Dubois Co Sch Corp,20210812,81,
+1810640,2100,Southeast Dubois Co Sch Corp,20210816,82,1
+1810640,2100,Southeast Dubois Co Sch Corp,20210823,89,7
+1810650,3005,Hamilton Southeastern Schools,20210812,297,
+1810650,3005,Hamilton Southeastern Schools,20210816,297,0
+1810650,3005,Hamilton Southeastern Schools,20210823,297,0
+1810680,0815,Lewis Cass Schools,20210812,13,
+1810680,0815,Lewis Cass Schools,20210816,13,0
+1810680,0815,Lewis Cass Schools,20210823,13,0
+1810710,3115,Southern Hancock Co Com Sch Corp,20210812,268,
+1810710,3115,Southern Hancock Co Com Sch Corp,20210816,278,10
+1810710,3115,Southern Hancock Co Com Sch Corp,20210823,294,16
+1810740,6805,Randolph Southern School Corp,20210812,22,
+1810740,6805,Randolph Southern School Corp,20210816,23,1
+1810740,6805,Randolph Southern School Corp,20210823,24,1
+1810770,8425,Southern Wells Com Schools,20210812,34,
+1810770,8425,Southern Wells Com Schools,20210816,35,1
+1810770,8425,Southern Wells Com Schools,20210823,36,1
+1810800,4000,Southwestern-Jefferson Co Con,20210812,21,
+1810800,4000,Southwestern-Jefferson Co Con,20210816,25,4
+1810800,4000,Southwestern-Jefferson Co Con,20210823,37,12
+1810830,7360,Southwestern Con Sch Shelby Co,20210812,30,
+1810830,7360,Southwestern Con Sch Shelby Co,20210816,32,2
+1810830,7360,Southwestern Con Sch Shelby Co,20210823,35,3
+1810860,7715,Southwest School Corporation,20210812,32,
+1810860,7715,Southwest School Corporation,20210816,34,2
+1810860,7715,Southwest School Corporation,20210823,42,8
+1810870,2110,Southwest Dubois Co Sch Corp,20210812,117,
+1810870,2110,Southwest Dubois Co Sch Corp,20210816,118,1
+1810870,2110,Southwest Dubois Co Sch Corp,20210823,125,7
+1810900,6260,Southwest Parke Com Sch Corp,20210812,40,
+1810900,6260,Southwest Parke Com Sch Corp,20210816,48,8
+1810900,6260,Southwest Parke Com Sch Corp,20210823,55,7
+1810920,5400,School Town of Speedway,20210812,66,
+1810920,5400,School Town of Speedway,20210816,66,0
+1810920,5400,School Town of Speedway,20210823,66,0
+1810950,6195,Spencer-Owen Community Schools,20210812,60,
+1810950,6195,Spencer-Owen Community Schools,20210816,70,10
+1810950,6195,Spencer-Owen Community Schools,20210823,74,4
+1810980,6160,Springs Valley Com School Corp,20210812,32,
+1810980,6160,Springs Valley Com School Corp,20210816,33,1
+1810980,6160,Springs Valley Com School Corp,20210823,33,0
+1811100,7615,MSD Steuben County,20210812,40,
+1811100,7615,MSD Steuben County,20210816,40,0
+1811100,7615,MSD Steuben County,20210823,40,0
+1811190,1560,Sunman-Dearborn Com Sch Corp,20210812,171,
+1811190,1560,Sunman-Dearborn Com Sch Corp,20210816,178,7
+1811190,1560,Sunman-Dearborn Com Sch Corp,20210823,187,9
+1811220,7775,Switzerland County School Corp,20210812,67,
+1811220,7775,Switzerland County School Corp,20210816,70,3
+1811220,7775,Switzerland County School Corp,20210823,82,12
+1811250,3460,Taylor Community School Corp,20210812,20,
+1811250,3460,Taylor Community School Corp,20210816,20,0
+1811250,3460,Taylor Community School Corp,20210823,24,4
+1811260,6350,Tell City-Troy Twp School Corp,20210812,49,
+1811260,6350,Tell City-Troy Twp School Corp,20210816,65,16
+1811260,6350,Tell City-Troy Twp School Corp,20210823,75,10
+1811340,7865,Tippecanoe School Corp,20210812,782,
+1811340,7865,Tippecanoe School Corp,20210816,797,15
+1811340,7865,Tippecanoe School Corp,20210823,841,44
+1811370,4445,Tippecanoe Valley School Corp,20210812,86,
+1811370,4445,Tippecanoe Valley School Corp,20210816,86,0
+1811370,4445,Tippecanoe Valley School Corp,20210823,93,7
+1811400,7945,Tipton Community School Corp,20210812,45,
+1811400,7945,Tipton Community School Corp,20210816,50,5
+1811400,7945,Tipton Community School Corp,20210823,55,5
+1811430,8535,Tri-County School Corporation,20210812,13,
+1811430,8535,Tri-County School Corporation,20210816,13,0
+1811430,8535,Tri-County School Corporation,20210823,13,0
+1811460,4645,Tri-Creek School Corporation,20210812,168,
+1811460,4645,Tri-Creek School Corporation,20210816,168,0
+1811460,4645,Tri-Creek School Corporation,20210823,178,10
+1811490,5495,Triton School Corporation,20210812,32,
+1811490,5495,Triton School Corporation,20210816,32,0
+1811490,5495,Triton School Corporation,20210823,32,0
+1811580,8565,Twin Lakes School Corp,20210812,82,
+1811580,8565,Twin Lakes School Corp,20210816,82,0
+1811580,8565,Twin Lakes School Corp,20210823,87,5
+1811610,7950,Union Co/Clg Corner Joint Sch Dist,20210812,39,
+1811610,7950,Union Co/Clg Corner Joint Sch Dist,20210816,40,1
+1811610,7950,Union Co/Clg Corner Joint Sch Dist,20210823,41,1
+1811700,6530,Union Township School Corp,20210812,74,
+1811700,6530,Union Township School Corp,20210816,75,1
+1811700,6530,Union Township School Corp,20210823,84,9
+1811730,6795,Union School Corporation,20210812,0,
+1811730,6795,Union School Corporation,20210816,0,0
+1811730,6795,Union School Corporation,20210823,0,0
+1811910,7215,Union-North United School Corp,20210812,44,
+1811910,7215,Union-North United School Corp,20210816,44,0
+1811910,7215,Union-North United School Corp,20210823,54,10
+1811970,6560,Valparaiso Community Schools,20210812,192,
+1811970,6560,Valparaiso Community Schools,20210816,198,6
+1811970,6560,Valparaiso Community Schools,20210823,213,15
+1812060,3710,Crothersville Community Schools,20210812,8,
+1812060,3710,Crothersville Community Schools,20210816,8,0
+1812060,3710,Crothersville Community Schools,20210823,17,9
+1812090,8030,Vigo County School Corp,20210812,24,
+1812090,8030,Vigo County School Corp,20210816,24,0
+1812090,8030,Vigo County School Corp,20210823,24,0
+1812120,4335,Vincennes Community School Corp,20210812,128,
+1812120,4335,Vincennes Community School Corp,20210816,147,19
+1812120,4335,Vincennes Community School Corp,20210823,173,26
+1812150,8060,Wabash City Schools,20210812,49,
+1812150,8060,Wabash City Schools,20210816,50,1
+1812150,8060,Wabash City Schools,20210823,51,1
+1812180,8050,MSD Wabash County Schools,20210812,73,
+1812180,8050,MSD Wabash County Schools,20210816,77,4
+1812180,8050,MSD Wabash County Schools,20210823,91,14
+1812240,2285,Wa-Nee Community Schools,20210812,179,
+1812240,2285,Wa-Nee Community Schools,20210816,179,0
+1812240,2285,Wa-Nee Community Schools,20210823,185,6
+1812360,5360,MSD Warren Township,20210812,205,
+1812360,5360,MSD Warren Township,20210816,223,18
+1812360,5360,MSD Warren Township,20210823,277,54
+1812390,8130,Warrick County School Corp,20210812,387,
+1812390,8130,Warrick County School Corp,20210816,396,9
+1812390,8130,Warrick County School Corp,20210823,458,62
+1812420,4415,Warsaw Community Schools,20210812,381,
+1812420,4415,Warsaw Community Schools,20210816,381,0
+1812420,4415,Warsaw Community Schools,20210823,388,7
+1812450,1405,Washington Community Schools,20210812,73,
+1812450,1405,Washington Community Schools,20210816,82,9
+1812450,1405,Washington Community Schools,20210823,99,17
+1812720,5370,MSD Washington Township,20210812,44,
+1812720,5370,MSD Washington Township,20210816,44,0
+1812720,5370,MSD Washington Township,20210823,44,0
+1812810,5375,MSD Wayne Township,20210812,279,
+1812810,5375,MSD Wayne Township,20210816,279,0
+1812810,5375,MSD Wayne Township,20210823,279,0
+1812870,7875,West Lafayette Com School Corp,20210812,123,
+1812870,7875,West Lafayette Com School Corp,20210816,130,7
+1812870,7875,West Lafayette Com School Corp,20210823,132,2
+1812880,5245,Frankton-Lapel Community Schools,20210812,187,
+1812880,5245,Frankton-Lapel Community Schools,20210816,189,2
+1812880,5245,Frankton-Lapel Community Schools,20210823,195,6
+1812900,6065,West Noble School Corporation,20210812,82,
+1812900,6065,West Noble School Corporation,20210816,82,0
+1812900,6065,West Noble School Corporation,20210823,85,3
+1812930,8220,West Washington School Corp,20210812,15,
+1812930,8220,West Washington School Corp,20210816,15,0
+1812930,8220,West Washington School Corp,20210823,15,0
+1812990,0615,Western Boone Co Com Sch Dist,20210812,85,
+1812990,0615,Western Boone Co Com Sch Dist,20210816,85,0
+1812990,0615,Western Boone Co Com Sch Dist,20210823,86,1
+1813050,8355,Western Wayne Schools,20210812,35,
+1813050,8355,Western Wayne Schools,20210816,36,1
+1813050,8355,Western Wayne Schools,20210823,37,1
+1813080,3030,Westfield-Washington Schools,20210812,496,
+1813080,3030,Westfield-Washington Schools,20210816,496,0
+1813080,3030,Westfield-Washington Schools,20210823,515,19
+1813110,4525,Westview School Corporation,20210812,58,
+1813110,4525,Westview School Corporation,20210816,58,0
+1813110,4525,Westview School Corporation,20210823,58,0
+1813200,4760,School City of Whiting,20210812,21,
+1813200,4760,School City of Whiting,20210816,21,0
+1813200,4760,School City of Whiting,20210823,22,1
+1813230,4455,Whitko Community School Corp,20210812,59,
+1813230,4455,Whitko Community School Corp,20210816,59,0
+1813230,4455,Whitko Community School Corp,20210823,59,0

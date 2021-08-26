@@ -1,0 +1,19 @@
+name,type,description
+ncesID,character,NCES District ID
+corpID,character,IDOE Corporation ID
+corpName,character,Corporation Name
+firstDay2122,Date,"Students' first day of school, fall of 2021-2022 school year"
+enrollment2021,numeric,"Total PK-12 enrollment during 2020-2021 school year, from IDOE"
+maskMandate,logical,Whether the corporation has had a student mask mandate at any point in the 2021-2022 school year
+maskMandateDate,Date,"The earliest date of student mask mandate in the 2021-2022 school year. If the mandate was enacted prior to the school year, the date might be set to 2021-07-01"
+virtual,logical,Whether any school in the district has gone to virtual schooling in the 2021-2022 school year
+virtualDate,Date,The earliest date of virtual schooling in the 2021-2022 school year
+vote16Trump,numeric,"Republicans' share of two-party presidential vote in 2016, calculated from precinct-level data from the Voting and Election Science Team, and 2010 Census Block statistics"
+acsSchPub,numeric,"Total PK-12 public school enrollment, ACS 2019 5-year estimates"
+acsSchPrv,numeric,"Total PK-12 private school enrollment, ACS 2019 5-year estimates"
+acsWhiteNonHisp,numeric,"White non-Hispanic population, ACS 2019 5-year estimates"
+acsBlackNonHisp,numeric,"Black or African American non-Hispanic population, ACS 2019 5-year estimates"
+acsAsianNonHisp,numeric,"Asian non-Hispanic population, ACS 2019 5-year estimates"
+acsHispanic,numeric,"Hispanic or Latino population, ACS 2019 5-year estimates"
+acsOther,numeric,"Other race/ethnicity population, ACS 2019 5-year estimates"
+acsBAorMore,numeric,Percent of 25 and older population with a bachelor's degree or higher
