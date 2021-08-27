@@ -1,7 +1,0 @@
-name,type,description
-ncesID,character,NCES District ID
-corpID,character,IDOE Corporation ID
-corpName,character,Corporation Name
-downloadDate,Date,Date downloaded from Management and Performance Hub website. This file is currently updated weekly on Mondays.
-studentCasesTot,numeric,Total cases since dataset was created in fall of 2020
-studentCasesNew,numeric,Difference in cases since last downloaded version of file
