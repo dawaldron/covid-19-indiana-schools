@@ -17,7 +17,18 @@ This dataset is based on my inspection of school websites and news reports on ma
 
 ## COVID-19 cases by public school corporation
 
-This is based on a weekly download of Indiana Management and Performance Hub’s [COVID-19 CASES BY SCHOOL](https://hub.mph.in.gov/dataset/covid-19-cases-by-school) dataset, summarized by public school corporation and differences to get “new” cases. Several schools appear to have reported incomplete numbers to the state. New case numbers for the following school districts were corrected based on separate reports from the school districts.
+This is based on a weekly download of Indiana Management and Performance Hub’s [COVID-19 CASES BY SCHOOL](https://hub.mph.in.gov/dataset/covid-19-cases-by-school) dataset, summarized by public school corporation and differences to get “new” cases. Caution is advised when interpreting this data, as there might be some discrepancies between the state data and what individual school websites report. Also, calculated “new” cases may not have actually occurred in the last week if the reports include old cases.
+
+| name            | type      | description                                                                                                    |
+|-----------------|-----------|----------------------------------------------------------------------------------------------------------------|
+| ncesID          | character | NCES District ID                                                                                               |
+| corpID          | character | IDOE Corporation ID                                                                                            |
+| corpName        | character | Corporation Name                                                                                               |
+| downloadDate    | Date      | Date downloaded from Management and Performance Hub website. This file is currently updated weekly on Mondays. |
+| studentCasesTot | numeric   | Total cases since dataset was created in fall of 2020                                                          |
+| studentCasesNew | numeric   | Difference in cases since last downloaded version of file                                                      |
+
+Several schools appear to have reported incomplete numbers to the state. New case numbers for the following school districts were corrected based on separate reports:
 
 | ncesID  | corpName                           |
 |---------|------------------------------------|
@@ -31,16 +42,6 @@ This is based on a weekly download of Indiana Management and Performance Hub’s
 | 1812810 | MSD Wayne Township                 |
 | 1813080 | Westfield-Washington Schools       |
 
-Caution is advised when interpreting this data, as there might be some discrepancies between the state data and what individual school websites report. Also, calculated “new” cases may not have actually occurred in the last week if the reports include old cases.
-
-| name            | type      | description                                                                                                    |
-|-----------------|-----------|----------------------------------------------------------------------------------------------------------------|
-| ncesID          | character | NCES District ID                                                                                               |
-| corpID          | character | IDOE Corporation ID                                                                                            |
-| corpName        | character | Corporation Name                                                                                               |
-| downloadDate    | Date      | Date downloaded from Management and Performance Hub website. This file is currently updated weekly on Mondays. |
-| studentCasesTot | numeric   | Total cases since dataset was created in fall of 2020                                                          |
-| studentCasesNew | numeric   | Difference in cases since last downloaded version of file                                                      |
 
 ## School corporation data
 
