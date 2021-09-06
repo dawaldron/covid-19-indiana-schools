@@ -17,7 +17,19 @@ This dataset is based on my inspection of school websites and news reports on ma
 
 ## COVID-19 cases by public school corporation
 
-This is based on a weekly download of Indiana Management and Performance Hub’s [COVID-19 CASES BY SCHOOL](https://hub.mph.in.gov/dataset/covid-19-cases-by-school) dataset, summarized by public school corporation and differences to get “new” cases.
+This is based on a weekly download of Indiana Management and Performance Hub’s [COVID-19 CASES BY SCHOOL](https://hub.mph.in.gov/dataset/covid-19-cases-by-school) dataset, summarized by public school corporation and differences to get “new” cases. Several schools appear to have reported incomplete numbers to the state. New case numbers for the following school districts were corrected based on separate reports from the school districts.
+
+| ncesID  | corpName                           |
+|---------|------------------------------------|
+| 1800270 | Avon Community School Corp         |
+| 1803940 | Greater Clark County Schools       |
+| 1804770 | Indianapolis Public Schools        |
+| 1809690 | Merrillville Community School Corp |
+| 1810650 | Hamilton Southeastern Schools      |
+| 1812090 | Vigo County School Corp            |
+| 1812720 | MSD Washington Township            |
+| 1812810 | MSD Wayne Township                 |
+| 1813080 | Westfield-Washington Schools       |
 
 Caution is advised when interpreting this data, as there might be some discrepancies between the state data and what individual school websites report. Also, calculated “new” cases may not have actually occurred in the last week if the reports include old cases.
 
