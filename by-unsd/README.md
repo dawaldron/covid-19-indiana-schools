@@ -28,7 +28,7 @@ This is based on a weekly download of Indiana Management and Performance Hub’s
 | studentCasesTot | numeric   | Total cases since dataset was created in fall of 2020                                                          |
 | studentCasesNew | numeric   | Difference in cases since last downloaded version of file                                                      |
 
-Several schools appear to have reported incomplete numbers to the state. New case numbers for the following school districts were corrected based on separate reports. No accurate reports have been located for Gary Community School Corporation.
+Several schools appear to have reported incomplete numbers to the state. New case numbers for the following school districts were corrected based on separate reports from school districts. Total case numbers havenot been adjusted, so new case numbers will not add up for these districts.
 
 | ncesID  | corpName                           |
 |---------|------------------------------------|
