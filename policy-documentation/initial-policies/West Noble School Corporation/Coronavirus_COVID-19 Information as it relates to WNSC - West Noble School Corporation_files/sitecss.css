@@ -1,0 +1,1804 @@
+/* 2021-08-16T23:22:23.8461278Z */
+
+/* START /Themes/css/reset.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+var,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+p {
+  margin-top: 10px;
+}
+/* END /Themes/css/reset.css */
+
+/* START /Themes/css/schoolpointe.css */
+
+.clr {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+}
+a img {
+  border: 0;
+  outline: 0;
+}
+.empty-list {
+  margin: 16px 0;
+}
+.artifact {
+  position: absolute;
+  display: none;
+}
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even),
+table {
+  background: none;
+}
+.panel > table {
+  margin: 10px;
+}
+.panel > table {
+  margin: 10px;
+}
+.three > .panel > table {
+  margin: 0px;
+}
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 14px;
+}
+.clearfix {
+  clear: both;
+}
+#site-head {
+  position: relative;
+}
+table {
+  margin-bottom: 0px;
+}
+table .content {
+  vertical-align: top;
+}
+label {
+  display: inline;
+}
+#slideshow {
+  z-index: 3;
+  overflow: hidden;
+}
+#slideshow .slides {
+  overflow: hidden;
+  z-index: 3;
+}
+#slideshow .slides > img {
+  overflow: hidden;
+  z-index: 3;
+}
+#slideshow a.nav-button {
+  display: none;
+}
+#slideshow .nivo-directionNav a {
+  display: none;
+}
+#slideshow a.nivo-prevNav {
+  display: none;
+}
+#slideshow a.nivo-nextNav {
+  display: none;
+}
+#slideshow .nivo-controlNav {
+  display: none;
+}
+#eButton {
+  cursor: hand;
+  cursor: pointer;
+  color: #464646;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#backgroundPopup {
+  background-color: black;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#eForm {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  z-index: 1001;
+  padding: 20px;
+  background: transparent;
+}
+#formContainer {
+  display: block;
+  width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+}
+#formContainer label {
+  clear: both;
+  float: left;
+  width: 100px;
+  margin: 8px 0;
+}
+#formContainer input {
+  float: left;
+  width: 400px;
+  margin: 4px 0;
+}
+#formContainer textarea {
+  float: left;
+  width: 494px;
+  margin: 4px 0;
+}
+#formContainer header {
+  background: #000;
+  color: #FFF;
+  font-weight: bold;
+  padding: 4px 0 4px 14px;
+  font-size: 12px;
+}
+#formContainer input.submit-btn {
+  width: 120px;
+  float: right;
+}
+.DropDownBox {
+  width: 175px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#calendar-wrap {
+  max-width: 910px;
+  margin: 0 auto;
+}
+#content {
+  position: relative;
+}
+.aside-content ul {
+  margin: 12px 0;
+  list-style-position: inside;
+}
+.aside-content ul li {
+  position: relative;
+}
+.aside-content ul.list li {
+  list-style-image: url('/Themes/Vela/sysimages/bullet.png');
+  padding: 4px 0 4px 2px;
+  margin: 4px 0;
+}
+.aside-content a:hover,
+.aside-content a:focus {
+  color: #000;
+}
+section#calendar table.calendar {
+  width: 100%;
+  background: #FFF;
+  margin-bottom: 0px;
+  border: none;
+}
+section#calendar table.calendar td,
+section#calendar table.calendar th {
+  text-align: center;
+  color: white;
+}
+section#calendar table.calendar td {
+  padding: 2% 0;
+}
+section#calendar table tr:first-child td {
+  background: #000;
+  padding-top: 3px;
+  font-size: 11pt;
+  color: white;
+}
+section#calendar table tr:first-child td a {
+  padding-top: 3px;
+  font-size: 11pt;
+  color: white !important;
+}
+section#calendar table.calendar th {
+  font-weight: bold;
+  color: #7E7E7E;
+}
+section#calendar table .with-event a {
+  color: #E01920;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12pt;
+}
+section#calendar table .this-month a {
+  color: #464646;
+}
+section#calendar table .other-month a {
+  color: #6d6d6d;
+}
+section#calendar table .today {
+  background: #FFF !important;
+}
+section#calendar table .today a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+section#calendar td a:hover {
+  text-decoration: underline;
+}
+section#calendar footer {
+  display: none;
+}
+section#calendar footer a {
+  color: #fff;
+  text-align: right;
+}
+section#calendar footer a:hover {
+  text-decoration: underline;
+}
+.popContent {
+  background: #fff !important;
+}
+.monthCalendarTitle {
+  background-color: #C0C0C0 !important;
+  margin-bottom: 0px;
+  border: none !important;
+}
+.monthCalendarEventDay,
+.monthCalendarEventDay a {
+  background-color: #fff !important;
+}
+.monthCalendarEventDay a {
+  font-weight: bold;
+  font-size: larger;
+}
+section#upcoming-events {
+  margin: 0px 0px 5px 0px;
+}
+section#upcoming-events header {
+  background: none;
+  color: #fff;
+  font-weight: normal;
+  padding-left: 0;
+}
+section#upcoming-events footer a.view-all {
+  float: right;
+  margin-right: 6px;
+}
+section#upcoming-events ul {
+  list-style-type: none;
+  max-height: 350px;
+  overflow: auto;
+  margin-bottom: 11px;
+  position: relative;
+}
+section#upcoming-events ul li {
+  padding: 8px 0;
+}
+section#upcoming-events ul:last-child {
+  border-bottom: 0;
+}
+section#upcoming-events ul a {
+  display: block;
+  color: #000;
+  font-size: 13px;
+}
+section#upcoming-events ul a:hover {
+  text-decoration: underline;
+}
+section#upcoming-events ul span {
+  display: inline;
+  color: #000;
+}
+ul.athletic-events {
+  list-style-type: none;
+  max-height: 350px;
+  overflow: auto;
+  margin-bottom: 11px;
+  position: relative;
+}
+ul.athletic-events li {
+  padding: 8px 0;
+}
+ul.athletic-events:last-child {
+  border-bottom: 0;
+}
+ul.athletic-events a {
+  color: #000;
+  font-size: 13px;
+}
+ul.athletic-events a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+ul.athletic-events span {
+  display: inline;
+  color: #000;
+  font-size: 12px;
+}
+#jobs-list {
+  list-style-type: none;
+}
+#jobs-list li {
+  border-bottom: 1px solid #DEDEDE;
+  padding: 12px 0;
+  position: relative;
+}
+#jobs-list li a {
+  display: block;
+  color: #464646;
+  font-size: 12px;
+  font-weight: bold;
+}
+#jobs-list li a:hover {
+  text-decoration: underline;
+}
+#jobs-list li span {
+  display: block;
+}
+#jobs-list li span.job-type {
+  font-style: italic;
+  font-size: 12px;
+}
+#jobs-list li p {
+  margin: 4px 0;
+  font-size: 11px;
+}
+#jobs-list li label {
+  float: left;
+  width: 50px;
+  font-size: 12px;
+}
+.list li {
+  padding: 4px 0px;
+  list-style: none;
+  margin-left: 15px;
+}
+.job-detail span {
+  display: block;
+}
+.job-detail label {
+  clear: both;
+  float: left;
+  width: 80px;
+  font-weight: bold;
+}
+.job-detail span.job-description {
+  margin: 12px 0;
+}
+footer a {
+  color: #000;
+}
+div.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  top: 0;
+  position: absolute;
+  background: white url(/sysimages/background.jpg) repeat-y top center;
+}
+.gutterMiddle {
+  padding: 15px 0px;
+}
+ul.photoGalleryContent {
+  display: table;
+  list-style: none;
+}
+#gallery,
+#achievements,
+#menus {
+  float: left;
+  margin: 10px 0;
+}
+.admin-dept {
+  border: solid 1px #DEDEDE;
+  padding: 12px;
+  width: 46%;
+  margin: 10px;
+  float: left;
+  min-height: 120px;
+}
+.footerLine {
+  background: url(/sysimages/footerline.png) no-repeat top left;
+  height: 15px;
+  width: 1024px;
+  position: absolute;
+  bottom: 150px;
+}
+#social-links h6 {
+  font-size: 20px;
+  color: inherit;
+}
+#social-links a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 3px;
+  vertical-align: top;
+}
+#social-links a i.fa.google-drive {
+  background: url('https://cdn.schoolpointe.com/images/social/google-drive.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.pinwheel {
+  background: url('https://cdn.schoolpointe.com/images/social/pinwheel-color.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.letstalk {
+  background: url('https://cdn.schoolpointe.com/images/social/letstalk.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.progress-book {
+  background: url('https://cdn.schoolpointe.com/images/social/progress-book-icon.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.skyward {
+  background: url('https://cdn.schoolpointe.com/images/social/skyward.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.edmodo {
+  background: url('https://cdn.schoolpointe.com/images/social/edmodo.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.powerschool {
+  background: url('https://cdn.schoolpointe.com/images/social/powerschool.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.infinite-campus {
+  background: url('https://cdn.schoolpointe.com/images/social/infinite-campus-white.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a i.fa.lms {
+  background: url('https://cdn.schoolpointe.com/images/social/LMS-Black.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#social-links a.cms {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px 0px;
+}
+#social-links a.intranet {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -44px;
+}
+#social-links a.linkedin {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -90px;
+}
+#social-links a.rss {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -310px;
+}
+#social-links a.facebook {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -133px;
+}
+#social-links a.twitter {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -88px;
+}
+#social-links a.youtube {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+  background-position: 0px -176px;
+}
+#social-links a.cms:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px 0px;
+}
+#social-links a.intranet:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -44px;
+}
+#social-links a.linkedin:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -90px;
+}
+#social-links a.rss:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -310px;
+}
+#social-links a.facebook:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -133px;
+}
+#social-links a.twitter:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -88px;
+}
+#social-links a.youtube:hover {
+  background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+  background-position: 0px -176px;
+}
+#social-links a i.class-link-icon {
+  background: url('https://cdn.schoolpointe.com/images/social/Classlink.png') no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+#school-map span {
+  display: block;
+  color: inherit;
+}
+#school-map span a {
+  color: inherit;
+}
+#school-map span a:hover {
+  text-decoration: underline;
+}
+#school-map #AddInfo {
+  min-height: 18px;
+}
+#school-map #AddInfo img {
+  vertical-align: bottom;
+}
+#school-map h6 {
+  margin-bottom: 2px;
+}
+#Weather {
+  position: absolute;
+  bottom: 156px;
+  right: 10px;
+}
+.formCategories {
+  margin-top: 10px;
+}
+.FormTable {
+  padding-bottom: 8px;
+}
+.category {
+  font-size: 11pt;
+  font-weight: bold;
+}
+.linkform {
+  font-size: 10pt;
+  font-weight: bold;
+}
+.lbl_formDesc {
+  font-size: 10pt;
+}
+.panel ol {
+  margin-left: 40px;
+}
+table tr th,
+table tr td {
+  padding: 0px;
+}
+table {
+  border: 0;
+}
+.sf-vertical li a {
+  display: block;
+}
+.sf-vertical {
+  list-style: none;
+}
+.sf-vertical li {
+  margin: 0 0 0.4375em 0;
+  font-size: 0.875em;
+}
+.schoolclosings {
+  background: #fff;
+  padding: 10px;
+}
+.maincontentsection {
+  margin: 10px;
+}
+@media only screen and (min-width: 640px) {
+  .quicklinks {
+    display: none !important;
+  }
+  .topquicklinks {
+    display: none !important;
+  }
+}
+.qlTitle {
+  font-weight: bold;
+  margin-left: 20px;
+}
+.sTitle a {
+  color: #000;
+}
+.olc2ColumnContentLeft div {
+  padding: 0 !important;
+  margin: 12px 0 !important;
+}
+.olc2ColumnContentLeft div div {
+  margin: 0 !important;
+}
+div.olcLeftTitle {
+  background: none;
+  color: #000;
+  font-weight: normal;
+  padding-left: 0;
+  font-family: Georgia, Times New Roman, times, serif;
+}
+.olc2ColumnContentLeft .classitem {
+  background-image: none;
+  margin: 8px 0 !important;
+  padding-left: 0 !important;
+}
+.olc2ColumnContentLeft .classitem a {
+  color: #000;
+  font-family: Arial, Verdana, Sans-Serif;
+  font-size: 11px;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.olc2ColumnContentLeft .classitem .innerPageList {
+  margin-left: 12px !important;
+}
+#pageList .pageitem {
+  background-position: 0 0 !important;
+  display: block;
+}
+#pageList .pageitem a {
+  color: #000;
+  display: inline-block;
+  min-height: 22px;
+}
+#pageList .pageitem {
+  display: block;
+}
+#jMonthCalendar .Event {
+  height: 22px !important;
+}
+.title,
+.athletictitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+#jMonthCalendar {
+  width: 99% !important;
+}
+input {
+  height: 30px;
+}
+.field-control input {
+  height: initial;
+}
+input[type="image"] {
+  height: inherit;
+}
+.sf-vertical.sf-arrows > li > .sf-with-ul {
+  background: url(/sysimages/arrows-ffffff.png) no-repeat right center;
+  background-position: right 10px;
+}
+.searchresultstitle {
+  display: none;
+}
+.pp_gallery li.default a img {
+  display: block !important;
+}
+.pp_gallery li.default a {
+  background: none !important;
+}
+.blogList {
+  padding-bottom: 15px;
+  display: block;
+}
+/* END /Themes/css/schoolpointe.css */
+
+/* START /js/search/search.css */
+
+#txtSearch {
+  height: 18px;
+  border: none;
+  width: 120px;
+  margin-top: 5px;
+}
+#txtSearch2 {
+  height: 18px;
+  border: none;
+  width: 120px;
+  margin-top: 5px;
+}
+.searchBar {
+  margin-left: 0px;
+}
+/* END /js/search/search.css */
+
+/* START /Themes/Vela/css/Vela.css */
+
+/*
+	font-family: 'Mr Dafoe', cursive;
+	font-family: "droid-sans", sans-serif;
+	font-family: "droid-serif", serif;
+
+	Red:			#C4112F
+*/
+
+a {
+  color: blue;
+}
+body {
+  font-family: "droid-serif", serif;
+}
+.panel {
+  border-radius: 0;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+.bg-header1 {
+  color: #000;
+  background-color: #fff;
+  background-image: url('/userfiles/-18/My%20Files/Header-Texture.jpg?id=9983');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.wrap-topBox {
+  padding: 10px;
+  background-color: #051129;
+}
+.wrap-translate {
+  float: right;
+}
+.skiptranslate.goog-te-gadget > div {
+  margin-bottom: -15px;
+}
+.goog-te-gadget #googleTranslateSelect.goog-te-combo {
+  padding: 0;
+  margin: 0;
+}
+.wrap-searchLink {
+  float: right;
+  padding-right: 10px;
+  line-height: 19px;
+}
+.wrap-searchLink a {
+  color: #fff;
+}
+.wrap-socialLinks {
+  float: right;
+  padding-right: 8px;
+  line-height: 19px;
+}
+.wrap-socialLinks a {
+  display: inline-block;
+  max-height: 19px;
+  margin-left: 6px;
+  color: #fff;
+  font-size: 18px;
+}
+.wrap-socialLinks a:first-child {
+  margin-left: 0;
+}
+.logo {
+  display: block;
+  width: 579px;
+  max-width: 100%;
+  padding-top: 145px;
+  margin: 0 auto 20px auto;
+  color: #000;
+  background-image: url('/userfiles/-18/My%20Files/District-Logo.png?id=10007');
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  line-height: 100%;
+}
+.logo:hover,
+.logo:focus {
+  color: #000;
+  text-decoration: none;
+}
+.logo .top {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 56px;
+  font-family: 'Mr Dafoe', cursive;
+  text-align: center;
+  line-height: 100%;
+}
+.logo .bottom {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "droid-sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 100%;
+}
+.bg-header2 {
+  border-top: 2px solid #2C2C2C;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,222222+100 */
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #000000 0%, #222222 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #000000 0%, #222222 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #000000 0%, #222222 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#222222', GradientType=0);
+  /* IE6-9 */
+
+}
+#TopNav > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+#TopNav > ul > li {
+  display: inline-block;
+  position: relative;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+#TopNav > ul > li:before,
+#TopNav > ul > li:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.2+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#33ffffff', GradientType=0);
+  /* IE6-9 */
+
+}
+#TopNav > ul > li:before {
+  left: 0;
+}
+#TopNav > ul > li:after {
+  right: 0;
+}
+#TopNav > ul > li:first-child:before,
+#TopNav > ul > li:last-child:after {
+  display: none;
+}
+#TopNav > ul > li > a {
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#TopNav > ul > li > a:hover,
+#TopNav > ul > li > a:focus,
+#TopNav > ul > li.open > a {
+  color: #ddd;
+  text-decoration: none;
+}
+#TopNav > ul > li > a:hover:before,
+#TopNav > ul > li > a:focus:before,
+#TopNav > ul > li.open > a:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 100%;
+  width: calc(70%);
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: #ddd;
+}
+.dropdown-menu {
+  top: 0;
+  left: 100%;
+  right: auto;
+  bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #C4112F;
+}
+#slideshow {
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  #slideshow {
+    display: none;
+  }
+}
+.bg-body1 {
+  padding: 20px 0;
+  background-image: url('/userfiles/-18/My%20Files/Black-Texture_2.jpg?id=9978');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/* Custom Feature */
+
+.customFeature {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.customFeature a,
+.customFeature a:hover,
+.customFeature a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+.customFeature .cfContent {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+.customFeature .cfHeader {
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "droid-serif", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 100%;
+}
+.customFeature .cfBody {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+}
+.customFeature .cfFrame {
+  display: block;
+  float: right;
+  width: 383px;
+  height: 271px;
+  padding: 23px 25px 27px 22px;
+  margin: 0;
+  background-image: url('/userfiles/-18/My%20Files/Photo-Frame.png?id=9989');
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.customFeature .cfPhoto {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+  .customFeature .cfContent {
+    padding: 0;
+  }
+  .customFeature .cfPhotoContainer {
+    display: none;
+  }
+}
+.bg-body2 {
+  padding: 20px 0;
+  background-image: url('/userfiles/-18/My%20Files/Pattern-Gray.jpg?id=9985');
+  background-position: top left;
+  background-size: auto;
+  background-repeat: repeat;
+}
+/* Headings Fixers */
+
+/* Remove Additional Padding/Margin */
+
+#middle3Column,
+#middle2Column,
+.content.clearfix > h1:first-child > .title,
+.title > .title,
+.athleticsTitle {
+  padding: 0;
+  margin: 0;
+}
+/* Style All Headings */
+
+.title,
+.athleticsEventsTitle,
+.content.clearfix > h1:first-child,
+.headerM,
+.forms-links-employment > h1:first-child,
+.sTitle > a,
+.LeftDistrict1 > h1,
+h1,
+#middle3Column > span,
+#middle2Column,
+.SecondaryContentHeader,
+.sectionHeader,
+.athleticsTitle {
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 0;
+  color: #C4112F;
+  font-size: 38px;
+  font-weight: normal;
+  font-family: "droid-serif", serif;
+  font-variant: small-caps;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 100%;
+}
+#news-list .article.row {
+  padding-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#news-list .news-title {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+#news-list .news-image {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#news-list .news-post-date {
+  display: none;
+}
+.bg-body3 {
+  padding: 20px 0;
+  background-image: url('/userfiles/-18/My%20Files/Pattern-Gray-2.jpg?id=9986');
+  background-position: top left;
+  background-size: auto;
+  background-repeat: repeat;
+}
+/* Upcoming Events */
+
+#upcoming-events > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#upcoming-events > ul > li:before,
+#upcoming-events > ul > li:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+section#upcoming-events > ul > li {
+  position: relative;
+  min-height: 85px;
+  padding-top: 0;
+  margin-bottom: 15px;
+  font-family: "droid-serif", serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#upcoming-events .event-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 75px;
+  margin-right: 0;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+#upcoming-events .event-date:after {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  color: #C4112F;
+  content: '\f0da';
+  font-size: 18px;
+  font-family: "FontAwesome";
+}
+#upcoming-events .event-date .event-month {
+  padding: 0;
+  color: #fff;
+  background-color: #C4112F;
+  font-size: 12px;
+}
+#upcoming-events .event-date .event-month .month {
+  display: block;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+#upcoming-events .event-date .event-month .day {
+  display: block;
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+#upcoming-events .event-date .event-year {
+  display: block;
+  padding: 2px 0;
+  color: #fff;
+  background-color: #000;
+}
+#upcoming-events .event-date .event-date-number,
+#upcoming-events .event-date .event-month2:last-child {
+  color: #13007D;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#upcoming-events .event-link {
+  padding-left: 70px;
+}
+#upcoming-events .event-link a {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+#upcoming-events .event-location {
+  display: none;
+}
+#upcoming-events .event-time {
+  padding-left: 70px;
+  font-size: 13px;
+  font-style: italic;
+}
+.wrap-events footer {
+  display: none;
+}
+.wrap-feature .feature-content-title.title {
+  display: block;
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #000;
+  font-size: 24px;
+  font-family: "droid-serif", serif;
+  text-transform: uppercase;
+}
+.bg-body4 {
+  background-image: url('/userfiles/-18/My%20Files/maps/00.PNG?id=10008');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-top: 6px solid #fff;
+}
+.mapHeight {
+  min-height: 300px;
+}
+.findUs {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  min-width: 300px;
+  padding: 15px;
+  color: #fff;
+  background-color: #171717;
+  font-size: 13px;
+  font-family: "droid-sans", sans-serif;
+  line-height: 20px;
+}
+.findUs h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "droid-serif", serif;
+  text-transform: uppercase;
+}
+.findUs .name {
+  display: block;
+}
+.findUs .address {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+.bg-footer1 {
+  padding: 20px 0;
+  background-color: #C4112F;
+  background-image: url('/userfiles/-18/My%20Files/Red-Texture.jpg?id=9992');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.footerName,
+.footerName:hover,
+.footerName:focus {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 38px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footerAddress,
+.footerAddress:hover,
+.footerAddress:focus {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "droid-serif", serif;
+}
+.footerPhones {
+  display: block;
+  color: #fff;
+  font-family: "droid-serif", serif;
+}
+#QuickLinks > ul,
+.side-nav.sf-vertical {
+  padding: 0 10px;
+  margin: 0;
+  list-style: none;
+}
+#QuickLinks > ul > li,
+.side-nav.sf-vertical > li {
+  padding: 0 0 5px 0;
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#QuickLinks > ul > li:last-child,
+.side-nav.sf-vertical > li:last-child {
+  border: none;
+}
+#QuickLinks > ul > li > a,
+.side-nav.sf-vertical > li > a {
+  display: block;
+  position: relative;
+  padding: 3px 0;
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#QuickLinks > ul > li > a:before,
+.side-nav.sf-vertical > li > a:before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 102%;
+  color: #B2B2B2;
+  font-family: "FontAwesome";
+  content: '\f0da';
+}
+#QuickLinks > ul > li > a:hover,
+#QuickLinks > ul > li > a:focus,
+#QuickLinks > ul > li > a:hover:before,
+#QuickLinks > ul > li > a:focus:before,
+.side-nav.sf-vertical > li > a:hover,
+.side-nav.sf-vertical > li > a:focus,
+.side-nav.sf-vertical > li > a:hover:before,
+.side-nav.sf-vertical > li > a:focus:before {
+  color: #C4112F;
+}
+#FooterNav > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#FooterNav > ul:before,
+#FooterNav > ul:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+#FooterNav > ul > li {
+  display: block;
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+#FooterNav > ul > li:nth-child(odd) {
+  clear: left;
+}
+#FooterNav > ul > li > a {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.row.copyright {
+  margin-top: 20px;
+  color: #fff;
+}
+.row.copyright > div:first-child {
+  padding-top: 10px;
+}
+.row.copyright > div:last-child {
+  text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  .row.copyright,
+  .row.copyright > div:last-child {
+    text-align: center;
+  }
+}
+.mobileName {
+  display: inline-block;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+#MobileNav {
+  padding: 10px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+#MobileNav h1 {
+  margin-bottom: 10px;
+}
+#MobileNav > ul {
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+#MobileNav > ul:last-child {
+  border-bottom: none;
+}
+#MobileNav > ul > li {
+  padding: 3px 0;
+}
+/* ADA Fixes */
+
+/* Google Translate */
+
+#google_translate_element .goog-te-gadget,
+#google_translate_element .goog-logo-link {
+  color: #fff;
+}
+#google_translate_element .goog-te-gadget select {
+  color: #000;
+}
+/* Link Colors */
+
+a {
+  color: blue;
+}
+a:hover,
+a:focus {
+  color: #23517a;
+}
+/* Obscure */
+
+.obscure {
+  height: 1px;
+  color: #000 !important;
+  background-color: #fff !important;
+}
+@media only screen and (max-width: 767px) {
+  .col-xs-12 {
+    margin-bottom: 20px;
+  }
+}
+.bg-black {
+  background-color: #000;
+}
+/* Athletics Jump To Sport */
+
+#athleticsJumptoSport {
+  margin: 20px 0;
+}
+#athleticsJumptoSport p,
+#athleticsJumptoSport select {
+  margin: 0;
+}
+ul,
+ol {
+  padding-left: 15px;
+}
+.headerM {
+  margin-top: 20px;
+}
+/* Month Calendar Fixes */
+
+#site-body #calendar-wrap {
+  width: 1140px !important;
+  margin: 0 auto !important;
+}
+@media only screen and (max-width: 1199px) {
+  #site-body #calendar-wrap {
+    width: 940px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #site-body #calendar-wrap {
+    width: 750px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #site-body #calendar-wrap {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+/* Week Calendar Fixes */
+
+.monthCalendar .monthCalendarTitle {
+  color: #fff;
+  background-color: #C4112F !important;
+  /* Main Color */
+
+}
+.monthCalendar .monthCalendarNextPrev a {
+  color: #fff !important;
+}
+.calendarWeekDayTable .calendarDayHeader {
+  background-color: transparent;
+}
+.calendarDayHeader .dayHeaderLabel {
+  color: #000;
+}
+.monthCalendarDayHeader {
+  text-align: center;
+}
+.wrap-searchLink a:hover,
+.wrap-searchLink a:focus,
+.wrap-socialLinks a:hover,
+.wrap-socialLinks a:focus {
+  color: #fff;
+}
+i.fa.infinite-campus {
+  width: 34px;
+  height: 19px;
+  background-image: url('https://cdn.schoolpointe.com/images/social/infinite-campus-white.png');
+  background-size: contain;
+  vertical-align: text-top;
+}
+@media only screen and (min-width: 992px) {
+  .dropdown-menu {
+    top: initial;
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dropdown-menu {
+    float: none;
+    position: relative;
+    left: 0;
+  }
+}
+/* END /Themes/Vela/css/Vela.css */
+
+/* START /Customers/IN/WestNobleSchCorp/css/IN_WestNobleSchCorp.css */
+
+body,
+.logo .top,
+.logo .bottom,
+section#upcoming-events > ul > li {
+  font-family: 'Lato', sans-serif;
+}
+.bg-header1 {
+  color: #fff;
+  background-color: #000;
+  background-image: url('/userfiles/-2/My Files/Header.png?id=2');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.bg-body1 {
+  padding: 20px 0;
+  background-image: url('/userfiles/-2/My Files/Middle-Blue.png?id=4');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.bg-header2 {
+  background: #CC0000;
+  border-top: 3px solid #B4060D;
+}
+#TopNav > ul > li > a:hover,
+#TopNav > ul > li > a:focus,
+#TopNav > ul > li.open > a {
+  color: #fff;
+}
+.customFeature .cfFrame {
+  display: block;
+  float: right;
+  width: 383px;
+  height: 271px;
+  padding: 23px 25px 27px 22px;
+  margin: 0;
+  background-image: url('/userfiles/-2/My Files/Photo-Frame.png?id=5');
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bg-body2 {
+  padding: 20px 0;
+  background-image: url('/userfiles/-2/My Files/Light-Pattern.png?id=3');
+  background-position: top left;
+  background-size: auto;
+  background-repeat: repeat;
+}
+.logo {
+  padding: 0;
+  background: none;
+  color: #fff;
+  margin: 0 0 40px 0;
+  width: 100%;
+}
+.logo:hover,
+.logo:focus {
+  color: #CC0000;
+}
+.logo .top,
+.logo .bottom {
+  display: inline-block;
+  text-align: left;
+}
+.findUs {
+  display: none;
+}
+.logo .top {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.logo .bottom {
+  padding-left: 0px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 10px;
+  font-size: 33px;
+}
+.bg-footer1 {
+  background-image: url('/userfiles/-2/My Files/Red-Footer.png?id=6');
+}
+.title,
+h1,
+.athleticsEventsTitle,
+.content.clearfix > h1:first-child,
+.headerM,
+.forms-links-employment > h1:first-child,
+.sTitle > a,
+.LeftDistrict1 > h1,
+#middle3Column > span,
+#middle2Column,
+.SecondaryContentHeader,
+.sectionHeader,
+.athleticsTitle {
+  color: #0A3479;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 45px;
+}
+.customFeature .cfHeader {
+  font-family: 'Fjalla One', sans-serif;
+}
+.bg-body3 {
+  background-image: url('/userfiles/-2/My Files/Darker-Pattern.png?id=1');
+}
+.bg-body4 {
+  background-image: url('/userfiles/-2/My Files/00.PNG?id=11');
+  border-top: 6px solid #0F4296;
+}
+#TopNav > ul > li > a:hover:before,
+#TopNav > ul > li > a:focus:before,
+#TopNav > ul > li.open > a:before {
+  background-color: #E06666;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+}
+@media only screen and (min-width: 992px) {
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background-color: #CC0000;
+  }
+}
+.viewAll {
+  color: #0F4296;
+}
+#upcoming-events .event-date .event-month {
+  background-color: #0F4296;
+}
+#upcoming-events .event-date .event-year {
+  background-color: #CC0000;
+}
+#upcoming-events .event-date:after {
+  color: #0F4296;
+}
+.logo .top,
+.logo .bottom {
+  display: block;
+}
+.wrap-tabs .nav-tabs > li > a {
+  color: #fff;
+}
+.wrap-tabs .nav-tabs > li > a:hover {
+  color: #000;
+}
+.wrap-tabs .nav-tabs > li.active > a {
+  color: #0F4296;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #0F4296;
+  border: 2px solid #CC0000;
+  border-bottom-color: transparent;
+}
+.nav-tabs {
+  background: #0F4296;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-top: 15px;
+  border-bottom: 2px solid #CC0000;
+}
+.wrap-tabs .nav-tabs > li > a {
+  font-size: 23px;
+}
+.tab-content {
+  min-height: 300px;
+}
+.nav-tabs > li {
+  margin-bottom: -2px;
+}
+#upcoming-events .school-location {
+  padding-left: 70px;
+  font-size: 13px;
+  font-style: italic;
+}
+.cycle-pager {
+  display: none;
+}
+.wrap-slideshow .caption {
+  bottom: 0;
+  padding: 0;
+}
+.wrap-slideshow .caption div {
+  padding: 5px 75px 5px 15px;
+  text-align: left;
+}
+.bg-body3 > div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* END /Customers/IN/WestNobleSchCorp/css/IN_WestNobleSchCorp.css */
+
+/* CustomCss schoolId: -1 */
+
+.bg-body4 {
+  background-image: url('/userfiles/-2/My Files/District Map.png?id=13');
+  border-top: 6px solid #0F4296;
+}
+section#upcoming-events ul {
+  max-height: 595px;
+}

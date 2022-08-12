@@ -1,0 +1,26 @@
+/* Enter Your Custom CSS Here */
+.entry { color: black; }
+.entry.excerpt { color: black; }
+
+input[type="image"] {
+	border: 0 none;
+	width: inherit;
+	padding: 0;
+}
+/* Hide sign in on Submit a Job */
+form#submit-job-form fieldset[class*="logged"],form#submit-job-form fieldset[class*="-login"]{
+    display: none !important;
+}
+
+/* Get ride of sticky wrapper*/
+
+.widget-area .sticky-wrapper,
+.widget-area .sticky-wrapper.is-sticky {
+	height: auto !important;
+}
+.widget-area .sticky-wrapper .sticky-sidebar,
+.widget-area .sticky-wrapper.is-sticky .sticky-sidebar {
+	width: 100% !important;
+	position: relative !important;
+	top: auto !important;
+}

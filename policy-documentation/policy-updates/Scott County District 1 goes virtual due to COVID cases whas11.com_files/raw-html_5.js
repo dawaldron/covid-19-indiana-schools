@@ -1,0 +1,2 @@
+define("raw-html",["module","page","utils"],function(t,a,i){const e={name:t.id,class:"."+t.id};i.broadcastNoJQ(e.name,"loaded"),i.createModuleNoJQ(e.name,function(t){const a=this;this.el=t,this.module=e,this.init=function(){a.broadcast("init"),a.broadcast("ready")}})});
+//# sourceMappingURL=raw-html_5.8.4.js.map

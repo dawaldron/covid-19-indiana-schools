@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/l/font?kit=1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCKLKwfC3YehYvjJmkOzExGk9jEJyDZyUJ80cY&skey=30a27f2564731c64&v=v22) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=KFOmCnqEu92Fr1Me4H5XIxl8aYW3088GMjf5TxZPMWeMD7BVUos9&skey=a0a0114a1dcab3ac&v=v27) format('woff2');
+}

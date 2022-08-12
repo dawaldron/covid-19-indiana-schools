@@ -1,0 +1,1007 @@
+/* --- FONTS --- 
+
+ font-family: 'asapregular';
+ font-family: 'asapbold';
+ font-family: 'latobold';
+ font-family: 'latoregular';
+ font-family: 'latoregularitalic';
+ font-family: 'latolight';
+ font-family: 'latoblack';
+
+------------ */
+/* --------------------- COLORS ---------------------- */
+/*--Link Color--*/
+a, a:hover {
+  color: #000000; }
+
+.subpage .ptl_page a {
+  color: #000000; }
+
+/*-- Header BG color --*/
+#header {
+  background: black; }
+
+/*-- Section heading border bottom color --*/
+.sec-header h2, .sec-header h3 {
+  border-bottom-color: #000000; }
+
+/*-- School name text color --*/
+#school-name h1 {
+  color: #ffffff; }
+
+/*-- school address text color --*/
+#header-address {
+  color: #DD0000; }
+
+/*-- Menubar BG color and border bottom color --*/
+#menubar {
+  background: #000000;
+  border-bottom-color: #DD0000; }
+
+/*-- Footer BG color and footer address text color --*/
+#footer {
+  background: black;
+  color: #DD0000; }
+
+/*-- Footer school name color --*/
+#footer h3 {
+  color: #ffffff; }
+
+/*-- Upcoming event BG color --*/
+.ptl_page .eventPlaceHolder, .ptl_page .eventPlaceHolder:hover {
+  background: #DD0000;
+  color: #000000; }
+
+.name-of-event {
+  color: #000000; }
+
+/*-- Sidenav LV2 border left color --*/
+.sitenavl1 a.navLink {
+  border-left: 3px solid #DD0000; }
+
+/*-- News item BG color --*/
+.news-item .add-padding {
+  background: #000000; }
+
+/*-- News item text color --*/
+.news-item .newscontent {
+  color: #ffffff; }
+
+/*-- News item title text color --*/
+.news-item a.news-title {
+  color: #ffffff; }
+
+.news-item a.news-title:hover {
+  color: #ffffff;
+  text-decoration: underline; }
+
+/*-- News item date text color --*/
+.news-item .date {
+  color: #EFEFEF; }
+
+/*-- News item read more BG color --*/
+.read-more {
+  background: #DD0000; }
+
+/*---- CALENDAR ----*/
+/*--Calendar BG's--*/
+.mini_calendar_tbl, .tbl_mini_calendar, .tbl_cell_calendar {
+  background-color: #000000; }
+
+/*--Calendar Number Boxes BG--*/
+.mini_calendar_day {
+  background: #ffffff; }
+
+/*--Calendar 'Days of The Week' Colors--*/
+td.mini_calendar_header {
+  color: #ffffff; }
+
+/*--Top of the Calendar BG Color--*/
+.cal-top {
+  background: #DD0000; }
+
+/*--Calendar Today BG and Color--*/
+.mini_calendar_day.mini_calendar_today {
+  background: black;
+  color: #ffffff; }
+
+/*--Calendar 'Go to Main Calendar' Color--*/
+A.mini_calendar_header:link, A.mini_calendar_header:visited {
+  color: #ffffff; }
+
+/*--Calendar 'Go to Main Calendar' Color Hover--*/
+A.mini_calendar_header:hover {
+  color: #ffffff; }
+
+/*--Calendar Event Text Color--*/
+A.mini_calendar_day:link, A.mini_calendar_day:visited {
+  color: #ffffff;
+  background: #DD0000; }
+
+/*--Calendar Event Hover BG Color and Text Color--*/
+A.mini_calendar_day:hover {
+  color: #ffffff;
+  background: #DD0000; }
+
+/*--Calendar Today With Event BG and Color--*/
+a.mini_calendar_day.mini_calendar_today {
+  background: rgba(255, 255, 255, 0.39);
+  color: #ffffff; }
+
+/*-- Calendar Arrows --*/
+.cal-btn-l {
+  border-color: transparent #ffffff transparent transparent; }
+
+.cal-btn-r {
+  border-color: transparent transparent transparent #ffffff; }
+
+/*---- TELERIK COLORS ----*/
+/*--TOP LEVEL STYLES--*/
+.RadMenu .rmGroup .rmText {
+  color: #ffffff; }
+
+/*--Normal State--*/
+#menubar a, .telerik_main_menu .rmRootGroup a {
+  color: #ffffff; }
+
+.telerik_main_menu .rmRootGroup a span {
+  color: #ffffff; }
+
+/*--Over and Focused State ***/
+#menubar a:hover, .telerik_main_menu .rmRootGroup a:hover, .telerik_main_menu .rmRootGroup a.rmFocused {
+  color: #ffffff; }
+
+.telerik_main_menu .rmRootGroup a:hover span, .telerik_main_menu .rmRootGroup a.rmFocused span {
+  color: black; }
+
+/*--TOP LEVEL HOVER BG COLOR AND IMAGES (two images)--*/
+#menubar a:hover, .telerik_main_menu .rmRootGroup a:hover, .telerik_main_menu .rmRootGroup a.rmFocused {
+  background-color: transparent; }
+
+/*--END OF TOP LEVEL STYLES--*/
+/*--DROPDOWN MENU STYLES--*/
+/*--Normal State--*/
+.telerik_main_menu .rmGroup a {
+  color: #ffffff;
+  background: black; }
+
+.telerik_main_menu .rmGroup a span {
+  color: #ffffff;
+  background: black; }
+
+/*--Over and Focused State--*/
+.telerik_main_menu .rmGroup a:hover, .telerik_main_menu .rmGroup a.rmFocused {
+  background: #DD0000;
+  color: black; }
+
+.telerik_main_menu .rmGroup a:hover span, .telerik_main_menu .rmGroup a.rmFocused span {
+  background: #DD0000;
+  color: black; }
+
+/*--END OF DROPDOWN MENU STYLES--*/
+.rmItem:hover {
+  background-color: transparent; }
+
+.rmVertical .rmItem:hover a span, .rmVertical .rmItem:hover a {
+  background-color: #DD0000; }
+
+/*--DROPDOWN LV2 MENU STYLES--*/
+/*--Normal State--*/
+.telerik_main_menu .rmGroup .rmGroup a {
+  color: #171717;
+  background: #ffffff; }
+
+.telerik_main_menu .rmGroup .rmGroup a span {
+  color: #171717;
+  background: #ffffff; }
+
+/*--Over and Focused State--*/
+.telerik_main_menu .rmGroup .rmGroup a:hover, .telerik_main_menu .rmGroup .rmGroup a.rmFocused {
+  background: black;
+  color: #ffffff; }
+
+.telerik_main_menu .rmGroup .rmGroup a:hover span, .telerik_main_menu .rmGroup .rmGroup a.rmFocused span {
+  background: black;
+  color: #ffffff; }
+
+/*--SECOND LEVEL BORDER LEFT--*/
+.rmLevel2 {
+  border-left: 4px solid #DD0000; }
+
+/*--END OF DROPDOWN MENU STYLES--*/
+/*---- END TELERIK COLORS ----*/
+/* ------------------------------------------------------------- */
+/* --------------------- IMAGES ---------------------- */
+/*--Navigation Arrow BG--*/
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  background: url('https://p18cdn2static.sharpschool.com/Common/resources/DesignPortfolio/SiteThemes/Metric/Blue/arrows-sprite.png'); }
+
+/*--Navigation Arrow--*/
+/*--Light--*/
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  background-position: -18px -44px !important; }
+
+/*or*/
+/*--Dark--*/
+/*
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+ background-position: -18px -8px !important;
+}
+*/
+/* --------------------- END IMAGES ---------------------- */
+/* --------------------- QUICK LINKS ---------------------- */
+ul.quick-links {
+  list-style: none;
+  padding: 0px;
+  margin: 10px 0px 10px 0px; }
+
+ul.quick-links li {
+  margin-bottom: 10px;
+  text-align: center; }
+
+ul.quick-links a {
+  display: block;
+  background: #000000; }
+
+ul.quick-links img {
+  background: #000000;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; }
+
+ul.quick-links li a:hover {
+  opacity: 0.8; }
+
+/* ------------------------------------------------------------- */
+body .w-33 {
+  float: right; }
+
+body .w-66 {
+  float: right; }
+
+.sec-header h2, .sec-header h3 {
+  font-family: 'asapbold';
+  padding: 0px 0px 4px 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  font-size: 23px;
+  margin: 20px 0px 15px; }
+
+.w-33 {
+  background: #f5f5f5; }
+
+#header-left {
+  width: 75%;
+  float: left; }
+
+#school-name h1 {
+  color: #ffffff;
+  margin: 0px 0px 15px 0px;
+  font-weight: normal;
+  font-family: 'asapbold';
+  text-transform: uppercase; }
+
+#header-left a:hover {
+  text-decoration: none !important; }
+
+#school-name h1 #motto {
+  font-size: 50%;
+  font-family: 'latolight'; }
+
+#header-address {
+  color: #DD0000; }
+
+#header-right {
+  width: 25%;
+  float: right; }
+
+#logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; }
+
+#menubar {
+  border-bottom-width: 8px;
+  border-bottom-style: solid; }
+
+.inner-bar {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px 10px 0px 10px; }
+
+#footer .inside-padding {
+  padding: 25px 10px 25px 10px; }
+
+#footer-left {
+  width: 75%;
+  float: left; }
+
+#footer-right {
+  width: 25%;
+  float: left; }
+
+#footer h3 {
+  font-family: 'asapbold';
+  margin: 0px 0px 10px;
+  font-size: 25px; }
+
+#footer-address {
+  color: #DD0000; }
+
+#upcoming-event-wrapper {
+  margin-bottom: 15px; }
+
+.eventPlaceHolder, .eventPlaceHolder:hover {
+  margin-bottom: 5px; }
+
+.eventPlaceHolder:hover {
+  opacity: 0.8; }
+
+.full-date {
+  font-size: 14px; }
+
+#banner.row {
+  margin: 20px 0 0px; }
+
+#banner .nivoSlider {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.subpage #page {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px; }
+
+#sub-content-left {
+  width: 23%;
+  float: left; }
+
+#sub-content-right {
+  width: 77%;
+  float: left; }
+
+a.navLink {
+  display: block;
+  padding: 6px; }
+
+.sitenavl0.currentpage a.navLink {
+  background: #E4E4E4; }
+
+.sitenavl1 a.navLink {
+  padding: 3px 6px 3px 6px;
+  margin: 6px 0px 6px 0px; }
+
+.credits {
+  background: #333333;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px; }
+
+.label_skin_corporation {
+  font-size: 13px;
+  font-family: 'latolight'; }
+
+.label_skin_corporation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'latolight'; }
+
+.label_skin_corporation a:hover {
+  text-decoration: underline;
+  color: #ffffff; }
+
+#breadcrumbs {
+  margin: 0px 0px 15px; }
+
+ul#social {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float: right; }
+
+#social li.icn {
+  display: inline-block;
+  padding: 0px 3px 0px 3px; }
+
+#social li.icn a {
+  width: 40px;
+  height: 40px;
+  display: inline-block; }
+
+#social li.icn.facebook a {
+  background-position: 0px 0px; }
+
+#social li.icn.twitter a {
+  background-position: -40px 0px; }
+
+#social li.icn.youtube a {
+  background-position: -80px 0px; }
+
+#social li.icn.email a {
+  background-position: -120px 0px; }
+
+#social li.icn a {
+  background: url('https://p18cdn2static.sharpschool.com/common/resources/DesignPortfolio/SiteThemes/CommonLib/social-media/social-sprite.png'); }
+
+.news-item {
+  border: 0px;
+  background: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  width: 50%;
+  float: left; }
+
+.news-item:first-child {
+  margin-top: 0px;
+  padding-top: 0px; }
+
+.news-item .add-padding {
+  padding: 0px;
+  margin: 10px;
+  position: relative; }
+
+.news-item .newscontent {
+  padding: 10px 10px 50px 10px; }
+
+.news-item .news-title {
+  font-size: 18px;
+  line-height: normal;
+  margin: 0px 0px 5px 0px;
+  font-family: 'latoregular'; }
+
+.news-item .date {
+  margin-bottom: 5px; }
+
+.homepage .read-more {
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  padding: 1px; }
+
+.mini_calendar_tbl {
+  margin: 0px auto 15px;
+  width: 100%;
+  padding: 15px 0px 10px; }
+
+.mini_calendar_tbl table {
+  margin: 0px auto;
+  width: 97%; }
+
+.tbl_cell_calendar {
+  width: 13%;
+  height: 13%; }
+
+.mini_calendar_day {
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  width: 100%;
+  display: inline-block;
+  padding: 6px 0px 6px 0px;
+  min-height: 15px; }
+
+td.mini_calendar_header {
+  font-weight: normal;
+  font-size: 18px;
+  background: none;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  line-height: 16px;
+  padding-bottom: 9px;
+  font-family: 'latobold';
+  letter-spacing: 0.5px;
+  text-transform: uppercase; }
+
+td.mini_calendar_header_small {
+  background: #1a7da6; }
+
+A.mini_calendar_header:link, A.mini_calendar_header:visited {
+  font-weight: normal;
+  text-align: center;
+  display: block;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 8px; }
+
+A.mini_calendar_header:hover {
+  font-weight: normal;
+  text-align: center;
+  display: block;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 15px;
+  margin-top: 8px; }
+
+A.mini_calendar_day:link, A.mini_calendar_day:visited {
+  font-weight: normal;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  text-decoration: none; }
+
+A.mini_calendar_day:hover {
+  font-weight: normal;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  text-decoration: none; }
+
+/*-- Calendar Arrows Hover --*/
+.cal-btn-l:hover {
+  opacity: 0.8; }
+
+.cal-btn-r:hover {
+  opacity: 0.8; }
+
+.cal-btn-l {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 12px 7px 0;
+  display: block;
+  text-indent: -9999px; }
+
+.cal-btn-r {
+  position: relative;
+  top: 0px;
+  right: 5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  display: block;
+  text-indent: -9999px; }
+
+.cal-btn-r:focus, .cal-btn-l:focus {
+  outline-color: transparent;
+  outline-style: none; }
+
+.RadMenu a.rmLink {
+  line-height: 45px; }
+
+/*** START OF TOP LEVEL MENU STYLES ***/
+.telerik_main_menu a, .telerik_main_menu a:hover {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: normal; }
+
+.telerik_main_menu .rmText {
+  padding-top: 5px !important;
+  padding-bottom: 15px !important; }
+
+.telerik_main_menu .rmGroup .rmText {
+  padding-bottom: 5px !important; }
+
+.RadMenu .rmItem {
+  height: auto;
+  margin-right: 0px; }
+
+.RadMenu .rmText {
+  font-family: 'latoregular';
+  font-weight: normal;
+  font-size: 12pt; }
+
+.RadMenu .rmLink {
+  float: left;
+  outline: 0 none;
+  padding-left: 0px !important; }
+
+.RadMenu .rmHorizontal .rmText {
+  padding: 0px 8px 0px 8px !important;
+  letter-spacing: 0.06em; }
+
+.RadMenu .rmGroup .rmText {
+  margin-left: 0px !important;
+  padding: 8px 10px 8px 10px !important;
+  margin-bottom: 4px; }
+
+.rmrootGroup .rmHorizontal li.rmItem {
+  margin-left: 10px; }
+
+/*** Normal State ***/
+.telerik_main_menu .rmRootGroup a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'latoregular'; }
+
+.telerik_main_menu .rmRootGroup a span {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'latoregular';
+  font-family: 'latoblack';
+  text-transform: uppercase; }
+
+/*** Over and Focused State ***/
+.telerik_main_menu .rmRootGroup a:hover, .telerik_main_menu .rmRootGroup a.rmFocused {
+  text-decoration: none;
+  background-position: left top, right top;
+  background-repeat: no-repeat; }
+
+.telerik_main_menu .rmRootGroup a:hover span, .telerik_main_menu .rmRootGroup a.rmFocused span {
+  text-decoration: none; }
+
+/*** END OF TOP LEVEL MENU STYLES ***/
+/*** START OF DROPDOWN MENU STYLES ***/
+/*** Normal State ***/
+.telerik_main_menu .rmGroup a {
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: normal; }
+
+.telerik_main_menu .rmGroup a span {
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: normal;
+  line-height: normal !important;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  text-transform: none; }
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 18px;
+  height: 26px; }
+
+/*** Over and Focused State ***/
+.telerik_main_menu .rmGroup a:hover, .telerik_main_menu .rmGroup a.rmFocused {
+  text-decoration: none;
+  border-bottom: none !important; }
+
+.telerik_main_menu .rmGroup a:hover span, .telerik_main_menu .rmGroup a.rmFocused span {
+  text-decoration: none; }
+
+/*** Dropdown border ***/
+.RadMenu .rmRootGroup .rmItem ul.rmGroup {
+  width: 200px;
+  padding: 0px; }
+
+/*** END OF DROPDOWN MENU STYLES ***/
+
+
+#magic-line {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100px;
+  height: 45px;
+  background: #DD0000;
+  z-index: -1; }
+
+.RadMenu .rmHorizontal .rmItem {
+  z-index: 200; }
+
+li#magic-line:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -10px;
+  z-index: 999; }
+
+#mobile-bar {
+  line-height: 40px;
+  color: #ffffff;
+  text-indent: 15px; }
+
+@media screen and (max-width: 860px) {
+  body .w-33, body .w-66 {
+    width: 50%;
+    float: left; }
+
+  .news-item {
+    width: 100%; }
+ }
+
+@media screen and (max-width: 730px) {
+  .subpage .sec-header {
+    display: none; }
+
+  #sub-content-left, #sub-content-right {
+    width: 100%;
+    float: none; }
+ }
+
+@media screen and (max-width: 640px) {
+  body .w-66 {
+    width: 100%;
+    float: none; }
+
+  body .w-33 {
+    width: 100%;
+    margin-bottom: 15px; }
+
+  .news-item {
+    width: 50%; }
+
+  #header-left, #header-right {
+    text-align: center; }
+ }
+
+@media screen and (max-width: 450px) {
+  .news-item {
+    width: 100%; }
+
+  .w-33 {
+    width: 100%; }
+ }
+
+#social li.icn a:hover {
+  opacity: 0.8; }
+
+.read-more a, .read-more a:hover {
+  color: #000000; }
+
+/*===== FONTS =====*/
+@font-face {
+  font-family: 'asapregular';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-regular-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-regular-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-regular-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-regular-webfont.svg#asapregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'asapbold';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-bold-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-bold-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-bold-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/asap-bold-webfont.svg#asapbold') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.svg#latolight') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.eot');
+  src: url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.eot?#iefix') format('embedded-opentype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.woff') format('woff'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.ttf') format('truetype'), url('https://p18cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.svg#latoblack') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/*-------------------------------------------------------------------------*/
+
+/* New Color Scheme */
+
+#menubar {
+    background: #1100af;
+    border-bottom-color: #cecece;
+}
+
+ul.quick-links a {
+    background: #1100af;
+}
+
+ul.quick-links img {
+    background: #1100af;
+}
+
+.news-item .add-padding {
+    background: #1100af;
+}
+
+#footer {
+    background: #0a004e;
+}
+
+#menubar .telerik_main_menu .rmGroup a span {
+    background: #0f0071;
+   color: #fff;
+}
+
+#menubar .telerik_main_menu .rmGroup a:hover span, #menubar .telerik_main_menu .rmGroup a.rmFocused span, #menubar .telerik_main_menu .rmGroup a.rmExpanded span {
+    background: #0e014e;
+    color: #fff !important;
+}
+
+#menubar .telerik_main_menu .rmGroup .rmItem:hover .rmExpandRight:after, #menubar .telerik_main_menu .rmGroup .rmExpanded .rmExpandRight:after, #menubar .telerik_main_menu .rmGroup .rmFocused .rmExpandRight:after {}
+
+.rmLevel2 {
+    border-left: 4px solid #1800b7;
+}
+
+#menubar .telerik_main_menu .rmGroup .rmGroup a:hover span, #menubar .telerik_main_menu .rmGroup .rmGroup a.rmFocused span, #menubar .telerik_main_menu .rmGroup .rmGroup a.rmExpanded span {
+    color: #140076 !important;
+    background: #ffffff !important;
+}
+
+#menubar .telerik_main_menu .rmRootGroup a:hover span, #menubar .telerik_main_menu .rmRootGroup a.rmFocused span, #menubar .telerik_main_menu .rmRootGroup a.rmExpanded span {
+    color: #0f0052 !important;
+    background: #ffffff;
+}
+
+#header {
+    background: #0f0052;
+}
+
+#magic-line {
+    background: #ffffff;
+}
+
+.read-more {
+    background: #cecece;
+}
+
+div#footer-left {
+    color: #fff;
+}
+
+#footer-address {
+    color: #ffffff;
+}
+
+#header-address {
+    color: #fff;
+}
+
+.ptl_page .eventPlaceHolder, .ptl_page .eventPlaceHolder:hover {
+    background: #1800b7;
+    color: #fff;
+}
+
+.name-of-event {
+    color: #fff;
+}
+
+.ev-b-p {
+    border-right: 2px solid #fff;
+}
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+    background-position: -18px -44px !important;
+}
+
+.telerik_main_menu .rmGroup .rmItem:hover .rmExpandRight:after, .telerik_main_menu .rmGroup .rmFocused .rmExpandRight:after, .telerik_main_menu .rmGroup .rmExpanded .rmExpandRight:after {
+    background-position: -18px -8px !important;
+}
+
+.telerik_main_menu .rmGroup .rmGroup .rmItem .rmExpandRight:after {
+    background-position: -18px -44px !important;
+}
+
+.telerik_main_menu .rmGroup .rmGroup .rmItem:hover .rmExpandRight:after, .telerik_main_menu .rmGroup .rmGroup .rmFocused .rmExpandRight:after, .telerik_main_menu .rmGroup .rmGroup .rmExpanded .rmExpandRight:after {
+    background-position: -18px -8px !important;
+}
+
+
+.read-more a {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.read-more a:hover {
+    background: #fff;
+    margin-top: 0;
+}
+
+.sitenavl1 a.navLink {
+    border-left: 3px solid #1800b7;
+}
+
+button[id*="btn_month"] {
+    color: #000;
+}
+
+#social li.icn:empty {
+    display: none;
+}
+
+div#menubar {border-bottom-color: #dd0000;}
+
+#logo img {
+    max-width: 160px;
+}
+
+#school-name h1 span {
+    display: block;
+}
+
+#footer h3 span {
+    display: block;
+}
+
+#ctl00_lblCompany a:hover,div#breadcrumbs a:hover {
+
+text-decoration:none;
+
+}
+
+div#breadcrumbs a {
+    text-decoration: underline;
+}
+
+#header {
+    background: #000;
+}
+
+
+.ptl_page .eventPlaceHolder, .ptl_page .eventPlaceHolder:hover {
+    background: #000;
+}
+
+ul.quick-links a {
+    background: #000;
+}
+
+ul.quick-links img {
+    background: #000;
+}
+
+.news-item .add-padding {
+    background: #000;
+}
+
+#menubar .telerik_main_menu .rmGroup a span {
+    background: #f10000;
+    color: #000;
+}
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after, .telerik_main_menu .rmGroup .rmGroup .rmItem .rmExpandRight:after {
+    background-position: -18px -8px !important;
+}
+
+
+#footer {
+    background: #000;
+}
+
+
+ul.quick-links li a {
+    color: #fff;
+    padding: 10px;
+}
+
+ul.quick-links li a .fa {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+ul.quick-links img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+ul.quick-links li a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul.quick-links li a:hover {
+    text-decoration: none;
+}

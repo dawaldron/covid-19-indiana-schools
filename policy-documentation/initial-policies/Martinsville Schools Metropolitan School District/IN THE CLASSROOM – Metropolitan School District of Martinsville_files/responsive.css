@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+	1. Mobile
+	2. Large Mobile
+	3. iPad
+	4. large desktop
+	5. Other
+*/
+
+/* 1. Mobile responsive css 640px
+------------------------------------------------------------------------------*/
+
+
+
+@media (max-width:640px) {
+.banner-content .title p {font-size:26px !important; font-weight:800;}
+#new-school .social-icons ul li {
+    width: 50px;
+}
+.banner-content a {
+    font-size: 20px;
+}
+.services-block .service-content {width:76%;padding: 0px 10px;}
+.blog-listing li {
+    width: 100%;
+}
+.secondary nav ul li a {font-size: 12px;padding: 12px 8px;}
+#staff ul li{width:100%;margin-bottom:15px;}
+#staff ul li:nth-child(2){margin:0 0 15px;}
+.calendar, .news {width:100%;}    
+#school .feed {width:100%;}    
+h1, h2, h3, h4, h5, h6{ margin-bottom:15px;}
+h1{ font-size:20px;}
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+p{ font-size:14px;}
+.title img {width:100%;}
+
+/*----- Banner ------*/ 
+
+.banner .slick-prev{ left:10px;}
+.banner .slick-next{ right:10px;}
+.banner-content{ padding-left:40px; max-width:350px;}
+.banner-content .title{ font-size:20px; margin-bottom:15px; margin-top: 15px !important;}
+.banner-content a{ padding:10px 25px;}
+.banner .slick-next, .banner .slick-prev{ height:28px; width:28px;}
+.banner .slick-dots{ bottom:10px;}
+.slick-arrow:before{ line-height:16px; font-size:13px;}
+
+/*----- Footer ------*/ 
+.footer-top{ padding:15px 0 10px;}
+.footer-top ul li a{ font-size:16px; padding:0 12px; line-height:26px;}
+.footer-middle .address-bar{ padding:25px 0 20px;}
+.footer-middle .address-bar .address-block.address{ max-width:100%; margin-bottom:20px;}
+.footer-middle .address-bar .address-block{ padding:0; max-width:50%;}
+.footer-middle .address-bar .address-block .content-block p a{ font-size:16px;}
+.footer-middle .update-block{ padding:30px 0 20px;}
+.footer-middle .update-block .webmaster-block .single-webmaster{ margin:10px 0; max-width:306px;}
+.footer-middle .update-block .webmaster-block{ margin-bottom:25px;}
+.footer-middle .update-block .client-logo a{ margin:0 10px 15px; max-width:180px;}
+.footer-bottom .left-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer:before{ background-color: #93191d; content: ""; height: 100%; right: 100%; position: absolute;  top: 0; width: 4000px; z-index: 2; border:none;}
+.scroll-top-top{ bottom:24px; right:20px;}
+
+/*----- Services ------*/ 
+.services{ padding:30px 0;}
+.services-block{ margin:10px; width:180px; height:180px;}
+.services-block .service-content i{ font-size:55px;}
+.services-block .service-content i.icon-skyward{ font-size:80px; line-height:15px;}
+
+/*----- Welcome Block ------*/ 
+.welcome-block{ padding-top:0; padding-bottom:50px;}
+.welcome-image{ display:none;}
+.welcome-mobile{ display:block;}
+.welcome-content{ max-width:100%; padding-top:40px;}
+.welcome-content .read-btn{ padding:8px 22px; font-size:16px;}
+.welcome-content .title > span{ font-size:24px;}
+
+/*----- Programs ------*/
+.programs{ padding:30px 0 20px;}
+.programs-list .programs-block{ max-width:100%; margin-bottom:20px;}
+.programs-list .programs-block.large{ max-width:100%;}
+.programs-list .programs-block .caption .text{ font-size:20px;}
+
+/*--------- Typography page ------------*/
+/*.inner-banner{ min-height:170px; margin-top:0 !important;}*/
+.col2-layout{ padding:30px 0 20px;}
+.col2-layout .container{ padding:0;}
+.col2-layout .col-left{ max-width:100%; padding:0 18px;}
+.col2-layout .col-right{ max-width:100%;}
+.content-block blockquote .title{ font-size:20px;}
+.content-block ul li{ font-size:14px;}
+.content-block .alignleft{ float:none; text-align:center; margin:0 0 20px;width: 100% !important; height: auto;}
+.content-block .alignright{ float:none; text-align:center; margin:0 0 20px;width: 100% !important;  height: auto;}
+.content-block .aligncenter{ float:none; text-align:center; margin:0 0 20px; width: 100% !important; height: auto;}
+.typography .welcome-content .title h1{ margin-bottom:15px;}
+
+.col-layout{ padding:30px 0 30px;}
+.content-block ul.search-result li{ padding-bottom:15px; margin-bottom:15px;}
+}
+
+/* 2. Large Mobile responsive css 640px
+------------------------------------------------------------------------------*/
+@media (min-width:641px) and (max-width:767px) {
+.blog-listing li {
+    width:48%;
+}
+.secondary nav ul li a {font-size: 12px;padding: 12px 8px;}
+
+#staff ul li{width:100%;margin-bottom:15px;}
+#staff ul li:nth-child(2){margin:0 0 15px;}
+.calendar, .news {width:100%;}    
+#school .feed {width:100%;}    
+h1, h2, h3, h4, h5, h6{ margin-bottom:20px;}
+h1{ font-size:20px;}
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+p{ font-size:14px;}
+
+/*----- Banner ------*/ 
+
+.banner .slick-prev{ left:15px;}
+.banner .slick-next{ right:15px;}
+.banner-content{ padding-left:50px; max-width:450px;}
+.banner-content .title{ font-size:26px; margin-bottom:15px; margin-top: 40px !important;}
+.banner-content a{ padding:10px 25px;}
+.banner .slick-next, .banner .slick-prev{ height:30px; width:30px;}
+.banner .slick-dots{ bottom:15px;}
+.slick-arrow:before{ line-height:28px; font-size:13px;}
+
+/*----- Services ------*/ 
+.services{ padding:30px 0;}
+.services-block{ margin:10px; width:180px; height:180px;}
+.services-block .service-content i{ font-size:55px;}
+.services-block .service-content i.icon-skyward{ font-size:80px; line-height:15px;}
+
+/*----- Footer ------*/ 
+.footer-top{ padding:20px 0;}
+.footer-top ul li a{ font-size:16px; padding:0 12px;}
+.footer-middle .address-bar{ padding:25px 0 20px;}
+.footer-middle .address-bar .address-block.address{ max-width:100%; margin-bottom:20px;}
+.footer-middle .address-bar .address-block{ padding:0; max-width:50%;}
+.footer-middle .address-bar .address-block .content-block p a{ font-size:20px;}
+.footer-middle .update-block{ padding:30px 0 30px;}
+.footer-middle .update-block .webmaster-block .single-webmaster{ margin:10px 0;}
+.footer-middle .update-block .webmaster-block{ margin-bottom:25px;}
+.footer-middle .update-block .client-logo a{ margin:0 10px; max-width:180px;}
+.footer-bottom .left-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer:before{ background-color: #93191d; content: ""; height: 100%; right: 100%; position: absolute;  top: 0; width: 4000px; z-index: 2; border:none;}
+.scroll-top-top{ bottom:24px; right:20px;}
+
+/*----- Welcome Block ------*/ 
+.welcome-block{ padding-top:0; padding-bottom:50px;}
+.welcome-image{ display:none;}
+.welcome-mobile{ display:block;}
+.welcome-content{ max-width:100%; padding-top:40px;}
+.welcome-content .read-btn{ padding:8px 22px; font-size:16px;}
+.welcome-content .title > span{ font-size:24px;}
+
+/*----- Programs ------*/
+.programs .title{ margin-bottom:20px;}
+.programs{ padding:30px 0 30px;}
+.programs .programs-list{ margin:0 -5px;}
+.programs-list .programs-block{ padding:0 5px; margin-bottom:10px;}
+.programs-list .programs-block .caption .text{ font-size:18px;}
+
+/*--------- Typography page ------------*/
+/*.inner-banner{ min-height:250px; margin-top:0 !important;}*/
+.col2-layout{ padding:40px 0 30px;}
+.col2-layout .container{ padding:0;}
+.col2-layout .col-left{ max-width:100%; padding:0 18px;}
+.col2-layout .col-right{ max-width:100%;}
+.content-block blockquote .title{ font-size:20px;}
+.content-block ul li{ font-size:14px;}
+.content-block .alignleft{ float:none; text-align:center; margin:0 0 20px;}
+.content-block .alignright{ float:none; text-align:center; margin:0 0 20px;}
+.content-block .aligncenter{ float:none; text-align:center; margin:0 0 20px;}
+.typography .welcome-content .title h1{ margin-bottom:20px;}
+
+.col-layout{ padding:30px 0 30px;}
+.content-block ul.search-result li{ padding-bottom:15px; margin-bottom:15px;}
+
+}
+
+/* 3. iPad responsive css 768px to 1023px
+------------------------------------------------------------------------------*/
+@media (min-width:768px) and (max-width:1023px) {
+.services-block .service-content{width: 100%;}    
+    .icon1, .icon2 {
+    margin: 0 auto;
+    max-width: 60px;
+}
+.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal {
+    width: 100%;
+    display: block !IMPORTANT;
+}
+.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a.wp-mega-menu-link, .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a.wp-mega-menu-link {
+    padding: 20px 30px 20px 11px !important;
+}
+.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a, .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a {font-size: 13px !important;}
+.blog-listing li {width:48%;}
+.calendar, .news {width:48%;}    
+#school .feed {display:none;}
+h1, h2, h3, h4, h5, h6{ margin-bottom:25px;}
+h1{ font-size:22px;}
+h2{ font-size:22px;}
+h3{ font-size:20px;}
+h4{ font-size:18px;}
+
+/*----- Header ------*/ 
+header .left-header .logo{ width:120px;}
+header .left-header:after{  border-width:85px 0 0 30px;}
+header .right-header .top-nav{ padding:8px 0;}
+header .other-links a{ padding:0 5px; font-size:14px;}
+header .social-icons{ margin-left:10px;}
+header .social-icons a{ padding:0 5px; font-size:18px;}
+header .right-header .top-nav .search-block{ margin-left:5px;}
+header .right-header .top-nav .search-block .search-icon{ height:30px; width:30px; line-height:34px;  font-size:16px;}
+header .top-nav .contact-btn a{ font-size:16px; padding:4px 8px 4px;}
+nav ul li a{ padding:11px 3px 10px; font-size:14px;}
+header .right-header .top-nav .search-block .search-field .input-field, header .right-header .top-nav .search-block .search-field input[type="text"]{ height:30px; line-height:30px;}
+header .right-header .top-nav .search-block .search-field .submit-btn, header .right-header .top-nav .search-block .search-field input[type="submit"]{ height:30px; line-height:30px;}
+header .right-header .top-nav .search-block .search-field{ right:35px;}
+.contact-btn{ margin-top:0;}
+
+/*----- Nav ------*/
+nav ul li:hover > ul{ top:39px;}
+nav ul li ul li a{ font-size:14px; padding:10px 10px;}
+
+/*----- Banner ------*/
+
+.banner .slick-prev{ left:15px;}
+.banner .slick-next{ right:15px;}
+.banner-content{ padding-left:50px; max-width:500px;}
+.banner-content .title{ font-size:28px; margin-bottom:15px; margin-top:30px !important;}
+.banner-content a{ padding:10px 25px;}
+.banner .slick-next, .banner .slick-prev{ height:30px; width:30px;}
+.banner .slick-dots{ bottom:15px;}
+.slick-arrow:before{ line-height:28px; font-size:13px;}
+	
+/*----- Services ------*/ 
+.services{ padding:40px 0;}
+.services-block{ margin:10px; width:200px; height:200px;}
+.services-block .service-content i{ font-size:65px;}
+.services-block .service-content i.icon-skyward{ font-size:95px; line-height:15px;}
+
+/*----- welcome Block ------*/
+.welcome-block{ padding:30px 0;}
+.welcome-content .title > span{ font-size:22px;}
+.welcome-content .read-btn{ padding:10px 28px;}
+
+/*----- Programs ------*/
+.programs{ padding:40px 0 30px;}
+.programs .programs-list{ margin:0 -10px;}
+.programs-list .programs-block{ padding:0 10px; margin-bottom:15px;}
+.programs-list .programs-block .caption .text{ font-size:18px;}
+
+/*----- Footer ------*/ 
+.footer-top ul li a{ padding:0 15px;}
+.footer-middle .address-bar{ padding:25px 0 20px;}
+.footer-middle .address-bar .address-block{ padding-right:0;}
+.footer-middle .address-bar .address-block .content-block p{ font-size:14px;}
+.footer-middle .address-bar .address-block .content-block{ padding-left:12px;}
+.footer-middle .address-bar .address-block .content-block p a{ font-size:20px;}
+.footer-middle .update-block .webmaster-block .single-webmaster{ max-width:245px; padding:0 5px;}
+.footer-middle .update-block{ padding:30px 0 35px;}
+.footer-middle .update-block .webmaster-block .single-webmaster a{ font-size:13px; padding:0;}
+.footer-bottom .left-footer{ text-align:center; width:100%; padding:15px 0;}
+.footer-bottom .right-footer{ text-align:center; width:100%; padding:15px 0;}
+.footer-bottom .right-footer:before{ background-color: #93191d; content: ""; height: 100%; right: 100%; position: absolute;  top: 0; width: 4000px; z-index: 2;}
+.scroll-top-top{ bottom:35px; right:20px;}
+
+
+/*--------- Typography page ------------*/
+/*.inner-banner{ min-height:320px;}*/
+.col2-layout .col-left{ max-width:59%;}
+.col2-layout .col-right{ max-width:38%;}
+.typography .welcome-content .title h1{ margin-bottom:25px;}
+
+.col-layout{ padding:40px 0 40px;}
+.content-block ul.search-result li{ padding-bottom:15px; margin-bottom:15px;}
+
+}
+
+/* 4. large desktop responsive css 1024px to 1199px
+------------------------------------------------------------------------------*/
+@media (min-width:1024px) and (max-width:1199px) {	
+h1, h2, h3, h4, h5, h6{ margin-bottom:30px;}
+h1{ font-size:28px;}
+h2{ font-size:24px;}
+h3{ font-size:22px;}
+h4{ font-size:20px;}
+
+/*----- Header ------*/ 
+header .other-links a{ padding:0 10px;}
+nav ul li a{ padding:18px 10px;}
+  
+/*----- Banner ------*/ 
+
+.banner .slick-prev{ left:30px;}
+.banner .slick-next{ right:30px;}
+.banner-content{ padding-left:80px; max-width:750px;}
+.banner-content .title{ font-size:40px; max-width:60% !important;}
+
+/*----- Services ------*/ 
+.services{ padding:45px 0;}
+.services-block{ height:200px;  width:200px; margin:20px 20px;}
+
+/*----- Welcome Block ------*/ 
+.welcome-block{ padding:50px 0;}
+.welcome-content .read-btn{ padding:12px 28px;}
+.welcome-content .title > span{ font-size:30px;}
+
+/*--------- Typography page ------------*/
+.col2-layout .col-left{ max-width:55%;}
+.col2-layout .col-right{ max-width:38%;}
+.typography .welcome-content .title h1{ margin-bottom:30px;}
+.scroll-top-top{ right:20px;}
+
+}
+
+/* 5. Other media-query
+------------------------------------------------------------------------------*/
+
+@media (min-width:1200px) and (max-width:1560px) {	
+/*----- Banner ------*/ 
+.banner .slick-prev{ left:30px;}
+.banner .slick-next{ right:30px;}
+}
+
+@media screen and (min-width:656px) and (max-width:767px){
+.services-block .service-content{width: 100%;}
+}
+
+@media (max-width:767px) {
+.icon1, .icon2 {
+    max-width: 73%;
+    margin: 0 auto;
+}
+
+header .left-header .logo{ max-width:70px;}
+header .left-header:after{ border-width:58px 0 0 20px;}
+header .right-header .top-nav{ display:none;}
+header .right-header .main-navigation{ display:none;}
+header .secondary{ display: none; }
+/*header .right-header .nav-mobile::before, header .right-header .nav-mobile::after{background-color: #333333; content: ""; height: 100%; left: 100%; position: absolute; top: 0; width: 4000px; z-index: 2;}*/
+
+/*----- mobile nav ------*/ 
+.nav-mobile { display: block; float: right; margin: 9px 0 0 9px; }
+.nav-mobile .btn-nav { display: block; width: 53px; height: 40px; background: #93191d; border-radius: 3px; transition: all 0.2s ease-in-out 0s; }
+.nav-mobile .btn-nav span { width: 28px; height: 2px; display: block; background: #fff; border-radius: 2px; position: relative; top: 19px; margin:0 auto; }
+.nav-mobile .btn-nav span:before { width: 28px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.2s ease-in-out 0s; content: ""; position: absolute; left: 0; top: -8px; }
+.nav-mobile .btn-nav span:after { width: 28px; height: 2px; content: ""; background: #fff; border-radius: 2px; transition: all 0.2s ease-in-out 0s;  position: absolute; right: 0; bottom: -8px; }
+.nav-mobile .nav-mobile-content { position: absolute; }
+.nav-mobile .btn-nav.nav-open {  background: #0b244f; }
+.nav-mobile .btn-nav.nav-open span:before { width: 15px; }
+.nav-mobile .btn-nav.nav-open span:after { width: 15px; right: 0; }
+/*----- mobile frist lavel nav ------*/ 
+.nav-mobile-content{width: 100%; max-height: calc(100vh - 58px); opacity: 0; overflow-y: scroll; background: #93191d; transition: all 0.3s ease-in-out 0s; visibility: hidden; position: absolute; left: 0; top: 58px;}
+.nav-mobile.nav-open .nav-mobile-content {  opacity: 1; visibility: visible;  }
+.nav-mobile-content ul { margin: 0; padding: 20px 0; }
+.nav-mobile-content ul li { display: block; padding: 0; clear: both; font: 400 15px 'Roboto', sans-serif;; color: #3f474a; letter-spacing: 0.02em; text-transform: uppercase; position: relative; }
+.nav-mobile-content ul li a {  padding: 10px 20px; display: block;  color: #fff; font-weight:normal; }
+.nav-mobile-content ul li a:hover {text-decoration: none; }
+.nav-mobile-content ul li.active { color: #fff; }
+.nav-mobile-content ul li em {  display: block; width: 40px; height: 36px; cursor: pointer; position: absolute; right: 15px; top: 0; }
+.nav-mobile-content ul li em:before { width: 20px; height: 2px; display: block; background: #fff; transform: translate(-10px, -1px); content: ""; position: absolute; left: 50%; top: 50%; }
+.nav-mobile-content ul li em:after { width: 2px; height: 20px; display: block; content: ""; background: #fff; transform: translate(-1px, -10px); position: absolute; left: 50%; top: 50%; }
+.nav-mobile-content ul li.active em:after { display: none; }
+/*----- mobile second lavel nav ------*/ 
+.nav-mobile-content ul li ul { margin: 0; padding: 10px 0; display: none; background: #a13134; }
+.nav-mobile-content ul li ul li { font: 300 13px 'Roboto', sans-serif;; color: #3f474a; }
+.nav-mobile-content ul li ul li a { margin-left: 20px; padding: 8px 18px; color: #fff; }
+.nav-mobile-content ul li ul li em { height: 33px; }
+.nav-mobile-content ul li ul li em:before { display: block; }
+.nav-mobile-content ul li ul li em:after { display: block !important; }
+.nav-mobile-content ul li ul li.active em:after { display: none !important; }
+/*----- mobile thread lavel nav ------*/ 
+.nav-mobile-content ul li ul li ul { margin: 0; display: none; background: #ae3f43; }
+.nav-mobile-content ul li ul li ul li { color: #fff; font-size: 13px; }
+.nav-mobile-content ul li ul li ul li a { padding: 8px 35px;  color: #fff;}
+.mobile-contact{ margin:0 20px; background-color:#0b244f; padding:10px 15px 15px; margin-bottom:30px;}
+.mobile-contact .search-field {margin-top: 0; position: relative; padding-right: 40px;}
+.mobile-contact .search-field input { width: 100%;}
+.mobile-contact .search-field input[type="submit"] {width: 40px; position: absolute; right: 0; top: -1px; background-color:#93191d; font-size:0; height:38px; padding:5px; font-family:"msd", sans-serif; font-size:16px; color:#fff;}
+header .mobile-contact .contact-btn{ width:100%; margin-top:20px;}
+header .mobile-contact .contact-btn a{ background-color:#93191d; text-align:center; padding:10px 0; display:block; color:#fff; text-transform:uppercase;}
+.mobile-contact .sublinks ul{ padding:0 0 20px;}
+.mobile-contact .sublinks ul li{ text-transform:capitalize;}
+.mobile-contact .sublinks ul li a{ padding:10px 0;}
+
+#menu-martinsville-high-school{ margin: 0; padding: 20px 0; float: none; }
+#menu-martinsville-high-school li{ width: 100%; }
+#menu-martinsville-high-school ul{ 
+    position: static; 
+    width: 100%;
+    height: auto !important;
+    padding: 20px 0 !important;
+}
+
+}
+
+
+@media (max-width:480px) {
+/*----- Banner ------*/ 
+.icon1, .icon2 {
+    width: 100px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+	
+.banner-content .title{ font-size:16px; margin-bottom:10px;}
+.banner-content{ padding-left:30px; max-width:300px; max-width:50%}
+.banner-content a { padding: 7px 20px; font-size: 13px;}
+.banner .slick-next, .banner .slick-prev{ height:24px; width:24px;}
+.banner .slick-dots{ bottom:10px;}
+.slick-arrow:before{ line-height:16px; font-size:12px;}
+
+/*----- Footer ------*/ 
+.footer-top ul li a{ font-size:14px; padding:0 7px;}
+.footer-middle .address-bar{ padding:25px 0 5px;}
+.footer-middle .address-bar .address-block.address{ max-width:100%; margin:0 0 15px;}
+.footer-middle .address-bar .address-block{ padding:0; max-width:100%; margin:0 0 15px;}
+.footer-middle .address-bar .address-block .content-block p a{ font-size:16px;}
+.footer-middle .address-bar .address-block .content-block p{ font-size:13px;}
+.footer-middle .update-block{ padding:20px 0 10px;}
+.footer-middle .update-block .webmaster-block .single-webmaster{ margin:5px 0; max-width:306px;}
+.footer-middle .update-block .webmaster-block{ margin-bottom:20px;}
+.footer-middle .update-block .client-logo a{ margin:0 10px 15px; max-width:180px;}
+.footer-bottom .left-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer{ text-align:center; width:100%; padding:12px 0;}
+.footer-bottom .right-footer:before{ background-color: #93191d; content: ""; height: 100%; right: 100%; position: absolute;  top: 0; width: 4000px; z-index: 2; border:none;}
+.scroll-top-top{ bottom:24px;}
+
+/*----- Services ------*/ 
+.services{ padding:30px 0;}
+.services-block{ margin:10px; width:220px; height:220px;}
+.services-block .service-content i{ font-size:55px;}
+.services-block .service-content i.icon-skyward{ font-size:80px; line-height:15px;}
+
+/*----- Welcome Block ------*/ 
+.welcome-block{ padding-top:0; padding-bottom:30px;}
+.welcome-content{ max-width:100%; padding-top:20px;}
+.welcome-content .read-btn{ padding:8px 22px; font-size:16px;}
+.welcome-content .title > span{ font-size:24px;}
+	
+/*----- Programs ------*/
+.programs-list .programs-block{ margin-bottom:15px;}
+.programs-list .programs-block .caption .text{ font-size:18px;}
+}
+
+

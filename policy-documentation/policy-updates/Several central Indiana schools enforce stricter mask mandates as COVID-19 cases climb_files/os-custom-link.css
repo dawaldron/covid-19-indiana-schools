@@ -1,0 +1,18 @@
+/* This CSS file helps the custom OneSignal link prompt to look like other elements in the secondary footer. */
+.onesignal-customlink-container {
+    display: inline-block;
+}
+
+.onesignal-customlink-container .onesignal-customlink-explanation {
+    display: none !important;
+}
+
+.newsnation .onesignal-customlink-container .onesignal-customlink-subscribe.link.small {
+    opacity: 0.7;
+}
+
+.onesignal-customlink-container .onesignal-customlink-subscribe.link.small {
+    font-size: 100%;
+    text-transform: capitalize;
+    font-weight: normal;
+}

@@ -1,0 +1,2763 @@
+/* 2021-08-15T17:26:06.4701270Z */
+/* START /Themes/css/reset.css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, var, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: '';
+    content: none;
+}
+
+p{ margin-top:10px;}
+
+/* END /Themes/css/reset.css */
+/* START /Themes/css/schoolpointe.css */
+.clr {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+    a img {
+        border: 0;
+        outline: 0;
+    }
+
+.empty-list {
+    margin: 16px 0;
+}
+
+.artifact {
+    position: absolute;
+    display: none;
+}
+
+html, body {
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even), table {
+    background: none;
+}
+
+.panel > table {
+    margin: 10px;
+}
+
+.panel > table {
+    margin: 10px;
+}
+
+.three > .panel > table {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+#page {
+}
+
+.clearfix {
+    clear: both;
+}
+
+#site-head {
+    position: relative;
+}
+
+    #site-head ul {
+    }
+
+    #site-head li {
+    }
+
+#static-nav {
+}
+
+table {
+    margin-bottom: 0px;
+}
+
+    table .content {
+        vertical-align: top;
+    }
+
+label {
+    display: inline;
+}
+
+.search {
+}
+
+#slideshow {
+    z-index: 3;
+    overflow: hidden;
+}
+
+    #slideshow .slides {
+        overflow: hidden;
+        z-index: 3;
+    }
+
+        #slideshow .slides > img {
+            overflow: hidden;
+            z-index: 3;
+        }
+
+    #slideshow a.nav-button {
+        display: none;
+    }
+
+    #slideshow .nivo-directionNav a {
+        display: none;
+    }
+
+    #slideshow a.nivo-prevNav {
+        display: none;
+    }
+
+    #slideshow a.nivo-nextNav {
+        display: none;
+    }
+
+    #slideshow .nivo-controlNav {
+        display: none;
+    }
+
+    #slideshow .nivo-directionNav {
+    }
+
+
+#eButton {
+    cursor: hand;
+    cursor: pointer;
+    color: #464646;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#backgroundPopup {
+    background-color: black;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#eForm {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    z-index: 1001;
+    padding: 20px;
+    background: transparent;
+}
+
+#formContainer {
+    display: block;
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+    #formContainer label {
+        clear: both;
+        float: left;
+        width: 100px;
+        margin: 8px 0;
+    }
+
+    #formContainer input {
+        float: left;
+        width: 400px;
+        margin: 4px 0;
+    }
+
+    #formContainer textarea {
+        float: left;
+        width: 494px;
+        margin: 4px 0;
+    }
+
+    #formContainer header {
+        background: #000;
+        color: #FFF;
+        font-weight: bold;
+        padding: 4px 0 4px 14px;
+        font-size: 12px;
+    }
+
+    #formContainer input.submit-btn {
+        width: 120px;
+        float: right;
+    }
+
+.DropDownBox {
+    width: 175px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#calendar-wrap {
+    max-width: 910px;
+    margin: 0 auto;
+}
+
+    #calendar-wrap table.calendarHeader {
+    }
+
+        #calendar-wrap table.calendarHeader tr {
+        }
+
+            #calendar-wrap table.calendarHeader tr td {
+            }
+
+#content {
+    position: relative;
+}
+
+.aside-content ul {
+    margin: 12px 0;
+    list-style-position: inside;
+}
+
+    .aside-content ul li {
+        position: relative;
+    }
+
+    .aside-content ul.list li {
+        list-style-image: url('/Themes/Foxbat/sysimages/bullet.png');
+        padding: 4px 0 4px 2px;
+        margin: 4px 0;
+    }
+
+.aside-content li a {
+}
+
+.aside-content a:hover, .aside-content a:focus {
+    color: #000;
+}
+
+
+#calendar {
+}
+
+section#calendar table.calendar {
+    width: 100%;
+    background: #FFF;
+    margin-bottom: 0px;
+    border: none;
+}
+
+    section#calendar table.calendar td, section#calendar table.calendar th {
+        text-align: center;
+        color: white;
+    }
+
+    section#calendar table.calendar td {
+        padding: 2% 0;
+    }
+
+section#calendar table tr:first-child td {
+    background: #000;
+    padding-top: 3px;
+    font-size: 11pt;
+    color: white;
+}
+
+    section#calendar table tr:first-child td a {
+        padding-top: 3px;
+        font-size: 11pt;
+        color: white !important;
+    }
+
+section#calendar table.calendar th {
+    font-weight: bold;
+    color: #7E7E7E;
+}
+
+section#calendar table .with-event a {
+    color: #E01920;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12pt;
+}
+
+section#calendar table .with-event {
+}
+
+section#calendar table .this-month a {
+    color: #464646;
+}
+
+section#calendar table .other-month a {
+    color: #6d6d6d;
+}
+
+section#calendar table .today {
+    background: #FFF !important;
+}
+
+    section#calendar table .today a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+section#calendar td a:hover {
+    text-decoration: underline;
+}
+
+section#calendar footer {
+    display: none;
+}
+
+    section#calendar footer a {
+        color: #fff;
+        text-align: right;
+    }
+
+        section#calendar footer a:hover {
+            text-decoration: underline;
+        }
+
+.popContent {
+    background: #fff !important;
+}
+
+.monthCalendarTitle {
+    background-color: #C0C0C0 !important;
+    margin-bottom: 0px;
+    border: none !important;
+}
+
+.monthCalendarEventDay, .monthCalendarEventDay a {
+    background-color: #fff !important;
+}
+
+    .monthCalendarEventDay a {
+        font-weight: bold;
+        font-size: larger;
+    }
+
+section#upcoming-events {
+    margin: 0px 0px 5px 0px;
+}
+
+    section#upcoming-events header {
+        background: none;
+        color: #fff;
+        font-weight: normal;
+        padding-left: 0;
+    }
+
+    section#upcoming-events footer a.view-all {
+        float: right;
+        margin-right: 6px;
+    }
+
+    section#upcoming-events ul {
+        list-style-type: none;
+        max-height: 350px;
+        overflow: auto;
+        margin-bottom: 11px;
+        position: relative;
+    }
+
+        section#upcoming-events ul li {
+            padding: 8px 0;
+        }
+
+        section#upcoming-events ul:last-child {
+            border-bottom: 0;
+        }
+
+        section#upcoming-events ul a {
+            display: block;
+            color: #000;
+            font-size: 13px;
+        }
+
+            section#upcoming-events ul a:hover {
+                text-decoration: underline;
+            }
+
+        section#upcoming-events ul span {
+            display: inline;
+            color: #000;
+        }
+
+
+ul.athletic-events {
+    list-style-type: none;
+    max-height: 350px;
+    overflow: auto;
+    margin-bottom: 11px;
+    position: relative;
+}
+
+    ul.athletic-events li {
+        padding: 8px 0;
+    }
+
+    ul.athletic-events:last-child {
+        border-bottom: 0;
+    }
+
+    ul.athletic-events a {
+        color: #000;
+        font-size: 13px;
+    }
+
+        ul.athletic-events a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+    ul.athletic-events span {
+        display: inline;
+        color: #000;
+        font-size: 12px;
+    }
+
+#jobs-list {
+    list-style-type: none;
+}
+
+    #jobs-list li {
+        border-bottom: 1px solid #DEDEDE;
+        padding: 12px 0;
+        position: relative;
+    }
+
+        #jobs-list li a {
+            display: block;
+            color: #464646;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+            #jobs-list li a:hover {
+                text-decoration: underline;
+            }
+
+        #jobs-list li span {
+            display: block;
+        }
+
+            #jobs-list li span.job-type {
+                font-style: italic;
+                font-size: 12px;
+            }
+
+        #jobs-list li p {
+            margin: 4px 0;
+            font-size: 11px;
+        }
+
+        #jobs-list li label {
+            float: left;
+            width: 50px;
+            font-size: 12px;
+        }
+
+.list li {
+    padding: 4px 0px;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.job-detail {
+}
+
+    .job-detail span {
+        display: block;
+    }
+
+    .job-detail label {
+        clear: both;
+        float: left;
+        width: 80px;
+        font-weight: bold;
+    }
+
+    .job-detail span.job-description {
+        margin: 12px 0;
+    }
+
+footer a {
+    color: #000;
+}
+
+#news-list {
+}
+
+    #news-list .article {
+    }
+
+    #news-list .article {
+    }
+
+        #news-list .article a.news-image {
+        }
+
+            #news-list .article a.news-image:hover {
+            }
+
+            #news-list .article a.news-image img {
+            }
+
+div.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: 0;
+    position: absolute;
+    background: white url(/sysimages/background.jpg) repeat-y top center;
+}
+
+.gutterMiddle {
+    padding: 15px 0px;
+}
+
+.fullCal, .fullCal a {
+}
+
+ul.photoGalleryContent {
+    display: table;
+    list-style: none;
+}
+
+#gallery, #achievements, #menus {
+    float: left;
+    margin: 10px 0;
+}
+
+#gallery {
+}
+
+    #gallery div {
+    }
+
+        #gallery div a {
+        }
+
+            #gallery div a:hover {
+            }
+
+            #gallery div a img {
+            }
+
+#menus {
+}
+
+.admin-dept {
+    border: solid 1px #DEDEDE;
+    padding: 12px;
+    width: 46%;
+    margin: 10px;
+    float: left;
+    min-height: 120px;
+}
+
+.footerLine {
+    background: url(/sysimages/footerline.png) no-repeat top left;
+    height: 15px;
+    width: 1024px;
+    position: absolute;
+    bottom: 150px;
+}
+
+#social-links {
+}
+
+    #social-links h6 {
+        font-size: 20px;
+        color: inherit;
+    }
+
+    #social-links a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 3px;
+        vertical-align:top;
+    }
+
+        #social-links a i.fa.google-drive {
+            background: url('https://cdn.schoolpointe.com/images/social/google-drive.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.pinwheel {
+            background: url('https://cdn.schoolpointe.com/images/social/pinwheel-color.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.letstalk {
+            background: url('https://cdn.schoolpointe.com/images/social/letstalk.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.progress-book {
+            background: url('https://cdn.schoolpointe.com/images/social/progress-book-icon.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.skyward {
+            background: url('https://cdn.schoolpointe.com/images/social/skyward.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.edmodo {
+            background: url('https://cdn.schoolpointe.com/images/social/edmodo.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.powerschool {
+            background: url('https://cdn.schoolpointe.com/images/social/powerschool.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.infinite-campus {
+            background: url('https://cdn.schoolpointe.com/images/social/infinite-campus-white.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.lms {
+            background: url('https://cdn.schoolpointe.com/images/social/LMS-Black.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a.cms {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px 0px;
+        }
+
+        #social-links a.intranet {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -44px;
+        }
+
+        #social-links a.linkedin {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -90px;
+        }
+
+        #social-links a.rss {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -310px;
+        }
+
+        #social-links a.facebook {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -133px;
+        }
+
+        #social-links a.twitter {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -88px;
+        }
+
+        #social-links a.youtube {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -176px;
+        }
+
+        #social-links a.cms:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px 0px;
+        }
+
+        #social-links a.intranet:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -44px;
+        }
+
+        #social-links a.linkedin:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -90px;
+        }
+
+        #social-links a.rss:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -310px;
+        }
+
+        #social-links a.facebook:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -133px;
+        }
+
+        #social-links a.twitter:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -88px;
+        }
+
+        #social-links a.youtube:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -176px;
+        }
+        #social-links a i.class-link-icon {
+            background: url('https://cdn.schoolpointe.com/images/social/Classlink.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+
+#school-map {
+}
+
+    #school-map span {
+        display: block;
+        color: inherit;
+    }
+
+        #school-map span a {
+            color: inherit;
+        }
+
+            #school-map span a:hover {
+                text-decoration: underline;
+            }
+
+    #school-map #AddInfo {
+        min-height: 18px;
+    }
+
+        #school-map #AddInfo img {
+            vertical-align: bottom;
+        }
+
+    #school-map h6 {
+        margin-bottom: 2px;
+    }
+
+#Weather {
+    position: absolute;
+    bottom: 156px;
+    right: 10px;
+}
+
+
+.formCategories {
+    margin-top: 10px;
+}
+
+.FormTable {
+    padding-bottom: 8px;
+}
+
+.category {
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.linkform {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.lbl_formDesc {
+    font-size: 10pt;
+}
+
+.panel ol {
+    margin-left: 40px;
+}
+
+table tr th, table tr td {
+    padding: 0px;
+}
+
+table {
+    border: 0;
+}
+
+.sf-vertical li a {
+    display: block;
+}
+
+.sf-vertical {
+    list-style: none;
+}
+
+    .sf-vertical li {
+        margin: 0 0 0.4375em 0;
+        font-size: 0.875em;
+    }
+
+.schoolclosings {
+    background: #fff;
+    padding: 10px;
+}
+
+.maincontentsection {
+    margin: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+    .quicklinks {
+        display: none !important;
+    }
+
+    .topquicklinks {
+        display: none !important;
+    }
+}
+
+.qlTitle {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.sTitle a {
+    color: #000;
+}
+
+
+.olc2ColumnContentLeft div {
+    padding: 0 !important;
+    margin: 12px 0 !important;
+}
+
+    .olc2ColumnContentLeft div div {
+        margin: 0 !important;
+    }
+
+div.olcLeftTitle {
+    background: none;
+    color: #000;
+    font-weight: normal;
+    padding-left: 0;
+    font-family: Georgia, Times New Roman, times, serif;
+}
+
+.olc2ColumnContentLeft .classitem {
+    background-image: none;
+    margin: 8px 0 !important;
+    padding-left: 0 !important;
+}
+
+    .olc2ColumnContentLeft .classitem a {
+        color: #000;
+        font-family: Arial, Verdana, Sans-Serif;
+        font-size: 11px;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .olc2ColumnContentLeft .classitem .innerPageList {
+        margin-left: 12px !important;
+    }
+
+#pageList {
+}
+
+    #pageList .pageitem {
+        background-position: 0 0 !important;
+        display: block;
+    }
+
+        #pageList .pageitem a {
+            color: #000;
+            display: inline-block;
+            min-height: 22px;
+        }
+
+    #pageList .pageitem {
+        display: block;
+    }
+
+#jMonthCalendar .Event {
+    height: 22px !important;
+}
+
+.title, .athletictitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#jMonthCalendar {
+    width: 99% !important;
+}
+
+input {
+    height: 30px;
+}
+
+.field-control input {
+    height: initial;
+}
+
+input[type="image"] {
+    height: inherit;
+}
+
+.sf-vertical.sf-arrows > li > .sf-with-ul {
+    background: url(/sysimages/arrows-ffffff.png) no-repeat right center;
+    background-position: right 10px;
+}
+
+.searchresultstitle {
+    display: none;
+}
+
+.pp_gallery li.default a img {
+    display: block !important;
+}
+
+.pp_gallery li.default a {
+    background: none !important;
+}
+.blogList{padding-bottom:15px; display:block;}
+/* END /Themes/css/schoolpointe.css */
+/* START /js/search/search.css */
+#txtSearch{ height:18px; border:none; width:120px;margin-top:5px;}
+#txtSearch2{ height:18px; border:none; width:120px;margin-top:5px;}
+.searchBar{margin-left:0px;}
+/* END /js/search/search.css */
+/* START /Themes/Foxbat/css/Foxbat.css */
+table tr th, table tr td {
+    color: #000;
+}
+
+body, label, .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, #jobs-list li a, .side-nav li a, table tr th, table tr td, .athletictitle, form {
+    color: #4E5065;
+}
+
+
+fieldset legend {
+    background: none;
+}
+
+table {
+    background: none;
+}
+
+.row {
+    max-width: 1172px;
+}
+
+.column, .columns {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#news-list {
+    background: none;
+    padding: 10px;
+}
+
+#page {
+    background: none;
+}
+
+#content {
+    background: none;
+}
+
+#site-head {
+    height: 225px;
+    background: none;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navigation {
+    position: absolute;
+    top: 175px;
+    z-index: 11;
+    background: url('/Themes/foxbat/sysimages/custom/background.png') repeat center top;
+    width: 97.5%;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li:hover > a {
+    color: #fff;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: none;
+    -webkit-transition: 200ms linear 0s;
+    -moz-transition: 200ms linear 0s;
+    -o-transition: 200ms linear 0s;
+    transition: 200ms linear 0s;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    background: none;
+    outline: 0 none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: none;
+    -webkit-transition: 200ms linear 0s;
+    -moz-transition: 200ms linear 0s;
+    -o-transition: 200ms linear 0s;
+    transition: 200ms linear 0s;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    background: none;
+    outline: 0 none;
+}
+
+#calendar-wrap {
+    position: relative;
+}
+
+
+.article {
+    margin: 0px 0px 10px 0 !important;
+    padding: 5px;
+}
+
+.news-post-date {
+    display: none;
+}
+
+#news-list .article .view-all {
+    color: #003075;
+    font-size: 12px;
+    float: right;
+    display: block;
+}
+
+#news-list .article a.news-image {
+    float: left;
+    margin: 10px;
+    border: 1px solid #003075;
+}
+
+    #news-list .article a.news-image img {
+        width: 85px;
+    }
+
+#calendar {
+    min-height: 210px;
+}
+
+section#calendar {
+    background: none !important;
+}
+
+.athletic-events {
+    list-style: none;
+    max-height: 350px;
+    position: relative;
+    overflow: auto;
+}
+
+.UpcomingEvents {
+    padding: 5px;
+    min-height: 55px;
+    background: #fff;
+    font-size: .75em;
+}
+
+#event-wrapper {
+    overflow: auto;
+    max-height: 350px;
+    text-align: left;
+    padding: 5px 10px;
+    position: relative;
+    min-height: 100px;
+}
+
+#school-map h6, #school-map span, #social-links h6 {
+    color: #fff;
+}
+
+#school-map {
+    line-height: 16px;
+}
+
+#social-links, .schoolpointe {
+    float: right;
+}
+
+#site-foot {
+    background: url('/Themes/foxbat/sysimages/custom/background.png') repeat center top;
+}
+
+.content ul {
+    margin-left: 30px;
+}
+
+.bgimage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    z-index: -1;
+}
+
+.slideshowback {
+    max-width: 100%;
+    max-height: 624px;
+}
+
+#slideshow {
+    position: relative;
+    max-width: 1130px;
+    margin: 20px auto 0;
+    padding: 0px;
+    overflow: initial;
+}
+
+    #slideshow .slides {
+        max-height: 400px;
+        margin-left: 0px;
+        max-width: 1130px;
+        -moz-box-shadow: 5px 4px 12px #333;
+        -webkit-box-shadow: 5px 4px 12px #333;
+        box-shadow: 5px 4px 12px #333;
+    }
+
+        #slideshow .slides > img {
+            overflow: hidden;
+            z-index: 3;
+            max-height: 400px;
+        }
+
+.imagetext {
+    position: relative;
+    z-index: 20;
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    font-family: 'Lato', sans-serif;
+    line-height: 8px;
+    text-align: center;
+    top: 7px;
+    text-transform: uppercase;
+}
+
+
+.flyout {
+    display: none;
+    -moz-box-shadow: 5px 4px 12px #888;
+    -webkit-box-shadow: 5px 4px 12px #888;
+    box-shadow: 5px 4px 12px #888;
+    /* IE6-9 */ padding: 20px;
+    margin: 0;
+    border: 1px solid #d9d9d9;
+    position: absolute;
+    left: 200px;
+    width: 250px;
+    top: 0px;
+    z-index: 40;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* remove margin on any first-child element */ /* remove margin on last element */
+}
+
+    .flyout p {
+        line-height: 1.2;
+        font-size: 13px;
+    }
+
+    .flyout *:first-child {
+        margin-top: 0;
+    }
+
+    .flyout *:last-child {
+        margin-bottom: 0;
+    }
+
+    .flyout.small {
+        width: 166.667px;
+    }
+
+    .flyout.large {
+        width: 437.5px;
+    }
+
+    .flyout.right {
+        left: auto;
+        right: -2px;
+    }
+
+    .flyout.up {
+        top: auto;
+        bottom: 39px;
+    }
+
+ul.flyout, .nav-bar li ul {
+    padding: 0;
+    list-style: none;
+}
+
+    ul.flyout li a, .nav-bar li ul li a {
+        border-width: 1px 1px 0 0;
+        color: #555;
+        display: block;
+        font-size: 14px;
+        height: auto;
+        line-height: 1;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    }
+
+        ul.flyout li a:hover, .sf-vertical li ul li a:hover {
+            color: #333;
+        }
+
+    ul.flyout li.active, .sf-vertical li ul li.active {
+        margin-top: 0;
+        border-top: 1px solid #4d4d4d;
+        border-left: 4px solid #1a1a1a;
+    }
+
+.sf-vertical li.hover a, .sf-vertical li ul li a {
+    border: none;
+    height: auto;
+    margin: 0;
+    position: static;
+    top: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+.sf-vertical li:hover a {
+    color: #A0A0A0;
+}
+
+.sf-vertical li ul li a:hover, .sf-vertical > li > a:hover {
+    text-decoration: underline;
+}
+
+.sf-vertical li.has-flyout:hover a:first-child:after {
+    border-color: transparent transparent transparent #fff;
+}
+
+.sf-vertical {
+    position: relative;
+}
+
+    .sf-vertical li a:hover {
+        color: #A0A0A0;
+    }
+
+    .sf-vertical li {
+        margin: 0px;
+        position: relative;
+        list-style:none;
+    }
+
+        .sf-vertical li a {
+            padding: 6px 0 6px 45px;
+            color: #000;
+            font-size: .8em;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+        }
+
+li.has-flyout:hover .flyout {
+    display: block;
+}
+
+section#calendar table.calendar th {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    #social-links {
+        margin: 25px 0;
+    }
+
+    #social-links {
+        float: none;
+        text-align: center;
+    }
+
+    #site-foot .row div h6 {
+        text-align: center;
+    }
+}
+
+.LinkColumn {
+    margin-left: 40px;
+}
+
+    .LinkColumn, .LinkColumn ul li {
+        list-style: none;
+    }
+
+.athleticLinks {
+    display: none;
+}
+
+
+
+#site-head {
+    background: none;
+}
+
+body, html {
+    background: none;
+}
+
+#news-list .article a.news-title {
+    background: none;
+    color: #2151BF;
+    font-size: 18px;
+    display: block;
+    font-weight: normal;
+}
+
+    #news-list .article a.news-title:hover {
+        color: #A0A0A0;
+    }
+
+#news-list .article .view-all {
+    text-decoration: underline;
+}
+
+.news-summary {
+    font-size: 14px;
+}
+
+.titleimage {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.beeimage {
+    margin-top: 10px;
+}
+
+.rightev {
+    padding-top: 0px;
+}
+
+section#calendar table tr:first-child td {
+    background: none !important;
+}
+
+    section#calendar table tr:first-child td, section#calendar table tr:first-child td a {
+        color: #000 !important;
+    }
+
+.panel h1, .panel header, .title, .athletictitle {
+    color: #4E4E4E;
+    min-height: 30px;
+    text-indent: 0px;
+    font-size: 21px !important;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.rightTop {
+    position: absolute;
+    right: 20px;
+    Top: 20px;
+}
+
+.signin {
+    color: #fff;
+}
+
+#txtSearch {
+    width: 175px;
+    height: 23px;
+    font-size: 10px;
+    margin-top: 0px;
+    text-indent: 10px;
+}
+
+#site-head .logo span {
+    font-size: 2.4em;
+    text-align: left;
+    color: #000;
+    display: block;
+    position: absolute;
+    top: 147px;
+    font-weight: bold;
+    left: 133px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+    #site-head .logo span.welcome {
+        font-size: 1.2em;
+    }
+
+.leftimage {
+    position: relative;
+    top: 24px;
+}
+
+.rightimage {
+    position: relative;
+    top: 33px;
+}
+
+.panel {
+    padding: 12px;
+    min-height: 600px;
+    position: relative;
+    border: none;
+    background: none;
+    padding-bottom: 30px;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
+#news-list, #content, section#calendar, .sf-vertical, #event-wrapper, .article {
+    background: none;
+}
+
+    #news-list .article .view-all {
+        color: #000;
+    }
+
+    .sf-vertical li:hover a, .sf-vertical li.hover a {
+        color: #A0A0A0;
+    }
+
+    .sf-vertical li a {
+        padding-left: 10px !important;
+    }
+
+    .sf-vertical li ul li a, .sf-vertical li a {
+        color: #000;
+    }
+
+    #news-list .article a.news-image {
+        border: 1px solid #175698;
+    }
+
+#school-map h6, #school-map span, #social-links h6 {
+    line-height: 18px;
+}
+
+.dsn, .schoolpointe {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 940px) {
+    #social-links {
+        margin: 25px 0;
+    }
+
+    #social-links {
+        float: none;
+        text-align: center;
+    }
+
+    #site-foot .row div h6 {
+        text-align: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #head-shape1.artifact {
+        display: none !important;
+    }
+
+    .panel {
+        padding: 12px;
+        min-height: 200px;
+        position: relative;
+        border: none;
+        background: none;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .quicklinks {
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        padding: 0px;
+    }
+
+    .dropdown-menu .dropdown-menu {
+        top: -5px;
+        left: 100%;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+
+    #head-shape1.artifact {
+        display: none !important;
+    }
+}
+
+.sf-vertical li a {
+    display: block;
+}
+
+.sf-vertical {
+    list-style: none;
+}
+
+    .panel h1, .panel header, .sf-vertical li a {
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+        color: #4E4E4E;
+    }
+
+.panel h1, .panel header {
+    border-bottom: 1px solid #080B0C;
+    margin-bottom: 10px;
+}
+
+#site-foot h6 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.centerlinks {
+    margin-top: 15px;
+}
+
+.imageTime span {
+    left: -1px;
+    top: 3px;
+}
+
+#site-foot {
+    position: relative;
+}
+
+.header-overly {
+    position: relative;
+    background: #003075;
+}
+
+section#calendar footer {
+    display: block;
+}
+
+    section#calendar footer a {
+        color: #000;
+    }
+
+.contentBack {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+section#upcoming-events {
+    padding-top: 7px;
+}
+
+    section#upcoming-events ul {
+    }
+
+        section#upcoming-events ul span {
+            display: block;
+            color: #EDAC1A;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        section#upcoming-events ul a {
+            margin-top: 4px;
+            color: #000;
+            display: inline;
+            font-size: 18px;
+        }
+
+            section#upcoming-events ul a:hover {
+                color: #A0A0A0;
+                text-decoration: underline;
+            }
+
+        section#upcoming-events ul li {
+            padding: 5px 7px;
+            font-size: 14px;
+        }
+
+            section#upcoming-events ul li .rightevents {
+                float: left;
+                margin-left: 10px;
+            }
+
+            section#upcoming-events ul li .leftevents {
+                float: left;
+                background: #656E8B;
+                padding: 5px;
+                margin: 0 5px;
+                font-weight: bold;
+            }
+
+            section#upcoming-events ul li .event-date {
+                color: #656E8B;
+                font-weight: normal;
+                display: inline;
+                font-size: 14px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+            section#upcoming-events ul li .event-title {
+                display: inline;
+            }
+
+table {
+    border: none;
+}
+
+.backsearch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 50;
+    padding: 6px;
+    height: 35px;
+}
+
+.search {
+    background: url('/Themes/foxbat/sysimages/custom/search.jpg') no-repeat top left;
+    width: 204px;
+    position: relative;
+}
+
+.searchtext {
+    color: #0E2064;
+    display: inline;
+    font-size: 12pt;
+}
+
+.searchgo {
+    background: url('/Themes/foxbat/sysimages/custom/searchgo.jpg') no-repeat top left;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    width: 22px;
+    height: 16px;
+}
+
+#txtSearch {
+    border: none;
+    background: none;
+}
+
+footer a {
+    color: #000;
+}
+
+#site-foot {
+    position: relative;
+    margin: 0px auto;
+    padding: 23px;
+}
+
+    #site-foot h6 {
+        color: #fff;
+        font-size: 15pt;
+    }
+
+#site-foot {
+    min-height: 192px;
+    position: relative;
+    max-width: 1172px;
+}
+
+#school-map {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    left: 0px;
+    max-width: 1172px;
+    text-align: left;
+    position: relative;
+}
+
+#social-links {
+}
+
+    #social-links h6 {
+        text-align: right;
+    }
+
+    #social-links a i {
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 3px;
+    }
+
+        #social-links a i.fa.google-drive {
+            background: url('https://cdn.schoolpointe.com/images/social/google-drive.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.pinwheel {
+            background: url('https://cdn.schoolpointe.com/images/social/pinwheel-color.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.letstalk {
+            background: url('https://cdn.schoolpointe.com/images/social/letstalk.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.progress-book {
+            background: url('https://cdn.schoolpointe.com/images/social/progress-book-icon.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.skyward {
+            background: url('https://cdn.schoolpointe.com/images/social/skyward.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.edmodo {
+            background: url('https://cdn.schoolpointe.com/images/social/edmodo.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.powerschool {
+            background: url('https://cdn.schoolpointe.com/images/social/powerschool.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.infinite-campus {
+            background: url('https://cdn.schoolpointe.com/images/social/infinite-campus.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.fa.lms {
+            background: url('https://cdn.schoolpointe.com/images/social/LMS-Black.png') no-repeat center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        #social-links a i.cms {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px 0px;
+        }
+
+        #social-links a i.intranet {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -44px;
+        }
+
+        #social-links a i.linkedin {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -90px;
+        }
+
+        #social-links a i.rss {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -310px;
+        }
+
+        #social-links a i.facebook {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -133px;
+        }
+
+        #social-links a i.twitter {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -88px;
+        }
+
+        #social-links a i.youtube {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Icons-Sprite.png');
+            background-position: 0px -176px;
+        }
+
+        #social-links a i.cms:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px 0px;
+        }
+
+        #social-links a i.intranet:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -44px;
+        }
+
+        #social-links a i.linkedin:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -90px;
+        }
+
+        #social-links a i.rss:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -310px;
+        }
+
+        #social-links a i.facebook:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -133px;
+        }
+
+        #social-links a i.twitter:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -88px;
+        }
+
+        #social-links a i.youtube:hover {
+            background: url('https://cdn.schoolpointe.com/images/new/Solid-White-Grey-No-Cutout-Icons-Sprite.png');
+            background-position: 0px -176px;
+        }
+
+
+#footerLine {
+    background: #303B51;
+    height: 1px;
+    width: 170px;
+    margin: 5px 0px;
+}
+
+.dsn {
+    float: left;
+}
+
+.footerimage {
+    ;
+    width: 90px;
+    height: 67px;
+    float: left;
+}
+
+#school-map span {
+    font-size: 11px;
+    color: #fff;
+    line-height: 18px;
+    display: block;
+}
+
+#school-map #AddInfo {
+    min-height: 17px;
+}
+
+.dsninfo {
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+}
+
+#dsn {
+    position: relative;
+    max-width: 980px !important;
+    background: white;
+    height: 65px;
+}
+
+    #dsn .dsn {
+        float: left;
+        margin-left: 30px;
+        margin-top: 17px;
+    }
+
+    #dsn .schoolpointe {
+        float: left !important;
+        margin-right: 5px;
+        margin-top: 17px;
+    }
+
+#site-foot #dsn .schoolpointe {
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+#site-foot #dsn .dsn img {
+    margin: 0px;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+
+#site-foot #dsn {
+    background: none !important;
+    position: relative;
+    max-width: 330px !important;
+    margin: 0 auto;
+    top: 65px;
+}
+
+.content {
+    line-height: 1.6em;
+}
+
+.eventTable {
+    width: inherit !important;
+}
+
+.monthCalendarEventDay, .monthCalendarEventDay a {
+    font-size: inherit !important;
+}
+
+@media only screen and (min-width: 640px) {
+    .quicklinks {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .search, .backsearch {
+        display: none;
+    }
+}
+
+.qlTitle {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.content ul {
+    margin-left: 20px;
+}
+
+.athletictitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section#upcoming-events ul {
+    margin-left: 0px;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: none;
+}
+
+table tr th, table tr td {
+}
+
+#news-list .article .view-all {
+    color: #00256B;
+}
+
+section#calendar table .with-event a {
+    color: #00256B;
+}
+
+section#calendar {
+    width: 100%;
+}
+
+#news-list {
+    padding: 0;
+}
+
+.view-all-news {
+    float: right;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:active > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #cccccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:active > a:after {
+        border-left-color: #ffffff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+
+/* END /Themes/Foxbat/css/Foxbat.css */
+/* START /Customers/IN/NorthHarrisonCmtySchs/css/NorthHarrison.css */
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;
+}
+
+a.schoolName, .panel h1, h1, h2, .panel header, .title {
+    font-family: 'Droid Serif', serif;
+}
+
+table.content.staff-table tr.content.odd td {
+    background-color: #676767;
+}
+
+table.calendar tr td, table.calendar tr th {
+    color: #000;
+    text-align: center;
+    background: #fff;
+}
+
+table#employmentTable td {
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+table img {
+    max-width: none;
+}
+
+.calendarCondivols select, input, button, select, textarea,
+.DropDownBox {
+    color: #000;
+}
+
+section#calendar table.calendar td, section#calendar table.calendar th {
+    background: transparent;
+}
+
+.areaContent .upList > .assign > .eventTitle, .areaContent .upList > .event > .eventTitle,
+.areaContent .upList > .assign > .eventDate, .areaContent .upList > .event > .eventDate,
+.board-meeting-datetime .board-meeting-time, .board-meeting-datetime .board-meeting-date,
+ul.athletic-events a {
+    color: #fff;
+}
+
+.news-summary,
+.maincontentsection.col-xs-12.col-sm-12.col-md-12.col-lg-12.navbarcontainer, .col-xs-12.col-sm-12.col-md-12.col-lg-12.backgroundcolor.headerdiv .maincontentsection p,
+.maincontentsection span,
+.maincontentsection span p {
+    font-size: 10pt;
+}
+
+body, label, .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, #jobs-list li a, .side-nav li a, table tr th, .content, table tr td, .athletictitle, form {
+    color: #fff;
+}
+
+.staff-table tr td a {
+    color: #fff !IMPORTANT;
+}
+
+input, .staffDD {
+    color: #000;
+}
+
+section#calendar table .with-event a {
+    color: #20398B;
+    font-weight: bold;
+}
+
+ul.sf-vertical.sf-js-enabled.sf-arrows {
+    margin: 0;
+}
+
+    ul.sf-vertical.sf-js-enabled.sf-arrows li a img {
+        max-width: 100%;
+    }
+
+a.logo {
+    background: url('/userfiles/-13/My%20Files/logo2.png') no-repeat center;
+    background-size: contain;
+    display: block;
+    width: 159px;
+    height: 139px;
+    float: left;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#site-head {
+    height: auto;
+}
+
+#slideshow, #slideshow .slides {
+    margin: auto;
+    max-width: 100%;
+}
+
+.forms-container, ul.LinkColumn.ucLinksColumn {
+    color: #fff;
+}
+
+.slideshowback {
+    padding-bottom: 20px;
+}
+
+#calendar-wrap {
+    background: none !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.calmonthview .masterC {
+    position: relative;
+}
+
+#aViewCals {
+    color: white;
+}
+
+#popSelectCal {
+    padding: 30px;
+    width: auto;
+    margin-left: -300px;
+}
+
+#site-foot, section#calendar, #popSelectCal {
+    background: rgba(0,0,0,.8);
+}
+
+    #popSelectCal .popTitle,
+    #popSelectCal legend {
+        color: white;
+    }
+
+
+    #popSelectCal label {
+        height: 26px;
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #popSelectCal input {
+        height: 30px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+.calmonthview .masterC > .row {
+    background: rgba(0,0,0,.8);
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+    width: 65%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 5px;
+    padding-left: 0px;
+}
+
+a.schoolName {
+    color: #fff;
+    text-shadow: 1px 2px 3px #171717;
+    font-size: 46px;
+    position: relative;
+    display: block;
+    font-weight: normal;
+    float: left;
+    margin: 30px 15px;
+    line-height: 40px;
+}
+
+    a.schoolName .schoolNameBottom {
+        font-size: 28px;
+    }
+
+.panel2, .panel, #calendar-wrap {
+    background: rgba(0,0,0,.8);
+    min-height: 500px;
+}
+
+.popContent {
+    background: none !important;
+}
+
+.calendarControls a {
+    color: #fff;
+}
+
+table tr.calendarControls select {
+    color: #000;
+}
+
+.bgmdimage {
+    background: url('/userfiles/-13/My%20Files/background.jpg') no-repeat top center;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block !important;
+    top: 0;
+}
+
+.sf-vertical li ul li a, .sf-vertical li a {
+    color: #fff;
+}
+
+.sf-vertical li ul li a {
+    background: #555;
+}
+
+.masterC {
+    background: none;
+    border: none;
+}
+
+#news-list .article .news-summary, section#upcoming-events ul li .event-date, section#upcoming-events ul li, .view-all, .panel p, #news-list .article .view-all, #news-list .article a.news-title, section#upcoming-events ul a {
+    color: #fff;
+}
+
+.panel h1, .panel header, .panel .title, .panel .athletictitle {
+    color: #fff;
+    text-shadow: 1px 1px #062367;
+    border-bottom-color: #062367;
+    font-size: 20px !important;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.headerback {
+    position: relative;
+    z-index: 9;
+    background: url(/Customers/WA/NorthHarrisonCmtySchs/sysimages/custom/top-shadow.png) repeat-x top center;
+    background-size: contain;
+}
+
+.loginClass {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    background: #fff;
+    top: 0;
+    position: relative;
+    border-bottom: solid 7px #20398B;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #44433E;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.rightTop {
+    top: 20px;
+    right: 0;
+}
+
+    .rightTop > div {
+        z-index: 99;
+        position: relative;
+        clear: both;
+    }
+
+div#google_translate_element {
+    float: right;
+    margin: 5px;
+}
+
+
+.search-box {
+    background: #0039a6;
+    margin: 5px;
+    padding: 5px;
+    float: right;
+    display: block;
+}
+
+    .search-box input#txtSearchBox {
+        width: 150px;
+    }
+
+    .search-box i.search-box-go.fa.fa-search {
+        cursor: pointer;
+    }
+
+.view-all-link-container a.view-all:before {
+    content: "...";
+}
+
+.view-all-link-container a.view-all:hover, .view-all-link-container a.view-all:focus {
+    text-shadow: -1px 1px 14px #ffc, 1px -1px 14px #fff;
+}
+
+.searchgo {
+    background: none;
+}
+
+    .searchgo a.glyphicon {
+        color: #fff;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+#news-list .article a.news-title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+#news-list .article {
+    margin: 0 0 15px !important;
+}
+
+footer a.view-all-events {
+    display: none;
+}
+
+a.view-all-news, section#calendar footer a, footer a.view-all {
+    background: #5F5E59;
+    float: right;
+    display: block;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+
+#school-map {
+    margin: 0 -15px;
+}
+
+#social-links {
+    text-align: right;
+}
+
+    #social-links a {
+        color: #fff;
+        font-size: 24px;
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+
+        #social-links a i {
+            float: right;
+            width: 100%;
+            line-height: 40px;
+        }
+
+section#upcoming-events {
+    padding: 0;
+}
+
+    section#upcoming-events ul li .event-date {
+        font-size: 12px;
+        display: block;
+    }
+
+    section#upcoming-events ul a {
+        font-size: 16px;
+    }
+
+    section#upcoming-events ul li {
+        border-bottom: 1px solid #062367;
+    }
+
+
+
+    section#upcoming-events ul span {
+        color: #fff;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+        section#upcoming-events ul span.event-start-time, section#upcoming-events ul span.event-end-time {
+            display: inline-block !important;
+        }
+
+#news-list .article a.news-image {
+    border: none;
+}
+
+section#calendar {
+    background: rgba(200,200,200,.5) !important;
+    text-shadow: 1px 1px #000;
+}
+
+    section#calendar table .other-month a {
+        color: #464646;
+        display: none;
+    }
+
+    section#calendar table tr:first-child td {
+        font-size: 16px;
+        color: #fff !important;
+        font-weight: bold;
+    }
+
+    section#calendar table .this-month a, section#calendar table tr:first-child td, section#calendar table.calendar th {
+        color: #fff;
+    }
+
+    section#calendar table.calendar th {
+        font-weight: bold;
+    }
+
+    section#calendar table tr:first-child td a {
+        text-decoration: none;
+        display: none;
+    }
+
+    section#calendar table tr:first-child td:nth-child(1) a:before {
+        content: "\f0d9";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        display: block;
+        color: #A2A2A2;
+    }
+
+    section#calendar table tr:first-child td:nth-child(3) a:before {
+        content: "\f0da";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        display: block;
+        color: #000;
+    }
+
+
+
+    section#calendar table.calendar, section#calendar table .today {
+        background: none !important;
+    }
+
+        section#calendar table .today a {
+            font-weight: bold;
+            color: #eee;
+        }
+
+
+#site-foot {
+    margin-top: 15px;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+    width: 65%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 5px;
+    padding-left: 0px;
+}
+
+
+@media (max-width: 991px) {
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #44433E;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        padding-left: 25px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.navbarcontainer, .col-xs-12.col-sm-12.col-md-12.col-lg-12.backgroundcolor.headerdiv {
+        padding: 0;
+    }
+
+    a.logo {
+        position: relative;
+        float: none;
+        margin: auto;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .qlTitle,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #44433E;
+    }
+
+    .quicklinks {
+        display: block !important;
+    }
+
+
+    a.schoolName {
+        position: relative;
+        float: none;
+        font-size: 24px;
+        text-align: center;
+        margin: 10px auto;
+        line-height: 25px;
+    }
+
+        a.schoolName .schoolNameBottom {
+            font-size: 18px;
+        }
+}
+
+.assList,
+.assListFull {
+    width: auto !important;
+}
+
+span.assignContent,
+span.assignContent p {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    div.schoolname {
+        display: none;
+    }
+
+    .sf-vertical li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .class-column {
+        width: 100% !important;
+    }
+
+    .OLC > div > table > tbody > tr > td {
+        display: block;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.sTitle a, .sTitle {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.olc2ColumnContentLeft div {
+    padding: 0 !important;
+    margin: 12px 0 !important;
+    font-size: 14px;
+}
+
+    .olc2ColumnContentLeft div div {
+        margin: 0 !important;
+        font-size: 14px;
+    }
+
+div.olcLeftTitle {
+    background: none;
+    color: #000;
+    font-weight: normal;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.olc2ColumnContentLeft .classitem {
+    background-image: none;
+    margin: 8px 0 !important;
+    padding-left: 0 !important;
+    font-size: 14px;
+}
+
+    .olc2ColumnContentLeft .classitem a {
+        color: #fff !important;
+        font-size: 14px;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .olc2ColumnContentLeft .classitem .innerPageList {
+        margin-left: 12px !important;
+        font-size: 14px;
+    }
+
+#pageList {
+    font-size: 14px;
+}
+
+    #pageList .pageitem {
+        background-position: 0 0 !important;
+        font-size: 14px;
+        display: block;
+    }
+
+        #pageList .pageitem a {
+            color: #fff !important;
+            display: inline-block;
+            font-size: 14px;
+            min-height: 22px;
+        }
+
+    #pageList .pageitem {
+        display: block;
+        font-size: 14px;
+    }
+
+#jMonthCalendar .Event {
+    height: 22px !important;
+    font-size: 14px;
+}
+
+.olcTextHead, div.olcLeftTitle, .olcNoAvail, .areaTitle, .noevents {
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.panel {
+    width: 100%;
+}
+
+.sTitle a, .sTitle {
+    font-size: 24px;
+}
+
+.olc2ColumnContentLeft div {
+    font-size: 16px !important;
+}
+
+.olc2ColumnContentLeft .classitem a {
+    font-size: 14px !important;
+}
+
+/* END /Customers/IN/NorthHarrisonCmtySchs/css/NorthHarrison.css */
+
+
+/* CustomCss schoolId: 0 */
+
+.apply-widgets 
+{
+    margin-top: 15px;
+}
+
+.apply-widgets > iframe
+{
+    max-width: 100%;
+}
+
+.apply-widgets > a
+{
+   font-size: 16px;    
+   font-family: 'Lato', sans-serif;
+   font-weight: normal;
+   padding: 6px 0 6px 10px;
+   color: white;
+}
+
+

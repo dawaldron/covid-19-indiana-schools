@@ -1,0 +1,1888 @@
+/*
+Theme Name: Perry Township Schools
+Theme URI: http://www.perryschools.org/themes/perrytownship/
+Author: Jackson Sky Web Design & Development
+Author URI: http://jacksonsky.com/
+Description: This is a custom responsive theme designed and developed exclusively for Perry Township Schools. 
+Version: 1.00010
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Navigation
+12.0 Layout
+   12.1 Header
+   12.2 Regular Content
+   12.3 Footer
+   12.4 Home Page
+   12.5 Pages
+   12.6 Posts
+   12.7 Columns 
+   12.8 Miscellaneous
+13.0 Comments
+14.0 Widgets & Plugins
+15.0 Media
+   15.1 Galleries
+16.0 Media Queries
+17.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize - See Stylesheet normalize.css
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.0 Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+/* Hide visually and from screen readers */
+.hidden {display: none !important;}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {border: 0; clip: rect(0 0 0 0);  height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+
+/** Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638 */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
+
+/** Hide visually and from screen readers, but maintain layout */
+.invisible {visibility: hidden;}
+
+/* Text meant only for screen readers. */
+label.screen-reader-text {clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden;}
+
+.screen-reader-text:focus {background-color: #f1f1f1; border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-size: 0.875rem; font-weight: bold; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar. */}
+
+
+/*--------------------------------------------------------------
+3.0 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {display: inline; float: left; margin-right: 1.5em;}
+
+.alignright {display: inline; float: right; margin-left: 1.5em;}
+
+.aligncenter {clear: both; display: block; margin-left: auto; margin-right: auto;}
+
+
+/*--------------------------------------------------------------
+4.0 Clearings
+--------------------------------------------------------------*/
+
+/**** Clearfix update ****/
+.group:before, .group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
+	font-size:18px;
+	color:#686868;
+	font-weight: normal;
+	font-style:normal;
+	line-height:1.7;
+	letter-spacing:.075em;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6{font-family:'Open Sans', Helvetica, Arial, sans-serif; font-weight:700; color:#686868; line-height:1.2; margin:0; padding:0; letter-spacing:.075em; margin-bottom:5px; text-transform:uppercase;}
+h1{ font-family: Georgia,Times,Times New Roman,serif; font-size:38px; margin-bottom:20px; color:#181818; font-weight:400; text-transform:none; color:#181818;}
+h2{font-size:24px; font-weight:400; margin-bottom:25px; color:#ce9448;}
+h3{ font-size:24px; font-weight:600; text-transform: none; margin-bottom:20px;}
+h4{ font-size:20px;}
+h5{ font-size: 18px;}
+h6{ font-size:18px; text-transform:none; font-weight:600;}
+
+p {margin: 0 0 1.5em; padding: 0;}
+
+dfn, cite, em, i {font-style: italic;}
+
+blockquote {
+	color: #666;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.7;
+	margin: 0;
+	overflow: hidden;
+	padding: 1em 0 0 1em;
+	margin-bottom:1.5em;
+	border-left:7px solid #F3EFEA;
+}
+
+
+blockquote cite {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 0.5em;
+}
+
+address { margin: 0 0 1.5em;}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #eee;
+	text-decoration: none;
+}
+
+big {font-size: 125%;}
+
+.normal{font-weight:400;}
+.semibold{font-weight:600;}
+.strong, strong{font-weight:700;}
+
+blockquote {quotes: "" "";}
+
+q {quotes: "â€œ" "â€" "â€˜" "â€™";}
+
+blockquote:before,
+blockquote:after {content: "";}
+
+:focus {outline: none;}
+
+
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+label {
+	color: #686868;
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.35em;
+	font-size:14px;
+}
+
+fieldset {
+	margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #686868;
+	background: #fff;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	border: 1px solid #bbb;
+	display: block;
+	padding: 0.5em;
+	font-size:14px;
+	width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #222;
+	border-color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+	border: 1px solid #bbb;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	height: 3em;
+	max-width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 0.5em;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	font-weight: 400;
+}
+
+button,.button, a.button, .contentText a.button,
+input[type="button"],
+input[type="submit"] {
+	text-transform:uppercase;
+	background-color: #dbab61;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1em 1.5em;
+	text-shadow: none;
+		-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+	text-decoration: none;
+}
+
+button:hover,.button:hover, a.button:hover, .contentText a.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover{ color:#fff; text-decoration:none; background-color:#ce9448;}
+
+
+
+
+/************* Buttons **********/
+a.more, #pageContentCon a.more, a.{ font-size:14px; text-align:center; padding:10px 15px; min-width:90px; line-height:1.2; text-decoration:none; color:#fff !important; text-transform:uppercase; background:#6bbcb9; font-weight:400; display:inline-block; margin-bottom:0 5px 7px 0; -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+a.more:hover, #pageContentCon a.more:hover, a.:hover{background:#429895; text-decoration:none !important;}
+.singleCenter{display:block; text-align:center;}
+
+/********* Placeholders **********/
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+	color: #9f9f9f;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+:-moz-placeholder {
+	color: #9f9f9f;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+::-moz-placeholder {
+	color: #9f9f9f;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	opacity: 1;
+	/* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+	color: #9f9f9f;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/*--------------------------------------------------------------
+7.0 Formatting
+--------------------------------------------------------------*/
+
+hr {
+	background-color: #f3efea;
+	border: 0;
+	height: 3px;
+	margin-bottom: 1.5em;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*--------------------------------------------------------------
+8.0 Lists
+--------------------------------------------------------------*/
+
+ul, ol { margin: 0 0 1.5em 2em; padding: 0;}
+
+ul {list-style: disc;}
+
+ol {list-style: decimal;}
+
+li{ padding-left:.5em; margin-bottom:.5em;}
+
+li > ul,
+li > ol {margin-bottom: 0; margin-left: 1.5em;}
+
+dt {font-weight: 700;}
+
+dd {margin: 0 1.5em 1.5em;}
+
+/*--------------------------------------------------------------
+9.0 Tables
+--------------------------------------------------------------*/
+
+table { border-collapse: collapse; margin: 0 0 1.5em; width: 100%;}
+
+thead th { border-bottom: 2px solid #bbb; padding-bottom: 0.5em;}
+
+th { padding: 0.4em; text-align: left; }
+
+tr { border-bottom: 1px solid #eee;}
+
+td {padding: 0.4em; vertical-align:top;}
+
+th:first-child,td:first-child {padding-left: 0;}
+
+th:last-child,td:last-child {padding-right: 0;}
+
+/*** Pseudo Table Styles****/
+.table{display:table;}
+.tableRow{display:table-row;}
+.tableCell{display:table-cell;}
+.tableMiddle{ vertical-align:middle;}
+.vert50{ height:50%;}
+
+
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a{color:#DBAB61; text-decoration: none;}
+a:hover{color:#CE9448; text-decoration:underline;}
+a:active, a:focus{outline:none;}
+
+.contentText a, #postTitle a, #sideLatestPosts a, #sideCategories a, #sideArchives a, #paging a {color:#CE9448; text-decoration: none;}
+.contentText a:hover, #postTitle a:hover, #sideLatestPosts a:hover, #sideCategories a:hover, #sideArchives a:hover, #paging a:hover {color:#B70000; text-decoration:none;}
+.contentText p a, .contentText li a{text-decoration: underline;}
+.contentText p a:hover, .contentText li a:hover{text-decoration: underline;}
+.contentText p a.moreBtn, .contentText p a.moreBtn:hover{text-decoration: none;}
+.contentText p a[rel="external"]::after,  .contentText li a[rel="external"]::after{
+  font-family: 'FontAwesome';
+    content: " \f08e";
+  display: inline-block;
+  margin-left: 0.2em;
+  width: 1.20em;
+  height: 1em;
+	font-size: .7em;
+	vertical-align: text-top;
+}
+
+.contentText p a.moreBtn[rel="external"]::after, .contentText p a.moreBtn:hover[rel="external"]::after, .contentText p a.button[rel="external"]::after{display: none;}
+
+/***** Mobile Quick Links ****/
+#masthead #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-quick-link > a.mega-menu-link{color:#fff; background:#dbab61;}
+#masthead #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-quick-link > a.mega-menu-link:hover{color:#fff; background:#ce9448;}
+
+/*--------------------------------------------------------------
+11.0 Navigation
+--------------------------------------------------------------*/
+/********* Top Utility Nav ********/
+#utilityNav{float:right; margin-right:20px;}
+#utilityNav ul{list-style:none; padding:0; margin:0; float:left;}
+#utilityNav ul li{padding:0; margin:0;}
+#utilityNav ul li a{ background:#DBAB61; color:#fff; text-decoration:none; display:block; height:30px; line-height:30px; border-left:1px solid #ce9448; 
+	-o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+#utilityNav ul li a:hover{background:#ce9448;}
+#utilityNav ul .elSmall{display:none;}
+ul#commonLinks li{float:left; font-weight:600; font-size:12px; text-transform:uppercase;}
+ul#commonLinks li a{padding:0 14px;}
+ul#socialLinks li{float:left;}
+ul#socialLinks li a{padding:0 13px; font-size:14px;}
+ul#socialLinks li:nth-last-child(1) a{border-right:1px solid #ce9448;}
+
+/********* Resources Nav ***********/
+#resourceNav{float:right; margin-right:20px; margin-top:26px;}
+#resourceNav ul{list-style:none; padding:0; margin:0;}
+#resourceNav ul li{float:left; margin:0; padding:0; margin-right:14px; display:inline-block; width:auto;}
+#resourceNav ul li:last-child{margin-right:0;}
+#resourceNav ul li a{display:block; height:30px;}
+#resourceNav ul li#gmail a{ width:40px;}
+#resourceNav ul li#gdrive a{ width:35px;}
+#resourceNav ul li#canvas a{ width:30px;}
+#resourceNav ul li#gClassroom a{ width:30px;}
+#resourceNav ul li#skyward a{ width:60px;}
+#resourceNav ul li#pivot a{ width:32px;}
+#resourceNav ul li#parentsquare a{ width:30px;}
+#resourceNav ul li a img{ width:100%; height:auto;}
+
+/********* Main Navigation ********/
+#mainNavRow{background:#00447c;}
+#navHead{min-height:50px; float:right; clear:right;} 
+#menu {display: none;}
+#mainNavCon{height:50px; display:inline-block; float:left; width:100%;}
+#mainNav{ display:block;}
+
+
+/*** Schools section ***/
+.wrapper #mega-menu-wrap-primary-menu{z-index:10;}
+.wrapper #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title{display:none;} 
+.widget_nav_menu ul.menu, .widget_nav_menu ul.sub-menu{margin:0; padding:0; list-style:none; line-height:1.4;}
+.widget_nav_menu ul.menu li{margin:0 0 20px; padding:0; text-transform:uppercase; font-weight:600;}
+.widget_nav_menu ul.menu li a{margin-bottom:4px;}
+.widget_nav_menu ul.sub-menu li{margin: 0px;  text-transform: none; font-weight:400;}
+.widget_nav_menu ul.sub-menu li a{ margin-bottom:0;}
+.widget_nav_menu ul a{color:#fff; display:block; padding:7px;}
+.widget_nav_menu ul a:hover{ background:#022542; text-decoration:none;}
+
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link::after{display:none;}
+/* Disable Main Nav Link */
+li.disableLink > a{ pointer-events: none !important; cursor:default !important;}
+
+/*** Mega Menu Mobile ***/
+#mainNav #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after, #mainNav #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-3 a.mega-icon:before, #mainNav #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 a.mega-icon:before{color: #999;}
+#mainNav #mega-menu-wrap-primary-menu a.fancybox-inline:hover{text-decoration: none !important;}
+#mainNav #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-center{text-align: center;}
+
+
+
+  
+/********* Side Navigation ********/
+.sideNav ul{margin:0 0 25px 0; padding:0; list-style:none; background:#dbab61;}
+.sideNav ul ul{margin:0;}
+.sideNav ul li{margin:0; padding:0;}
+.sideNavTitle{color:#fff; text-decoration:0; display:block; padding:5px 20px; font-size:24px; text-transform:uppercase; line-height:1.2; padding:15px 20px 10px;}
+.sideNav ul li a{background:#dbab61; color:#fff; text-decoration:0; display:block; padding:15px 20px 10px; line-height:1.2; font-size:24px; text-transform:uppercase;
+-o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+.sideNav ul ul li a{padding:10px 20px;}
+.sideNav ul li a:hover{ background:#ce9448;}
+.sideNav ul li li a{font-size:18px; text-transform:none;}
+.sideNav ul ul li:last-child a{padding-bottom:15px;}
+
+  
+
+/************ Footer Resource Links *************/
+/*** Foot Resource Nav ***/
+#footerMid.mobileOnly{width: 100%;}
+#footerMid.mobileOnly .wrapper{width: 100%;}
+#footResourceNav{float:left; margin-left:3.5%;}
+#footResourceNav ul{list-style:none; padding:0; margin:0;}
+#footResourceNav ul li{float:left; margin:0; padding:0; margin-right:14px; display:inline-block; width:auto;}
+#footResourceNav ul li:last-child{margin-right:0;}
+#footResourceNav ul li a{display:block; height:30px;}
+#footResourceNav ul li{margin-right:10px;}
+#footResourceNav ul li#gmail a{ width:30px;}
+#footResourceNav ul li#gdrive a{ width:26.25px;}
+#footResourceNav ul li#canvas a{ width:22.5px;}
+#footResourceNav ul li#gClassroom a{ width:22.5px;}
+#footResourceNav ul li#skyward a{ width:45px;}
+#footResourceNav ul li#pivot a{ width:24px;}
+#footResourceNav ul li#parentsquare a{ width:22.5px;}
+#footResourceNav ul li a img{ width:100%; height:auto;}
+
+/*** Foot Social Nav ***/
+#footSocialCon{float:right; margin-right:3.5%;}
+#footSocialCon ul{list-style:none; padding:0; margin:0;}
+#footSocialCon ul li{float:left; margin:0; padding:0; margin-left:14px; display:inline-block; width:auto;}
+#footSocialCon ul li a{ font-size:18px;}
+
+/*--------------------------------------------------------------
+12.0 Layout
+--------------------------------------------------------------*/
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+/***** Table Sticky Footer Styles *****/
+body {display: table; width: 100%;}
+.page{position:relative;}
+.page-row {display: table-row; height: 1px;}
+.page-row-expanded { height: 100%;}
+.block{display:block;}
+.row{display:block; width:100%;}
+
+.mobileOnly{display:none;}
+
+
+#page {
+	position: relative;
+}
+
+#page a{word-wrap:break-word;}
+
+ .wrapper {margin: 0 auto; padding:0; width:1260px; display:table; height:100%;}
+ .wrapper:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.full{min-width:100%;}
+
+
+/*--------------------------------------------------------------
+12.1 Header
+--------------------------------------------------------------*/
+
+/***** Main Header *****/
+#masthead{background:#fff; width:100%;}
+#mainHeader{width: 100%; height:auto;}
+#mainHeader .wrapper{background:none;}
+
+/***** Utility Bar *****/
+#utilityBar{background:#dbab61;}
+#utilityCon{float:right; margin-right:20px;}
+
+/** Logo **/
+#headTitle{width:550px; float:left;}
+#logo{overflow:hidden; display:block; width:550px; height:75px; margin:30px 0 0; float:left;}
+#logo hgroup h1{display:block; width:86px; height:74px; background: url(images/common/logoMark.png) top left no-repeat; overflow:hidden; text-indent:-9999em; margin:0 14px 0 0; float:left; font-size:10px; line-height:0; background-size: contain;}
+#logo hgroup #perryTextLogo{display:block; width:450px; height:74px; background:url(images/common/logoText.png) top left no-repeat; text-indent:-9999em; margin:0; float:left; font-size:10px; line-height:0; background-size:contain;}
+
+#helperCon{float:right; margin:23px 20px 20px 0; clear:right;}
+
+#helperCon #learnerLink{float:left; margin-right:18px;}
+#helperCon #learnerLink a{color:#00447c; text-decoration: none;}
+#helperCon #learnerLink a:hover{color:#1b6bad; text-decoration: none;}
+#helperCon .goog-te-gadget-simple{margin: 1px 0 0;}
+.goog-te-menu2-item{color:#00447c !important; }
+
+
+/*** Search ****/
+#helperCon #topSearch{float:left; margin-left:4px;}
+#helperCon #topSearch .searchform{background:#f3efea;}
+#helperCon #topSearch .searchField{float:right;}
+#helperCon #topSearch .searchField{width:165px; height:30px; line-height:30px; padding:0 10px 0 4px; font-size:14px; border:none 0; color:#003F72; background:#f3efea; letter-spacing:.05em;}
+#helperCon #topSearch button[type="submit"]{height:30px; line-height:30px; background:#00C; padding:0 10px; float:right; border:none 0; color:#9f9f9f; background:#f3efea;}
+#helperCon #topSearch button[type="submit"]:hover{background:#c4c4c4; color:#686868;}
+
+
+/*** Search Lightbox ***/
+#lbSearch{padding:20px; background:#f3efea;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+#lbSearch label{font-size:24px; font-weight:700; text-transform:uppercase;}
+#lbSearch input#s{width:100%; font-size:18px; padding:7px 10px; margin-bottom:15px; 
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+#lbSearch .righter{text-align:right;}
+
+
+/** Utility Links **/
+#mainHeader #headerUtilityCon{float:right; display:inline-block; clear:right; margin:18px 0 27px; opacity:1;
+-o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+#mainHeader #headerUtilityCon a.top, #mainHeader #headerUtilityCon a.topAlt{font-size:14px; color:#fff; display:inline-block; min-width:90px; margin:0 0 0 10px; background:#6bbcb9; text-align:center; text-transform:uppercase; padding:8px 15px;
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+#mainHeader #headerUtilityCon a.topAlt{background:#ff664b;}
+#mainHeader #headerUtilityCon a.top:hover{text-decoration:none; background:#429895;}
+#mainHeader #headerUtilityCon a.topAlt:hover{ text-decoration:none; background:#da4e35;}
+
+
+/**** Mobile Search *****/
+#mobileSearch a{background:#DBAB61; color:#fff;
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+#mobileSearch a:hover{ background:#CE9448;}
+
+
+/**** Accessibility Tools *****/
+body #pojo-a11y-toolbar{z-index: 50;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title{letter-spacing: 0;}
+
+/*--------------------------------------------------------------
+12.2 Regular Content
+--------------------------------------------------------------*/
+
+/********** Page Content **********/
+#pageContentCon{ width:100%; margin:0; padding:0;}
+#pageContentCon .wrapper{ padding:35px 0 35px;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;	
+}
+#pageContentCon .wrapper a{word-break: break-word;
+	-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;}
+
+
+/***** Page Title Area ******/
+#pageContentCon #pageTitleArea{}
+#pageContentCon #pageTitleArea #pageTitle{bottom:0px; display:block; width:100%;}
+#pageContentCon #pageTitleArea #pageTitle h1{ margin-bottom:30px;}
+
+
+/**** Main Content ****/
+#contentArea{margin:0;}
+.withSideColumn #mainContent, .sectionWithSide .wsContent{float:left; width:64.28571428571429%; margin:0 2.38095238095238% 0 0; padding:0; display:block;}
+.withSideColumn #sideColumn, .sectionWithSide .sideSection{width:33.33333333333333%; display:block; float:left; padding:0 0 25px 0; }
+
+/** Main Full width **/
+.fullWidth #mainContent{width:100%; margin:0 0 15px;}
+
+
+/*--------------------------------------------------------------
+12.3 Sidebar Content
+--------------------------------------------------------------*/
+#sideColumn section{margin-bottom:45px;}
+#sideColumn section .gutter{padding:0 20px;}
+/***** Side Column Headers *****/
+#sideColumn .headerCon, #sideColumn a .headerCon{ background:#f3efe9; position:relative; margin-bottom:24px; text-decoration:none;
+-o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+#sideColumn a:hover{text-decoration:none;}
+#sideColumn a:hover .headerCon {text-decoration:none; background:#c4c4c4;}
+#sideColumn a .headerCon h2{color:#9f9f9f;
+-o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+#sideColumn a:hover .headerCon h2{color:#686868;}
+#sideColumn .headerCon:before{content: ""; width: 0; height: 0; border-top: 49px solid #fff; border-right: 20px solid transparent; position:absolute; top:0; left:0;}
+#sideColumn .headerCon:after{content: ""; width: 0; height: 0; border-bottom: 49px solid #fff; border-left: 20px solid transparent; position:absolute; top:0; right:0;}
+#sideColumn h2 i{margin-right:5px;}
+#sideColumn h2{font-weight:400; font-size:24px; display:block; padding:10px 30px; margin-bottom:0; color:#9f9f9f;}
+
+/**** Side Column Image Link ******/
+
+.imageLink{ position:relative; width:100%;}
+.imageLink img{width:100%; height:auto;}
+.imageLink a{}
+.imageLink a .overlay{position:absolute; top: 0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0);
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+.imageLink a:hover .overlay{position:absolute; top: 0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.2);}
+.imageLink .imageLinkText{position:absolute; bottom:20px; left:0; width:90%; margin-left:5%; margin-right:5%; display:block; background:#fff; background:rgba(255, 255, 255, 0.85); line-height:1.2;}
+.imageLink a .imageLinkText{color:#181818; font-size:24px; font-family:Georgia,Times,Times New Roman,serif; padding:10px 12px;}
+
+/***** Side List ******/
+.sideList ul{margin:0 0 0 12px; padding:0; list-style:none;}
+.sideList ul li{line-height:1.2; padding:0; margin:0 0 15px; display:block; font-size:14px;}
+#sideColumn .sideList ul li a:hover{text-decoration:none;}
+
+/**** Twitter feed *****/
+.ctf-tweets{line-height:1.4 !important;}
+
+
+/*--------------------------------------------------------------
+12.4 Footer
+--------------------------------------------------------------*/
+
+#mainFooter{ min-height:50px; width:100%; font-size:14px; background:#00335d; color:#fff;}
+#mainFooter #footerTop .wrapper{ padding:60px 0;}
+#mainFooter a{color:#fff;}
+
+/****** Footer Map *****/
+#footerTop #footMapCon{float:left; width:34.12698412698413%; padding-right:3.96825396825397%;}
+#footerTop #mapCon{width:100%;}
+#footerTop #mapCon #wpgmza_map{color:#00335D;}
+
+/****** Footer Information ******/
+#footerTop #footInformationCon{float:left; width:34.12698412698413%; padding-right:3.96825396825397%;}
+#footInformationCon .iconLeftCon{margin-bottom:33px;}
+#footInformationCon .leftIcon{float:left; width:16.57894736842105%; font-size:25px;}
+#footInformationCon .leftIcon .circle{ border:2px solid #fff;
+width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 59px;
+  text-align: center;
+  }
+#footInformationCon .ilcontent{float:left; width:83.42105263157895%; line-height:1.3; padding-left:5.26315789473684%; font-size:16px;}
+#footInformationCon .ilcontent .schoolName{font-size:18px;}
+#footPhoneCon .ilcontent{font-size:18px; font-weight:600; padding-top:4%;}
+
+/****** Footer Signup ******/
+#footerTop #footSignupCon{float:left; width:30.15873015873016%;}
+#footSignupCon h2{color:#fff; font-size:24px; margin-bottom:7px;}
+#footSignupCon .fsContent{margin-bottom:7px;}
+#footSignupCon ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#5c5c5c;
+}
+#footSignupCon ::-moz-placeholder { /* Firefox 19+ */
+opacity: 1; color:#5c5c5c; }
+#footSignupCon :-ms-input-placeholder { /* IE 10+ */
+  color: #5c5c5c;
+}
+#footSignupCon:-moz-placeholder { /* Firefox 18- */
+  color:#5c5c5c;
+}
+
+#footCon .mc4wp-form input[type=text], #footCon .mc4wp-form input[type=email]{margin-bottom:7px; background:#e2e2e2; border:0 none;}
+#footCon .mc4wp-form input[type=text]:focus, #footCon .mc4wp-form input[type=email]:focus{background:#fff;}
+
+/****** Footer Mid ******/
+#footerMid{background:#fff; padding:10px 0;}
+
+
+/****** Footer Bottom ******/
+#footerBottom{background:#f3efea; color:#969696; font-size:12px; padding:10px 0;}
+#footerCopyright{float:left;}
+#footerUtilityLinks{float:right; line-height: 1.8;}
+#footerUtilityLinks a{color:#00335d;}
+#footerUtilityLinks a:hover{text-decoration:underline;}
+
+/*** Google Language ***/
+#footerLang{display: block; text-align: center;}
+#footerLang a{color:#00447c; text-decoration: none;}
+#footerLang a:hover{color:#1b6bad; text-decoration: none;}
+#footerLang .goog-te-gadget-simple{margin: 1px 0 0; line-height: 1; font-size: 12px;}
+
+
+/*--------------------------------------------------------------
+12.5 Home Page
+--------------------------------------------------------------*/
+.home #hero .block{ background-image:url(images/home/hero1.jpg); background-repeat:no-repeat; background-position:center bottom; background-size: cover; height:500px;}
+
+.home #hero .heroTextHolder{width:28.671875%; background:#fff; background: rgba(255, 255, 255, 0.75); margin-top:60px; margin-left:5.46875%; padding:20px 25px;}
+.home #hero .smallHeroText{font-size:18px; color:#181818;}
+.home #hero .largeHeroText{ font-size:48px; color:#181818; font-family: Georgia,Times,Times New Roman,serif; line-height:1.2;}
+
+/*** Header w/ more button ***/
+.sectionHeaderCon{width:100%; display:block; position:relative; margin-bottom:24px; height:48px;}
+.sectionHeaderCon h2{background: #f3efea; color:#9f9f9f; font-size:24px; margin-bottom:0; float:left; width:100%; height:48px; padding-left:35px; line-height:48px;
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+.sectionHeaderCon:before{content: ""; width: 0; height: 0; border-top: 48px solid #fff; border-right: 20px solid transparent; position:absolute; top:0; left:0; visibility:visible;}
+.sectionHeaderCon:after{content: ""; width: 0; height: 0; border-bottom: 48px solid #fff; border-left: 20px solid transparent; position:absolute; top:0; right:0; visibility:visible;
+}
+
+
+a .sectionHeaderLinkCon{width:100%; display:block; position:relative; margin-bottom:24px; height:48px;}
+a .sectionHeaderLinkCon h2{ background: #f3efea; color:#9f9f9f; font-size:24px; margin-bottom:0; float:left; width:83.59375%; height:48px; padding-left:35px; line-height:48px;
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+a .sectionHeaderLinkCon .headerMore{background:#00335d; color:#fff; font-weight:600; font-size:14px; float:left; width:16.40625%; display:block; height:48px; line-height:48px; padding-left:20px;
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+
+a .sectionHeaderLinkCon:before{content: ""; width: 0; height: 0; border-top: 48px solid #fff; border-right: 20px solid transparent; position:absolute; top:0; left:0; visibility:visible;}
+a .sectionHeaderLinkCon:after{content: ""; width: 0; height: 0; border-bottom: 48px solid #fff; border-left: 20px solid transparent; position:absolute; top:0; right:0; visibility:visible;
+}
+a .sectionHeaderLinkCon h2 i{margin-right:5px;}
+
+a:hover .sectionHeaderLinkCon h2{background:#C4C4C4; color:#686868;}
+a:hover .sectionHeaderLinkCon .headerMore{background:#00447c;}
+
+#pageContentCon .wrapper{padding:50px 0;}
+
+/**** Home News ****/
+.home #recentNewCon{display:block; padding:0 1.5625%;}
+.home .imageLink{ position:relative; width:30.64516129032258%; margin-right:4.03225806451613%; float:left;}
+.home .imageLink:last-of-type{margin-right:0;}
+.home .imageLink img{width:100%; height:auto;}
+.home .imageLink a{}
+.home .imageLink a .overlay{position:absolute; top: 0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0);
+-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;}
+.home .imageLink a:hover .overlay{position:absolute; top: 0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.2);}
+.home .imageLink .imageLinkText{position:absolute; bottom:20px; left:0; width:90%; margin-left:5%; margin-right:5%; display:block; background:#fff; background:rgba(255, 255, 255, 0.85); line-height:1.2; letter-spacing:.03em;}
+.home .imageLink a .imageLinkText{color:#181818; font-size:24px; font-family:Georgia,Times,Times New Roman,serif; padding:10px 12px;}
+
+/**** Home Mission ****/
+.home #homeMission{background:#dbab61; color:#fff; line-height:1.4;}
+.home #homeMission .gutter{padding:0 3.125% 0;}
+.home #homeMission h2{font-family: Georgia,Times,Times New Roman,serif; color:#fff; font-size:48px; margin-bottom:6px;}
+.home #homeMission p{font-size:30px;}
+.home #homeMission p:last-of-type{margin-bottom:0;}
+
+/**** Home Schools ****/
+#homeSchool .sectionHeaderCon{ margin-bottom:45px;}
+#homeSchool .gutter{padding:0 3.125%;}
+#homeSchoolListCon .hsListCol{float:left; display:block; width:33.3333333%; padding-right:4.16666666666667%;}
+#homeSchoolListCon .hsListCol h3{font-size:14px; font-weight:600; margin-bottom:.7em; line-height:1.3;}
+#homeSchoolListCon .hsListCol ul{padding:0; margin:0 0 2em; list-style:none;}
+#homeSchoolListCon .hsListCol li{ margin:0 0 .7em; padding:0; font-size:14px; line-height:1.3;}
+#homeSchoolListCon .hsListCol li a{color:#00447c;}
+#homeSchoolListCon .hsListCol li a:hover{color:#DBAB61; text-decoration:underline;}
+
+/**** Home Spotlight ****/
+.home #homeSpotlight{background:#f3efea; line-height:1.4; color:#686868;}
+.home #homeSpotlight .gutter{padding:0 1.5625% 0;}
+.home #homeSpotlightImg{float: left; width:34.67741935483871%; padding-right:4.03225806451613%;}
+.home #homeSpotlightImg .imageLink{width:100%;}
+.home #homeSpotlightImg img{width:100%; height:auto;}
+.home #homeSpotContent{float:left; width:65.32258064516129%;}
+.home #homeSpotlight h2{font-size:48px; margin-bottom:6px; color:#686868;}
+.home #homeSpotlight p{font-size:18px;}
+
+/*--------------------------------------------------------------
+12.6 Interior Pages
+--------------------------------------------------------------*/
+/************ Site Section Over List ***********/
+ul.list-pages-shortcode{margin-left:0; padding-left:0;}
+ul.list-pages-shortcode li{list-style:none; font-size:18px; margin-left:0; padding-left:0; text-transform:uppercase;}
+ul.list-pages-shortcode li ul{margin-left:0; padding-left:0;}
+ul.list-pages-shortcode li li{font-size:16px; margin-left:0; padding-left:15px; margin-left:0; text-transform:none; }
+ul.list-pages-shortcode li li li{padding-left:20px; font-size:14px;}
+ul.list-pages-shortcode li li li:before{content:"- "}
+
+/*** Page Shortcode reset ****/
+.page-child ul.list-pages-shortcode{margin-left:2em;}
+.page-child ul.list-pages-shortcode li{list-style:disc; text-transform:none;}
+
+/************* Search Form *****************/
+.search-form label{display:inline-block;}
+.search-form input[type="search"]{width:25%; display: inline-block; padding:1em .5em;}
+.search-form input[type="submit"]{padding:.95em 1.5em 1.05em;}
+
+/********** School *******/
+#schoolList h3{font-size: 18px; margin-bottom: .2em;}
+#schoolList ul{margin-left:0;}
+#schoolList ul li{line-height:1.4; margin-bottom:10px; padding-left:0; list-style:none; font-size:14px;}
+
+/********** Calendar *********/
+/*** Remove resposive table interference on Calendar ***/
+.simcal-calendar table.simcal-calendar-grid{ display: table !important;}
+.simcal-calendar .ml-responsive-table{display:none;}
+body.page-template-default.page .qtip-content .simcal-event-start-time, body.page-template-default.page .qtip-content .simcal-event-end-time{display:inline-block;}
+
+/********** District Contacts **********/
+.district_item{margin-bottom: 20px;}
+
+/*********** About - School Board - School Board Memebrs ***********/
+#sb_member .sb_member_item{border-bottom: 3px solid #f3efea; margin-bottom: 1.5em;}
+#sb_member .sb_member_item:last-child{border-bottom: 0 none;}
+#sb_member .sb_member_item:last-of-type{border-bottom: 0 none;}
+#sb_member .sb_header{margin-bottom: 1.75em;}
+#sb_member .sb_header h4{margin-bottom: 4px;}
+#sb_member .sb_member_photo{float: right; width:29.62962962962963%; margin-top: 5px;}
+#sb_member .sb_member_photo img{max-width: 240px; width: 100%; height: auto;}
+#sb_member .sb_member_content{float: left; width: 67.37037037037037%; margin-right: 3%;}
+
+/******** Staff Directory *******/
+.directory{margin-bottom: 45px;}
+.directory .staff_item{margin-bottom: 30px;}
+.directory .staff_info{font-size:16px; line-height: 1.6;}
+.directory.photo img{width: 100%; height: auto;}
+.directory.photo .staff_photo{float: left; width: 23.7037037037037%; margin-right:2%; }
+.directory.photo .staff_info{float:left; width:74.2962962962963%;}
+.directory .staff_item .staff_bio{margin-top: 30px;}
+/*.directory hr.staff_hr:last-of-type{ display: none;}*/
+.directory.table{width: 100%;}
+.directory.table.small_photo .hidden{border-bottom:2px solid #bbb;}
+.directory.table.small_photo td.staff_photo{ width:9.25925925925926%;}
+.directory.table.small_photo td.staff_photo img{width: 100%; height: auto; overflow: hidden;}
+.directory .hide, .ml-empty{display: none;}
+
+/********* FAQ ******/
+/* Eliminate Text Advert for FAQ Plugin */
+.hrf-faq-list article:not(.hrf-entry) {
+display: none !important;
+}
+.hrf-faq-list {
+margin-bottom: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+12.7 Posts
+--------------------------------------------------------------*/
+/******************* Blog Overview ************************/
+
+.blogBox {
+	 width: 32%; margin-right: 2%; float: left; background: #fff; margin-bottom: 2%;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.blogBox:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+#paging-bottom{width:100%; display:block; clear:both;}
+#paging-bottom .alignleft, #paging-bottom .alignright{
+	background: #00447C;
+	display: block;
+	width: 32%;
+}
+
+#paging-bottom .alignleft a, #paging-bottom .alignright a{
+	background: #00447C;
+	display: block;
+	width: 100%;
+}
+
+#paging-bottom .alignleft {
+	float: left;
+}
+#paging-bottom .alignright {
+	float: right;
+}
+#paging-bottom .alignleft a, #paging-bottom .alignright a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-size: 16px;
+	-o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+#paging-bottom .alignleft a:hover, #paging-bottom .alignright a:hover {
+	background: #00325C;
+}
+
+
+/******************* Blog Overview ************************/
+#featurePic{margin-bottom:15px; padding-bottom:66.71626984126984%; overflow:hidden; height:0; background-size: cover; background-position:center; background-repeat:no-repeat;}
+
+
+/********************* WordPress Styles *********************/
+
+#postTitle h1{margin-bottom:5px !important; line-height:115%; text-transform:none;}
+
+#postInfo {color:#9f9f9f; font-size:14px; margin:0 0 20px 0; clear: both; font-style:italic;}
+
+#paging {
+display: block;
+text-align: center;
+margin-top: 60px;
+padding-bottom: 60px;
+font-weight:bold;
+font-size:14px;
+text-transform:uppercase;
+}
+
+a.moreBtn { text-align:center; padding:10px 15px; text-decoration:none; color:#fff; text-transform:uppercase; background:#dbab61; font-weight:600; display:inline-block; margin-bottom:0 5px 7px 0; -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+a.moreBtn:hover {background:#ce9448; color:#fff;}
+
+
+/*--------------------------------------------------------------
+12.7 Columns
+--------------------------------------------------------------*/
+.colCon{}
+.colThird{ width:33.333333%; padding-right:2%; float:left;}
+.colHalf{width:50%; padding-right:2%; float:left;} 
+
+
+/*--------------------------------------------------------------
+12.8 Miscellaneous
+--------------------------------------------------------------*/
+
+#redAnnouncement {
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.7;
+	margin: 0;
+	padding: 1em 1.25em;
+	margin-bottom:1.5em;
+	background:#B70000;
+}
+
+#redAnnouncement a {color: #fff; text-decoration:underline;}
+#redAnnouncement a:hover {color: #DBAB61; text-decoration: underline;}
+
+
+
+/*--------------------------------------------------------------
+13 Comments
+--------------------------------------------------------------*/
+
+h3#comments  {padding-top:10px;font-size:18px; text-transform:uppercase;}
+#respond h3 {margin:25px 0 10px 0; font-size:18px; padding-top:10px; text-transform:uppercase;}
+#reply-title  {padding-top:30px;}
+
+.avatar { display:none;}
+
+.commentlist {padding:0; margin:25px 0 0 0;}
+.commentlist li {padding:10px 20px 10px 20px; margin:10px 0; list-style-type:none;background:#f6f5f3;}
+.comment-author {font-weight:bold;}
+.comment-body, .comment-notes, .logged-in-as {font-size:14px;}
+.comment-body p {margin:8px 0;}
+.comment-meta {font-size:12px; margin:0 0 6px 0;}
+
+/*--------------------------------------------------------------
+14 Widgets & Plugins
+--------------------------------------------------------------*/
+
+.simcal-event-title {letter-spacing:0em;}
+.simcal-calendar a.post-edit-link {display:none;}
+
+/*--------------------------------------------------------------
+15 Media
+--------------------------------------------------------------*/
+img {vertical-align: middle;}
+
+img.alignleft {float:left; display:inline; margin:5px 20px 15px 0; max-width:38%; height:auto;
+ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+img.alignright {float:right; display:inline; margin:5px 0 15px 20px; max-width:38%; height:auto;
+ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+img.alignnone {margin: 0 0 10px 0; max-width:100%; height:auto;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+img.aligncenter {clear: both; display: block; margin: 0 auto 10px; max-width:100%; height:auto;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+
+.wp-caption.alignright{float:right; margin:5px 0 15px 15px; max-width:40%; height:auto;
+ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  
+.wp-caption.alignleft{float:left; margin:5px 15px 15px 0; max-width:40%; height:auto;
+ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  
+.wp-caption img{width:100% !important; height:auto;} 
+  
+.alignright {float: right; margin: 0 0 5px 15px; display:inline;}
+.alignleft {float: left; margin: 0 15px 5px 0; display:inline;}
+.center{text-align:center;}
+  
+
+.wp-caption img{margin:5px;}
+.wp-caption {margin-bottom:10px; text-align:center; font-size:11px; color:#9f9f9f;}
+.wp-caption p{margin-bottom:5px;}
+
+/*--------------------------------------------------------------
+15.1 Galleries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+16 Media Queries
+--------------------------------------------------------------*/
+@media only screen and (max-width: 479px) {
+h1, h2, h3, h4, h5, h6{margin-bottom:7px;}	
+h1{ font-size:26px;}
+h2{ font-size:20px;}
+blockquote{font-size:16px;}
+	
+/******** LAYOUT ****************/
+.mobileOnly{display:inline-block;}
+.mobileHide{display:none;}
+
+/***** Table Sticky Footer Styles *****/
+body {display: table; width: 100%;}
+.page-row {display: table-row; height: 1px;}
+.page-row-expanded { height: inherit; }
+.block{display:block;}
+
+.wrapper, .home .wrapper {margin: 0 auto; width:100%;}
+.mobileHide{display:none;}
+
+		
+/*********** Header - main ***********/
+
+/*#mainNav #mega-menu-wrap-primary-menu{ position:fixed; width:100%;}*/
+
+#masthead{ position:relative; z-index:500; top:0; left:0; width:100%; background:#FFF; height:65px; border-bottom:1px solid #DBAB61;}
+#mainHeader{}
+
+/** Logo **/
+#headTitle{ display:none;}
+#mobileSearch.mobileOnly{display:none;}
+
+
+#mainHeader #navHead{ position:fixed; top:0; left:0; height:65px; width:65px; background:#313F4F;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  
+#utilityBar{display:none;}
+#commonLinks{display:none;}
+#utilityNav{ display:none;}
+#resourceNav{display:none;}
+
+
+/**** Main Navigation *****/
+#mainNavRow .mega-menu-toggle{border-bottom:1px solid #DBAB61;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left{background:#00447c; width:65px; margin-left:0; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left::before{margin-left:0;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right{ background:#dbab61; margin-right:0; width:65px; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right .search-icon, #mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right{right:0;}
+
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link::after{display: inline-block;}
+
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right a:hover{text-decoration:none;}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item{ padding:0;}
+
+/*** Schools menu section ***/
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu{padding:0;}
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item{padding:0;}
+.widget_nav_menu ul a{padding:8px 10px;}
+
+/* Disable Main Nav Link */
+li.disableLink > a{ pointer-events:inherit !important; cursor:pointer !important;}
+
+/******* Page Content *********/
+#pageContentCon{margin-top:0; width:100%;}
+#pageContentCon .wrapper{ padding:75px 3.5% 30px;}
+#pageContentCon #pageTitleArea #pageTitle h1{ font-size:26px; margin-bottom:15px;}
+#contentArea{width:100%; padding:0;}
+
+/**** Main Content ****/
+
+#mainContent{font-size:14px;}
+#mainContent, .withSideColumn #mainContent, .home #mainContent, .fullWidth #mainContent, .sectionWithSide .wsContent{float:none; width:100%; margin:0; padding: 0 0 20px;}
+.sectionWithSide .wsContent{padding-bottom:10px;}
+.sectionWithSide .sideSection{padding-bottom:0;}
+
+/********* Sidebar Content ************/
+.withSideColumn #sideColumn{padding-bottom:0;}
+#sideColumn section{margin-bottom:25px;}
+#sideColumn section .gutter{padding:0 15px;}
+.withSideColumn #sideColumn, #sideColumn, .sectionWithSide .sideSection{float:none; width:100%; margin: 0;}
+#sideContent{ width:100%; padding:0;}
+.sectionWithSide .sideSection{padding-bottom:0;}
+
+#sideColumn section{width:100%; margin-right:0; float:none;}
+
+/***** Side Column Nav ******/
+.sideNav ul li a, .sideNavTitle{font-size:18px; padding:13px 14px 8px;}
+.sideNav ul ul li a{ padding:8px 14px; font-size:16px;}
+.sideNav ul ul li:last-child a{padding-bottom:13px;}
+
+/***** Side Column Headers *****/
+#sideColumn .headerCon, #sideColumn a .headerCon{margin-bottom:15px;}
+#sideColumn h2{font-size:18px; display:block; padding:4px 10px 4px 30px;}
+#sideColumn h2 i{display:none;}
+#sideColumn .headerCon:before{content: ""; width: 0; height: 0; border-top: 37px solid #fff; border-right: 15px solid transparent; position:absolute; top:0; left:0;}
+#sideColumn .headerCon:after{content: ""; width: 0; height: 0; border-bottom: 37px solid #fff; border-left: 15px solid transparent; position:absolute; top:0; right:0;}
+.imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/*** Side Column Twitter Feed ***/
+#sideTwitterSection #ctf .ctf-tc-image{float:none; width:100%;}
+#sideTwitterSection #ctf .ctf-quoted-tweet .ctf-tc-summary-info{float:none; width:100%;}
+
+
+
+/******* Footer *********/
+#mainFooter #footerTop .wrapper{padding:35px 3.5% 20px;}
+#footerTop #footMapCon{width:100%; padding-right:0; margin-bottom:20px;}
+#footerTop #footInformationCon{width:100%; float:none;}
+#footInformationCon .leftIcon{width:100%; float:none; text-align:center;}
+#footInformationCon .ilcontent{width:100%; float:none; text-align:center; padding:7px 0 0;}
+#footInformationCon .leftIcon .circle{line-height:36px; font-size:24px; width:40px; height:40px; margin:0 auto;}
+#footPhoneCon .ilcontent{padding-top:7px;}
+#footerTop #footSignupCon{width:100%; float:none; text-align:center;}
+#footerTop #footSignupCon h2{width:100%; text-align:center; font-size:20px;}
+
+/****** Footer Mid ******/
+#footerMid{ display:block;}
+
+#footResourceNav{float:none; width:100%; text-align:center; margin:0; padding:0 3.5%;}
+#footResourceNav ul{display:inline-block; margin:0 auto;}
+#footSocialCon{float:none; width:100%; text-align:center; margin:0; padding:0 3.5%;}
+#footSocialCon ul{display:inline-block; margin:0 auto;}
+
+#footerUtilityLinks, #footerCopyright{float:none; margin-bottom:5px; display:block; text-align:center;}
+
+
+/******************** PAGES ***************************/
+/****************** HOME ********************/
+#pageContentCon .wrapper{padding:35px 3.5%;}
+
+.home #hero{}
+.home #hero .block{height:0px; padding-bottom:46%; position:relative;}
+.home #hero .heroTextHolder{ margin:0; width:100%; position:absolute; bottom:5px; padding:2% 3.5%;}
+.home #hero .smallHeroText{font-size:12px;}
+.home #hero .largeHeroText{font-size:16px;}
+
+/**** Image Links ****/
+.home .imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/*** Header with More Link ***/
+a .sectionHeaderLinkCon h2{width:100%;}
+a .sectionHeaderLinkCon h2 .fa{display:none;}
+a .sectionHeaderLinkCon .headerMore{ display:none;}
+
+
+/*** Home Mission ***/
+.home #homeMission h2{font-size:24px;}
+.home #homeMission p{font-size:16px;}
+
+/*** Home Recent News ***/
+.home #recentNewCon .imageLink{width:100%; margin:0 0 15px 0;}
+
+
+/*** Schools ***/
+#homeSchoolListCon .hsListCol{float:none; width:100%; margin:0 0 20px 0;}
+
+/*** Teacher Spotlight ***/
+.home #homeSpotlightImg{width:100%; float:none; padding:0 0 15px;}
+.home #homeSpotContent{width:100%; float:none; line-height:1.6;}
+.home #homeSpotContent h2{font-size:20px;}
+.home #homeSpotContent p{font-size:14px;}
+	
+/*********** About - School Board - School Board Memebrs ***********/
+#sb_member .sb_header{margin-bottom: 1.75em;}
+#sb_member .sb_header h4{margin-bottom: 4px;}
+#sb_member .sb_member_photo{float: none; width:100%; margin-top: 0; margin-bottom: 1em; text-align: center;}
+#sb_member .sb_member_photo img{max-width: 200px; width: 100%; height: auto;}
+#sb_member .sb_member_content{float: none; width: 100%; margin-right:0;}
+	
+/********* Search Form ***********/
+.search-form label{display:inline-block;}
+.search-form input[type="search"]{width:33%; display: inline-block; padding:.5em; font-size: 16px;}
+.search-form input[type="submit"]{padding:.55em 1em; font-size: 16px; line-height: 1.7;}
+
+
+/******************* Blog Overview ************************/
+.blogBox {width:100%; margin:0 0 5% 0;}
+.blogBox:nth-child(3n+3) {margin-right:0;}
+.blogBox:nth-child(2n+2) {margin-right:0;}
+
+
+
+
+/****************** MISC ********************/
+
+/*------- Columns ---------*/
+.colCon{}
+.colThird{ width:100%; padding-right:0; float:none;}
+.colHalf{width:100%; padding-right:0; float:none;}
+ 
+.intro{padding-bottom:10px;}
+
+.singleCenter a.{ margin:0 0 10px; width:100%; font-size:16px; padding:15px;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+
+/**** Tables ****/
+dt.ml-table{padding-bottom:5px;}
+
+/**** Captions ****/
+.wp-caption.alignright{float:none; padding:5px 0 15px 5%; margin:0; max-width:100%;}  
+.wp-caption.alignleft{float:none; padding:5px 5% 15px 0; margin:0;  max-width:100%;}
+
+
+/********************* WordPress Styles *********************/
+img.alignleft {float:none; display:block; margin:0 0 15px 0; background:#ffffff; max-width:100%; height:auto;}
+img.alignright {float:none; display:block; margin:0 0 15px 0; background:#ffffff; max-width:100%; height:auto;}
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 784px){
+h1, h2, h3, h4, h5, h6{margin-bottom:7px;}	
+h1{ font-size:30px;}
+h2{ font-size:22px;}
+	
+/******** LAYOUT ****************/
+.mobileOnly{display:inline-block;}
+.mobileHide{display:none;}
+
+/***** Table Sticky Footer Styles *****/
+body {display: table; width: 100%;}
+.page-row {display: table-row; height: 1px;}
+.page-row-expanded { height: inherit; }
+.block{display:block;}
+
+.wrapper, .home .wrapper {margin: 0 auto; width:100%;}
+.mobileHide{display:none;}
+
+		
+/*********** Header - main ***********/
+#masthead{ position:relative; z-index:500; top:0; left:0; width:100%; background:#FFF; height:65px; border-bottom:1px solid #DBAB61;}
+#mainHeader{}
+
+/** Logo **/
+#headTitle{ display:none;}
+#mobileSearch.mobileOnly{display:none;}
+
+
+#mainHeader #navHead{ position:fixed; top:0; left:0; height:65px; width:65px; background:#313F4F;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  
+#utilityBar{display:none;}
+#commonLinks{display:none;}
+#utilityNav{ display:none;}
+#resourceNav{display:none;}
+
+
+/**** Main Navigation *****/
+#mainNavRow .mega-menu-toggle{border-bottom:1px solid #DBAB61;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left{background:#00447c; width:65px; margin-left:0; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left::before{margin-left:0;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right{ background:#dbab61; margin-right:0; width:65px; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right .search-icon, #mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right{right:0;}
+
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link::after{display: none;}
+
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right a:hover{text-decoration:none;}
+
+/*** Schools menu section ***/
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu{padding:0;}
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item{padding:0;}
+.widget_nav_menu ul a{padding:8px 10px;}
+
+
+/* Disable Main Nav Link */
+li.disableLink > a{ pointer-events:inherit !important; cursor:pointer !important;}
+
+
+/******* Page Content *********/
+#pageContentCon{margin-top:0; width:100%;}
+#pageContentCon .wrapper{ padding:85px 3.5% 30px;}
+#pageContentCon #pageTitleArea #pageTitle h1{ font-size:30px; margin-bottom:18px;}
+
+#contentArea{width:100%; padding:0;}
+
+/******** Regular Content *********/
+#mainContent{font-size:16px;}
+#mainContent, .withSideColumn #mainContent, .home #mainContent, .fullWidth #mainContent, .sectionWithSide .wsContent{float:none; width:100%; margin:0; padding: 0 0 20px;}
+.sectionWithSide .wsContent{padding-bottom:10px;}
+
+/********* Sidebar Content ************/
+.withSideColumn #sideColumn{padding-bottom:0;}
+#sideColumn section{margin-bottom:25px;}
+#sideColumn section .gutter{padding:0 15px;}
+.withSideColumn #sideColumn, #sideColumn, .sectionWithSide .sideSection{float:none; width:100%; margin: 0;}
+#sideContent{ width:100%; padding:0;}
+.sectionWithSide .sideSection{padding-bottom:0;}
+
+#sideColumn section{width:49%; margin-right:2%; float:left;}
+#sideColumn section:nth-of-type(2n+2){ margin-right:0;}
+
+/***** Side Column Headers *****/
+#sideColumn .headerCon, #sideColumn a .headerCon{margin-bottom:15px;}
+#sideColumn h2{font-size:18px; display:block; padding:4px 10px 4px 30px;}
+#sideColumn h2 i{display:none;}
+#sideColumn .headerCon:before{content: ""; width: 0; height: 0; border-top: 37px solid #fff; border-right: 15px solid transparent; position:absolute; top:0; left:0;}
+#sideColumn .headerCon:after{content: ""; width: 0; height: 0; border-bottom: 37px solid #fff; border-left: 15px solid transparent; position:absolute; top:0; right:0;}
+
+.imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/***** Side Column Nav ******/
+.sideNav ul li a, .sideNavTitle{font-size:18px; padding:13px 14px 8px;}
+.sideNav ul ul li a{ padding:8px 14px; font-size:16px;}
+.sideNav ul ul li:last-child a{padding-bottom:13px;}
+
+
+
+/******* Footer *********/
+#mainFooter #footerTop .wrapper{padding:35px 3.5% 20px;}
+#footerTop #footMapCon{width:100%; padding-right:0; margin-bottom:20px;}
+#footerTop #footInformationCon{width:50%;}
+#footInformationCon .leftIcon{width:17%;}
+#footInformationCon .ilcontent{width:83%;}
+#footInformationCon .leftIcon .circle{border:0 none; line-height:1.2; font-size:30px;}
+#footPhoneCon .ilconten{padding-top:0;}
+#footerTop #footSignupCon{width:45%;}
+
+/****** Footer Mid ******/
+#footerMid{ display:block;}
+
+
+#footerUtilityLinks, #footerCopyright{float:none; margin-bottom:5px; display:block; text-align:center;}
+
+/******************** PAGES ***************************/
+
+/****************** HOME ********************/
+
+#pageContentCon .wrapper{padding:35px 3.5%;}
+
+.home #hero{}
+.home #hero .block{height:325px; position:relative;}
+.home #hero .heroTextHolder{ margin:0; width:100%; position:absolute; bottom:10px;}
+.home #hero .smallHeroText{font-size:16px;}
+.home #hero .largeHeroText{font-size:28px;}
+
+/**** Image Links ****/
+.home .imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/*** Header with More Link ***/
+a .sectionHeaderLinkCon h2{width:62%;}
+a .sectionHeaderLinkCon .headerMore{ width:38%;}
+
+/*** Home Mission ***/
+.home #homeMission h2{font-size:30px;}
+.home #homeMission p{font-size:21px;}
+
+/*** Home Recent News ***/
+.home #recentNewCon .imageLink{width:48%; margin-right:4%;}
+.home #recentNewCon .imageLink:nth-of-type(2){margin-right:0;}
+.home #recentNewCon .imageLink:last-of-type{ display:none;}
+
+/*** Schools ***/
+#homeSchoolListCon .hsListCol li{font-size:13px;}
+
+/*** Teacher Spotlight ***/
+.home #homeSpotlightImg{width:40%;}
+.home #homeSpotContent{width:60%;}
+.home #homeSpotContent h2{font-size:20px;}
+.home #homeSpotContent p{font-size:15px;}
+
+/******************* Blog Overview ************************/
+
+.blogBox {width:48%; margin-right:4%;}
+.blogBox:nth-child(3n+3) {margin-right:4%;}
+.blogBox:nth-child(2n+2) {margin-right:0;}
+
+
+/***************** MISC ******************/
+
+/*------- Columns ---------*/
+.colCon{}
+.colThird{width:100%; padding-right:0; float:none;}
+.colHalf{width:100%; padding-right:0; float:none;}
+
+
+.singleCenter a.{ margin:0 0 10px; width:100%; font-size:16px; padding:15px;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+
+/**** Tables ****/
+dt.ml-table{padding-bottom:5px;}
+
+/********************* WordPress Styles *********************/
+img.alignleft {float:left; display:inline; margin:5px 5% 15px 0; background:#ffffff; width:33%; height:auto;}
+img.alignright {float:right; display:inline; margin:5px 0 15px 5%; background:#ffffff;  width:33%; height:auto;}
+
+
+}
+
+
+@media only screen and (min-width: 785px) and (max-width: 977px){
+
+/********** Typography ************/
+h1{font-size:32px;}
+h2{font-size:22px;}
+
+/******** LAYOUT ****************/
+ .wrapper, .home .wrapper {margin: 0 auto; padding:0; width:750px;}
+ 
+/***** Main Header *****/
+
+/** Utility Links **/
+#utilityBar{display:none;}
+#utilityNav{margin-right:15px;}
+ul#commonLinks li{float:left; font-weight:600; font-size:10px; text-transform: none;}
+ul#commonLinks li a{padding:0 8px;}
+ul#socialLinks li{float:left;}
+ul#socialLinks li a{padding:0 8px; font-size:12px;}
+#utilityNav ul .elSmall{display:inline-block;}
+
+/** Logo **/
+#headTitle{width:440px;}
+#logo{width:440px; height:59.2px; margin:24px 0 0;}
+#logo hgroup h1{width:68.8px; height:59.2px; margin:0 11.2px 0 0;}
+#logo hgroup #perryTextLogo{width:360px; height:59.2px;}
+
+/*** Resource Nav ***/
+#resourceNav{margin:20px 15px 0 0;}
+#resourceNav ul li{margin-right:10px;}
+#resourceNav ul li#gmail a{ width:30px;}
+#resourceNav ul li#gdrive a{ width:26.25px;}
+#resourceNav ul li#canvas a{ width:22.5px;}
+#resourceNav ul li#gClassroom a{ width:22.5px;}
+#resourceNav ul li#skyward a{ width:45px;}
+#resourceNav ul li#parentsquare a{ width:22.5px;}
+#resourceNav ul li#pivot a{ width:24px;}
+
+
+
+#helperCon{margin: 10px 15px 15px 0;}
+#helperCon #learnerLink{display:none;}
+
+ 
+/**** Main Navigation ****/
+#mainNav ul li a, .wrapper #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link{padding-left:11px; padding-right:11px; font-size:13px; font-weight:600 !important;}
+#mainNav .widget_nav_menu ul.sub-menu li a{font-weight:400 !important;}
+.wrapper #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:hover{font-weight:600;}
+.widget_nav_menu ul a{padding:4px 7px;}
+
+/**** Main Nav ****/
+.hideLong{display:none;}
+ul.mega-sub-menu ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link::after{ display:none !important;}
+
+/**** Main Nav ****/
+.hideLong{display:none;}
+
+/********* Regular Content ************/
+#pageContentCon #pageTitleArea #pageTitle h1{ margin-bottom:25px;}
+.contentText{font-size:16px;}
+
+/********* Sidebar Content ************/
+#sideColumn section{margin-bottom:35px;}
+#sideColumn section .gutter{padding:0 15px;}
+
+/***** Side Column Headers *****/
+#sideColumn .headerCon, #sideColumn a .headerCon{margin-bottom:15px;}
+#sideColumn h2{font-size:18px; display:block; padding:4px 10px 4px 30px;}
+#sideColumn h2 i{display:none;}
+#sideColumn .headerCon:before{content: ""; width: 0; height: 0; border-top: 37px solid #fff; border-right: 15px solid transparent; position:absolute; top:0; left:0;}
+#sideColumn .headerCon:after{content: ""; width: 0; height: 0; border-bottom: 37px solid #fff; border-left: 15px solid transparent; position:absolute; top:0; right:0;}
+
+.imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/***** Side Column Nav ******/
+.sideNav ul li a, .sideNavTitle{font-size:20px; padding:13px 16px 8px;}
+.sideNav ul ul li a{ padding:8px 16px; font-size:16px;}
+.sideNav ul ul li:last-child a{padding-bottom:13px;}
+
+
+/************** Footer **************/
+#mainFooter #footerTop .wrapper{padding:35px 0 20px;}
+#footerTop #footMapCon{width:100%; padding-right:0; margin-bottom:20px;}
+#footerTop #footInformationCon{width:50%;}
+#footerTop #footSignupCon{width:45%;}
+
+	/*** Google Language ***/
+#footerLang{float:left; margin-right:6px;}
+
+
+/**************** PAGES ********************/
+
+/**************** HOME ********************/
+.home #hero .block{height:375px;}
+.home #hero .heroTextHolder{ margin:25px 0 0 25px; width:42%;}
+.home #hero .smallHeroText{font-size:16px;}
+.home #hero .largeHeroText{font-size:36px;}
+
+/**** Image Links ****/
+.home .imageLink a .imageLinkText{font-size:16px; bottom:2px; margin:0 1%; width:98%;}
+
+/*** Header with More Link ***/
+a .sectionHeaderLinkCon h2{width:73%;}
+a .sectionHeaderLinkCon .headerMore{ width:27%;}
+
+/*** Home Mission ***/
+.home #homeMission h2{font-size:36px;}
+.home #homeMission p{font-size:24px;}
+
+/********** School *******/
+#schoolList .colThird{float:none; width:100%;}
+#schoolList ul{margin-left:0;}
+#schoolList ul li{line-height:1.4; margin-bottom:10px; padding-left:0; list-style:none; font-size:16px;}
+
+/*************** MISC ******************/
+img.alignleft {margin:5px 5% 15px 0; max-width:40%;}
+img.alignright {margin:5px 0 15px 5%; max-width:40%;}
+	
+	
+#mainNavRow .mega-menu-toggle{border-bottom:1px solid #A7A9AC;}
+/******** LAYOUT ****************/
+.mobileOnly{display:inline-block;}
+.mobileHide{display:none;}
+
+/***** Table Sticky Footer Styles *****/
+body {display: table; width: 100%;}
+.page-row {display: table-row; height: 1px;}
+.page-row-expanded { height: inherit; }
+.block{display:block;}
+
+#mainNavRow .wrapper, .home #mainNavRow .wrapper, #mainHeader .wrapper, .home #mainHeader .wrapper{margin: 0 auto; width:100%;}
+.mobileHide{display:none;}
+
+		
+/*********** Header - main ***********/
+#masthead{ position:relative; z-index:500; top:0; left:0; width:100%; background:#FFF; height:65px; border-bottom:1px solid #494949;}
+#mainNav{}
+#mainHeader{display: none;}
+
+/** Logo **/
+#mainHeader #headTitle{ display:block; height: auto; text-indent:inherit; width:100%;}
+#headTitle #logo{margin:0; width:100%; height:auto;}
+#headTitle #logo h1{ background-image:none !important; display:block; font-size:14px; padding:10px 0 8px 3%; line-height:1.2; height:auto; margin:0; text-align:center; width:100%; background:#494949;}
+#headTitle #logo h1 .centerV{display:block; width:100%; text-align:center; color:#fff;}
+#headTitle #logo h1 .centerV br{display:none;}
+
+
+#mainHeader #navHead{ position:fixed; top:0; left:0; height:65px; width:65px; background:#494949;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  
+#resourceNav{display:none;}
+#mainHeader #learnerLink{display:none;}
+
+/**** Main Navigation *****/
+#mainNavRow .mega-menu-toggle{border-bottom:1px solid #A7A9AC; border-top:1px solid #fff;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left{background:#2f4b81; width:65px; margin-left:0; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-left::before{margin-left:0;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right{background:#494949; margin-right:0; width:65px; text-align:center;}
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right .search-icon, #mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle #mega-toggle-block-3 .mega-search.expand-to-right{right:0;}
+
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link::after{display: inline-block;}
+
+#mainNavRow #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-right a:hover{text-decoration:none;}
+
+/*** Schools menu section ***/
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu{padding:0;}
+#mainNavRow #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item{padding:0;}
+.widget_nav_menu ul a{padding:8px 10px;}
+
+/* Disable Main Nav Link */
+li.disableLink > a{ pointer-events:inherit; cursor:pointer;}	
+	
+
+}
+
+
+
+@media only screen and (min-width: 978px) and (max-width: 1298px) {
+	
+/********** Typography ************/
+h1{font-size:36px;}
+
+
+/*********** LAYOUT ************/
+.wrapper, .home .wrapper {margin: 0 auto; padding:0; width:960px;}
+
+#helperCon .goog-te-gadget-simple{width:155px; font-size: 11px; margin-top: 3px;}
+#helperCon #learnerLink{margin-right: 3px;}
+
+/**** Main Nav ****/
+.hideLong{display:none;}
+ul.mega-sub-menu ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link::after{ display:none !important;}
+
+
+/********* Regular Content ************/
+#pageContentCon #pageTitleArea #pageTitle h1{ margin-bottom:25px;}
+
+/********* Sidebar Content ************/
+#sideColumn section{margin-bottom:40px;}
+
+/***** Side Column Headers *****/
+#sideColumn .headerCon, #sideColumn a .headerCon{margin-bottom:15px;}
+#sideColumn h2{font-weight:400; font-size:20px; display:block; padding:10px 30px; margin-bottom:0; color:#9f9f9f;}
+.imageLink a .imageLinkText{font-size:18px; bottom:6px; margin:0 2%; width:96%;}
+
+/***** Side Column Nav ******/
+.sideNav ul li a, .sideNavTitle{font-size:22px; padding:13px 18px 8px;}
+.sideNav ul ul li a{ padding:8px 18px;}
+.sideNav ul ul li:last-child a{padding-bottom:13px;}
+
+ 
+/************** Footer **************/ 
+/**** Footer Information ****/
+#footInformationCon .iconLeftCon{margin-bottom:33px;}
+#footInformationCon .leftIcon{font-size:20px;}
+#footInformationCon .leftIcon .circle{width: 48px; height: 48px; line-height: 44px;}
+#footInformationCon .ilcontent{float:left; width:83.42105263157895%; line-height:1.3; padding-left:5.26315789473684%; font-size:14px;}
+#footInformationCon .ilcontent .schoolName{font-size:16px;}
+#footPhoneCon .ilcontent{font-size:16px; font-weight:600; padding-top:4%;}
+ 
+/**************** PAGES ********************/
+/**************** HOME ********************/
+.home #hero .heroTextHolder{ margin:50px 0 0 50px; width:37%;}
+.home #hero .largeHeroText{font-size:41px;}
+
+/**** Image Links ****/
+.home .imageLink a .imageLinkText{font-size:18px; bottom:6px; margin:0 2%; width:96%;}
+
+/*** Header with More Link ***/
+a .sectionHeaderLinkCon h2{width:78%;}
+a .sectionHeaderLinkCon .headerMore{ width:22%;}
+
+/********* Misc ******/
+.contentText table{font-size:16px;}
+
+}
+
+
+/*--------------------------------------------------------------
+17 Print
+--------------------------------------------------------------*/
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+
+
+a.more, #pageContentCon a.more, a.{ font-size:14px; text-align:center; padding:10px 15px; min-width:90px; line-height:1.2; text-decoration:none; color:#fff !important; text-transform:uppercase; background:#6bbcb9; font-weight:400; display:inline-block; margin-bottom:0 5px 7px 0; -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;}
+a.more:hover, #pageContentCon a.more:hover, a.:hover{background:#429895; text-decoration:none !important;}
+.singleCenter{display:block; text-align:center;}

@@ -1,0 +1,364 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+/* Starter CSS for Menu */
+
+/* Navigation
+--------------------------------------------------------------------------------------- */
+
+.np-menu-wrap { width: 100%; max-width: 1170px; margin: 0 auto;}
+
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  text-align: center;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+}
+#cssmenu > ul > li {
+	float: none;
+	display: inline-block;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+  text-align: left;
+}
+#cssmenu ul ul ul {
+  top: 0;
+  left: 190px;
+  width: 190px;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+#cssmenu ul ul {
+  margin-top: 0;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+
+
+/* Custom CSS Styles Home Menu */
+#cssmenu {
+  background: #d0b62b;
+  border-bottom: 4px solid #928235;
+  font-family: 'Lato', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+#cssmenu > ul {
+  *display: inline-block;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu ul {
+  text-transform: uppercase;
+}
+#cssmenu ul ul {
+  border-top: 4px solid #928235;
+  text-transform: none;
+  min-width: 190px;
+}
+#cssmenu ul ul a {
+  background: #928235;
+  color: #ffffff;
+  border: 1px solid #928235;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 12px 20px;
+  font-size: 12px;
+}
+#cssmenu ul ul ul {
+  border-top: 0 none;
+}
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top: 1px solid #928235;
+}
+#cssmenu ul ul li:hover > a {
+  background: #d0b62b;
+  color: #ffffff;
+}
+#cssmenu ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #928235;
+  -webkit-box-shadow: 0 1px 0 #928235;
+  box-shadow: 0 1px 0 #928235;
+}
+#cssmenu ul ul li:last-child:hover > a {
+  -moz-border-radius: 0 0 0 3px;
+  -webkit-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu ul ul li.has-sub > a:after {
+  content: '\00bb';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a {
+  background: #928235;
+  color: #ffffff;
+}
+#cssmenu ul li.has-sub > a:after {
+  content: '';
+  margin-left: 5px;
+}
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu a {
+  background: #d0b62b;
+  color: #000000;
+  padding: 0 20px;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+/* High School */
+
+#nphs-menu #cssmenu {
+  background: #d0b62b;
+  border-bottom: 4px solid #928235;
+  font-family: 'Lato', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+#nphs-menu #cssmenu ul ul a {
+  background: #928235;
+  color: #ffffff;
+  border: 1px solid #928235;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 12px 20px;
+  font-size: 12px;
+}
+#nphs-menu #cssmenu ul ul li:hover > a {
+  background: #d0b62b;
+  color: #ffffff;
+}
+#nphs-menu #cssmenu ul li:hover > a,
+#nphs-menu #cssmenu ul li.active > a {
+  background: #928235;
+  color: #ffffff;
+}
+#nphs-menu #cssmenu a {
+  background: #d0b62b;
+  color: #000000;
+  padding: 0 20px;
+}
+
+/* PVE */
+
+#pve-menu #cssmenu {
+  background: #f1f1f1;
+  border-bottom: 4px solid #cccccc;
+  font-family: 'Lato', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+#pve-menu #cssmenu ul ul {
+  border-top: 4px solid #cccccc;
+  
+}
+#pve-menu #cssmenu ul ul a {
+  background: #cccccc;
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+#pve-menu #cssmenu ul ul li:hover > a {
+  background: #d53832;
+  color: #ffffff;
+}
+#pve-menu #cssmenu ul li:hover > a,
+#pve-menu #cssmenu ul li.active > a {
+  background: #cccccc;
+  color: #d53832;
+}
+#pve-menu #cssmenu a {
+  background: #f1f1f1;
+  color: #000000;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#pve-menu #cssmenu ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #aaaaaa;
+  -webkit-box-shadow: 0 1px 0 #aaaaaa;
+  box-shadow: 0 1px 0 #aaaaaa;
+}
+
+/* OTE */
+
+#ote-menu #cssmenu {
+  background: #f1f1f1;
+  border-bottom: 4px solid #cccccc;
+  font-family: 'Lato', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+#ote-menu #cssmenu ul ul {
+  border-top: 4px solid #cccccc;
+  
+}
+#ote-menu #cssmenu ul ul a {
+  background: #cccccc;
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+#ote-menu #cssmenu ul ul li:hover > a {
+  background: #f16823;
+  color: #ffffff;
+}
+#ote-menu #cssmenu ul li:hover > a,
+#ote-menu #cssmenu ul li.active > a {
+  background: #cccccc;
+  color: #f16823;
+}
+#ote-menu #cssmenu a {
+  background: #f1f1f1;
+  color: #000000;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#ote-menu #cssmenu ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #aaaaaa;
+  -webkit-box-shadow: 0 1px 0 #aaaaaa;
+  box-shadow: 0 1px 0 #aaaaaa;
+}
+
+
+/* RPE */
+
+#rpe-menu #cssmenu {
+  background: #f1f1f1;
+  border-bottom: 4px solid #cccccc;
+  font-family: 'Lato', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#rpe-menu #cssmenu ul ul {
+  border-top: 4px solid #cccccc;
+  
+}
+
+#rpe-menu #cssmenu ul ul a {
+  background: #cccccc;
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+#rpe-menu #cssmenu ul ul li:hover > a {
+  background: #205eab;
+  color: #ffffff;
+}
+#rpe-menu #cssmenu ul li:hover > a,
+#rpe-menu #cssmenu ul li.active > a {
+  background: #cccccc;
+  color: #000000;
+}
+#rpe-menu #cssmenu a {
+  background: #f1f1f1;
+  color: #000000;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#rpe-menu #cssmenu ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #aaaaaa;
+  -webkit-box-shadow: 0 1px 0 #aaaaaa;
+  box-shadow: 0 1px 0 #aaaaaa;
+}
+
+
+
+
+.main_content .staff-row p { margin-top: 0 !important; }

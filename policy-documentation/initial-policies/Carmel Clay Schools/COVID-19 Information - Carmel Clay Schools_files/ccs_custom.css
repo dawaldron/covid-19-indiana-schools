@@ -1,0 +1,3 @@
+body:not(.fsComposeMode) .ccs_hidden{
+	display:none;
+}

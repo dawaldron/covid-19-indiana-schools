@@ -1,0 +1,22 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/base.css);
+
+
+/* New style-related Base Values
+----------------------------------------------------------------------------------------------------*/
+
+body { font: normal 14px/20px "AvenirLTStd", Arial, Helvetica, sans-serif; }
+
+mark, ins { color: #333333; }
+
+hr { border-top-color: #EBEBEB; }
+
+pre { 
+	background: #F5F5F5;
+	border-radius: 6px; 
+}
+
+
+.blog_latest span.blog_title { float: left; font-size: large; font-weight: bold; }
+.blog_latest span.blog_full_link { float: right; }

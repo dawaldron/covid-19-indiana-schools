@@ -1,0 +1,2 @@
+define("article-sharing",["module","page","utils"],function(i,t,a){const e={name:i.id,class:"."+i.id};a.broadcastNoJQ(e.name,"loaded"),a.createModuleNoJQ(e.name,function(i){const t=this;this.el=i,this.module=e,this.init=function(){t.broadcast("init"),t.broadcast("ready")}})});
+//# sourceMappingURL=article-sharing_5.8.4.js.map

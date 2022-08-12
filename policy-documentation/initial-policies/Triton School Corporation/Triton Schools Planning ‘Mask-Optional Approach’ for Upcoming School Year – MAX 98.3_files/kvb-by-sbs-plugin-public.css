@@ -1,0 +1,21 @@
+#kvb-widget-social-icons { clear: both; padding: 0; margin: 0; }
+#kvb-widget-social-icons ul { zoom: 1; margin: 10px 0; padding: 0; }
+#kvb-widget-social-icons ul:before, #kvb-widget-social-icons ul:after { content: ""; display: table; }
+#kvb-widget-social-icons ul:after { clear: both; }
+#kvb-widget-social-icons ul li { display: block; float: left; margin: 1% 0 1% 1.6%; width: 23.8%; }
+#kvb-widget-social-icons ul li:first-child { margin-left: 0; }
+#kvb-widget-social-icons ul li a { background-image: url(social-icons-sprite.png); display: inline-block; height: 32px; width: 32px; text-decoration: none; }
+#kvb-widget-social-icons .google a { background-position: 0 -32px; }
+#kvb-widget-social-icons .facebook a { background-position: 0 0px; }
+#kvb-widget-social-icons .twitter a { background-position: 0 -64px; }
+#kvb-widget-social-icons .youtube a { background-position: 0 -96px; }
+#kvb-widget-social-icons .beforeIcons { font-size: smaller; }
+#kvb-widget-todays-date .date-and-time { text-align: center }
+#kvb-widget-todays-date .date-and-time p { margin: 0; font-size: 16px; line-height: 26px }
+#kvb-widget-todays-date .date-and-time .date { font-weight: 700 }
+#kvb-widget-todays-date .date-and-time .time { height: 26px }
+#kvb-widget-todays-date .date-and-time .time span { width: 50%; text-align: center; display: block; float: left; font-size: 14px; line-height: 26px }
+.lt-ie9 #kvb-widget-social-icons ul { margin: 10px 24px; }
+@media (min-width:800px) and (min-device-width:800px) {
+    #kvb-widget-social-icons ul { margin: 10px 24px; }
+}

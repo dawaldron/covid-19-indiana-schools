@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../geometry ../../request ../utils ../support/TrimExtendParameters ../../tasks/operations/trimExtend ../../geometry/Polyline".split(" "),function(d,g,t,h,e,k,l,m){function c(){c=g._asyncToGenerator(function*(b,a,f){a=k.from(a);const n=l.trimExtendToRESTParameters(a);b=e.parseUrl(b);const p=a.sr;a=e.asValidOptions({...b.query,f:"json",...n},f);return h(b.path+"/trimExtend",a).then(({data:q})=>(q.geometries||[]).map(({paths:r})=>new m({spatialReference:p,
+paths:r})))});return c.apply(this,arguments)}d.trimExtend=function(b,a,f){return c.apply(this,arguments)};Object.defineProperty(d,"__esModule",{value:!0})});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../request ../../geometry/support/jsonUtils ../utils ../support/GeneralizeParameters ../../tasks/operations/generalize".split(" "),function(e,g,h,k,f,l,m){function d(){d=g._asyncToGenerator(function*(b,a,c){a=l.from(a);const n=a.toJSON();a=m.generalizeToRESTParameters(a);b=f.parseUrl(b);const p=n.geometries[0].spatialReference;c=f.asValidOptions({...b.query,f:"json",...a},c);return h(b.path+"/generalize",c).then(({data:q})=>(q.geometries||
+[]).map(r=>k.fromJSON(r).set({spatialReference:p})))});return d.apply(this,arguments)}e.generalize=function(b,a,c){return d.apply(this,arguments)};Object.defineProperty(e,"__esModule",{value:!0})});

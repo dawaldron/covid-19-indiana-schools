@@ -1,0 +1,2 @@
+window.__tnt=window.__tnt||{},function(n,t){function r(){var t=Array.from(n.querySelectorAll(".user-controls .tn-user-avatar"));t.length>0&&(__tnt.user.loggedIn&&__tnt.user.avatar?t.forEach(function(n){n.innerHTML='<img src="'+__tnt.user.avatar+'" class="user-icon" alt="user-icon">'}):t.forEach(function(n){n.innerHTML='<i class="fas tnt-user tnt-fw user-icon"></i>'}))}"loading"==n.readyState?n.addEventListener("DOMContentLoaded",r):r()}(document,__tnt);
+//# sourceMappingURL=user-controls.578df3df79d812af55ab13bae47f9857.js.map

@@ -1,0 +1,87 @@
+/* This stylesheet is used to style the public view of the plugin. */
+.sailthru-signup-display-area{
+    background: #000;
+    color: #fff;
+    padding: 10px 20px 5px 20px;
+    text-align: center;
+}
+
+.sailthru-signup-display-button-area {
+    display: inline-block;
+    margin: 18px 5px 13px 5px;
+}
+
+.sailthru-signup-display-message {
+    display: inline-block;
+    font-family: Roboto Condensed,arial,helvetica,verdana,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    line-height: 1;
+    margin: 0.3rem 1rem 0.7rem 1rem;
+    text-align: left;
+}
+
+.sailthru-signup-success-message {
+    line-height: 1;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    font-family: Roboto Condensed,arial,helvetica,verdana,sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.sailthru-signup-display-button {
+    cursor: pointer;
+    background-color: #2d5ea8;
+    border: 0;
+    color: #fff;
+    font: bold 12px Arial !important;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sailthru-signup-display-button:focus {
+    outline:none;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.sailthru-add-subscriber-errors {
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    height: 16px;
+}
+
+.sailthru-subscribe-grid-display {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+}
+
+.sailthru-subscribe-SM-display {
+    display: block !important;
+}
+
+.sailthru-add-subscriber-form {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    margin-top: 0.7rem;
+}
+
+.sailthru-subscribe-form-SM-display {
+    text-align: center;
+    margin: 0.5rem 0rem !important;
+    width: 100%;
+}
+
+.sailthru-signup-display-button.sailthru-subscribe-form-SM-display {
+    margin: 0.2rem 0rem 1.3rem 0rem !important;
+}

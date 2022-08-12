@@ -1,0 +1,116 @@
+// this is a dynamically generated file. Please DO NOT store or cache it! Otherwise, metrics, configuration, etc will work incorrectly
+
+var currentScript = document.currentScript || (function() {
+    var scripts = document.getElementsByTagName('script');
+    return scripts[scripts.length - 1];
+})();
+
+(function() {
+    window.TRINITY_PLAYER = window.TRINITY_PLAYER || {
+        isLegacyBrowser: false,
+        options: {
+            isTrinityEnabled: true,
+            unitId: '2900001620',
+            filters: [{"name":"nodefiltered","params":["in-story-ad"]}],
+            partnerName: '',
+            paramsObject: {"testId":null}, // TODO: REMOVE_AFTER_PROJECT_SLIM_FAST
+            abTestAlias: '',
+            FAB_config: {},
+            multipleArticlesAlg: '', // TODO: REMOVE_AFTER_PROJECT_SLIM_FAST
+            documentLoadType: '',
+            documentLoadTypeSelector: '',
+            adsDurationThreshold: '',
+            loaderText: '', // TODO: REMOVE_AFTER_PROJECT_SLIM_FAST
+            useCFCDN: 0,
+            serverSubdomain: '',
+            language: 'en',
+            FABOnly: false,
+            pageURL: 'https://www.journalreview.com/',
+            publisherSections: [],
+            themeData: {"colorMain": "#333", "layout": "closed-mode"},
+            themeId: 58,
+            placeholderSelector: {}        },
+
+        config: {
+            injectorScript: 'https://vd.trinitymedia.ai/trinity-player/tts-player/20210812_0333c0dba9d8fac29875ac8a32807d226e3cfa33/trinity-injector-script.js'
+        },
+
+        publisherUserId: '',
+        publisherUserIdOptions: '{}',
+        version: '20210812_0333c0dba9d8fac29875ac8a32807d226e3cfa33',
+        userAgentData: {"browser":"Firefox","os":"Windows","os_ver":"10","device":"Other","browser_ver":"91.0","is_bot":false,"is_legacy_browser":false},
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0',
+        SDKData: {"platform":null,"version":null,"app_name":null,"app_version":null},
+        isDebugMode: false,
+        userId: '',
+        server: 'staging-audio',
+        server_region: 'NA',
+        server_env: 'NA',
+        publisherId: '1203',
+        ts: Date.now(),
+        tsServer: 1628912033287,
+        isOembed: 0,
+        isShowFAB: true    };
+
+    const playerId = currentScript.dataset.playerId || 'be5b762e6da748e0dd508017e10c16db'
+    currentScript.setAttribute('data-player-id', playerId); // set dynamically generated ID
+
+    window.TRINITY_PLAYER.players = window.TRINITY_PLAYER.players || {};
+    window.TRINITY_PLAYER.players[playerId] = {
+        abtest: '', //FIXME: Do we need it?
+        language: '', //FIXME: Do we need it?
+        textSelector: 'h1#headline, h3#subtitle, .main-body>p, div.content',
+        readContentType: '',
+        readContentConfig: '',
+        imageSelector: '',
+        activateFAB: true, //TODO: REMOVE_AFTER_PROJECT_SLIM_FAST and move to TOP level
+        state: 'not-started'
+    };
+
+    /* NOTE: This script doesn't transpiled. Please use ES5 code here */
+window.TRINITY_PLAYER.injectScript = function(playerId) {
+  var isDOMContentLoaded = false;
+
+  /* TTS could be loaded dynamically and skip DOMContentLoaded event. So check if document already ready as well */
+  function checkIfDocumentReady() {
+    return ['interactive', 'complete', 'loaded'].indexOf(document.readyState) !== -1 || isDOMContentLoaded;
+  }
+
+  function run() {
+    if (document.body) {
+      if (!document.getElementById('trinity-audio-js')) {
+        var js = document.createElement('script');
+        js.type = 'text/javascript';
+        js.setAttribute('crossorigin', 'anonymous');
+        js.src = window.TRINITY_PLAYER.config.injectorScript;
+        js.id = 'trinity-audio-js';
+
+        js.addEventListener('load', createPlayer);
+
+        document.body.appendChild(js);
+      } else {
+        if (window.TRINITY_PLAYER.isLoaded) createPlayer();
+        else document.getElementById('trinity-audio-js').addEventListener('load', createPlayer);
+      }
+    }
+  }
+
+  function createPlayer() {
+    if (checkIfDocumentReady()) window.TRINITY_PLAYER.api.createPlayer(playerId);
+    else document.addEventListener('DOMContentLoaded', function() {
+      isDOMContentLoaded = true;
+      window.TRINITY_PLAYER.api.createPlayer(playerId);
+    });
+  }
+
+  run();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    isDOMContentLoaded = true;
+    run();
+  });
+};
+
+    window.TRINITY_PLAYER.injectScript(playerId);
+})();
+var __TRINITY_TAG_TIME__ = 18;

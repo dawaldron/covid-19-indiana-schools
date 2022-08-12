@@ -1,0 +1,47 @@
+.attachment {
+  display: none;
+}
+.attachment.show {
+  display: block;
+}
+.mailing {
+  display: none;
+}
+.mailing.show {
+  display: block;
+}
+.filename {
+  font-weight: bold;
+  margin-left: 15px;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  /*display: inline-block;*/
+  padding: 5px 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: white;
+  background-color: #94c7ee;
+  cursor: pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #0060aa;
+}
+.custom_button {
+  display: inline-block;
+  min-width: 124px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.inset {
+  padding: 0 7px;
+}

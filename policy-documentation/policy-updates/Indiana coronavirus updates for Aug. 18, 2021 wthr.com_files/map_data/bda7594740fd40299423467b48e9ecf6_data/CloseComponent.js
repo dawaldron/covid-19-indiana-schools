@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../core/maybe","../EditGeometry"],function(e,a,h){let k=function(){function f(b,c){this.editGeometry=b;this.component=c;this.createdEdge=null}var d=f.prototype;d.apply=function(){let b="redo";if(a.isNone(this.createdEdge)){b="apply";const c=this.component.getFirstVertex(),g=this.component.getLastVertex();if(this.component.isClosed()||3>this.component.vertices.length||a.isNone(c)||a.isNone(g))return;this.createdEdge=new h.Edge(this.component,g,c)}this.createdEdge.left.right=
+this.createdEdge;this.createdEdge.right.left=this.createdEdge;this.component.edges.push(this.createdEdge);this.editGeometry.emit("change",{operation:b})};d.undo=function(){a.isNone(this.createdEdge)||(this.component.edges.splice(this.component.edges.indexOf(this.createdEdge),1),this.createdEdge.left.right=null,this.createdEdge.right.left=null,this.editGeometry.emit("change",{operation:"undo"}))};d.accumulate=function(){return!1};return f}();e.CloseComponent=k;Object.defineProperty(e,"__esModule",
+{value:!0})});

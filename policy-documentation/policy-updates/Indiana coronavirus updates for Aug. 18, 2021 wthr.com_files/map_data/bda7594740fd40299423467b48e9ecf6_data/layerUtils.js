@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../CSVLayerAdapter ../FeatureLayerAdapter ../LayerAdapter ../PointCloudLayerAdapter ../SceneLayerAdapter".split(" "),function(b,k,c,l,m,n){const d={[0]:{adapter:k,type:"csv",label:"CSVLayer"},[2]:{adapter:c,type:"feature",label:"FeatureLayer"},[1]:{adapter:c,type:"geojson",label:"GeoJSONLayer"},[3]:{adapter:n,type:"scene",label:"SceneLayer"},[4]:{adapter:m,type:"point-cloud",label:"PointCloudLayer"},[5]:{adapter:c,type:"wfs",label:"WFSLayer"}},p=[0,2,1,3,4,5];b.createLayerAdapter=
+function(a,e=p){if(a instanceof l)return a;let f=null;e.some(g=>{const h=a.type===d[g].type;h&&(f=new d[g].adapter({layer:a}));return h});return f};b.getLayerTypeLabels=function(a){return a.map(e=>d[e].label)};Object.defineProperty(b,"__esModule",{value:!0})});

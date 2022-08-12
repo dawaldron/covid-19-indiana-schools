@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3fle43');
+  src:  url('fonts/icomoon.eot?3fle43#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3fle43') format('truetype'),
+    url('fonts/icomoon.woff?3fle43') format('woff'),
+    url('fonts/icomoon.svg?3fle43#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-Skyward-Logo:before {
+  content: "\e917";
+}
+.icomoon-IC-Icon:before {
+  content: "\e916";
+}
+.icomoon-Bucyrus-B:before {
+  content: "\e915";
+}
+.icomoon-Powerschool:before {
+  content: "\e914";
+}
+.icomoon-Peachjar:before {
+  content: "\e912";
+}
+.icomoon-Star:before {
+  content: "\e913";
+}
+.icomoon-Outlook:before {
+  content: "\e911";
+}
+.icomoon-Infinite-Campus-PARENTS:before {
+  content: "\e90f";
+}
+.icomoon-Infinite-Campus-STAFF:before {
+  content: "\e910";
+}
+.icomoon-Munis-Black:before {
+  content: "\e90d";
+}
+.icomoon-sharepoint:before {
+  content: "\e90e";
+}
+.icomoon-calendar-edit-regular:before {
+  content: "\e909";
+}
+.icomoon-Grade-Cam:before {
+  content: "\e90a";
+}
+.icomoon-Weebly:before {
+  content: "\e90b";
+}
+.icomoon-Frontline:before {
+  content: "\e90c";
+}
+.icomoon-SIP:before {
+  content: "\e908";
+}
+.icomoon-ASP:before {
+  content: "\e900";
+}
+.icomoon-Canvas:before {
+  content: "\e901";
+}
+.icomoon-CCEF-Logo:before {
+  content: "\e902";
+}
+.icomoon-i-Ready:before {
+  content: "\e903";
+}
+.icomoon-Office365:before {
+  content: "\e904";
+}
+.icomoon-PTA-Partners:before {
+  content: "\e905";
+}
+.icomoon-PTSA:before {
+  content: "\e906";
+}
+.icomoon-Tribal-Chant:before {
+  content: "\e907";
+}

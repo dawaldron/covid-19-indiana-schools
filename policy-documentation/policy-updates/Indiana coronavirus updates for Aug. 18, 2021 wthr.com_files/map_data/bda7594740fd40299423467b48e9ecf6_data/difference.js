@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../request ../../geometry/support/jsonUtils ../utils ./utils".split(" "),function(f,k,l,g,m,n){function c(){c=k._asyncToGenerator(function*(b,a,d,e){const h=a[0].spatialReference;b=m.parseUrl(b);a={query:{...b.query,f:"json",sr:JSON.stringify(h.toJSON()),geometries:JSON.stringify(n.encodeGeometries(a)),geometry:JSON.stringify({geometryType:g.getJsonType(d),geometry:d.toJSON()})}};e&&(a={...e,...a});return l(b.path+"/difference",a).then(({data:p})=>
+(p.geometries||[]).map(q=>g.fromJSON(q).set({spatialReference:h})))});return c.apply(this,arguments)}f.difference=function(b,a,d,e){return c.apply(this,arguments)};Object.defineProperty(f,"__esModule",{value:!0})});

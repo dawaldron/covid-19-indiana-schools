@@ -1,0 +1,256 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+.custom-logo { 
+	height: 104px;
+	width: 254px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.ezblog-latestpost .blog-calendar-month {
+background: none repeat scroll 0 0 #333;
+border: none;
+}
+
+
+/* Frontpage Teaser
+----------------------------------------------------------------------------------------------------*/
+
+.frontpage-teaser-1,
+.frontpage-teaser-2,
+.frontpage-teaser-3 { 
+	height: 420px;
+	border-radius: 9px;
+	background: url(../../../images/yootheme/demo/slideshow/slide1.jpg) 50% 50% no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	text-align: center;
+}
+
+.frontpage-teaser-2 { background-image: url(../../../images/yootheme/demo/slideshow/slide2.jpg); }
+.frontpage-teaser-3 { background-image: url(../../../images/yootheme/demo/slideshow/slide3.jpg); }
+
+.frontpage-teaser-1 h1,
+.frontpage-teaser-2 h1,
+.frontpage-teaser-3 h1 { 
+	font-size: 60px;
+	line-height: 83px;
+}
+
+.frontpage-teaser-1 h1 { margin: 80px 0 0 0; }
+.frontpage-teaser-2 h1 { margin: 50px 0 0 0; }
+.frontpage-teaser-3 h1 { margin: 120px 0 0 0; }
+
+.frontpage-teaser-1 p,
+.frontpage-teaser-2 p,
+.frontpage-teaser-3 p { 
+	margin-top: 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.width50 .frontpage-title { 
+	margin-top: 0;
+	font-size: 28px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+/* Footer Icons
+----------------------------------------------------------------------------------------------------*/
+
+ul.footer-icons { 
+	padding: 6px 0;
+	list-style: none;
+}
+
+ul.footer-icons li { 
+	margin-top: 10px;
+	padding-left: 25px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	line-height: 19px;
+}
+
+ul.footer-icons li:first-child { margin-top: 0; }
+
+ul.footer-icons li.phone { background-position: 0 -50px; }
+
+
+/* Contact Footer
+----------------------------------------------------------------------------------------------------*/
+
+.contact-footer .box-content { 
+	display: block;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.contact-footer .box-content > .grid-box:first-child {
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #D1D1D1; 
+}
+
+.contact-footer form { margin-top: 6px; }
+
+.contact-footer form.style div {
+ 	position: relative; 
+ 	width: 250px;
+}
+
+.contact-footer form.style input {
+	width: 230px;
+	height: 31px;
+	padding-right: 40px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.contact-footer form.style button {
+ 	display: inline-block;
+ 	position: absolute;
+ 	right: 0;
+ 	width: 30px;
+	height: 31px;
+ 	border: none;
+ 	border-radius: 0 5px 5px 0;
+	background: url(../images/tools/input_button.png) 0 0 no-repeat;
+}
+
+.contact-footer.grid-gutter.grid-block,
+.sidebar-socialicons.grid-gutter.grid-block { margin: 0 -8px; }
+
+.contact-footer.grid-gutter > .grid-box > *,
+.sidebar-socialicons.grid-gutter > .grid-box > * { margin: 0 8px; }
+
+.contact-footer .box-content > .grid-box:first-child > * { margin-left: 5px; }
+.contact-footer .grid-gutter > .grid-box + .grid-box > * { margin-right: 5px; }
+
+.contact-footer p { margin-bottom: 0; }
+
+.breadcrumbs a { color: #56A0D3; }
+.breadcrumbs a:hover { color: #5c5c5c; }
+.breadcrumbs strong { font-weight:normal; color: #5c5c65; }
+
+
+/* Responsive 
+----------------------------------------------------------------------------------------------------*/
+
+/* Only Phones and Tablets (Portrait) */
+@media (max-width: 959px) {
+
+	.contact-footer form.style div { width: 100%; }
+	.contact-footer form.style input { width: 98%; }
+
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 959px) {
+
+	.contact-footer .width60 { margin-bottom: 15px; }
+
+}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	.frontpage-teaser-1 h2, 
+	.frontpage-teaser-2 h2 { padding: 0 18%; }
+	.frontpage-teaser-3 h2 { padding: 0 25%; }
+
+	.contact-footer .grid-gutter > .grid-box > * { margin: 0 8px; }
+	
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+	.frontpage-teaser-1, 
+	.frontpage-teaser-2, 
+	.frontpage-teaser-3 { height: 350px; }
+
+	.frontpage-teaser-1 { background-position: 50% 80%; }
+	.frontpage-teaser-2 { background-position: 50% 90%; }
+	.frontpage-teaser-3 { background-position: 50% 60%; }
+
+	.frontpage-teaser-1 h1, 
+	.frontpage-teaser-2 h1,
+	.frontpage-teaser-3 h1 { 
+		font-size: 40px;
+		line-height: 45px; 
+	}
+
+	.frontpage-teaser-1 h1, 
+	.frontpage-teaser-2 h1 {
+		margin-top: 10%;
+	}
+
+	.frontpage-teaser-3 h1 {
+		margin-top: 15%;
+	}
+
+	.frontpage-teaser-1 h2, 
+	.frontpage-teaser-2 h2,
+	.frontpage-teaser-3 h2 { 
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.frontpage-teaser-1 h2, 
+	.frontpage-teaser-2 h2 { margin-top: 3%; }
+	.frontpage-teaser-3 h2 { margin-top: 7%; }
+
+	.contact-footer .grid-gutter > .grid-box > * { margin: 0 15px; }
+
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+	.frontpage-teaser-1, 
+	.frontpage-teaser-2, 
+	.frontpage-teaser-3 { height: 240px; }
+
+	.frontpage-teaser-1 { background-position: 50% 90%; }
+	.frontpage-teaser-2 { background-position: 50% 95%; }
+	.frontpage-teaser-3 { background-position: 50% 60%; }
+
+	.frontpage-teaser-1 h1, 
+	.frontpage-teaser-2 h1, 
+	.frontpage-teaser-3 h1 { 
+		font-size: 30px; 
+		line-height: 32px;
+		margin-top: 10%;
+	}
+
+	.frontpage-teaser-1 h2, 
+	.frontpage-teaser-2 h2, 
+	.frontpage-teaser-3 h2 {
+		font-size: 12px;
+		line-height: 17px;
+		margin-top: 20px; 
+	}
+
+	.contact-footer .box-content > .grid-box:first-child { border: none; }
+	.contact-footer .grid-gutter > .grid-box + .grid-box > * { margin-top: 7px; }
+}
+
+.tweets iframe {
+	width: 100% !important;
+}
+
+
+.g-recaptcha {
+    margin-left: 150px;
+}

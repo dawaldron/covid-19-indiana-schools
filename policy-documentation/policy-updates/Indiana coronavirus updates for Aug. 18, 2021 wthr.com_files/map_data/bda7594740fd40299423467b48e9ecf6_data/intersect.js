@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../request ../../geometry/support/jsonUtils ../utils ./utils".split(" "),function(f,l,m,g,h,n){function d(){d=l._asyncToGenerator(function*(a,b,e,c){const k=b[0].spatialReference;a=h.parseUrl(a);b={...a.query,f:"json",sr:JSON.stringify(k.toJSON()),geometries:JSON.stringify(n.encodeGeometries(b)),geometry:JSON.stringify({geometryType:g.getJsonType(e),geometry:e.toJSON()})};c=h.asValidOptions(b,c);return m(a.path+"/intersect",c).then(({data:p})=>
+(p.geometries||[]).map(q=>g.fromJSON(q).set({spatialReference:k})))});return d.apply(this,arguments)}f.intersect=function(a,b,e,c){return d.apply(this,arguments)};Object.defineProperty(f,"__esModule",{value:!0})});

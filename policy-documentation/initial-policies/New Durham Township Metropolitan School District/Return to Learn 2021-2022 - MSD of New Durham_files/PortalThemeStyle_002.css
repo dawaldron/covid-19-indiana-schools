@@ -1,0 +1,906 @@
+/* --- FONTS --- 
+
+ font-family: 'bebas_neueregular';
+ font-family: 'latobold';
+ font-family: 'latoregular';
+ font-family: 'latolight';
+ font-family: 'latoblack';
+
+ ------------ */
+
+
+/*--- COLOR GUIDE - FIND AND REPLACE THESE COLORS
+
+Dom       : $color-1
+Dom Light : $color-1-light
+Dom Dark  : $color-1-dark
+
+Sec       : $color-2
+Sec Light : $color-2-light
+
+---*/
+
+
+/*--- COLOR GUIDE - FIND AND REPLACE THESE COLORS
+
+Dom     : @color1
+
+Sec     : @color2
+
+---*/
+
+
+/* --------------------- COLORS ---------------------- */
+
+
+/*--Link Color--*/
+
+a,
+a:hover {
+  color: #F15C08;
+}
+
+.subpage .ptl_page a {
+  color: #C64C06;
+}
+
+
+/*-- Body BG --*/
+
+body {
+  background-color: #dfe5ea;
+}
+
+
+/*-- Section Heading BG and text color --*/
+
+.sec-header h2,
+.sec-header h3 {
+  background: #F15C08;
+  color: #1d1d1d;
+}
+
+
+/*---- BANNER CONTROLS ----*/
+
+
+/*--BTN Background--*/
+
+.nivo-directionNav a {
+  background-color: #F15C08 !important;
+}
+
+
+/*--BTN Background HOVER--*/
+
+.nivo-directionNav a:hover,
+.nivo-directionNav a:focus {
+  background-color: #302F2E !important;
+}
+
+
+/*--BTN Triangle color--*/
+
+#banner a.nivo-prevNav:after {
+  border-color: transparent #1d1d1d transparent transparent;
+}
+
+#banner a.nivo-nextNav:after {
+  border-color: transparent transparent transparent #1d1d1d;
+}
+
+#banner a.nivo-prevNav:hover:after {
+  border-color: transparent #ffffff transparent transparent;
+}
+
+#banner a.nivo-nextNav:hover:after {
+  border-color: transparent transparent transparent #ffffff;
+}
+
+
+/*-- Sidenav LV2 border left color --*/
+
+.sitenavl1 a.navLink {
+  border-left: 3px solid #F15C08;
+}
+
+
+/*-- Home News and Upcoming events button --*/
+
+#news-summary .content a.read-more,
+.ptl_upcomingevents .ptl_upcomingevents_footer .more_events:link,
+.ptl_upcomingevents .ptl_upcomingevents_footer .more_events:visited,
+.ptl_upcomingevents .ptl_upcomingevents_footer .more_events:active {
+  background: #F15C08;
+  color: #1d1d1d;
+}
+
+
+/*-- Home News and Upcoming events button HOVER --*/
+
+#news-summary .content a.read-more:hover,
+.ptl_upcomingevents .ptl_upcomingevents_footer .more_events:hover {
+  background: #333333;
+  color: #fff !important;
+}
+
+
+/*-- Footer title text color --*/
+
+#footer h3 {
+  color: #000;
+}
+
+
+/*---- TELERIK COLORS ----*/
+
+
+/*--TOP LEVEL STYLES--*/
+
+
+/*--Normal State--*/
+
+.inner-bar a,
+.telerik_main_menu .rmRootGroup a {
+  color: #ffffff;
+}
+
+.telerik_main_menu .rmRootGroup a span {
+  color: #ffffff;
+}
+
+
+/*--Over and Focused State ***/
+
+.inner-bar a:hover,
+.telerik_main_menu .rmRootGroup a:hover,
+.telerik_main_menu .rmRootGroup a.rmFocused,
+.telerik_main_menu .rmRootGroup a.rmExpanded {
+  color: #1d1d1d;
+}
+
+.telerik_main_menu .rmRootGroup a:hover span,
+.telerik_main_menu .rmRootGroup a.rmFocused span,
+.telerik_main_menu .rmRootGroup a.rmExpanded span {
+  color: #1d1d1d;
+}
+
+
+/*--TOP LEVEL HOVER BG COLOR AND IMAGES (two images)--*/
+
+.inner-bar a:hover,
+.telerik_main_menu .rmRootGroup a:hover,
+.telerik_main_menu .rmRootGroup a.rmFocused,
+.telerik_main_menu .rmRootGroup a.rmExpanded {
+  background-color: #F15C08;
+}
+
+
+/*--END OF TOP LEVEL STYLES--*/
+
+
+/*--DROPDOWN MENU STYLES--*/
+
+
+/*--Normal State--*/
+
+.telerik_main_menu .rmGroup a {
+  color: #ffffff;
+  background: #1A1A1A;
+}
+
+.telerik_main_menu .rmGroup a span {
+  color: #ffffff;
+  background: #1A1A1A;
+}
+
+
+/*--Over and Focused State--*/
+
+.telerik_main_menu .rmGroup a:hover,
+.telerik_main_menu .rmGroup a.rmFocused,
+.telerik_main_menu .rmGroup a.rmExpanded {
+  background: #302F2E;
+  color: #ffffff;
+}
+
+.telerik_main_menu .rmGroup a:hover span,
+.telerik_main_menu .rmGroup a.rmFocused span,
+.telerik_main_menu .rmGroup a.rmExpanded span {
+  background: #302F2E;
+  color: #ffffff;
+}
+
+
+/*--END OF DROPDOWN MENU STYLES--*/
+
+.rmItem:hover {
+  background-color: #F15C08;
+}
+
+.rmVertical .rmItem:hover a span,
+.rmVertical .rmItem:hover a {
+  background-color: #302F2E;
+}
+
+
+/*--DROPDOWN LV2 MENU STYLES--*/
+
+
+/*--Normal State--*/
+
+.telerik_main_menu .rmGroup .rmGroup a {
+  color: #171717;
+  background: #ffffff;
+}
+
+.telerik_main_menu .rmGroup .rmGroup a span {
+  color: #171717;
+  background: #ffffff;
+}
+
+
+/*--Over and Focused State--*/
+
+.telerik_main_menu .rmGroup .rmGroup a:hover,
+.telerik_main_menu .rmGroup .rmGroup a.rmFocused,
+.telerik_main_menu .rmGroup .rmGroup a.rmExpanded {
+  background: #F15C08;
+  color: #1d1d1d;
+}
+
+.telerik_main_menu .rmGroup .rmGroup a:hover span,
+.telerik_main_menu .rmGroup .rmGroup a.rmFocused span,
+.telerik_main_menu .rmGroup .rmGroup a.rmExpanded span {
+  background: #F15C08;
+  color: #1d1d1d;
+}
+
+
+/*--SECOND LEVEL BORDER LEFT--*/
+
+.rmLevel2 {
+  border-left: 4px solid #302F2E;
+}
+
+
+/*--END OF DROPDOWN MENU STYLES--*/
+
+
+/*---- END TELERIK COLORS ----*/
+
+
+/*--UPCOMING EVENTS--*/
+
+.abtnPrev a,
+.abtnPrev a:hover,
+.abtnNext a,
+.abtnNext a:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+
+/*--END UPCOMING EVENTS--*/
+
+
+/* --------------------- IMAGES ---------------------- */
+
+
+/*-- Body BG --*/
+
+body {
+  background-image: url('https://p10cdn4static.sharpschool.com/UserFiles/Servers/Server_20573175/Templates/img/header-bg-v6.png');
+}
+
+
+/*-- Social Icons --*/
+
+#social li.icn a {
+  background: url('https://p10cdn2static.sharpschool.com/common/resources/DesignPortfolio/SiteThemes/CommonLib/social-media/social-sprite.png');
+}
+
+
+/*--Navigation Arrow BG--*/
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  background: url('https://p10cdn2static.sharpschool.com/Common/resources/DesignPortfolio/SiteThemes/Metric/Blue/arrows-sprite.png');
+}
+
+
+/*--Navigation Arrow--*/
+
+
+/*--Light--*/
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  background-position: -18px -44px !important;
+}
+
+
+/*or*/
+
+
+/*--Dark--*/
+
+
+/*
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+ background-position: -18px -8px !important;
+}
+*/
+
+
+/* --------------------- QUICK LINKS ---------------------- */
+
+ul.quick-links {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.quick-links img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+ul.quick-links img:hover {
+  opacity: 0.7;
+}
+
+
+/* ------------------------------------------------------------- */
+
+body {
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.sec-header h2,
+.sec-header h3 {
+  padding: 15px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0px;
+  font-size: 24px;
+}
+
+.w-33 .sec-header h3,
+.w-33 .sec-header h2 {
+  background: #302F2E;
+  color: #fff;
+}
+
+.w-66 .row .inside-padding,
+.w-33 .row .inside-padding {
+  background: #ffffff;
+}
+
+.w-66>div>.row,
+.w-33>div>.row {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#menubar {
+  padding: 0px 20px 0px 20px;
+}
+
+.inner-bar {
+  max-width: 950px;
+  margin: 0px auto;
+  background: #302F2E;
+  border-radius: 15px;
+  padding: 0px 15px 0px 15px;
+}
+
+#banner.row {
+  margin-bottom: 0px;
+}
+
+#banner .bannerContainer {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#banner .nivoSlider {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#banner .nivo-directionNav a {
+  display: block;
+  width: 31px !important;
+  height: 31px !important;
+  background-repeat: no-repeat !important;
+  z-index: 2998 !important;
+  background-image: none !important;
+}
+
+#banner a.nivo-prevNav:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 12px 7px 0;
+}
+
+#banner a.nivo-nextNav:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 11px;
+}
+
+#banner .bannerContainer.bannerShowControls .nivo-caption {
+  padding-bottom: 0.5em !important;
+}
+
+#banner .nivo-controlNav {
+  display: none !important;
+}
+
+#RSSLink {
+  position: absolute;
+  top: -47px;
+  right: 0px;
+}
+
+#header-center {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#logo {
+  float: left;
+  width: 20%;
+}
+
+#logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+#school-name {
+  float: left;
+  width: 80%;
+}
+
+#school-name h1 {
+  margin: 0px;
+  font-family: 'lusitanaregular';
+  text-transform: uppercase;
+  font-size: 33px;
+  padding: 7px 0px 0px 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#header-center a {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+#header-center a:hover,
+#header-center a:focus {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+#motto {
+  text-transform: none;
+  display: block;
+  font-family: 'lusitanaregular';
+  letter-spacing: 1px;
+  font-size: 60%;
+  text-align: center;
+}
+
+.subpage #page {
+  max-width: 1000px;
+  margin: 5px auto 0px;
+  padding: 10px;
+}
+
+#sub-content-left {
+  width: 23%;
+  float: left;
+}
+
+#sub-content-right {
+  width: 77%;
+  float: left;
+}
+
+.sitenavl0 {
+  padding-left: 0px;
+}
+
+a.navLink {
+  display: block;
+  padding: 10px;
+  margin: 0px 0px 5px;
+}
+
+.sitenavl0 a.navLink {
+  font-family: 'latobold';
+}
+
+.sitenavl0.currentpage a.navLink {
+  background: #f5f5f5;
+}
+
+.sitenavl1 a.navLink {
+  padding: 3px 6px 3px 6px;
+  margin: 6px 0px 6px 0px;
+}
+
+.credits {
+  text-align: center;
+  color: #333333;
+  padding: 5px;
+}
+
+.label_skin_corporation {
+  font-size: 13px;
+  font-family: 'latolight';
+}
+
+.label_skin_corporation a {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'latolight';
+}
+
+.label_skin_corporation a:hover {
+  text-decoration: underline;
+  color: #333333;
+}
+
+#breadcrumbs {
+  margin: 5px 0px 15px;
+}
+
+#spanBreadcrumbPageId {
+  font-family: 'latobold';
+}
+
+#main-content .row {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#main-content .row .inside-padding {
+  background: #ffffff;
+}
+
+#inside-nav {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0px;
+  min-height: 300px;
+}
+
+#footer {
+  border-top: 3px dotted #ffffff;
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 10px 0px 10px;
+}
+
+#footer h3 {
+  font-family: 'lusitanaregular';
+  font-size: 25px;
+  margin: 0px 0px 5px;
+}
+
+#footer-address {
+  color: #000;
+}
+
+ul#social {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+#social li.icn {
+  display: inline-block;
+  padding: 0px 3px 0px 3px;
+}
+
+#social li.icn a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#social li.icn.facebook a {
+  background-position: 0px 0px;
+}
+
+#social li.icn.twitter a {
+  background-position: -40px 0px;
+}
+
+#social li.icn.youtube a {
+  background-position: -80px 0px;
+}
+
+#social li.icn.email a {
+  background-position: -120px 0px;
+}
+
+#footer-left {
+  float: left;
+  width: 75%;
+}
+
+#footer-right {
+  float: left;
+  width: 25%;
+}
+
+.RadMenu a.rmLink {
+  line-height: 50px;
+}
+
+
+/*** START OF TOP LEVEL MENU STYLES ***/
+
+.telerik_main_menu a,
+.telerik_main_menu a:hover {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.telerik_main_menu .rmText {
+  padding-top: 5px !important;
+  padding-bottom: 15px !important;
+}
+
+.telerik_main_menu .rmGroup .rmText {
+  padding-bottom: 5px !important;
+}
+
+.RadMenu .rmItem {
+  height: auto;
+  margin-right: 0px;
+}
+
+.RadMenu .rmText {
+  font-family: 'latoregular';
+  font-weight: normal;
+  font-size: 12pt;
+}
+
+.RadMenu .rmLink {
+  float: left;
+  outline: 0 none;
+  padding-left: 0px !important;
+}
+
+.RadMenu .rmHorizontal .rmText {
+  padding: 0px 12px 0px 12px !important;
+  letter-spacing: 0.06em;
+}
+
+.RadMenu .rmGroup .rmText {
+  margin-left: 0px !important;
+  padding: 8px 10px 8px 10px !important;
+  margin-bottom: 4px;
+}
+
+.rmrootGroup .rmHorizontal li.rmItem {
+  margin-left: 10px;
+}
+
+
+/*** Normal State ***/
+
+.telerik_main_menu .rmRootGroup a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'latoregular';
+}
+
+.telerik_main_menu .rmRootGroup a span {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'latoregular';
+}
+
+
+/*** Over and Focused State ***/
+
+.telerik_main_menu .rmRootGroup a:hover,
+.telerik_main_menu .rmRootGroup a.rmFocused,
+.telerik_main_menu .rmRootGroup a.rmExpanded {
+  text-decoration: none;
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+}
+
+.telerik_main_menu .rmRootGroup a:hover span,
+.telerik_main_menu .rmRootGroup a.rmFocused span {
+  text-decoration: none;
+}
+
+
+/*** END OF TOP LEVEL MENU STYLES ***/
+
+
+/*** START OF DROPDOWN MENU STYLES ***/
+
+
+/*** Normal State ***/
+
+.telerik_main_menu .rmGroup a {
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: normal;
+}
+
+.telerik_main_menu .rmGroup a span {
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: normal;
+  line-height: normal !important;
+  font-family: 'latoregular', Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+
+.telerik_main_menu .rmGroup .rmItem .rmExpandRight:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 18px;
+  height: 26px;
+}
+
+
+/*** Over and Focused State ***/
+
+.telerik_main_menu .rmGroup a:hover,
+.telerik_main_menu .rmGroup a.rmFocused {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.telerik_main_menu .rmGroup a:hover span,
+.telerik_main_menu .rmGroup a.rmFocused span {
+  text-decoration: none;
+}
+
+
+/*** Dropdown border ***/
+
+.RadMenu .rmRootGroup .rmItem ul.rmGroup {
+  width: 200px;
+  padding: 0px;
+}
+
+
+/*** END OF DROPDOWN MENU STYLES ***/
+
+#mobile-bar {
+  line-height: 50px;
+  color: #ffffff;
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  #header-center {
+    margin: 10px auto;
+  }
+}
+
+#social li.icn a:hover {
+  opacity: 0.8;
+}
+
+.ptl_upcomingevents_item .ptl_upcomingevents_date .ptl_upcomingevents_month {
+  color: #000000;
+}
+
+
+/*===== FONTS =====*/
+
+@font-face {
+  font-family: 'lusitanaregular';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lusitana-regular-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lusitana-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lusitana-regular-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lusitana-regular-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lusitana-regular-webfont.svg#lusitanaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-regita-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latobold';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bol-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-reg-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-lig-webfont.svg#latolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoblack';
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.eot');
+  src: url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.eot?#iefix') format('embedded-opentype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.woff') format('woff'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.ttf') format('truetype'), url('https://p10cdn3static.sharpschool.com/common/template-fonts/lato-bla-webfont.svg#latoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Calendar Go Fix */
+
+button[id*="btn"] {
+  color: #000;
+}
+
+
+/* Hover State Fix */
+
+.label_skin_corporation a:hover,
+.label_skin_corporation a:focus {
+  text-decoration: none;
+}
+
+div#breadcrumbs a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div#breadcrumbs a:hover,
+div#breadcrumbs a:focus {
+  text-decoration: none;
+}
+
+div[id*="divContent"] a {
+  text-decoration: underline;
+}
+
+div[id*="divContent"] a:hover,
+div[id*="divContent"] a:focus {
+  text-decoration: none;
+}

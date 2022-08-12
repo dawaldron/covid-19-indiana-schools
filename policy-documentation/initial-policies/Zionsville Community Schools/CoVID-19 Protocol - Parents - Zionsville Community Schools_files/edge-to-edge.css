@@ -1,0 +1,88 @@
+@media only screen and (min-width: 768px) {
+    #content_main, #content, #content_main_inner, .content_main, .content  {
+        margin-left: inherit;
+        margin-right: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        width: inherit;
+        max-width: inherit;
+    }
+}
+
+.not-edge-to-edge, .not-edge-to-edge-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+    .not-edge-to-edge, .not-edge-to-edge-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-wrapper .page-block-photos.not-edge-to-edge,
+    .hero-wrapper .hero-page-navigation-wrapper.not-edge-to-edge {
+        padding-right: 0;
+    }
+}
+
+.not-edge-to-edge-wrapper {
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+link:first-child ~ .pageTitle.not-edge-to-edge,
+link:first-child ~ .breadcrumb.not-edge-to-edge {
+    padding-top: 1.5em;
+    margin-bottom: 10px;
+}
+
+link:first-child ~ .breadcrumb.not-edge-to-edge + .pageTitle.not-edge-to-edge {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .hero-wrapper:not(:empty) ~ .pageTitle.not-edge-to-edge,
+    .hero-wrapper:not(:empty) ~ .breadcrumb.not-edge-to-edge,
+    .pages-left-column {
+        padding: 0rem 1rem !important;
+    }
+
+    .pages-column {
+        padding: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #content_main, #content, #content_main_inner, .content_main, .content  {
+        margin-left: inherit;
+        margin-right: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        width: 100%;
+    }
+
+    .pageTitle.not-edge-to-edge,
+    .breadcrumb.not-edge-to-edge,
+    .right-column-page-navigation-wrapper {
+        padding: 0rem 1rem;
+    }
+
+    .page-block.page-block-text,
+    .page-block.page-block-files,
+    .page-block.page-block-staff,
+    .page-block.page-block-button {
+        width: auto !important;
+        padding: 0rem 1rem;
+    }
+
+    .left-hero .pages-left-column-wrapper .pages-column .page-block.page-block-photos,
+    .right-hero .pages-left-column-wrapper .pages-column .page-block.page-block-photos,
+    .full-hero .pages-left-column-wrapper .pages-column .page-block.page-block-photos.not-edge-to-edge,
+    .full-width .pages-left-column-wrapper .pages-column .page-block.page-block-photos.not-edge-to-edge {
+        width: auto !important;
+        padding: 0rem 1rem;
+    }
+}

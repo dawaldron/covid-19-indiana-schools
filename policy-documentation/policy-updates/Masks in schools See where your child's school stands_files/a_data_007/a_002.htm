@@ -1,0 +1,684 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.video_control_overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9100;
+}
+
+.video_control_overlay.controls_only {
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+}
+
+.video_paused_overlay {
+    background: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 9100;
+}
+
+.spinner {
+    -webkit-animation: rotator 1.4s linear infinite;
+    animation: rotator 1.4s linear infinite;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -33px;
+}
+
+@-webkit-keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: 33px 33px;
+    -ms-transform-origin: 33px 33px;
+    transform-origin: 33px 33px;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+    0% {
+        stroke: #CCCCCC;
+    }
+    50% {
+        stroke: #FFFFFF;
+    }
+    100% {
+        stroke: #CCCCCC;
+    }
+}
+
+@keyframes colors {
+    0% {
+        stroke: #CCCCCC;
+    }
+    50% {
+        stroke: #FFFFFF;
+    }
+    100% {
+        stroke: #CCCCCC;
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+.video_paused_overlay div.control {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    margin: -50px -25px 0.25em;
+    float: left;
+}
+
+.video_paused_overlay div.control div {
+    width: auto;
+    height: auto;
+    position: static;
+    margin-top: 0px;
+}
+
+.video_paused_overlay .play span {
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.video_paused_overlay .play span:before {
+    left: 2px;
+    border: 32px solid transparent;
+    border-width: 44px 64px;
+    border-left-color: #CCCCCC;
+    margin-top: -44px;
+    background: transparent;
+}
+
+.video_paused_overlay .play:hover span:before,
+.video_controls .play div:focus span:before,
+.video_controls .play div:active span:before {
+    border-left-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+body:hover .video_control_overlay.mouse_device .video_controls {
+    opacity: 0.8;
+}
+
+.skip_control {
+    position: fixed;
+    top: 5px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    z-index: 9101;
+    opacity: 0.8;
+    left: 0;
+    right: 2px;
+    border-radius: 3px;
+    height: 37px;
+}
+
+.skip_control .skip {
+    top: 0px;
+    bottom: 0px;
+    width: 36px;
+    position: absolute;
+    right: 0px;
+}
+
+.skip_control .skip div {
+    margin-left: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+.skip_control .skip div:before {
+    content: '';
+    left: 11px;
+    top: 4px;
+    height: 18px;
+    border-left: 3px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.skip_control .skip div:after {
+    content: '';
+    left: 11px;
+    top: 4px;
+    height: 18px;
+    border-left: 3px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.video_controls {
+    position: fixed;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    z-index: 9101;
+    opacity: 0.8;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    height: 37px;
+}
+
+div.control {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+}
+
+div.control div {
+    width: 23px;
+    height: 25px;
+    top: 50%;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 9px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+div.control.volume, div.control.full, div.control.exit {
+    float: right;
+    margin-left: 0;
+}
+
+div.control div span {
+    display: block;
+    border: 0;
+    padding-left: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.video_control_overlay.mouse_device div.control div span {
+    color: #CCCCCC;
+}
+
+div.control div:hover span, div.control div:focus span, div.control div:active span {
+    color: #FFFFFF;
+    background: transparent;
+}
+
+div.control div:before, div.control div:after, div.control div span:before, div.control div span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+}
+
+div.control span:before, div.control span:after {
+    margin: -8px 0 0;
+}
+
+.video_controls .play, .video_controls .pause {
+    width: 35px;
+    margin: 0;
+    position: absolute;
+    top: -27px;
+    bottom: -20px;
+    left: 0px;
+}
+
+.video_controls .play span, .video_controls .pause span {
+    padding-top: 25px;
+}
+
+.video_controls .play span:before {
+    left: 6px;
+    border: 8px solid transparent;
+    border-width: 8px 12px;
+    border-left-color: #CCCCCC;
+    margin-top: -8px;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls .play span:before {
+    border-left-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .play:hover span:before, .video_control_overlay .video_controls .play:focus span:before,
+.video_control_overlay .video_controls .play:active span:before, .video_control_overlay .video_controls .play:hover span:after,
+.video_control_overlay .video_controls .play:focus span:after, .video_control_overlay .video_controls .play:active span:after,
+.video_control_overlay .video_controls .play span:hover:before, .video_control_overlay .video_controls .play span:focus:before,
+.video_control_overlay .video_controls .play span:active:before, .video_control_overlay .video_controls .play span:hover:after,
+.video_control_overlay .video_controls .play span:focus:after, .video_control_overlay .video_controls .play span:active:after {
+    border-left-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .pause span:before {
+    left: 6px;
+    width: 0px;
+    height: 10px;
+    border: 2px solid #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    border-radius: 2px 2px;
+}
+
+.video_control_overlay.mouse_device .video_controls .pause span:before {
+    border-color: #CCCCCC;
+}
+
+.video_controls .pause span:after {
+    left: 13px;
+    width: 0px;
+    height: 10px;
+    border: 2px solid #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    border-radius: 2px 2px;
+}
+
+.video_control_overlay.mouse_device .video_controls .pause span:after {
+    border-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .pause:hover span:before, .video_control_overlay .video_controls .pause:focus span:before,
+.video_control_overlay .video_controls .pause:active span:before, .video_control_overlay .video_controls .pause:hover span:after,
+.video_control_overlay .video_controls .pause:focus span:after, .video_control_overlay .video_controls .pause:active span:after {
+    border-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .volume {
+    width: 40px;
+    top: -27px;
+    bottom: -20px;
+    position: absolute;
+    right: 36px;
+}
+
+.video_controls .volume div {
+    margin-left: 11px;
+}
+
+.video_controls .volume span {
+    width: 0;
+}
+
+.video_controls .volume span:before {
+    right: 10px;
+    border: 7px solid transparent;
+    border-right-color: #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    left: auto;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume span:before {
+    border-right-color: #CCCCCC;
+}
+
+.video_controls .volume span:after {
+    right: 13px;
+    width: 4px;
+    height: 6px;
+    margin-top: -3px;
+    left: auto;
+    background: #FFFFFF;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume span:after {
+    background: #CCCCCC;
+}
+
+.video_controls .volume:not(.volume-on) span:before {
+    right: 8px;
+    border: 8px solid transparent;
+    border-right-color: #FFFFFF;
+    margin-top: -9px;
+    background: transparent;
+    left: 0px;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume:not(.volume-on) span:before {
+    border-right-color: #CCCCCC;
+}
+
+.video_controls .volume:not(.volume-on) span:after {
+    right: 13px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    left: 6px;
+}
+
+.video_controls .volume:not(.volume-on) div:after {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    width: 1px;
+    height: 18px;
+    top: 3px;
+    left: 10px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.video_control_overlay.mouse_device .video_controls .volume:not(.volume-on) div:after {
+    background-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .volume:not(.volume-on):hover span:before, .video_control_overlay .video_controls .volume:not(.volume-on):focus span:before,
+.video_control_overlay .video_controls .volume:not(.volume-on):active span:before {
+    border-right-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_control_overlay .video_controls .volume:not(.volume-on):hover span:after, .video_control_overlay .video_controls .volume:not(.volume-on):focus span:after,
+.video_control_overlay .video_controls .volume:not(.volume-on):active span:after, .video_control_overlay .video_controls .volume:not(.volume-on):hover div:after,
+.video_control_overlay .video_controls .volume:not(.volume-on):focus div:after, .video_control_overlay .video_controls .volume:not(.volume-on):active div:after {
+    background: #FFFFFF;
+}
+
+.video_controls .volume-on div:before {
+    right: 1px;
+    left: auto;
+    width: 6px;
+    height: 6px;
+    margin-top: -5px;
+    border: 4px double #1B9DD0;
+    border-width: 4px 4px 0 0; /* css3 */
+    border-radius: 0 15px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.video_control_overlay .video_controls .volume.volume-on div:before, .video_control_overlay .video_controls .volume.volume-on div:after {
+    border-color: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on span:before {
+    border-right-color: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on span:after {
+    background: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover div:before {
+    border-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover div:before, .video_controls .volume.volume-on:hover div:after {
+    border-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover span:before {
+    border-right-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover span:after {
+    background: #2BDDFF;
+}
+
+.video_controls .full, .video_controls .exit {
+    top: -27px;
+    bottom: -20px;
+    margin-right: 0px;
+    width: 36px;
+    position: absolute;
+    right: 0px;
+}
+
+.video_controls .full div, .video_controls .exit div {
+    margin-left: 4px;
+}
+
+.video_controls .full span {
+    width: 0;
+}
+
+.video_controls .full div:before, .video_controls .full div:after {
+    z-index: 12;
+    left: 9px;
+    width: 5px;
+    height: 7px;
+    border: 5px solid #000;
+    border-width: 5px 0;
+    margin-top: -8px; /* css3 */
+}
+
+.video_controls .full span:before, .video_controls .full span:after {
+    z-index: 10;
+    width: 11px;
+    height: 2px;
+    border-width: 2px 2px 0;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF transparent;
+    margin-top: -6px;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls .full span:before, .video_control_overlay.mouse_device .video_controls .full span:after {
+    border-color: #CCCCCC #CCCCCC transparent;
+}
+
+.video_controls .full span:after {
+    border-width: 0 2px 2px;
+    border-color: transparent #FFFFFF #FFFFFF;
+    margin-top: 3px;
+}
+
+.video_control_overlay.mouse_device .video_controls .full span:after {
+    border-color: transparent #CCCCCC #CCCCCC;
+}
+
+.video_control_overlay .video_controls .full:hover span:before, .video_control_overlay .video_controls .full:focus span:before,
+.video_control_overlay .video_controls .full:active span:before {
+    border-color: #FFFFFF #FFFFFF transparent;
+    background: transparent;
+}
+
+.video_control_overlay .video_controls .full:hover span:after, .video_control_overlay .video_controls .full:focus span:after,
+.video_control_overlay .video_controls .full:active span:after {
+    border-color: transparent #FFFFFF #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .exit span {
+    width: 0;
+}
+
+.video_controls .exit div:before, .video_controls .exit div:after {
+    z-index: 17;
+    top: 16px;
+    left: 3px;
+    width: 4px;
+    height: 9px;
+    border: 5px solid #000;
+    border-width: 5px 0;
+    margin-top: -13px;
+}
+
+.video_controls .exit div:after {
+    left: 16px;
+}
+
+.video_controls .exit span:before, .video_controls .exit span:after {
+    z-index: 10;
+    left: 4px;
+    width: 5px;
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    margin-top: -5px;
+    background: transparent;
+    height: 5px;
+    top: 10px;
+}
+
+.video_control_overlay.mouse_device .video_controls .exit span:before, .video_control_overlay.mouse_device .video_controls .exit span:after {
+    border-color: #CCCCCC;
+}
+
+.video_controls .exit span:after {
+    top: 20px;
+}
+
+.video_control_overlay .video_controls .exit:hover span:before, .video_control_overlay .video_controls .exit:focus span:before,
+.video_control_overlay .video_controls .exit:active span:before, .video_control_overlay .video_controls .exit:hover span:after,
+.video_control_overlay .video_controls .exit:focus span:after, .video_control_overlay .video_controls .exit:active span:after {
+    border-color: transparent #FFFFFF;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 5px;
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.progress-fill {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8EC641;
+    text-align: center;
+    background-color: #8EC641;
+}
+
+div.counter {
+    font-family: sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    left: 51px;
+    top: 3px;
+    border-radius: 5px;
+    padding: 5px;
+}</style><script type="text/javascript">function startProtection(o){window.ReportHijackAttempt=window.ReportHijackAttempt||function(){};var e=["dGFncy5ia3J0eC5jb20=","bGlwaWthcl9ib2R5Y2FyZV9hd2FyZW5lc3M=","Z2FjZG4=","bWlycmEuaW8=","YnJ0bWVkaWE=","VUEtNTcwODQyNTctNw==","Y29pbi1oaXZlLmNvbQ==","YnVuZGxlLmNsZWFyc3RyZWFtLnR2","LmNscnN0bS5jb20=","dmlkZW8ubGVhZHp1LmNvbQ==","LmxlYWR6dS5jb20=","czAuMm1kbi5uZXQvYWRzL3JpY2htZWRpYS9zdHVkaW8vcHYyLzYwMTI4Njk2Lw==","YWR2ZXJ0aXNpbmdzdG9yeS5jb20=","bWVkaWFncm91cGFkcy5jb20=","ZWxpdGVsbWVkaWFhZHZlcnRpc2luZy5jb20=","dmVydGFtZWRpYS5jb20=","bWVkaWFncm91cHByby5jb20=","aGlnaHJhdGVkYWRzLmNvbQ==","dmlkZW9ncmFtbWljLmNvbQ==","bWFya2V0aW5ndmlkZW9ub3cuY29t","c3RhdGljLm1hcmtldGluZ3ZpZGVvbm93LmNvbQ==","ZmlsZXMud2VidmlkZW9nbG9iYWwuY29t","d2VidmlkZW9nbG9iYWwuY29t","d2VibWVkaWFhcHAuY29t","ZmlsZXMud2VibWVkaWFhcHAuY29t","cG9wb3ZpZGVvYWQuY29t","c2Iudm9pY2VmaXZlLmNvbQ==","b25lLm00ZGMuY29t","dXBpZXcuY29t","cGlldy5jb20=","di5zaHVsY29udC5jb20=","di5hbGdvdmlkLmNvbQ==","dmlkLnNwcmluZ3NlcnZlLmNvbQ==","cG1pLmNvbQ==","dGFncy5ia3J0eC5jb20=","bGlwaWthcl9ib2R5Y2FyZV9hd2FyZW5lc3M=","Z2FjZG4=","bWlycmEuaW8=","YnJ0bWVkaWE=","VUEtNTcwODQyNTctNw==","Y29pbi1oaXZlLmNvbQ==","YnVuZGxlLmNsZWFyc3RyZWFtLnR2","LmNscnN0bS5jb20=","dmlkZW8ubGVhZHp1LmNvbQ==","LmxlYWR6dS5jb20=","czAuMm1kbi5uZXQvYWRzL3JpY2htZWRpYS9zdHVkaW8vcHYyLzYwMTI4Njk2Lw==","YWR2ZXJ0aXNpbmdzdG9yeS5jb20=","bWVkaWFncm91cGFkcy5jb20=","ZWxpdGVsbWVkaWFhZHZlcnRpc2luZy5jb20=","dmVydGFtZWRpYS5jb20=","bWVkaWFncm91cHByby5jb20=","aGlnaHJhdGVkYWRzLmNvbQ==","dmlkZW9ncmFtbWljLmNvbQ==","bWFya2V0aW5ndmlkZW9ub3cuY29t","c3RhdGljLm1hcmtldGluZ3ZpZGVvbm93LmNvbQ==","ZmlsZXMud2VidmlkZW9nbG9iYWwuY29t","d2VidmlkZW9nbG9iYWwuY29t","d2VibWVkaWFhcHAuY29t","ZmlsZXMud2VibWVkaWFhcHAuY29t","cG9wb3ZpZGVvYWQuY29t","c2Iudm9pY2VmaXZlLmNvbQ==","b25lLm00ZGMuY29t","dXBpZXcuY29t","cGlldy5jb20=","di5zaHVsY29udC5jb20=","di5hbGdvdmlkLmNvbQ==","dmlkLnNwcmluZ3NlcnZlLmNvbQ==","cG1pLmNvbQ=="],r=new RegExp(e.map(function(e){try{return atob(e)}catch(t){return e}}).join("|"),"i");function p(t){return e.length&&r.test(t)}function i(t,e){window.ReportHijackAttempt(t,e)}function n(e){var r=function(){try{e.removeEventListener("load",r);var t=e.contentWindow.document.createElement("script");t.type="text/javascript",e.contentWindow.hjkFunc=t.innerHTML=window.hjkFunc,e.contentWindow.document.head.appendChild(t)}catch(t){}};e.addEventListener("load",r)}function c(t){if(t.src)return t.src;if(t.childNodes.length)for(var e=0;e<t.childNodes.length;e++)if(t.childNodes[e]&&t.childNodes[e].src)return t.childNodes[e].src;return t.outerHTML}try{!function(){for(var t=document.scripts||[],e=0;e<t.length;e++)t[e].src&&p(t[e].src);var r=document.querySelectorAll("iframe")||[];for(e=0;e<r.length;e++)if(p(r[e].src)){i(r[e].src,!0);break}}(),HTMLIFrameElement.prototype.hasOwnProperty("_src")||(Object.defineProperty(HTMLIFrameElement.prototype,"_src",Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"src")),Object.defineProperty(HTMLIFrameElement.prototype,"src",{get:function(){return this._src},set:function(t){p(t)?i(t,!1):(n(this),this._src=t)}})),HTMLIFrameElement.prototype.hasOwnProperty("_setAttribute")||(HTMLIFrameElement.prototype._setAttribute=HTMLIFrameElement.prototype.setAttribute,HTMLIFrameElement.prototype.setAttribute=function(t,e){"src"==t.toLowerCase()&&p(e)?i(e,!1):(n(this),this._setAttribute(t,e))}),HTMLElement.prototype.hasOwnProperty("_insertBefore")||(HTMLElement.prototype._insertBefore=HTMLElement.prototype.insertBefore,HTMLElement.prototype.insertBefore=function(t,e){if(!p(t.outerHTML))return this._insertBefore(t,e);i(c(t),!1)}),HTMLElement.prototype.hasOwnProperty("_appendChild")||(HTMLElement.prototype._appendChild=HTMLElement.prototype.appendChild,HTMLElement.prototype.appendChild=function(t){if(!p(t.outerHTML))return this._appendChild(t);i(c(t),!1)}),HTMLScriptElement.prototype.hasOwnProperty("_src")||(Object.defineProperty(HTMLScriptElement.prototype,"_src",Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src")),Object.defineProperty(HTMLScriptElement.prototype,"src",{get:function(){return this._src},set:function(t){p(t)?i(t,!1):this._src=t}})),HTMLScriptElement.prototype.hasOwnProperty("_setAttribute")||(HTMLScriptElement.prototype._setAttribute=HTMLScriptElement.prototype.setAttribute,HTMLScriptElement.prototype.setAttribute=function(t,e){"src"==t.toLowerCase()&&p(e)?i(e,!1):this._setAttribute(t,e)}),HTMLObjectElement.prototype._scrollIntoView=HTMLObjectElement.prototype.scrollIntoView,HTMLObjectElement.prototype.scrollIntoView=function(){return!1},HTMLDivElement.prototype._scrollIntoView=HTMLDivElement.prototype.scrollIntoView,HTMLDivElement.prototype.scrollIntoView=function(){return!1},XMLHttpRequest.prototype.hasOwnProperty("_open")||(XMLHttpRequest.prototype._open=XMLHttpRequest.prototype.open,XMLHttpRequest.prototype.open=function(t,e,r,o,n){p(e)?i(e,!1):this._open.apply(this,arguments)}),HTMLElement.prototype._click=HTMLElement.prototype.click,HTMLElement.prototype.click=function(){this.hasAttribute("download")||this._click()},o||(window.onerror=function(){return!0}),function(){if(!o){console=console||{};function t(){}for(var e=["debug","error","info","log","warn"],r=0;r<e.length;r++)console[e[r]]&&(console[e[r]]=t)}}()}catch(t){}}startProtection(false);</script><script type="text/javascript">function startProtection(o){window.ReportHijackAttempt=window.ReportHijackAttempt||function(){};var e=["dGFncy5ia3J0eC5jb20=","bGlwaWthcl9ib2R5Y2FyZV9hd2FyZW5lc3M=","Z2FjZG4=","bWlycmEuaW8=","YnJ0bWVkaWE=","VUEtNTcwODQyNTctNw==","Y29pbi1oaXZlLmNvbQ==","YnVuZGxlLmNsZWFyc3RyZWFtLnR2","LmNscnN0bS5jb20=","dmlkZW8ubGVhZHp1LmNvbQ==","LmxlYWR6dS5jb20=","czAuMm1kbi5uZXQvYWRzL3JpY2htZWRpYS9zdHVkaW8vcHYyLzYwMTI4Njk2Lw==","YWR2ZXJ0aXNpbmdzdG9yeS5jb20=","bWVkaWFncm91cGFkcy5jb20=","ZWxpdGVsbWVkaWFhZHZlcnRpc2luZy5jb20=","dmVydGFtZWRpYS5jb20=","bWVkaWFncm91cHByby5jb20=","aGlnaHJhdGVkYWRzLmNvbQ==","dmlkZW9ncmFtbWljLmNvbQ==","bWFya2V0aW5ndmlkZW9ub3cuY29t","c3RhdGljLm1hcmtldGluZ3ZpZGVvbm93LmNvbQ==","ZmlsZXMud2VidmlkZW9nbG9iYWwuY29t","d2VidmlkZW9nbG9iYWwuY29t","d2VibWVkaWFhcHAuY29t","ZmlsZXMud2VibWVkaWFhcHAuY29t","cG9wb3ZpZGVvYWQuY29t","c2Iudm9pY2VmaXZlLmNvbQ==","b25lLm00ZGMuY29t","dXBpZXcuY29t","cGlldy5jb20=","di5zaHVsY29udC5jb20=","di5hbGdvdmlkLmNvbQ==","dmlkLnNwcmluZ3NlcnZlLmNvbQ==","cG1pLmNvbQ==","dGFncy5ia3J0eC5jb20=","bGlwaWthcl9ib2R5Y2FyZV9hd2FyZW5lc3M=","Z2FjZG4=","bWlycmEuaW8=","YnJ0bWVkaWE=","VUEtNTcwODQyNTctNw==","Y29pbi1oaXZlLmNvbQ==","YnVuZGxlLmNsZWFyc3RyZWFtLnR2","LmNscnN0bS5jb20=","dmlkZW8ubGVhZHp1LmNvbQ==","LmxlYWR6dS5jb20=","czAuMm1kbi5uZXQvYWRzL3JpY2htZWRpYS9zdHVkaW8vcHYyLzYwMTI4Njk2Lw==","YWR2ZXJ0aXNpbmdzdG9yeS5jb20=","bWVkaWFncm91cGFkcy5jb20=","ZWxpdGVsbWVkaWFhZHZlcnRpc2luZy5jb20=","dmVydGFtZWRpYS5jb20=","bWVkaWFncm91cHByby5jb20=","aGlnaHJhdGVkYWRzLmNvbQ==","dmlkZW9ncmFtbWljLmNvbQ==","bWFya2V0aW5ndmlkZW9ub3cuY29t","c3RhdGljLm1hcmtldGluZ3ZpZGVvbm93LmNvbQ==","ZmlsZXMud2VidmlkZW9nbG9iYWwuY29t","d2VidmlkZW9nbG9iYWwuY29t","d2VibWVkaWFhcHAuY29t","ZmlsZXMud2VibWVkaWFhcHAuY29t","cG9wb3ZpZGVvYWQuY29t","c2Iudm9pY2VmaXZlLmNvbQ==","b25lLm00ZGMuY29t","dXBpZXcuY29t","cGlldy5jb20=","di5zaHVsY29udC5jb20=","di5hbGdvdmlkLmNvbQ==","dmlkLnNwcmluZ3NlcnZlLmNvbQ==","cG1pLmNvbQ=="],r=new RegExp(e.map(function(e){try{return atob(e)}catch(t){return e}}).join("|"),"i");function p(t){return e.length&&r.test(t)}function i(t,e){window.ReportHijackAttempt(t,e)}function n(e){var r=function(){try{e.removeEventListener("load",r);var t=e.contentWindow.document.createElement("script");t.type="text/javascript",e.contentWindow.hjkFunc=t.innerHTML=window.hjkFunc,e.contentWindow.document.head.appendChild(t)}catch(t){}};e.addEventListener("load",r)}function c(t){if(t.src)return t.src;if(t.childNodes.length)for(var e=0;e<t.childNodes.length;e++)if(t.childNodes[e]&&t.childNodes[e].src)return t.childNodes[e].src;return t.outerHTML}try{!function(){for(var t=document.scripts||[],e=0;e<t.length;e++)t[e].src&&p(t[e].src);var r=document.querySelectorAll("iframe")||[];for(e=0;e<r.length;e++)if(p(r[e].src)){i(r[e].src,!0);break}}(),HTMLIFrameElement.prototype.hasOwnProperty("_src")||(Object.defineProperty(HTMLIFrameElement.prototype,"_src",Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"src")),Object.defineProperty(HTMLIFrameElement.prototype,"src",{get:function(){return this._src},set:function(t){p(t)?i(t,!1):(n(this),this._src=t)}})),HTMLIFrameElement.prototype.hasOwnProperty("_setAttribute")||(HTMLIFrameElement.prototype._setAttribute=HTMLIFrameElement.prototype.setAttribute,HTMLIFrameElement.prototype.setAttribute=function(t,e){"src"==t.toLowerCase()&&p(e)?i(e,!1):(n(this),this._setAttribute(t,e))}),HTMLElement.prototype.hasOwnProperty("_insertBefore")||(HTMLElement.prototype._insertBefore=HTMLElement.prototype.insertBefore,HTMLElement.prototype.insertBefore=function(t,e){if(!p(t.outerHTML))return this._insertBefore(t,e);i(c(t),!1)}),HTMLElement.prototype.hasOwnProperty("_appendChild")||(HTMLElement.prototype._appendChild=HTMLElement.prototype.appendChild,HTMLElement.prototype.appendChild=function(t){if(!p(t.outerHTML))return this._appendChild(t);i(c(t),!1)}),HTMLScriptElement.prototype.hasOwnProperty("_src")||(Object.defineProperty(HTMLScriptElement.prototype,"_src",Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src")),Object.defineProperty(HTMLScriptElement.prototype,"src",{get:function(){return this._src},set:function(t){p(t)?i(t,!1):this._src=t}})),HTMLScriptElement.prototype.hasOwnProperty("_setAttribute")||(HTMLScriptElement.prototype._setAttribute=HTMLScriptElement.prototype.setAttribute,HTMLScriptElement.prototype.setAttribute=function(t,e){"src"==t.toLowerCase()&&p(e)?i(e,!1):this._setAttribute(t,e)}),HTMLObjectElement.prototype._scrollIntoView=HTMLObjectElement.prototype.scrollIntoView,HTMLObjectElement.prototype.scrollIntoView=function(){return!1},HTMLDivElement.prototype._scrollIntoView=HTMLDivElement.prototype.scrollIntoView,HTMLDivElement.prototype.scrollIntoView=function(){return!1},XMLHttpRequest.prototype.hasOwnProperty("_open")||(XMLHttpRequest.prototype._open=XMLHttpRequest.prototype.open,XMLHttpRequest.prototype.open=function(t,e,r,o,n){p(e)?i(e,!1):this._open.apply(this,arguments)}),HTMLElement.prototype._click=HTMLElement.prototype.click,HTMLElement.prototype.click=function(){this.hasAttribute("download")||this._click()},o||(window.onerror=function(){return!0}),function(){if(!o){console=console||{};function t(){}for(var e=["debug","error","info","log","warn"],r=0;r<e.length;r++)console[e[r]]&&(console[e[r]]=t)}}()}catch(t){}}startProtection(false);</script></head><body style="height:100%; margin:0; cursor: pointer"><div id="spotx_click_overlay" style="height:100%; margin:0; cursor: pointer"><iframe src="javascript:false" scrolling="no" allowfullscreen="true" data-integralas-id-c0731de0-d9ce-d217-a159-1e8b898573e0="" data-integralas-id-9a0abce7-24a7-bc96-d18e-c88ff684b4dd="" width="700" height="393" frameborder="0"></iframe></div><div class="video_control_overlay controls_only mouse_device">&nbsp;<div class="video_paused_overlay" style="">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <div class="control play" style="">
+        <div><span>&nbsp;</span></div>
+    </div>
+</div>
+<div class="skip_control" style="display: none;">
+    <div class="control skip"><div><span>&nbsp;</span></div></div>
+</div>
+<div class="video_controls">
+    <div class="control play" style="">
+        <div><span></span></div>
+    </div>
+    <div class="control pause" style="display: none;">
+        <div><span></span></div>
+    </div>
+    <div class="control counter" style="display: none;"></div>
+    <div class="progress-bar"><div class="progress-fill" style="width: 9.21764%;"></div></div>
+    <div class="control full"><div><span>&nbsp;</span></div></div>
+    <div class="control exit" style="display:none"><div><span>&nbsp;</span></div></div>
+    <div class="control volume"><div><span>&nbsp;</span></div></div>
+</div>
+</div></body></html>

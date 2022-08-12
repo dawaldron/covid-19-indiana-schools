@@ -1,0 +1,477 @@
+@import url("cq_base.css");
+
+/* Helper */
+
+.underline { text-decoration: underline; }
+
+/* `````````` Generic map ```````````` */
+
+.map_infowindow {
+	max-width: 250px;
+	font-size: 11px;
+	padding-left: 10px;
+}
+
+.map_infowindow #photo {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+.map_infowindow .logo {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.map_infowindow .logo img {
+	max-height: 100px;
+	max-width: 100%;
+}
+.map_infowindow #title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+.map_infowindow #title A {
+	color: black;
+}
+
+.map_infowindow #address {
+	margin-bottom: 7px;
+}
+
+.map_infowindow #description {
+	color: #888;
+	font-style: italic;
+	margin-bottom: 7px;
+}
+
+.map_infowindow .link {
+	font-size: 10px;
+}
+
+/* Account */
+
+.account-nav a:hover {
+	color: #666 !important;
+}
+.account-nav li.active a:hover {
+	color: white !important;
+}
+
+#user_account td {
+	padding: 4px;
+}
+#user_account tr > td {
+	min-width: 150px;
+	font-size: 90%;
+}
+#user_account #my_details,
+#user_account #profile {
+	margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+	#user_account #my_details {
+		width: 45%;
+		margin-right: 5%;
+		float: left;
+	}
+	#user_account #profile {
+		width: 50%;
+		float: left;
+	}
+}
+
+
+#user_account #mystuff {
+	float: right;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#user_account H1, #user_account H2, #user_account H3, #user_account H4, #user_account P {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#user_account .required {
+	background: #ffffdd;
+}
+
+#user_account .inputtext {
+	font-size: 13px;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+#user_account #transactionlist TD {
+	font-size: 11px;
+}
+
+#user_account #transactionlist .headers TD {
+	font-size: 9px;
+	font-weight: bold;
+}
+
+#user_account #transactionlist .receipt {
+	color: blue;
+	cursor: pointer;
+}
+
+#user_account #recurring H2, #user_account #recurring H4, #user_account #recurring P {
+	margin-bottom: 10px;
+}
+
+#user_account #recurring .cancel {
+	font-size: 10px;
+	margin-left: 7px;
+}
+
+#user_account .aboutme TEXTAREA {
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 1.3;
+	width: 95%;
+	padding: 7px;
+	height: 200px;
+}
+
+#user_account .submitbutton {
+	margin: 20px 0;
+}
+
+#user_account .submitbutton INPUT {
+	font-size: 18px;
+	padding: 5px 20px;
+}
+
+/* Detail footer */
+
+.detail-footer .kicker {
+	font-weight: bold;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 90%;
+	margin-bottom: 7px;
+}
+.detail-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.detail-footer .image-bg-centered {
+  width: 100%;
+  height: 120px;
+  background: #efefef;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+/* Bootstrap reset */
+.label {
+  border-radius: inherit;
+  /*color: inherit;*/
+  /*display: inline-block;*/
+  /*font-size: inherit;*/
+  /*font-weight: inherit;*/
+  line-height: inherit;
+  padding: none;
+  text-align: inherit;
+  vertical-align: inherit;
+  white-space: inherit;
+}
+#widget_detail_floated_polls .label {
+  display: inline !important;
+}
+.lead {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: inherit;
+}
+
+/* Audio player */
+.cq-audio-playlist .current-item .titles {
+	padding: 10px 15px 8px 15px;
+}
+.cq-audio-playlist .current-item .overline {
+	opacity: 0.8;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.cq-audio-playlist .current-item {
+	background: #f4f4f4;
+	color: #444;
+}
+.cq-audio-playlist .current-item h3 {
+	font-size: 140%;
+	line-height: 1.0;
+	margin-bottom: 5px;
+}
+.cq-audio-playlist .current-item .subhead {
+	opacity: 0.8;
+	margin-bottom: 0px;
+}
+.cq-audio-playlist audio {
+	width: 100%;
+	display: block;
+}
+.cq-audio-playlist ul.playlist {
+	display: none;
+}
+.cq-audio-playlist ul.playlist > li {
+	padding: 8px 15px;
+	background: #fbfbfb;
+	cursor: pointer;
+	opacity: 0.60;
+}
+.cq-audio-playlist ul.playlist > li:nth-child(odd) {
+	background: #f0f0f0;
+}
+.cq-audio-playlist ul.playlist > li:hover {
+	opacity: 1.0;
+}
+.cq-audio-playlist ul.playlist > li.selected {
+	background: #fff3cd;
+	opacity: 1.0;
+	font-weight: 700;
+	opacity: 0.8;
+}
+
+/* -- NEW calendar layout -- */
+
+/* Stacked widget */
+.calendar-widget-stack .header-bar {
+	background-image: linear-gradient(to bottom, rgba(249, 157, 62, 1), rgba(229, 137, 42, 1));
+	color: white;
+	padding: 4px 0;
+	line-height: 1.0;
+}
+.calendar-widget-stack .header-bar h5 {
+	margin: 0;
+	padding: 0;
+}
+.calendar-widget-stack .event-list {
+	font-size: 85%;
+}
+.calendar-widget-stack .event-list li {
+	background-image: linear-gradient(to bottom, rgba(250,250,250,1), rgba(230,230,230,1));
+}
+.calendar-widget-stack .event-list li:hover {
+	background-image: linear-gradient(to bottom, rgba(240,240,240,1), rgba(220,220,220,1));
+}
+.calendar-widget-stack .date-col {
+	padding: 7px 0;
+	width: 15%;
+	line-height: 1.0;
+	opacity: 0.56;
+	font-weight: 700;
+}
+.calendar-widget-stack .date-col .weekday {
+	font-size: 1.0em;
+}
+.calendar-widget-stack .date-col .calday {
+	font-size: 1.5em;
+}
+.calendar-widget-stack .details-col {
+	width: 85%;
+	padding: 6px 0;
+}
+.calendar-widget-stack .details-col h6 {
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+.calendar-widget-stack .day-picker {
+	margin-bottom: 8px;
+}
+.calendar-widget-stack .day-picker a {
+	color: black;
+}
+.calendar-widget-stack .day-picker .cal-icon {
+	width: 20%;
+	font-size: 1.5em;
+	padding: 8px;
+}
+.calendar-widget-stack .day-picker .day-link {
+	width: 16%;
+	padding: 8px;
+}
+.calendar-widget-stack .day-picker .weekday {
+	font-size: 1.0em;
+	line-height: 1.0;
+}
+.calendar-widget-stack .day-picker .calday {
+	font-size: 1.5em;
+	line-height: 1.0;
+}
+.section-1col .calendar-widget-stack .day-picker {
+	display: none;
+}
+.section-1col .calendar-widget-stack .links button {
+	margin: 5px 0;
+}
+
+/* Slider widget */
+@media (max-width: 767px) {
+	.calendar-widget-slider .arrows {
+		font-size: 2.0em;
+		color: #666;
+	}
+	.calendar-widget-slider .arrows.right {
+		float: right;
+	}
+	.calendar-widget-slider .arrows.left {
+		float: left;
+	}
+	.calendar-widget-slider .arrow-margins {
+		clear: both;
+		margin-bottom: 45px;
+	}
+	.calendar-widget-slider .mobile-browse {
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.calendar-widget-slider {
+		position: relative;
+	}
+	.calendar-widget-slider h6 {
+		font-size: 1.2em;
+	}
+	.calendar-widget-slider .links {
+		z-index: 9999;
+		position: absolute;
+		right: 0;
+		/*margin-top: -45px;*/
+	}
+	.calendar-widget-slider .carousel {
+		margin-left: 10px;
+	}
+	.calendar-widget-slider .event-list li {
+		float: left;
+		margin-left: 10px;
+	}
+	.calendar-widget-slider .event-list li:first-child {
+		margin-left: 0;
+	}
+	.calendar-widget-slider .arrows {
+		position: absolute;
+		font-size: 20px;
+		color: #999;
+		margin-top: -90px;
+	}
+	.calendar-widget-slider .arrows.right {
+		right: -10px;
+	}
+	.calendar-widget-slider .arrows.left {
+		left: -25px;
+	}
+	.calendar-widget-slider .day-picker {
+		margin-bottom: 8px;
+	}
+	.calendar-widget-slider .day-picker a {
+		color: black;
+	}
+	.calendar-widget-slider .day-picker .cal-icon {
+		font-size: 1.25em;
+		padding: 10px 12px;
+	}
+	.calendar-widget-slider .day-picker .day-link {
+		padding: 8px 12px;
+	}
+	.calendar-widget-slider .day-picker .weekday {
+		font-size: 0.6em;
+		line-height: 1.0;
+	}
+	.calendar-widget-slider .day-picker .calday {
+		font-size: 1.25em;
+		line-height: 1.0;
+	}
+	.section-1col .calendar-widget-slider .day-picker {
+		display: none;
+	}
+}
+
+/* Tile slug */
+.calendar-tile-slug {
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+@media (max-width: 768px) {
+	.calendar-tile-slug {
+		margin-bottom: 10px;
+	}
+}
+@media (min-width: 768px) {
+	.calendar-tile-slug {
+		width: 170px;
+	}
+}
+.calendar-tile-slug a {
+	color: black;
+}
+.calendar-tile-slug:hover {
+	opacity: 0.75;
+}
+.calendar-tile-slug .top-screen {
+	font-size: 11px;
+	color: white;
+	height: 20px;
+	overflow: hidden;
+	line-height: 1.0;
+	padding: 4px 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.calendar-tile-slug .top-screen.background {
+	background: black;
+	opacity: 0.7;
+}
+.calendar-tile-slug .top-margin {
+	padding-top: 100px;
+}
+.calendar-tile-slug .details {
+	background: #ddd;
+	font-size: 11px;
+	line-height: 1.0;
+	padding: 5px;
+}
+@media (min-width: 768px) {
+	.calendar-tile-slug .details {
+		height: 75px;
+		overflow: hidden;
+	}
+}
+.calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-6col .calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-5col .calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-4col .calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-3col .calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-2col .calendar-tile-slug .details h6,
+.pk-layer .pk-section.section-1col .calendar-tile-slug .details h6 {
+	font-size: 12.5px !important;
+	margin: 0 0 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

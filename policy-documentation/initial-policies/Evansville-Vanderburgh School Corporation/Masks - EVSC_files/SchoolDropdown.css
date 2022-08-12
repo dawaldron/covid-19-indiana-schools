@@ -1,0 +1,138 @@
+#selectSchool .schoolGroup { display: none; }
+#selectSchool tab-content {
+  display: inline-block;
+}
+
+#selectSchool ul li.tab-button{
+  width: 20%;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  background: none;
+}
+
+#selectSchool ul li.tab-button:nth-child(odd) {
+  background: #ccc;
+}
+
+#selectSchool ul li.tab-button a{
+  border: none !important;
+}
+
+#selectSchool ul li.tab-button:hover {
+  background: #717171; }
+  #selectSchool ul li.tab-button:hover a {
+    color: #fff;
+  /*transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;*/
+}
+
+#selectSchool ul li.tab-button.active {
+  background: #303030; }
+  #selectSchool ul li.tab-button.active a {
+    color: #fff; }
+
+    #selectSchool .tab-content li {
+      display: inline-block;
+      vertical-align: top;
+      width: 24%;
+      padding-right: 1%;
+    }
+    #selectSchool .tab-content li:last-child {
+      padding-right: 0; }
+
+      #selectSchool ul li.tab-button a, #selectSchool .tab-content li a {
+        min-width: auto !important;
+      }
+
+      #selectSchool ul#dropdown-tab li.active:after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        position: absolute;
+        left: 48%;
+        z-index: 99;
+      }
+
+      #selectSchool #tab-1, #selectSchool #tab-2,
+      #selectSchool #tab-3, #selectSchool #tab-4,
+      #selectSchool #tab-5 {
+        display: none;
+        background: #303030; }
+
+
+        #selectSchool .PublishedLinkMenu a.admin_menu,
+        #selectSchool .pubDropdown a {
+          background: transparent !important; }
+
+          #pubWrapper ul.pubList > li#selectSchool .schoolDropdown{
+            width: 1090px;
+            background: #e0e0e0 !important; }
+
+            #selectSchool .pubDropdown .school-dropdown-row a {
+              border: none !important;
+              color: #fff !important; }
+
+              #selectSchool .PublishedLinkMenu a.admin_menu:hover,
+              #selectSchool .PublishedLinkMenu a.admin_menu:focus,
+              #selectSchool .pubDropdown a:hover,
+              #selectSchool .pubDropdown a:focus {
+                color: #fff !important;
+                background: #424242 !important; }
+
+
+                @media screen and (max-width: 1100px) {
+
+                  #pubWrapper ul.pubList > li#selectSchool {
+                    position: static; }
+
+                    #pubWrapper ul.pubList > li#selectSchool .schoolDropdown{
+                      width: 100%; }
+
+                      #selectSchool .PublishedLinkMenu,
+                      #selectSchool .pubDropdown {
+                        top: 34px !important; }
+
+                      }
+
+
+                      @media screen and (max-width: 800px) {
+                        #selectSchool .tab-content li  {
+                          width: 100% !important; }
+
+                          ul.schoolDropdown.pubDropdown .school-dropdown-row {
+                            height: 450px;
+                            overflow-y: scroll;
+                          }
+                        }
+
+
+                        @media screen and (max-width: 480px) {
+
+                         #selectSchool ul li.tab-button {
+                           display: block;
+                           width: 100%;
+                         }
+
+                       }
+
+                       /** Print **/
+                       @media print{
+                        #pubWrapper .schoolDropdown{
+                         display: none !important;}
+                       }
+
+                       ul#dropdown-tab a {
+                        font-weight: 700;
+                        text-transform: uppercase;
+                      }

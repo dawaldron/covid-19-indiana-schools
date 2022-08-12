@@ -1,0 +1,144 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #5c5c65; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#totop-scroller:hover { background-color: #336600; }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { color: #336600; }
+
+.menu-dropdown li.parent a.level1 > span,
+.menu-dropdown li.parent span.level1 > span { background-image: url(../../images/color/green/menu_dropdown_level1_parent.png); }
+
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1,
+.menu-dropdown li.remain.active .level1,
+.menu-dropdown .dropdown-bg > div { background-color: #336600; }
+
+.menu-sidebar a,
+.menu-sidebar li > span { color: #336600; }
+
+.menu-sidebar a.level1:hover, 
+.menu-sidebar span.level1:hover { background-color: #336600; }
+ 
+.menu-sidebar a.level1 > span, 
+.menu-sidebar span.level1 > span { background-image: url(../../images/color/green/menu_sidebar_level1_hover.png); }
+
+.menu-sidebar ul a > span { background-image: url(../../images/color/green/menu_sidebar_level2.png); }
+
+.menu-sidebar li.active .level1:hover { background-color: #336600; }
+
+.menu-line li { background-image: url(../../images/color/green/menu_line_item.png); }
+
+.menu-line li a { color: #336600; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .color { color: #4DB24C; }
+
+.module .module-title .icon { background-image: url(../../images/color/green/module_icons.png); }
+
+.mod-headerline .module-title > span,
+.mod-headerbox-dark .module-title { background: #336600; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+.button-default { 
+	background-image: url(../../images/color/green/tools/button_default.png);
+	color: #336600;
+}
+
+#page .button-default:hover,
+.button-primary:hover,
+#system .item > .links a:hover { background-color: #336600; }
+
+.button-default:before,
+#system .item > .links a:before { background-image: url(../../images/color/green/tools/button_default_hover.png); }
+
+ul.check > li { background-image: url(../../images/color/green/tools/list_check.png); }
+
+.contact-icons:hover { background-color: #336600; }
+
+form.box legend { color: #336600; }
+
+form.style input, 
+form.style textarea, 
+form.style select, 
+form.style button, 
+form.style input[type="button"] { color: #336600; }
+
+form.style button:hover,
+form.style input[type="button"]:hover,
+form.style input[type="submit"]:hover { 
+	background-color: #336600;
+	border-color: #336600;
+}
+
+ul.footer-icons li { background-image: url(../../images/color/green/tools/footer_icons.png); }
+
+
+/* System-All
+----------------------------------------------------------------------------------------------------*/
+
+#system .title a { color: #336600; }
+
+#system .item > .links a { 
+	color: #336600;
+	background-image: url(../../images/color/green/tools/button_default.png);
+}
+
+#system .pagination a { color: #336600; }
+
+#system .pagination a:hover,
+.searchbox .results { background-color: #336600; }
+
+.searchbox .results li.more-results:hover { color: #DEDEE0; }
+
+#sidebar-a .searchbox:before,
+#sidebar-b .searchbox:before { background-image: url(../../images/color/green/searchbox_magnifier.png); }
+
+.breadcrumbs a { 
+	background-image: url(../../images/color/green/breadcrumbs.png);
+	color: #56A0D3; 
+}
+
+.breadcrumbs > span { 
+	background-image: url(../../images/color/green/breadcrumbs.png);
+	color: #535353; 
+}
+
+
+/* Slideshow
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-micasa > div:hover .next { background-position: 0 -240px; }
+.wk-slideshow-micasa > div:hover .prev { background-position: 0 -300px; }
+
+
+/* Slideset
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideset-micasa > div .next:hover,
+.wk-slideset-micasa > div .prev:hover  { background-color: #336600; }
+
+
+/* Custom
+----------------------------------------------------------------------------------------------------*/
+
+.contact-footer form.style button { background-color: #336600; }
+.custom-logo { background-image: url(../../../../images/yootheme/logo_blue.png); }

@@ -1,0 +1,144 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/modules.css);
+
+.module .module-title { line-height: 20px; }
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+	top: -10px;
+	right: -10px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/module_badges.png) 0 0 no-repeat;	
+}
+ 
+.module .badge-hot { background-position: 0 0; }
+.module .badge-top { background-position: 0 -50px; }
+.module .badge-free { background-position: 0 -100px; }
+.module .badge-new { background-position: 0 -150px; }
+
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon {  
+	top: -5px;
+	width: 31px;
+	height: 31px;
+	margin-right: 10px;
+	background-position: 0 0;
+	background-repeat: no-repeat; 
+}
+
+.module .module-title .icon-download { background-position: 0 0; }
+.module .module-title .icon-twitter { background-position: 0 -40px; }
+.module .module-title .icon-mail { background-position: 0 -80px; }
+.module .module-title .icon-bubble { background-position: 0 -120px; }
+.module .module-title .icon-login { background-position: 0 -160px; }
+.module .module-title .icon-cart { background-position: 0 -200px; }
+.module .module-title .icon-calendar { background-position: 0 -240px; }
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box {
+	padding: 14px;
+	border: 1px solid #EBEBEB;
+	border-radius: 6px;
+	background: #FFF;
+}
+
+.mod-box .module-title,
+.mod-headerbox .module-title { text-transform: uppercase; }
+
+/* Color: Grey */
+.mod-box-grey {
+	padding: 15px;
+	border: none;
+	background-color: #F5F5F5;
+}
+
+
+/* Module Type: Headerbox
+----------------------------------------------------------------------------------------------------*/
+
+.mod-headerbox .module-title {
+	padding: 10px;
+	border-radius: 6px;
+	line-height: 21px; 
+	background-color: #F5F5F5;
+}
+
+.mod-headerbox-dark .module-title { color: #FFF; }
+
+
+/* Module Type: Headerline
+----------------------------------------------------------------------------------------------------*/
+
+.mod-headerline .module-title { text-align: center; }
+
+.mod-headerline .module-title:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #EBEBEB;
+}	
+
+.mod-headerline .module-title > span {
+	display: inline-block;
+	position: relative;
+	padding: 5px 20px;
+	border-radius: 6px;
+	line-height: 31px;
+	color: #FFF;
+	font-size: 16px;
+}
+
+.mod-headerline .module-title .icon {
+	top: 0;
+	margin-left: -10px;
+}
+
+.module.mod-headerbox-dark .module-title .icon,
+.module.mod-headerline .module-title .icon { background-image: url(../images/module_icons_white.png); }
+
+
+/* Module Type: Line
+----------------------------------------------------------------------------------------------------*/
+
+.mod-line:before {
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+.grid-h .mod-line:before {
+	top: 0;
+	bottom: 0;
+	left: -17px;
+	border-width: 0 0 0 2px;
+	border-style: dotted;
+	border-color: #EBEBEB;
+}
+
+.grid-v .mod-line:before {
+	top: -17px;
+	left: 0;
+	right: 0;
+	border-top: 2px dotted #EBEBEB;
+}
+
+.grid-h:first-child .mod-line:before,
+.grid-v:first-child .mod-line:before { border: none; }
+
+.mod-line .badge {
+	top: -10px;
+	right: 0;
+}
+

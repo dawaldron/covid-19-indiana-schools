@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js no-touch rgba csstransitions audio" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="embed_data/6edff517c7"></script><script src="embed_data/nr-1210.js"></script><script src="embed_data/sdk.js" async="" crossorigin="anonymous"></script><script async="" src="embed_data/analytics.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"6edff517c7","applicationID":"356752418","transactionName":"c1haQRZWWVxSQBhJW1FOUUdLSl1fQA==","queueTime":0,"applicationTime":137,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"6edff517c7",applicationID:"356752418"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+
+  <title>WSLM1220AM on Mixlr | Mixlr</title>
+  <meta name="author" content="Mixlr">
+  <link rel="shortcut icon" type="image/x-icon" href="https://d23yw4k24ca21h.cloudfront.net/assets/favicon-c9685553e53d9287cc86ed86a281116797742efb18b81ec9cf20bc72a7df0d30.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" media="screen" href="embed_data/embed-f28aa04226226a1c565b11eceaad542a232a40907e1ca30e8f6ee5.css">
+
+  <script>
+//<![CDATA[
+window._isEmbeddablePlayer = true;
+      window.WEB_SOCKET_DEBUG = 0;
+      window.Mixlr = {"hub_url":"//hub.mixlr.com/sockets","googleAnalyticsID":"UA-8059487-5","env":"production","apiHostName":"api.mixlr.com","hostname":"mixlr.com","protocol":"https","fb_namespace":"mixlrcom","fb_app_id":"365158934875","data":{}};
+      var broadcasterData = {"id":2787040,"username":"WSLM1220AM","url":"http://mixlr.com/wslm1220am","profile_image_url":"https://mixlr-assets.s3.amazonaws.com/users/6bc59372cdadd8e15e8054a2d45c1cf8/thumb.jpg?1414181680","slug":"wslm1220am","followed_count":0,"follower_count":119,"autopost_comment_to_twitter":false,"autopost_comment_to_facebook":false,"broadcasts_count":607,"max_itunes_bytes":0,"can_download":true,"has_email":true,"days_since_joined":2493,"livepage_chat_disabled":false,"upcoming_event_count":0,"artwork":{"url":"https://mixlr-assets.s3.amazonaws.com/artwork/90d3573d689993929fe98ac9f341d1df/base.jpeg"},"showreel_frozen":false,"showreel_deleted":false,"livepage_accesscode_enabled":false,"has_embed_player":true,"plan":{"name":"Mixlr Premium Plus","reference":"premiumplus","description":"Broadcast for up to twelve hours a day"},"crowd_count":0,"about_me":"WSLMRADIO.COM is streaming Eastern High School Sports. ","is_premium":true,"showreel_count":398,"showreel_url":"http://mixlr.com/wslm1220am/showreel","current_heart_count":9,"artwork_url":"https://mixlr-assets.s3.amazonaws.com/artwork/90d3573d689993929fe98ac9f341d1df/base.jpeg","total_unique_listener_count":21413};
+      var catData = [{"name":"Drum and Bass / Jungle","group_name":"Music","id":6,"color":"006f4b","live_count":0,"url":"http://mixlr.com/live/drumnbass","slug":"drumnbass","is_default":false},{"name":"Country","group_name":"Music","id":26,"color":"668449","live_count":0,"url":"http://mixlr.com/live/country","slug":"country","is_default":false},{"name":"Dubstep / Bass","group_name":"Music","id":7,"color":"9fc1cb","live_count":0,"url":"http://mixlr.com/live/dubstep","slug":"dubstep","is_default":false},{"name":"Grime / Garage","group_name":"Music","id":8,"color":"3c3c3c","live_count":0,"url":"http://mixlr.com/live/grime-garage","slug":"grime-garage","is_default":false},{"name":"Electronica","group_name":"Music","id":9,"color":"66ffff","live_count":0,"url":"http://mixlr.com/live/electronica","slug":"electronica","is_default":false},{"name":"Funk / Soul","group_name":"Music","id":10,"color":"ff9900","live_count":0,"url":"http://mixlr.com/live/soul","slug":"soul","is_default":false},{"name":"Hip-hop / Rap","group_name":"Music","id":11,"color":"9a824c","live_count":0,"url":"http://mixlr.com/live/hip-hop","slug":"hip-hop","is_default":false},{"name":"House","group_name":"Music","id":12,"color":"ff72ff","live_count":0,"url":"http://mixlr.com/live/house","slug":"house","is_default":false},{"name":"Indie / Rock","group_name":"Music","id":13,"color":"ed4036","live_count":0,"url":"http://mixlr.com/live/indie-rock","slug":"indie-rock","is_default":false},{"name":"Metal","group_name":"Music","id":14,"color":"535879","live_count":0,"url":"http://mixlr.com/live/metal","slug":"metal","is_default":false},{"name":"Jazz","group_name":"Music","id":15,"color":"ff6600","live_count":0,"url":"http://mixlr.com/live/jazz","slug":"jazz","is_default":false},{"name":"Reggae / Dancehall","group_name":"Music","id":16,"color":"92bd6d","live_count":0,"url":"http://mixlr.com/live/reggae","slug":"reggae","is_default":false},{"name":"Techno","group_name":"Music","id":17,"color":"00ff86","live_count":0,"url":"http://mixlr.com/live/techno","slug":"techno","is_default":false},{"name":"Trance","group_name":"Music","id":18,"color":"957cff","live_count":0,"url":"http://mixlr.com/live/trance","slug":"trance","is_default":false},{"name":"World","group_name":"Music","id":19,"color":"b40e80","live_count":0,"url":"http://mixlr.com/live/world","slug":"world","is_default":false},{"name":"Pop / Dance","group_name":"Music","id":20,"color":"f03c86","live_count":0,"url":"http://mixlr.com/live/pop","slug":"pop","is_default":false},{"name":"Culture","group_name":"Spoken word","id":24,"color":"66a1c6","live_count":0,"url":"http://mixlr.com/live/culture","slug":"culture","is_default":false},{"name":"Comedy","group_name":"Spoken word","id":27,"color":"7faecc","live_count":0,"url":"http://mixlr.com/live/comedy","slug":"comedy","is_default":false},{"name":"Talk","group_name":"Spoken word","id":28,"color":"20227a","live_count":0,"url":"http://mixlr.com/live/talk","slug":"talk","is_default":false},{"name":"Acoustic / Folk","group_name":"Music","id":29,"color":"16c66a","live_count":0,"url":"http://mixlr.com/live/acoustic-folk","slug":"acoustic-folk","is_default":false},{"name":"Classical","group_name":"Music","id":30,"color":"cadb36","live_count":0,"url":"http://mixlr.com/live/classical","slug":"classical","is_default":false},{"name":"Punk / Ska","group_name":"Music","id":31,"color":"ffe600","live_count":0,"url":"http://mixlr.com/live/punk-ska","slug":"punk-ska","is_default":false},{"name":"Urban / RnB","group_name":"Music","id":32,"color":"6d0f91","live_count":0,"url":"http://mixlr.com/live/urban-rnb","slug":"urban-rnb","is_default":false},{"name":"Eclectic","group_name":"Music","id":36,"color":"b3b3b3","live_count":0,"url":"http://mixlr.com/live/eclectic","slug":"eclectic","is_default":true},{"name":"News / Politics","group_name":"Spoken word","id":1,"color":"508ebc","live_count":0,"url":"http://mixlr.com/live/news","slug":"news","is_default":false},{"name":"Religion","group_name":"Spoken word","id":2,"color":"2a6296","live_count":0,"url":"http://mixlr.com/live/religion","slug":"religion","is_default":false},{"name":"Sport","group_name":"Spoken word","id":3,"color":"005494","live_count":0,"url":"http://mixlr.com/live/sport","slug":"sport","is_default":false},{"name":"Technology","group_name":"Spoken word","id":4,"color":"1b1463","live_count":0,"url":"http://mixlr.com/live/technology","slug":"technology","is_default":false},{"name":"Ambient / Downtempo","group_name":"Music","id":5,"color":"ffcc33","live_count":0,"url":"http://mixlr.com/live/ambient-downtempo","slug":"ambient-downtempo","is_default":false},{"name":"Health / Family","group_name":"Spoken word","id":25,"color":"508ebc","live_count":0,"url":"http://mixlr.com/live/health","slug":"health","is_default":false}];
+//]]>
+</script>
+
+
+  <link href="embed_data/7f7bd88b-d0aa-4348-a270-851b08fd98ab.css" rel="stylesheet" type="text/css">
+  <link href="embed_data/css.css" rel="stylesheet" type="text/css">
+
+<script id="facebook-jssdk" async="" src="embed_data/sdk_002.js"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_new_ui_mobile_overlay_active{overflow:hidden}@keyframes fb_mpn_landing_page_slide_in{0%{border-radius:50%;margin:0 24px;width:60px}40%{border-radius:18px}100%{margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_in_from_left{0%{border-radius:50%;left:12px;margin:0 24px;width:60px}40%{border-radius:18px}100%{left:12px;margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+<body class="desktop" style="background-image: none;">
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+
+  
+
+  <script>
+//<![CDATA[
+var autologin = function() { if( typeof Analytics !== "undefined" && typeof AutoFacebookLogin !== "undefined" ) { new AutoFacebookLogin().loginIfRequired(); } else { setTimeout(autologin, 100) } };
+    window.fbAsyncInit = function() {
+    FB.init({channelUrl: "//mixlr.com/channel.html", appId: '365158934875', 'status':true, cookie: true, xfbml: true, oauth: true, frictionlessRequests: true, version: 'v2.9' });
+
+    var fbInterval = setInterval(function() {
+      if( window._FB ) {
+        _FB.isLoaded();
+        clearInterval(fbInterval);
+        fbInterval = null;
+      }
+    }, 200);
+
+    setTimeout(function() {
+      if( fbInterval ) {
+        clearInterval(fbInterval);
+      }
+    }, 20000);
+
+    autologin();
+    };
+    (function(d){var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}js = d.createElement('script'); js.id = id; js.async = true;js.src = "//connect.facebook.net/en_US/sdk.js";d.getElementsByTagName('head')[0].appendChild(js);}(document));
+//]]>
+</script>
+
+  <script src="embed_data/embed-6fec690329f391fc541a4f25ac103297a6a4946f4cf44615c788f30.js"></script>
+
+  <!--[if lt IE 8]>
+  <div id="oldieUsers">
+    Sorry, Mixlr currently doesn't support old versions of Internet Explorer.<br />To start listening please upgrade your browser: <a href="http://browsehappy.com/" target="_blank">browsehappy.com</a>
+  </div>
+  <![endif]-->
+
+
+
+<div id="mixlr_player" class="w_stage_image"><div><div class="mixlr_stage_image" style="background-image:url('https://mixlr-assets.s3.amazonaws.com/artwork/90d3573d689993929fe98ac9f341d1df/base.jpeg');">
+  <span class="broadcaster_overlay">
+    <h2>
+      <a href="http://mixlr.com/wslm1220am" class="stop_playing_link" target="_blank">WSLM1220AM</a>
+    </h2>
+    <div class="broadcaster_followers">
+      <a href="http://mixlr.com/wslm1220am" class="stop_playing_link" target="_blank" alt="119 Followers" title="119 Followers">
+        <span class="icon followers_icon"></span> <span class="follower_no">119</span>
+      </a>
+    </div>
+    <div class="broadcaster_stat">
+      <a href="http://mixlr.com/wslm1220am" class="stop_playing_link" target="_blank" alt="607 Broadcasts" title="607 Broadcasts">
+        <span class="icon stat_icon"></span> <span class="broadcaster_no">607</span>
+      </a>
+    </div>
+  </span>
+</div>
+</div><div class="broadcast_info active">
+  <div class="player_info user_icon">
+    <a href="http://mixlr.com/wslm1220am" class="stop_playing_link ewl" title="Find out more about WSLM1220AM on their livepage" target="_blank">
+      <img src="embed_data/thumb.jpg" class="stop_playing_link" alt="WSLM1220AM">
+    </a>
+  </div>
+  <div class="player_info user_info">
+    <div class="player_title_container">
+      <h1 class="mixlr_truncate">
+        <a href="http://mixlr.com/wslm1220am" class="stop_playing_link ewl" target="_blank">WSLM1220AM</a></h1>
+    </div>
+    <div class="subtitle_container">
+      <h2>Mixlr Live Audio</h2>
+    </div>
+    <div class="broadcast_status">
+      <span class="category_icon"></span>
+      <span class="content">Off-air</span>
+    </div>
+  </div>
+  <div class="player_info mixlr_icon">
+    <div id="mixlr_player_status" class="off_air" title="" alt="">
+      <div class="user_color_block" style="background-color: rgb(136, 16, 239);"></div>
+      <div class="player_button"></div>
+    </div>
+  </div>
+<div class="sharing_options"><h2>WSLM1220AM</h2>
+<a class="close_social_media">x</a>
+<ul class="social_media_links">
+  <li title="Share on facebook" class="facebook"><a>Facebook</a></li>
+  <li title="Share on twitter" class="twitter"><a target="_blank">Twitter</a></li>
+  <li title="Share via email" class="email"><a target="_blank">Email</a></li>
+</ul>
+<div class="sharing_link">
+  <label for="share_link">Link:</label>
+  <input name="share_link" id="share_link" type="text" onclick="this.select();" value="http://mixlr.com/wslm1220am" readonly="readonly">
+</div>
+</div></div>
+
+
+<div class="stats_bar" style="background-color: rgb(136, 16, 239);">
+  <div class="stats_left">
+    <div class="volume">
+      <div id="volume_trigger">
+        <span class="volume_icon"></span>
+        <div class="volume_control" style="background-color: rgb(136, 16, 239);">
+          <div id="volume_bar" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 55%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 55%;"></a></div>
+          <div class="volume_level">6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats_center" style="display: none;">
+    <div class="listeners">
+      <div alt="Listening now" title="Listening now">
+        <span class="icon icon-listening_now"></span>
+        <span class="count">0</span>
+      </div>
+    </div><div class="hearts">
+      <a href="http://mixlr.com/wslm1220am/crowd" class="stop_playing_link" target="_blank" alt="Heart Count" title="Heart Count">
+        <span class="icon icon-hearts"></span>
+        <span class="count">0</span>
+      </a>
+    </div><div class="total_listeners">
+      <div alt="Total listens" title="Total listens">
+        <span class="icon icon-total_listens"></span>
+        <span>21,413</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats_right">
+    <div class="share_trigger sharing">
+      <div class="sharing_container">
+        <span class="share_text">Share</span><span class="icon icon-share"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comments_bar">
+  <a class="comment_link stop_playing_link" href="http://mixlr.com/wslm1220am" target="_blank">
+  </a>
+  <a class="mixlr_link stop_playing_link ewl" href="https://mixlr.com/" target="_blank">
+    <span class="mixlr_watermark stop_playing_link ewl">Mixlr</span>
+  </a>
+</div>
+</div></body></html>

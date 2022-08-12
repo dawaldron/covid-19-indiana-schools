@@ -1,0 +1,85 @@
+/*
+	CSS FOR CONTENT ACCORDION APP
+	AUTHOR BRENTON KELLY - WEB DEVELOPMENT MANAGER - BLACKBOARD, INC.
+	VERSION 11.13.18
+*/
+
+@font-face {
+    font-family: 'content-accordion';
+    src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBE4AAAC8AAAAYGNtYXAXVtKHAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5ZgxOQCQAAAF4AAAAZGhlYWQQqGd3AAAB3AAAADZoaGVhBgoDxgAAAhQAAAAkaG10eAhIAAAAAAI4AAAAFGxvY2EAKABGAAACTAAAAAxtYXhwAAcACAAAAlgAAAAgbmFtZVbL+AEAAAJ4AAAB/nBvc3QAAwAAAAAEeAAAACAAAwIkAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpAAPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6QD//f//AAAAAAAg6QD//f//AAH/4xcEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAD/wAJIA8AABQAAFycJATcBQ0MBuP5IQwIFQEMBuAHCQ/37AAAAAQAAAAEAAOzXKi1fDzz1AAsEAAAAAADXoJF9AAAAANegkX0AAP/AAkgDwAAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAAAACSAABAAAAAAAAAAAAAAAAAAAABQQAAAAAAAAAAAAAAAIAAAACSAAAAAAAAAAKABQAHgAyAAEAAAAFAAYAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQARAAAAAQAAAAAAAgAHALoAAQAAAAAAAwARAFQAAQAAAAAABAARAM8AAQAAAAAABQALADMAAQAAAAAABgARAIcAAQAAAAAACgAaAQIAAwABBAkAAQAiABEAAwABBAkAAgAOAMEAAwABBAkAAwAiAGUAAwABBAkABAAiAOAAAwABBAkABQAWAD4AAwABBAkABgAiAJgAAwABBAkACgA0ARxjb250ZW50LWFjY29yZGlvbgBjAG8AbgB0AGUAbgB0AC0AYQBjAGMAbwByAGQAaQBvAG5WZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBjb250ZW50LWFjY29yZGlvbgBjAG8AbgB0AGUAbgB0AC0AYQBjAGMAbwByAGQAaQBvAG5jb250ZW50LWFjY29yZGlvbgBjAG8AbgB0AGUAbgB0AC0AYQBjAGMAbwByAGQAaQBvAG5SZWd1bGFyAFIAZQBnAHUAbABhAHJjb250ZW50LWFjY29yZGlvbgBjAG8AbgB0AGUAbgB0AC0AYQBjAGMAbwByAGQAaQBvAG5Gb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.ui-widget.app.content-accordion .content-accordion-toolbar {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.ui-widget.app.content-accordion .content-accordion-toolbar a {
+    color: inherit;
+    text-decoration: underline;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+.ui-widget.app.content-accordion .ui-articles,
+.ui-widget.app.content-accordion .ui-article {
+    padding: 5px 0px;
+}
+.ui-widget.app.content-accordion .content-accordion-button {
+	font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+    -webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.ui-widget.app.content-accordion .content-accordion-button:after {
+	content: "\e900";
+    font-family: 'content-accordion' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: inherit;
+    font-size: 14px;
+    -ms-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+    position: relative;
+    right: 10px;
+}
+.ui-widget.app.content-accordion .ui-article.active .content-accordion-button:after {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.ui-widget.app.content-accordion .content-accordion-button span {
+	padding-right: 30px;
+}
+.ui-widget.app.content-accordion .content-accordion-panel {
+    display: none;
+    margin-top: 10px;
+}
+.ui-widget.app.content-accordion .content-accordion-panel p:first-of-type {
+    margin-top: 0px;
+}
+.ui-widget.app.content-accordion .content-accordion-panel p:last-of-type {
+    margin-bottom: 0px;
+}

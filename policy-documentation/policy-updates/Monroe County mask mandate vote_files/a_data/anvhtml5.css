@@ -1,0 +1,2427 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anv-video-container {
+  background: #000;
+}
+
+/*When we allow implementation of individual components, we will have to change the size in order not to mask others*/
+.anv-custom-controller-container {
+  width: 100%;
+  height: 100%;
+  z-index: 2147483648;
+  position: absolute;
+  top: 0;
+}
+
+/* Uses a sans-serif font everywhere in the player */
+.anv-video-container, .anv-control {
+  font-family: sans-serif;
+}
+
+.anv-video-content {
+  position: absolute;
+}
+
+.anv-audio-poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.anv-canvas-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* The buttons/controls in the control bar */
+/*Issue 14552 - make button relative (to bring them in front of the background)*/
+.anv-control-btn {
+  position: relative;
+  height: 32px;
+  margin: 0 3px;
+  cursor: pointer;
+  pointer-events: all;
+  text-align: center;
+}
+
+/* The control bar play/pause button. This is used to play and pause the video. */
+.anv-play-pause-btn {
+  clear: left;
+  float: left;
+  width: 32px;
+  pointer-events: all;
+}
+
+.anv-restart-live-btn {
+  float: left;
+  pointer-events: all;
+}
+
+/*
+The "on" attribute:
+    In general with the control bar buttons, if the button has ON and OFF states, then they are given an attribute
+    called "on" with values of "true" or "false" to represent their ON/OFF state.
+*/
+
+.anv-stereo-btn {
+  float: right;
+  width: 32px;
+  height: 32px;
+  /*background-image: url("img/vr_sprite.png");*/
+  background-position: -5px -47px;
+}
+
+.anv-stereo-btn[on=true] {
+  /*background-image: url("img/vr.png");*/
+  width: 32px;
+  height: 32px;
+  background-position: -5px -47px;
+}
+
+.anv-stereo-btn:hover {
+  /*background-image: url("img/vr_red.png");*/
+  width: 32px;
+  height: 32px;
+  background-position: -5px -47px;
+}
+
+.anv-stereo-btn[on=true]:hover {
+  /*background-image: url("img/vr_red.png"); */
+  width: 32px;
+  height: 32px;
+  background-position: -47px -47px;
+}
+
+.anv-stereo-btn[on=false] {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -5px;
+  /*background-image: url("img/panorama.png");*/
+}
+
+.anv-stereo-btn[on=false]:hover {
+  width: 32px;
+  height: 32px;
+  background-position: -47px -5px;
+  /*background-image: url("img/panorama_red.png"); */
+}
+
+.anv-play-pause-btn[on=true] {
+  background-position: 0px 0px;
+}
+
+.anv-no-touch .anv-play-pause-btn[on=true]:hover {
+  background-position: 0px -33px;
+}
+
+.anv-play-pause-btn[on=false] {
+  background-position: -33px -0px;
+}
+
+.anv-no-touch .anv-play-pause-btn[on=false]:hover {
+  background-position: -33px -33px;
+}
+
+/* The control bar current playback time and overall video duration display. */
+.anv-duration-btn {
+  /*width:20%;*/
+  float: right;
+  margin-right: 10px;
+  font-size: .9em;
+  text-align: center;
+  line-height: 32px;
+}
+
+.anv-control-duration-label {
+
+}
+
+.anv-play-next-btn {
+  float: left;
+  width: 32px;
+}
+
+/* The control bar volume speaker icon button. This can be clicked to mute and unmute the volume. This is additionally
+   updated with the one of the following classes in order to roughly indicate the volume level. */
+.anv-volume-icon-btn {
+  float: left;
+  width: 32px;
+  margin-left: 10px;
+}
+
+/* This class is given to the volume icon button when the volume level is at 0 */
+.anv-volume-icon-btn[on=false] svg .unmuted,
+.anv-volume-icon-btn[on=true] svg .muted {
+  display: none;
+}
+
+.anv-volume-icon-btn[on=true] svg .unmuted,
+.anv-volume-icon-btn[on=false] svg .muted {
+  display: block;
+}
+
+/* The control bar volume slider control. We use the transition property to show and hide the slider in response to the
+   hover event. */
+.anv-volume-slider-btn {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0px;
+  transition: width 0.15s;
+  /* Safari */
+  -webkit-transition: width 0.15s;
+}
+
+/*.anv-volume-icon-btn:hover + .anv-volume-slider-btn,*/
+/*.anv-volume-icon-btn:active + .anv-volume-slider-btn,*/
+/*.anv-volume-slider-btn:hover,*/
+/*.anv-volume-slider-btn:active {*/
+/*width: 75px;*/
+/*transition: width 0.15s ease 0s;*/
+/*!* Safari *!*/
+/*-webkit-transition: width 0.15s ease 0s;*/
+/*}*/
+/* A sub-component of the volume slider bar, if using the tapered_bars style */
+.anv-volume-slider-tapered-bar {
+  display: inline-block;
+  background-color: #666;
+}
+
+/* A sub-component of the volume slider bar, if using the flat_line style */
+.anv-volume-slider-flat-bar {
+  display: inline-block;
+  height: 8px;
+  margin: 12px 0;
+  background-color: #666;
+}
+
+/* A sub-component of the volume slider bar, if using the flat_line style */
+.anv-volume-slider-scrubber {
+  position: absolute;
+  width: 6px;
+  height: 14px;
+  top: 9px;
+  background-color: #fff;
+  border: 0px solid #444;
+  border-radius: 3px;
+}
+
+/* A class given to the volume slider's left-side sub-component(s) that represents the volume level */
+.anv-volume-active {
+  background-color: #ee3f25;
+}
+
+/* The control bar playlist button. This button is used to show and hide the video playlist. */
+.anv-playlist-btn {
+  float: right;
+  width: 32px;
+}
+
+.anv-playlist-btn:hover {
+  background-position: -198px -33px;
+}
+
+.anv-playlist-btn[on=true] {
+  background-position: -198px -33px;
+}
+
+.anv-playlist-btn[on=false] {
+  background-position: -198px 0px;
+}
+
+/* The control bar caption button. This button is used to show a small popup containing buttons for the available
+   caption languages. */
+.anv-caption-btn {
+  float: right;
+  width: 32px;
+}
+
+/* The popup that is associated with the caption button. This shows a list of buttons for the available caption
+   languages. We use the transition property to show and hide the caption popup. This is the container that holds both
+   the buttons and the tail for popup. */
+.anv-caption-popup {
+  bottom: 48px;
+  left: -16px;
+  width: auto;
+  height: auto;
+  z-index: 2147483648;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.8s;
+  /*SAFARI*/
+  -webkit-transition: visibility 0s, opacity 0.8s;
+}
+
+.anv-caption-popup-menu {
+  width: auto;
+  height: auto;
+  padding: 4px;
+  background: rgba(5, 4, 5, 0.69);
+  border: 0px solid #555;
+  border-radius: 5px;
+  z-index: 2147483648;
+}
+
+.anv-caption-popup-tail {
+  position: relative;
+  left: 42%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgba(5, 4, 5, 0.69);
+  z-index: 2147483648;
+}
+
+.anv-caption-btn:hover > .anv-caption-popup, .anv-caption-popup:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 0.2s ease 0s;
+  /*SAFARI*/
+  -webkit-transition: visibility 0s linear 0s, opacity 0.2s ease 0s;
+}
+
+/* One of the caption language buttons in the caption popup. These buttons are given on=true when they represent the
+   caption language that is currently in use; in this case, the button is disabled and cannot be clicked. */
+.anv-caption-popup-entry {
+  height: 20px;
+  margin-bottom: 2px;
+  border: 0px solid #555;
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.anv-caption-popup-entry[on=false]:hover {
+  /*background-color: #ccc;*/
+  color: #ee3f25;
+}
+
+.anv-caption-popup-entry[on=false] {
+  cursor: pointer;
+  color: #808080;
+  /*background-color: #aaa;*/
+}
+
+.anv-caption-popup-entry[on=true] {
+  cursor: default;
+  color: white;
+  /*background-color: #444;*/
+}
+
+/* The control bar caption search button. This button is used to show and hide the caption search screen. */
+.anv-search-btn {
+  float: right;
+  width: 28px;
+}
+
+.anv-no-touch .anv-search-btn:hover {
+  background-position: -258px -33px;
+}
+
+/* The control bar quality button. This button is used to show a small popup containing buttons for adjusting video's
+   bitrate. */
+.anv-quality-btn {
+  float: right;
+  width: 32px;
+}
+
+.anv-quality-btn[switch-in-progress=true] .anv-quality-btn-icon {
+  -webkit-animation: spin 6s linear infinite;
+  -moz-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
+}
+
+.anv-quality-btn-icon {
+  /*background-position: -294px 0px;*/
+  /*width: 32px;*/
+}
+
+.anv-no-touch .anv-quality-btn:hover {
+  background-position: -294px -32px;
+}
+
+.anv-quality-popup {
+  bottom: 48px;
+  left: -16px;
+  width: auto;
+  height: auto;
+  z-index: 2147483648;
+  visibility: hidden;
+  /*transition: visibility 0s linear 0.8s, opacity 0.8s ease 0s;*/
+  /*SAFARI*/
+  /*-webkit-transition: visibility 0s linear 0.8s, opacity 0.8s ease 0s;*/
+}
+
+.anv-quality-popup-menu {
+  width: auto;
+  height: auto;
+  padding: 4px;
+  background: rgba(5, 4, 5, 0.69);
+  border: 0px solid #555;
+  border-radius: 5px;
+  z-index: 2147483648;
+}
+
+.anv-quality-popup-tail {
+  position: relative;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgba(5, 4, 5, 0.69);
+  z-index: 2147483648;
+}
+
+.anv-quality-btn:hover > .anv-quality-popup, .anv-quality-popup:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 0.2s ease 0s;
+  /*SAFARI*/
+  -webkit-transition: visibility 0s linear 0s, opacity 0.2s ease 0s;
+}
+
+/* One of the caption language buttons in the caption popup. These buttons are given on=true when they represent the
+   caption language that is currently in use; in this case, the button is disabled and cannot be clicked. */
+.anv-quality-popup-entry {
+  width: auto;
+  height: 20px;
+  margin-bottom: 2px;
+  border: 0px solid #555;
+  border-radius: 2px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.anv-quality-popup-entry[on=false]:hover {
+  /*background-color: #ccc;*/
+  color: #ee3f25;
+}
+
+.anv-quality-popup-entry[on=false] {
+  cursor: pointer;
+  color: #808080;
+  /*background-color: #aaa;*/
+}
+
+.anv-quality-popup-entry[on=true] {
+  cursor: default;
+  color: white;
+  /*background-color: #444;*/
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
+
+.anv-quality-popup-entry[on=pending] {
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+  -webkit-animation-duration: 1s;
+}
+
+.anv-download-btn {
+  float: right;
+  width: 32px;
+}
+
+.anv-download-btn:hover {
+  background-position: -477px -33px;
+}
+
+/* The control bar fullscreen button. This button is used for toggling fullscreen mode. */
+.anv-fullscreen-btn {
+  float: right;
+  width: 32px;
+}
+
+/* The control bar picture-in-picture button */
+.anv-picture-in-picture-btn {
+  float: right;
+  width: 32px;
+}
+
+.anv-no-touch .anv-picture-in-picture-btn:hover {
+  background-position: -505px -126px;
+}
+
+/* The control bar container */
+.anv-control {
+  position: absolute;
+  width: 100%;
+  height: 53px;
+  bottom: 0;
+  left: 0;
+  background: rgba(5, 4, 5, 0.69);
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00050405', endColorstr='#D1050405', GradientType=0);
+  zoom: 1;
+  background: -moz-linear-gradient(top, rgba(5, 4, 5, 0), rgba(5, 4, 5, 0.82));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(5, 4, 5, 0)), to(rgba(5, 4, 5, 0.819608)));
+  color: #fff;
+  z-index: 2147483648;
+}
+
+/* The video preview container */
+.anv-preview {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+/* The closed caption text container */
+.anv-track {
+  position: absolute;
+  bottom: 15%;
+  margin: 0 5%;
+  width: 90%;
+  z-index: 2147483648;
+}
+
+.anv-next-video-info {
+  top: 40px;
+  position: relative;
+  transform: translate(0, -50%);
+  padding-left: 10px;
+  font-size: 20px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 258px;
+}
+
+.anv-next-video-image {
+  height: 74px;
+  float: left;
+}
+
+.anv-next-video-title {
+  text-align: center;
+  font-size: 20px;
+  height: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 5px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.anv-next-video-container {
+  display: block;
+  z-index: 2147483648;
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  width: 400px;
+  height: 105px;
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid #666;
+  color: #FFF;
+  padding: 5px;
+  max-width: 500px;
+}
+
+
+.anv-caption-result-holder {
+  text-align: left;
+  display: inline-block;
+  padding: 8px;
+
+}
+
+.anv-caption-result {
+  display: inline-block;
+  /*padding: 0 5px;*/
+}
+
+/* The bar displaying playback progress. This is the actual left-side sub-component of the seek bar that grows as
+   playback proceeds. */
+.anv-duration-bar {
+  background: #ee3f25;
+  float: left;
+  /*-webkit-transition: width .3s; *//* Safari */
+  /*transition: width .3s;*/
+}
+
+/* The overall seek bar container. This contains the duration bar and the scroll button. */
+.anv-time-line {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background: #000;
+  background-clip: content-box;
+  pointer-events: all;
+}
+
+.anv-time-line:hover {
+  height: 9px;
+  padding-top: 2px;
+}
+
+.anv-time-line:hover .anv-scroll-button-circle {
+  width: 20px;
+  height: 20px;
+  /*top: 7px;*/
+  background-color: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  /*box-shadow: .8px 1.4px #000;*/
+}
+
+.anv-time-line:hover .anv-ad-break {
+  top: 2px;
+  height: 9px;
+}
+
+.anv-time-line:hover .anv-recall-frame {
+  bottom: 3px;
+}
+
+.anv-time-line-remaining {
+  background: #606060;
+}
+
+.anv-ad-break {
+  border-left: 3px solid #fff;
+  top: 5px;
+  height: 6px;
+}
+
+/* The thumb/handle of the seek bar */
+.anv-scroll-button {
+  position: absolute;
+  padding: 10px 10px;
+  margin-left: -15px;
+  margin-top: -17px;
+  /*-webkit-transition: left .3s; *//* Safari */
+  /*transition: left .3s;*/
+  /*border-radius: 50%;*/
+  /*height: 10px;*/
+  /*width: 10px;*/
+  /*background: rgba(235, 204, 52, 0.69);*/
+  /*float: left;*/
+  width: 20px;
+  height: 20px;
+  /*top: 7px;*/
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.anv-scroll-button-circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  /*top: 7px;*/
+  background-color: #fff;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: .8px 1.4px #000;
+}
+
+.anv-scroll-button-circle:hover {
+  width: 20px;
+  height: 20px;
+  /*top: 7px;*/
+  background-color: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  /*box-shadow: .8px 1.4px #000;*/
+}
+
+/* The share screen */
+.anv-share {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.9);
+  color: #fff;
+  z-index: 2147483648;
+}
+
+/* The actual central area of the share screen that contains the content */
+.anv-share-panel {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  width: 84%;
+  height: 90%;
+  max-width: 740px;
+  max-height: 360px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* This class is given to all buttons within the share screen */
+.anv-share-btn {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* This class is given to all text-based buttons within the share screen */
+.anv-share-text-btn {
+  color: #fff;
+  background-color: #666;
+  /*font-weight: bold;*/
+  text-align: center;
+  font-size: 0.6em;
+  height: 26px;
+  max-height: 28px;
+  line-height: 26px;
+  overflow: hidden;
+}
+
+.anv-no-touch .anv-share-text-btn:hover {
+  color: #ee3f25;
+}
+
+.anv-share-text-btn, .anv-share-input {
+  border: 0px solid #444;
+  border-radius: 6px;
+  margin-bottom: 4%;
+}
+
+.anv-share-to-input, .anv-share-from-input, .anv-share-msg-input {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
+
+/* The share panel header */
+.anv-share-title-label {
+  height: 38px;
+  line-height: 2em;
+}
+
+/* The text that describes the user's email status within the share screen */
+.anv-share-send-status-label {
+  height: 32px;
+  color: #ffad1d;
+}
+
+.anv-share-content-panel {
+  min-width: 278px;
+}
+
+/* The left section of the share panel */
+.anv-share-left-panel {
+  min-width: 120px;
+  width: 47%;
+}
+
+/* The right section of the share panel */
+.anv-share-right-panel {
+  margin-left: 5%;
+  min-width: 150px;
+  width: 48%;
+}
+
+/* The prompt for the email section in the share screen */
+.anv-share-email-label {
+  margin-bottom: 4%;
+  font-size: 0.8em;
+}
+
+/* The to and from textboxes in the share screen */
+.anv-share-to-input, .anv-share-from-input {
+  height: 26px;
+}
+
+/* The message textarea in the share screen */
+.anv-share-msg-input {
+  height: 50px;
+}
+
+/* The send button in the share screen */
+.anv-share-send-btn {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.anv-share-social-links-panel {
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+/* This class is given to the social media icon buttons within the share screen */
+.anv-share-social-btn {
+  display: inline-block;
+}
+
+.anv-share-social-btn svg{
+  display: inline-block;
+  width: auto;
+  height: 32px;
+}
+
+/* These are buttons used for closing the share and search screens */
+.anv-share-close-btn,
+.anv-search-close-btn,
+.anv-playlist-close-btn,
+.anv-notification-close-btn,
+.anv-caption-set-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.anv-share-close-btn svg,
+.anv-search-close-btn svg,
+.anv-playlist-close-btn svg,
+.anv-notification-close-btn svg,
+.anv-caption-set-close-btn svg {
+  width: auto;
+  height: 16px;
+  margin: 8px;
+}
+
+
+.anv-notification-close-btn {
+  height: 32px;
+}
+
+/* The share screen Facebook icon button. This button is used to open Facebook for sharing this video in a new tab. */
+.anv-facebook-btn {
+  background-position: -319px -89px;
+  width: 32px;
+  height: 32px;
+}
+
+.anv-no-touch .anv-facebook-btn:hover {
+  background-position: -319px -124px;
+}
+
+/* The share screen Google+ icon button. This button is used to open Google+ for sharing this video in a new tab. */
+.anv-google-plus-btn {
+  background-position: -253px -89px;
+  width: 34px;
+  height: 32px;
+}
+
+.anv-no-touch .anv-google-plus-btn:hover {
+  background-position: -253px -124px;
+}
+
+/* The share screen Pinterest icon button. This button is used to open Pinterest for sharing this video in a new tab. */
+.anv-pinterest-btn {
+  background-position: -352px -89px;
+  width: 32px;
+  height: 32px;
+}
+
+.anv-no-touch .anv-pinterest-btn:hover {
+  background-position: -352px -124px;
+}
+
+/* The share screen Twitter icon button. This button is used to open Twitter for sharing this video in a new tab. */
+.anv-twitter-btn {
+  width: 32px;
+  height: 32px;
+
+}
+
+.anv-no-touch .anv-twitter-btn:hover {
+  background-position: -287px -124px;
+}
+
+/* The link and embed textboxes in the share screen */
+.anv-share-link-input, .anv-share-embed-input {
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 24px;
+}
+
+/* The link and embed buttons in the share screen */
+.anv-share-link-btn, .anv-share-embed-btn {
+  min-width: 100px;
+  margin: 0 5px;
+
+}
+
+.anv-share-start-time-panel {
+  font-size: .9em;
+  margin-top: 5px;
+  height: 26px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+.anv-share-input-area {
+  font-size: 0.75em;
+}
+
+/* The playback start time prompt in the share screen */
+.anv-share-start-time-prefix {
+  font-size: 0.75em;
+}
+
+.anv-share-start-time-button {
+  font-size: 0.75em;
+  text-decoration: underline;
+}
+
+.anv-share-start-time-input-button {
+  font-size: 0.75em;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+/* The playback start time textbox in the share screen */
+.anv-share-start-time-input {
+  max-width: 40px;
+  width: 30%;
+  min-width: 30px;
+  height: 24px;
+  margin-left: 4px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* The caption search screen */
+.anv-search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  /*width: 540px;*/
+  /*height: 260px;*/
+  border: 0px solid #444;
+  border-radius: 5px;
+  background: rgba(5, 4, 5, 0.69);
+  color: #fff;
+  overflow: hidden;
+  z-index: 2147483648;
+}
+
+.anv-search-input {
+  border: none;
+  border-radius: 5px;
+}
+
+/* The search icon shown within the search screen search query textbox */
+.anv-search-icon svg {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+}
+
+.anv-search-icon svg *{
+  fill: #000;
+}
+/*video::-webkit-media-controls {*/
+/*display:none !important;*/
+/*}*/
+/* This is triangle attached to the preview image container that indicates the location of the preview image on the
+   seek bar */
+.anv-time-label-tail {
+  position: relative;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgba(5, 4, 5, 0.69);
+  z-index: 2147483648;
+}
+
+/* The slider preview container */
+.anv-slider-preview {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  z-index: 2147483648;
+}
+
+/* The splash screen container */
+.anv-splash {
+  z-index: 2147483648;
+}
+
+/* The play button displayed over top of the splash screen */
+.anv-splash-play-button {
+  cursor: pointer;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  z-index: 2147483648;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  pointer-events: all;
+}
+
+.anv-splash-play-button-img {
+  position: absolute;
+
+}
+
+.anv-chromecast-button {
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
+.anv-splash-img > .anv-chromecast-button {
+  display: none !important;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.anv-splash-mode-hoverScreen > .anv-splash-img > .anv-chromecast-button,
+.anv-splash-mode-castScreen > .anv-splash-img > .anv-chromecast-button {
+  display: none;
+}
+
+.anv-chromecast-button[state="active"],
+.anv-chromecast-button[state="buffering"],
+.anv-chromecast-button[state="playing"],
+.anv-chromecast-button[state="paused"] {
+  display: block;
+  background-position: -32px 0;
+}
+.anv-chromecast-button[state="active"] .cast-error,
+.anv-chromecast-button[state="buffering"] .cast-error,
+.anv-chromecast-button[state="playing"] .cast-error,
+.anv-chromecast-button[state="paused"] .cast-error {
+  display: none;
+}
+
+.anv-chromecast-button[state="idle"] {
+  display: block;
+  background-position: 0 0;
+}
+
+.anv-chromecast-button[state="idle"] .cast-inner,
+.anv-chromecast-button[state="idle"] .cast-error {
+  display: none;
+}
+
+.anv-chromecast-button[state="error"] {
+  display: block;
+  background-position: -64px 0;
+}
+
+.anv-control > .anv-chromecast-button {
+  float: right;
+}
+
+.anv-splash-cast-status {
+  display: none;
+  position: absolute;
+  left: 30px;
+  padding: 5%;
+  bottom: 15%;
+}
+
+.anv-splash-mode-castScreen .anv-splash-cast-status {
+  display: block;
+}
+
+.anv-splash-cast-load-button {
+  display: none;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.anv-splash-mode-loadScreen .anv-splash-cast-load-button:not([status="none"]) {
+  display: block;
+}
+
+.anv-splash-cast-status-icon {
+  display: inline-block;
+  width: 50px;
+  height: 44px;
+}
+
+.anv-splash-cast-status-icon svg * {
+  fill: #eef8ff;
+}
+
+.anv-splash-cast-status-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.anv-splash-cast-status-icon svg .cast-error {
+  display: none;
+}
+
+.anv-control-playlist-badge {
+  background-color: rgb(238,63,37);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+.anv-control-playlist-badge-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+}
+
+.anv-splash-cast-status-message-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  color: lightslategray;
+  margin-left: 5px;
+}
+
+.anv-splash-cast-status-message {
+  font-size: .8em;
+}
+
+.anv-splash-cast-status-receiver-name {
+  font-size: 1.4em;
+}
+
+/* The container for the video title and description displayed over top of the splash screen */
+.anv-splash-header {
+  position: relative;
+  height: 30%;
+  zoom: 1;
+  color: #fff;
+  padding: 5% 5%;
+}
+
+.anv-splash-header-gradient {
+  background: rgba(5, 4, 5, 0.42);
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1050405', endColorstr='#00050405', GradientType=0);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 4, 5, 0.82)), to(rgba(5, 4, 5, 0))); /* for webkit browsers */
+  background: -moz-linear-gradient(top, rgba(5, 4, 5, 0.82), rgba(5, 4, 5, 0)); /* for firefox 3.6+ */
+}
+
+/* Information about the video displayed in the splash screen */
+.anv-splash-info {
+  color: #fff;
+  float: left;
+  width: 90%
+}
+
+/* The title of the video displayed in the splash screen */
+.anv-splash-title {
+  font-size: 1.7em;
+}
+
+/* The title of the video displayed in the splash screen */
+.anv-splash-description {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+/* The Splash share button */
+.anv-splash-share {
+  /*float: right;*/
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  width: 32px;
+  height: 32px;
+  pointer-events: all;
+}
+
+.anv-splash-share svg {
+  height: 32px;
+  width: auto;
+}
+
+.anv-no-touch .anv-splash-share:hover > .anv-splash-share-svg * {
+  fill: #ee3f25;
+}
+
+.anv-splash-share:hover {
+  /*background-position: -224px -28px;*/
+}
+
+/* The playlist panel video entry that is currently selected */
+.anv-selected-playlist-item {
+  background: rgba(130, 130, 130, 0.7);
+}
+
+.anv-playlist-item {
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.anv-playlist-item-info {
+  position: relative;
+  overflow: hidden;
+  transform: translate(0,-50%);
+  top: 50%;
+  padding: 10px;
+}
+
+.anv-playlist-item-desc {
+  font-size: 0.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1em;
+  max-height: 3.3em;
+}
+
+
+
+/* The playlist item is simply an video entry in the playlist panel. The playlist mark is a vertical bar shown on the
+   left of a playlist item when it hovered over. */
+.anv-no-touch .anv-playlist-item:hover {
+  background: rgba(130, 130, 130, 0.7);
+}
+
+.anv-splash-spinning-wheel {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 47px;
+  height: 47px;
+  z-index: 2147483649;
+}
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -752px;
+  }
+}
+
+@-moz-keyframes play {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -752px;
+  }
+}
+
+@keyframes play {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -752px;
+  }
+}
+
+.anvVideoContent:-webkit-full-screen {
+  width: 100%
+}
+
+.anvVideoContent:-moz-full-screen {
+  width: 100%
+}
+
+.anvVideoContent:-ms-full-screen {
+  width: 100%
+}
+
+.anvVideoContent:-o-full-screen {
+  width: 100%
+}
+
+.anvVideoContent:full-screen {
+  width: 100%
+}
+
+.anv-recommendation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2147483648;
+  color: white;
+}
+
+.anv-recommendation-content {
+  /*padding: 5% 5%;*/
+  background: #000;
+  padding: 0 5%;
+  width: 90%;
+  height: 100%;
+}
+
+.anv-recommendation-background-poster {
+  background-color: #000;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.anv-recommendation-background-poster-filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.anv-recommendation-nav {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+}
+
+.anv-recommendation-nav-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.anv-recommendation-nav-icon svg {
+  height: 22px;
+  width: auto;
+  margin: 5px;
+}
+
+.anv-recommendation-nav-icon svg * {
+  fill: #fff;
+}
+
+.anv-no-touch .anv-recommendation-nav-icon:hover svg * {
+  fill: #ee3f25;
+}
+
+.anv-recommendation-prev {
+  left: 0;
+}
+
+.anv-recommendation-next {
+  right: 0;
+}
+
+.anv-recommendation-header {
+  /*background: #1817c0;*/
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+.anv-recommendation-title {
+  font-size: 2em;
+  white-space: nowrap;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  margin: 3%;
+}
+
+.anv-recommendation-main {
+  display: block;
+  position: relative;
+  /*background: #1817c0;*/
+  /*margin-top: 5%;*/
+  margin-bottom: 5%;
+  width: 100%;
+  height: 75%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.anv-recommendation-up-next {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 100%;
+
+}
+
+.anv-recommendation-up-next-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin: 10px 0;
+  padding: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.anv-recommendation-up-next-play {
+  cursor: pointer;
+  display: none;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  .anv-recommendation-background-poster {
+    display: block;
+  }
+  .anv-recommendation-small-content {
+    display: block;
+  }
+  .anv-recommendation-nav-icon {
+    display: none;
+  }
+  .anv-recommendation-title {
+    font-size: 1.3em;
+  }
+  .anv-recommendation-main {
+    display: none;
+  }
+  .anv-recommendation-up-next {
+    display: block;
+  }
+}
+
+.anv-recommendation-columns {
+  position: absolute;
+  height: 100%;
+  max-height: 100%;
+  /*background: #f817ff;*/
+}
+
+.anv-recommendation-column {
+  height: 100%;
+  /*background: #1718ff;*/
+  float: left;
+  /*padding: 5px;*/
+  /*margin: 1px;*/
+}
+
+.anv-recommendation-frame {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  border-radius: 3px;
+  opacity: 1.0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  /*background: #7718ff;*/
+  /*padding: 5%;*/
+}
+
+.anv-recommendation-frame:hover {
+  /*background: #ee3f25;*/
+}
+
+.anv-no-touch .anv-recommendation-frame:hover .anv-recommendation-info {
+  display: block;
+
+}
+
+.anv-no-touch .anv-recommendation-info {
+  display: none;
+  background: rgba(0, 0, 0, .8);
+}
+
+.anv-recommendation-info {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  padding: 0 5%;
+  width: 90%;
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(5, 4, 5, 0.82)', endColorstr='rgba(5, 4, 5, 0)');  for IE*/
+  /*background: -webkit-gradient(linear, left bottom, right bottom, from(rgba(5, 4, 5, 0.82)), to(rgba(5, 4, 5, 0)));  for webkit browsers*/
+  /*background: -moz-linear-gradient(left,  rgba(5, 4, 5, 0.82),  rgba(5, 4, 5, 0));  for firefox 3.6+*/
+  color: #fff;
+}
+
+.anv-recommendation-info-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .9em;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+}
+
+.anv-recommendation-info-desc {
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.7em;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.anv-recommendation-info-timer {
+  color: #ee3f25;
+}
+
+.anv-recommendation-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 10px;
+  margin: auto;
+  height: 95%;
+  width: 95%;
+}
+
+.anv-recommendation-thumbnail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.anv-recommendation-share {
+  float: right;
+  margin: 3%;
+  cursor: pointer;
+}
+
+.anv-recommendation-replay {
+  float: right;
+  margin: 3% 0;
+  cursor: pointer;
+}
+
+.anv-recommendation-share svg,
+.anv-recommendation-replay svg {
+  width: auto;
+  height: 32px;
+}
+
+.anv-recommendation-share svg *,
+.anv-recommendation-replay svg * {
+  fill: #fff;
+}
+
+.anv-no-touch .anv-recommendation-share:hover svg *,
+.anv-no-touch .anv-recommendation-replay:hover svg * {
+  fill: #ee3f25;
+}
+
+.anv-recommendation-fade {
+  opacity: 0.0;
+}
+
+.anv-no-touch .anv-recommendation-replay:hover {
+  background-position: -415px -32px;
+}
+
+.anv-recall-frame {
+  bottom: 0;
+  padding: 0 5px;
+  width: 50px;
+  z-index: 2147483648;
+}
+
+.anv-recall-time {
+  /*position: absolute;*/
+  text-align: center;
+  width: auto;
+  padding: 4px;
+  height: 15px;
+  font-size: 0.8em;
+  background: rgba(34, 34, 34, .95);
+
+  /*bottom: 25px;*/
+}
+
+.anv-recall-tail {
+  position: relative;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgba(34, 34, 34, 0.95);
+}
+
+.anv-recall-line {
+  width: 24px;
+  border-right: solid 2px #fff;
+  height: 15px;
+}
+
+.anv-live-btn {
+  /*width:20%;*/
+  margin-right: 10px;
+  float: right;
+}
+
+.anv-live-label {
+  font-size: 0.9em;
+  line-height: 30px;
+  text-align: left;
+  float: left;
+}
+
+.anv-live-mark {
+  font-size: 1.5em;
+  line-height: 28px;
+  float: left;
+}
+
+html {
+  -webkit-touch-callout: none !important;
+}
+
+body {
+  -webkit-touch-callout: none !important;
+}
+
+.anv-caption-set {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background: rgba(34, 34, 34, 0.8);
+  color: white;
+  border-radius: 5px;
+  font-family: arial;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 2147483648;
+}
+
+.anv-caption-set-header {
+  height: 20%;
+  width: 80%;
+  max-width: 500px;
+  max-height: 250px;
+  margin: 0 auto;
+  line-height: 5em;
+}
+
+.anv-caption-set-content {
+  height: 50%;
+  min-height: 145px;
+  max-width: 500px;
+  max-height: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.anv-caption-set-main {
+  width: 50%;
+  height: 100%;
+  float: left;
+  /*background: #193;*/
+}
+
+.anv-caption-set-advanced {
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.anv-overlay-close-btn svg {
+  height: 14px;
+  padding: 2px;
+  width: auto;
+}
+.anv-overlay-close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.anv-caption-set-main-row {
+  height: 25%;
+  width: 100%;
+}
+
+.anv-caption-set-main-half {
+  width: 48%;
+  min-width: 110px;
+}
+
+.anv-caption-set-advanced-row {
+  /*border: solid 1px #000;*/
+  height: 25%;
+  width: 100%;
+}
+
+.anv-caption-set-narrow-row {
+  height: 20%;
+  width: 100%;
+}
+
+.anv-caption-set-expand-button {
+  font-size: 0.8em;
+}
+
+.anv-caption-set-advanced-panel {
+  height: 85%;
+  width: 100%;
+}
+
+.anv-caption-set-result-frame {
+  min-height: 30%;
+  height: auto;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.anv-caption-set-result-holder {
+  display: inline-block;
+  padding: 8px;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.anv-caption-set-result {
+  /*line-height: 2em;*/
+  display: inline-block;
+  /*margin: 10px auto;*/
+  /*padding: 0 5px;*/
+}
+
+.anv-caption-set-row-label {
+  color: white;
+  font-size: .75em;
+  height: 2em;
+  line-height: 32px;
+  vertical-align: middle;
+  padding: 0 5px 0 0;
+}
+
+input[type="checkbox"] {
+  margin: 0 4px 0 0;
+}
+
+.anv-caption-set-check-label {
+  font-size: 0.75em;
+  vertical-align: top;
+  color: white;
+}
+
+.anv-check-holder {
+  margin-right: 25px;
+}
+
+.anv-caption-set-select {
+  /*-webkit-appearance: menulist-button;*/
+  /*-moz-appearance: menulist-button;*/
+  height: 28px;
+  background: #fff;
+  /*width: 68px;*/
+  padding: 0 5px;
+  text-align: center;
+  /*font-size: 16px;*/
+  /*line-height: 1;*/
+  border: solid 2px rgb(132, 132, 132);
+  border-radius: 5px;
+  height: 28px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 50%;
+}
+
+.anv-color-picker-item {
+  float: left;
+}
+
+.anv-left {
+  float: left;
+}
+
+.anv-right {
+  float: right;
+}
+
+.anv-color-picker {
+  background: #444444;
+  border-radius: 4px;
+}
+
+.anv-caption-set-color-box {
+  position: relative;
+  background: #fff;
+  width: 26px;
+  height: 26px;
+  border: solid 2px rgb(132, 132, 132);
+  border-radius: 4px;
+
+}
+
+.anv-select-corner {
+  position: absolute;
+  bottom: -1px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: rgb(132, 132, 132);
+  border-bottom-right-radius: 4px;
+}
+
+.anv-select-triangle {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 6px solid #000;
+  margin: 2px;
+}
+
+.anv-slate {
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 360px;
+  color: #fff;
+  background: #000000;
+  display: none;
+  z-index: 2147483649;
+}
+
+.anv-slate-frame {
+  width: 96%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 2%;
+  bottom: 0;
+  right: 2%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.anv-slate-animation {
+  position: relative;
+  max-width: 200px;
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: super;
+}
+
+.anv-slate-message-frame {
+  display: inline-block;
+  height: 100%;
+  padding-left: 3%;
+  width:  70%;
+  vertical-align: top;
+}
+
+.anv-slate-message {
+  line-height: 50px;
+  font-family: Arial, sans-serif;
+  color: #606060;
+  vertical-align: middle;
+  font-size: 3.5vw;
+  display: inline-block;
+}
+
+.anv-slate-message-frame:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.anv-slate-outer {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483649;
+  -webkit-animation: anv-cv 3.6s infinite linear;
+  -moz-animation: anv-cv 3.6s infinite linear;
+  animation: anv-cv 3.6s infinite linear;
+}
+
+.anv-slate-inner svg,
+.anv-slate-outer svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes anv-cv {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes anv-cv {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes anv-cv {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@keyframes anv-ccv {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes anv-ccv {
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes anv-ccv {
+  to {
+    -moz-transform: rotate(0deg);
+  }
+  from {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+.anv-slate-inner {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  padding-bottom: 25%;
+  padding-top: 25%;
+  z-index: 2147483649;
+  -webkit-animation: anv-ccv 3.6s infinite linear;
+  -moz-animation: anv-ccv 3.6s infinite linear;
+  animation: anv-ccv 3.6s infinite linear;
+}
+
+/*styling for subscriber authentication*/
+.anv-login-dialog {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  width: 260px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.anv-login-error {
+  color: red;
+  height: 28px;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 10px 0;
+}
+
+.anv-full-width {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.anv-row-item {
+  margin-right: 10px;
+}
+
+.anv-purchase, .anv-login {
+  -moz-box-shadow: inset 0px 1px 0px 0px #f5978e;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f5978e;
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(center top, #f24537 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+  background-color: #f24537;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-indent: 0;
+  border: 1px solid #d02718;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #810e05;
+}
+
+.anv-purchase:active, .anv-login:active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+  background: -moz-linear-gradient(center top, #c62d1f 5%, #f24537 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+  background-color: #c62d1f;
+}
+
+.anv-forgot {
+  text-decoration: none;
+  color: rgb(64, 153, 255);
+  font-size: .9em;
+}
+
+.anv-ad-timer-wrapper {
+  position: absolute;
+  z-index: 999999999999999999;
+  color: #fff;
+  padding: 1.5%;
+  width: 100%;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.anv-ad-timer-wrapper-gradient {
+  background: rgba(5, 4, 5, 0.42);
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1050405', endColorstr='#00050405', GradientType=0);
+  zoom: 1;
+  background: -moz-linear-gradient(top, rgba(5, 4, 5, 0.82), rgba(5, 4, 5, 0));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(5, 4, 5, 0.819608)), to(rgba(5, 4, 5, 0)));
+  background: linear-gradient(to bottom, rgba(5, 4, 5, 0.81960784313725), rgba(5, 4, 5, 0.0));
+}
+
+.anv-learn-more {
+  display: none;
+  background: rgba(0, 0, 0, .8);
+  border: 1px solid #eee;
+  color: #fff;
+  float: right;
+  padding: 1%;
+  pointer-events: all;
+  cursor: pointer;
+  z-index: 99999999999999999999999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.anv-skip-ad-button {
+  position: absolute;
+  /*right: 0;*/
+  /*top: 60%;*/
+  background: rgba(0, 0, 0, .8);
+  border: 1px solid #eee;
+  padding: 1%;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999999999999999999;
+}
+
+.anv-notification-dialog {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, .9);
+  display: none;
+  font-family: arial, sans-serif;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  z-index: 2147483649;
+}
+
+.anv-notification-dialog-content {
+  display: inline-block;
+  height: 30%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+  font-size: 5vh;
+  line-height: 7.5vh;
+}
+
+.anv-notification-dialog-content > a {
+  color: white;
+}
+
+.anv-notification-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 28px;
+  color: #000000;
+  display: none;
+  z-index: 2147483649;
+  cursor: pointer;
+}
+
+.anv-video-container-caption {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2147483648;
+  /*background: rgba(16, 221, 235, 0.68);*/
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  /*border: solid 1px #fff;*/
+}
+
+.anv-caption-608-frame {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  /*margin-left: 12.5%;*/
+  /*margin-right: 12.5%;*/
+}
+
+.anv-caption-608-frame-line {
+  font-family: Courier, monospace;
+}
+
+.anv-caption-608-frame-line-char {
+  display: inline-block;
+  visibility: hidden;
+  vertical-align: bottom;
+}
+
+.anv-autoplay-toggle-holder {
+  position: absolute;
+  right: 50px;
+  top: 16px;
+  font-size: 11px;
+}
+
+.anv-autoplay-toggle {
+  border-radius: 5px;
+  width: 25px;
+  height: 10px;
+  background-color: #888;
+  float: right;
+  margin-left: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.anv-autoplay-toggle:before{
+  position:absolute;
+  content:'';
+  top:-10px;
+  right:-10px;
+  left:-10px;
+  bottom:-10px;
+  cursor: pointer;
+}
+
+.anv-autoplay-toggle-inner-segment {
+  position: relative;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+  transition: left 0.2s;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.anv-splash-play-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.anv-splash-play-button > .anv-splash-play-button-svg * {
+  fill: rgba(255,255,255, 1);
+}
+
+.anv-no-touch .anv-splash-play-button > .anv-splash-play-button-svg * {
+  fill: rgba(255,255,255, 0.8);
+}
+
+.anv-splash-play-button > .anv-splash-play-button-svg:hover * {
+  fill: rgba(255,255,255, 1);
+}
+
+.anv-splash-share > .anv-splash-share-svg * {
+  fill: #ffffff;
+}
+
+.anv-control-btn > svg * {
+  fill: #fff;
+}
+.anv-control-btn > svg {
+  height: 16px;
+  width: auto;
+  margin: 8px auto;
+}
+
+.anv-control-btn > svg.anv-volume-icon-btn-svg {
+  height: 20px;
+  width: auto;
+  margin: 6px auto;
+}
+
+.anv-control-btn:hover > svg * {
+  fill: #ee3f25;
+}
+
+.anv-play-pause-btn[on=true] .pause,
+.anv-play-pause-btn[on=false] .play {
+  display: none;
+}
+
+/* This class is given to the volume icon button when the volume level is at 0 */
+.anv-volume-icon-btn[on=false] .low,
+.anv-volume-icon-btn[on=false] .medium,
+.anv-volume-icon-btn[on=false] .high {
+    display: none
+
+}
+.anv-volume-icon-off-btn:hover, .anv-volume-icon-btn[on=false]:hover {
+}
+/* This class is given to the volume icon button when the volume level is between 0 and 1/3 */
+.anv-volume-icon-low-btn[on=true] .low {
+    display: block;
+}
+.anv-volume-icon-low-btn[on=true] .medium,  .anv-volume-icon-low-btn[on=true] .high {
+    display: none;
+}
+.anv-volume-icon-med-btn[on=true] .high {
+    display: none;
+}
+.anv-volume-icon-med-btn[on=true] .low,  .anv-volume-icon-med-btn[on=true] .medium {
+    display: block;
+}
+.anv-volume-icon-high-btn[on=true] .low, .anv-volume-icon-high-btn[on=true] .medium,  .anv-volume-icon-high-btn[on=true] .high {
+    display: block;
+}
+.anv-volume-icon-off-btn[on=true] .low, .anv-volume-icon-off-btn[on=true] .medium,  .anv-volume-icon-off-btn[on=true] .high {
+    display: none;
+}
+.anv-no-touch .anv-volume-icon-high-btn[on=true]:hover {
+    background-position: -66px -33px;
+}
+.anv-fullscreen-btn[on=false] > .anv-fullscreen-btn-svg .normal{
+    display: none;
+}
+.anv-no-touch .anv-fullscreen-btn[on=false]:hover > .anv-fullscreen-btn-svg .normal{
+    display: none;
+    fill: #ee3f25;
+}
+.anv-fullscreen-btn[on=false] > .anv-fullscreen-btn-svg .fullscreen {
+    display: block;
+}
+.anv-fullscreen-btn[on=true] > .anv-fullscreen-btn-svg .normal{
+    display: block;
+}
+.anv-no-touch .anv-fullscreen-btn[on=true]:hover > .anv-fullscreen-btn-svg .normal{
+    display: block;
+    fill: #ee3f25;
+}
+.anv-fullscreen-btn[on=true] > .anv-fullscreen-btn-svg .fullscreen {
+    display: none;
+}
+
+.anv-share-social-btn > .anv-share-social-btn-svg * {
+    fill: #fff;
+}
+.anv-no-touch .anv-share-social-btn:hover > .anv-share-social-btn-svg * {
+    fill: #ee3f25;
+}
+
+.anv-share-close-btn svg *,
+.anv-search-close-btn svg *,
+.anv-notification-close-btn svg *,
+.anv-playlist-close-btn svg *,
+.anv-caption-set-close-btn svg *,
+.anv-overlay-close-btn svg * {
+    fill: #fff;
+}
+
+.anv-no-touch .anv-share-close-btn:hover svg *,
+.anv-no-touch .anv-search-close-btn:hover svg *,
+.anv-no-touch .anv-notification-close-btn:hover svg *,
+.anv-no-touch .anv-playlist-close-btn:hover svg *,
+.anv-no-touch .anv-caption-set-close-btn:hover svg *,
+.anv-no-touch .anv-overlay-close-btn:hover svg *{
+    fill: #ee3f25;
+}
+
+.anv-playlist-btn[on=true] svg * {
+    fill: #ee3f25;
+}
+.anv-playlist-btn[on=false] svg * {
+    fill: #fff;
+}
+
+/* Spining wheel */
+
+
+.anv-splash-spinning-wheel svg {
+  animation: rotate 2s linear infinite;
+  position: relative;
+}
+
+.anv-splash-spinning-wheel.ie11 svg {
+  animation: rotate 1s linear infinite;
+}
+
+
+.anv-splash-spinning-wheel svg .path {
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: square;
+  stroke: #fff;
+}
+
+.anv-splash-spinning-wheel.ie11 svg .path {
+  animation: none;
+  stroke-dasharray: 30,200;
+}
+
+.anv-splash-spinning-wheel svg .guide {
+  display: none;
+}
+
+.anv-splash-spinning-wheel.ie11 svg .guide {
+  display: block;
+  stroke: #6b6a6b;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+
+

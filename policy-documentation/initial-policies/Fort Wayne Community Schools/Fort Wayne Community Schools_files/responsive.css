@@ -1,0 +1,997 @@
+/******************* Customize responsive behaviors for phone browsers*************************/
+@media (max-width: 480px) {
+	h1 {
+		font-size: 2rem;
+	}
+ 	.searchbox {
+		clear: both;
+	}
+	.list-inline .important_icons {
+		display: block;
+	}
+	.green-date {
+		width: 12%;
+		font-size: 1.2rem;
+	}
+	.green-date span {
+		font-size: 1.4rem;
+	}
+	.district-status span {
+		padding: 0 .5rem;
+		display: inline-block;
+		justify-content: center;
+	}
+	.district-status span span {
+		padding: 0;
+	}
+	.district {
+		padding: 1rem;
+		margin: 0;
+		font-size: 1.2rem;
+	}
+	.calendars {
+		padding: 1rem 0 6rem 0;
+	}
+	.icon-menu {
+		padding: .2rem;
+		min-height: 40rem;
+		margin-top: 2rem;
+	}
+	.instagram-slideshow {
+		width: 28rem;
+		height: 20rem;
+	}
+	.app-footer ul {
+		text-align: center;
+	}
+	.app-footer li {
+		font-size: 4rem;
+		margin: 0;
+	}
+	.social-media {
+		height: 25rem;
+		width: 100%;
+	}
+	div.fwcs-app,  div.app-banner,  div.apple,  div.android {
+		padding: 0;
+	}
+	div.fwcs-app {
+		width: 100%;
+	}
+	div.app-banner {
+		padding-top: 5rem;
+	}
+	.poly-app {
+		-webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0 100%, 7% 50%, 0 0);
+		clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0 100%, 7% 50%, 0 0);
+		padding: .8rem 2rem;
+		height: 3.5rem;
+	}
+	.dark-gradient {
+		top: 19.5rem;
+		height: 5rem;
+	}
+	.social-media-banner:before, .social-media-banner:after {
+		margin-top: -5px;
+	}
+	.app-banner {
+		display: flex;
+		display: -webkit-flex; /* Safari 8 */
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap; /* Safari 8 */
+		justify-content: center;
+		-webkit-justify-content: center;/* Safari 8 */
+		padding-top: 2rem;
+		font-size: 3rem;
+	}
+	.app-banner:before {
+		content: '----';
+		letter-spacing: .15rem;
+		color: #9C8679;
+		margin-top: -5px;
+	}
+	.app-banner:after {
+		content: '----';
+		letter-spacing: .15rem;
+		color: #9C8679;
+		margin-top: -5px;
+	}
+	.staff-lookup {
+		padding: 5px 10px;
+	}
+	.app-footer {
+		height: 25rem;
+	}
+	.app-footer div a {
+		display: inline-block;
+		margin: 0 2rem;
+	}
+	.calendars {
+		padding: 5px;
+	}
+	.icon-bar a {
+		color: #b0b2b4;
+	}
+	.normal {
+		color: #b0b2b4;
+	}
+	.navbar-nav:after.searchbox, .navbar-nav:before.searchbox {
+		top: 7.1rem;
+		margin-bottom: -2px;
+		right: 10px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.navbar-nav:after.searchbox {
+		border-bottom-color: #F3F3F4;
+		border-width: 15px;
+		margin-left: -15px;
+		z-index: 1;
+	}
+	.school-details div {
+		border: none;
+		width: 100%;
+		border-bottom: 3px dashed #F3F3F4;
+		margin: 0 5rem;
+		padding: 2rem 1rem;
+	}
+	.school-details {
+		
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0 1rem;
+		line-height: 2rem;
+	}
+	.school-map-details {
+		height: 100%;
+	}
+	.school-map {
+		width: 100%;
+		display: flex;
+	}
+	.social-background {
+		margin: 0;
+	}
+	#body {
+		padding: 0 0 1rem 0;
+	}
+	.embed-pdf iframe {
+		width: 40rem;
+		height: 63rem;
+	}
+	.carousel-indicators {
+		width: 100%;
+	}
+	.carousel > .item > img {
+		height: 24rem;
+	}
+/* 	.dark-gradient {
+		top: 20rem;
+	} */
+}
+/******************* Customize responsive behaviors for ipad portrait browsers*************************/
+@media (max-width: 768px) {
+	#body {
+		padding: 0 0 0 0;
+	}
+	h1 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		padding: 1rem;
+		font-size: 1.8rem;
+		border: 0;
+	}
+	h2, .deadlines h2 {
+		font-size: 2rem;
+	}
+	.page-title {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.amp-lab-background {
+		width: 100%;
+		height: 30rem;
+		background-size: cover;
+		background-size: auto;
+		background-repeat: no-repeat;
+		margin-bottom: 2rem;
+	}
+	.amp-lab-launch {
+		font-size: 3rem;
+	}
+	.amp-logo {
+		width: 15rem;
+	}
+	a img.main_logo {
+		display: inline;
+	}
+	img.bgimage {
+		height: 20rem;
+	}
+	.bus-status, .our-staff, .upcoming-events {
+		margin: 0;
+		line-height: 2.5rem;
+	}
+
+	.blog-rows {
+		max-width: 100%;
+	}
+	.deadlines, .news-events {
+		max-width: 100%;
+		padding: 1rem;
+		font-size: 1.2rem;
+	}
+	h1 span.welcome-banner {
+		-webkit-clip-path: polygon(100% 0, 95% 54%, 100% 100%, 0 100%, 6% 53%, 0 0);
+		clip-path: polygon(100% 0, 95% 54%, 100% 100%, 0 100%, 6% 53%, 0 0);
+		width: 14rem;
+		text-align: center;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: center;
+		margin:0 0 1rem 0;
+		float: none;
+	}
+	h1 span.welcome-dash:before {
+		margin:0;
+		content: '----';
+		letter-spacing: .15rem;
+		color: white;
+	}
+	h1 span.welcome-dash:after {
+		margin:0;
+		content: '----';
+		letter-spacing: .15rem;
+		color: white;
+	}
+	.school-information .school-map-details, .school-information .school-map, .school-information .school-building, .school-information .school-building img  {
+		width: 100%;
+		text-align: center;
+	}
+	.school-building img {
+		height: 20rem;
+	}
+	.school-logo {
+		height: 3rem;
+		margin-top: 1.5rem;
+	}
+	.staff-lookup {
+		width: 100%;
+	}
+	.float-nav ul {
+		line-height: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-header {
+		margin: 0;
+		border: none;
+		display: inline-flex;
+		display: -webkit-inline-flex; /*Safari*/
+		justify-content: space-between;
+		-webkit-justify-content: space-between; /*Safari*/
+		flex-flow: wrap;
+		flex-wrap: wrap; /*Safari*/
+		width: 100%;
+		height: 5rem;
+	}
+	.navbar-header div button span {
+		position: relative;
+		text-align: right;
+		font-size: 2.5rem;
+		color: #B0B2B4;
+		margin: 0;
+		border: none;
+	}
+	/* centered navigation */
+	.navbar-default {
+		height: 6.5rem;
+	}
+	.navbar-toggle {
+		border: none;
+		height: 5rem;
+		float: none;
+		margin: 0;
+		font-size: 2.5rem;
+		color: #888;
+	}
+	.row.dark-grey-background, .row.darkest-grey-background, .row.green-background, .row.blue-background, .row.light-grey-background, .row.orange-background, .row.brown-background, .row.main-padding, .row.bright-blue-background  {
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+	.darkest-grey-background iframe {
+		width: 100%;
+	}
+	.navbar-header span a img.main_logo{
+		clear: both;
+		padding: 0;
+		height: 5rem;
+		margin: .5rem 0;
+	}
+	.navbar-header div a img.second_logo {
+		padding: 0 0 0 1rem;
+		height: 5rem;
+	}
+	.highlight-search {
+	  background: #B0D67A;
+	  color: white;
+	}
+	.highlight-language {
+	  background: #F7941E;
+	  color: white;
+	}
+	.highlight-font-setting-buttons {
+	  background: #9C8679;
+	  color: white;
+	}
+	.highlight-hamburger {
+	  background: #57B7DF;
+	  color: white;
+	}
+	div.language, div.search, div.hamburger, div.font-setting-buttons {
+		height: 100%;
+		width: 15%;
+		position: relative;
+		text-align: center;
+		display: block;
+		color: #888;
+	}
+	.social-background {
+		margin: 0;
+	}
+	.navbar-header .search:hover, .navbar-header .search:focus {
+		display: block;
+		background: #B0D67A;
+		height: 6.5rem;
+	}
+	.navbar-header .language:hover, .navbar-header .language:focus {
+		display: block;
+		background: #F7941E;
+		height: 6.5rem;
+	}
+	div.font-setting-buttons:hover, div.font-setting-buttons:focus  {
+		display: block;
+		background: #9C8679;
+		color: white;
+		height: 6.5rem;
+	}
+	div.font-setting-buttons {
+		padding-top: 10px;
+	}
+	button.contrast:hover, button.contrast:focus, button.contrast_back:hover, button.contrast_back:focus {
+		background: none;
+		padding: 0;
+	}
+	.navbar-header .hamburger:hover, .navbar-header .hamburger:focus {
+		display: block;
+		background: #57B7DF;
+		height: 6.5rem;
+	}
+	button.contrast, button.contrast_back {
+		font-size: 2.5rem;
+	}
+	.navbar-header .search button:hover span, .navbar-header .search button:focus span, .navbar-header .language button:hover span, .navbar-header .language button:focus span, .navbar-header .font-setting-buttons button:hover span, .navbar-header .font-setting-buttons button:focus span, :hover.span.icon-bar, :focus.span.icon-bar {
+		color: white;
+	}
+	.navbar-header .search:hover span.pointer, .navbar-header .search:focus span.pointer, .navbar-header .language:hover span.pointer, .navbar-header .language:focus span.pointer,.navbar-header .hamburger:hover span.pointer, .navbar-header .hamburger:focus span.pointer {
+		right: 15px;
+		top: 45px;
+		height: 0;
+		width: 0;
+		border: 10px solid transparent;
+		content: "";
+		position: absolute;
+	}
+	.navbar-header .search:hover span.pointer, .navbar-header .search:focus span.pointer {
+		border-bottom-color: #E5E6E7;
+	}
+	.navbar-header .language:hover span.pointer, .navbar-header .language:focus span.pointer {
+		border-bottom-color: #4D4D4F;
+	}
+	.navbar-header .hamburger:hover span.pointer, .navbar-header .hamburger:focus span.pointer {
+		border-bottom-color: #333333;
+		position: absolute;
+		right: 40px;
+		top: 47px;
+	}
+	.navbar-default > div > .green-logo:hover, .navbar-default > div > .green-logo:focus, .navbar-default > div > .orange-logo:hover, .navbar-default > div > .orange-logo:focus, .navbar-default > div > .brown-logo:hover, .navbar-default > div > .brown-logo:focus, .navbar-default > div > .blue-logo:hover, .navbar-default > div > .blue-logo:focus {
+		box-shadow: 0 -50px 0 0 #414142 inset;
+	}
+	.navbar-default > div > a {
+		display: block;
+		width: 100%;
+		color: white;
+	}
+	div.nav.navbar-nav {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		float: none;
+		width: 100%;
+		display: flex;
+		display: -webkit-flex;
+		height: 100%;
+		flex-flow: wrap;
+	}
+	.navbar, #body {
+		top: 0;
+	}
+	.nav div {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+	.nav div.searchbox {
+		height: 5rem;
+		display: block;
+	}
+	.school-first-color {
+		min-width: 90%;
+	}
+	.important-nav {
+		background: #333333;
+		display: inline-flex;
+		display: -webkit-inline-flex; /*Safari*/	
+		width: 100%;
+	}
+	.important-nav a {
+		justify-content: space-between;
+		-webkit-justify-content: space-between; /*Safari*/
+		color: white;
+		flex-grow: 2;
+	}
+	.important-nav a:hover, .important-nav a:focus {
+		background: #414142;
+		display: block;
+	}
+	.important-nav a:link:after, .important-nav a:visited:after {
+		border-right: 1px solid white;
+	}
+	.important-nav a.green-font, .important-nav a.orange-font, .important-nav a.light-brown-font {
+		padding: 10px;
+		text-align: center;
+		margin: 5px 0;
+	}
+	.important-nav a.green-font {
+		color: #B0D67A;
+		border-right: 1px solid #4d4d4f;
+	}
+	.important-nav a.orange-font {
+		color: #F7941E;
+		border-right: 1px solid #4d4d4f;
+		border-left: 1px solid #6e6e6f;
+	}
+	.important-nav a.light-brown-font {
+		color: #9C8679;
+		border-left: 1px solid #6e6e6f;
+	}
+	.green-logo, .blue-logo, .brown-logo, .orange-logo, .school-first-color {
+		width: 100%;
+		text-align: left;
+		padding-bottom: 1px;
+		background: #4D4D4F;
+		justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		border-bottom: 1px solid #282525;
+		padding-left: 10px;
+	}
+	.dropdown-menu {
+		min-width: 100%;
+		padding-top: 0;
+	}
+	li a:link.lang-select, li a:visited.lang-select {
+		border-bottom: 1px solid #282525;
+		color: white;
+	}
+	li a:hover.lang-select, li a:focus.lang-select {
+		background: #282525 !important;
+		color: white !important;
+	}
+ 	.orange-logo button:focus, .brown-logo button:focus, .blue-logo button:focus, .green-logo button:focus, .school-first-color button:focus {
+		background: #414142;
+	}
+	.orange-logo button:after, .brown-logo button:after, .blue-logo button:after, .green-logo button:after, .school-first-color button:after {
+		border-bottom: none;
+		color: #555;
+	}
+	button .icon-bar:hover, button .icon-bar:focus {
+		color: white;
+	}
+	.school-first-color {
+		width: 100%;
+	}
+	.dropdown form button {
+		color: white;
+		padding-left: 20px;
+	}
+	.dropdown button span {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	div.dropdown-menu {
+		min-width: 30rem;
+		background: #333333;
+		width: 100%;
+	}
+	.nav .open > a {
+		border: none;
+	}
+	.navbar-default .navbar-nav > div > a:hover, .navbar-default .navbar-nav > div > a:focus {
+		color: white;
+	}
+	.navbar-default > div > :hover, .navbar-default > div > :focus {
+		box-shadow: none;
+	}
+	.navbar-default, .navbar-default > button:hover, .navbar-default > button:focus {
+		box-shadow: none;
+	}
+ 	.navbar-default > .open > button, .navbar-default > .open > button:focus, .navbar-default > .open > button:hover,.navbar-default > .open > button:visited {
+		font-family: 'Teko-SemiBold';
+		color: white;
+		background: #414142;
+		border-bottom: 3px dashed #9C8679;
+	}
+	.dropdown.orange-logo form button, .dropdown.brown-logo form button, .dropdown.blue-logo form button, .dropdown.green-logo form button {
+		width: 100%;
+		display: block;
+		text-align: left;
+		padding-left: 20px;
+	}
+	.btn-group.open .dropdown-toggle {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.btn-group .dropdown-toggle {
+		position: absolute;
+		right: 0;
+		height: 50px;
+		width: 10%;
+		color: white;
+	}
+	/*Dropdown Menu starts*/
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: none;
+	}
+	/*Hide dropdown hover effect on mobile so Steve doesn't freak out each time he tests it*/
+ 	#navbar-collapse-2 div {
+		background: #4D4D4F;
+		padding: 0;
+	}
+	#navbar-collapse-2 div.dropdown {
+		color: white;
+		padding: 5px 20px;
+	}
+	.navbar-default .navbar-collapse {
+		border: none;
+		margin-top: -7px;
+		padding: 0;
+	}
+	.navbar-collapse.in {
+		overflow-y: visible;
+	}
+	#navbar-collapse-2 div.dropdown:after {
+		border-width: 15px;
+		margin-left: -15px;
+		z-index: 1000;
+	}	
+	.open.dropdown-menu:hover {
+		display: block !important;
+		display: none !important;
+	}
+	.dropdown div p a:link, .dropdown div p a:visited, .dropdown div a:link, .dropdown div a:visited {
+		font-size: 1rem;
+		padding-left: 20px;
+		line-height: 30px;
+	}
+	.dropdown-menu.multi-column {
+		width: 100% !important;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	.dropdown-menu.columns-2 {
+		width: 100%;
+	}
+	div.multi-column-dropdown {
+		margin: 0;
+	}
+	.dropdown-menu .multi-column .columns-2.multi-column-dropdown div a {
+		padding: 0;
+		margin: 0;
+	} 
+	.dropdown-menu div a {
+		padding: 0 1.5rem;
+	}
+	.school-first-color {
+		width: 100% !important;
+	}
+	.multi-column-dropdown div {
+		padding: 0;
+	}
+	.multi-column-dropdown {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		line-height: 0;
+		white-space: wrap;
+		color: white;
+		font-size: 1.6rem;
+	}
+	.multi-column-dropdown div a {
+		line-height: 0;
+		white-space: wrap;
+	}
+	/*search box*/
+	.search-nav {
+		height: 100%;
+	}
+	.float-nav {
+		position: relative;
+	}
+	.searchbox {
+		margin: 0; padding: 0;
+		font-family: 'Montserrat-Regular', 'Teko-SemiBold', arial;
+/* 		width: 100% !important; */
+	}
+	.searchbox input {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		padding: 3rem;
+		margin: 0;
+		width: 100%;
+		background: #E5E6E7;
+	}
+	.navbar-nav {
+		margin: 0 !important;
+	}
+	.container-fluid > .navbar-header {
+		margin: 0;
+	}
+	li.dropdown.searchbox {
+		background: #F0F1F1;
+	}
+	li.dropdown.normal a, li.dropdown button {
+		color: #B0D67A;
+		display: block;
+		position: absolute;
+		font-size: 1.4rem;
+		top: 1.7rem;
+		right: 2rem;
+	}
+	#navbar-collapse-3, #navbar-collapse-2, #navbar-collapse-1 {
+		position: relative;
+		width: 100%;
+		background: #4D4D4F;
+		color: white;
+	}
+	a:link.btn-primary, a:visited.btn-primary {
+		font-size: 1.2rem;
+	}
+	.main-padding {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.slick-slider {
+		width: 100%;
+	}
+	.carousel {
+		max-width: 100%;
+		height: 100%;
+	}
+	.slider {
+		position: relative;
+		text-align: center;
+		font-size: 1.6rem;
+		color: #F7941E;
+		font-family: 'Teko-SemiBold';
+		z-index: 200;
+		text-transform: uppercase;
+		top: 7rem;
+	}
+	.slider a {
+		color: #f7941e;
+		display: block;
+		background: #F3F3F4;
+		padding: 1rem;
+		text-decoration: none;
+	}
+	.slider a:hover, .slider a:focus {
+		color: #4D4D4F;
+		background: none;
+	}
+	.slider a span, .slider span {
+		color: #f7941e;
+		font-size: 1.6rem;
+		opacity: 0.5;
+		filter: alpha(opacity=5);
+	}
+	.slider-white {
+		position: relative;
+		display: block;
+		margin-top: 0;
+		text-align: center;
+		padding-top: 0;
+		max-width: 100%;
+		min-width: 100%;
+		top: 9rem;
+		left: 0;
+		z-index: 200;
+		background: #F3F3F4;
+	}
+	.carousel-inner {
+		background: #F3F3F4;
+	}
+	.carousel-indicators {
+		height: 3rem;
+		bottom: 1rem;
+		width: 100%;
+	}
+	.carousel-indicators li.active {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+	.item img {
+		min-width: 100%;
+		overflow: hidden;
+		height: 40rem;
+		position: relative;
+		background-size:cover;
+		background-position:50% 50%;
+	}
+	.item .carousel-caption {
+		position: relative;
+		min-width: 100%;
+		bottom: 8rem;
+	}
+	.greensheets, .deadlines, .news-events{
+		padding: 1rem 2rem;
+	}
+	.green-date {
+		padding: .5rem;
+		width: 20%;
+	}
+	.calendars {
+		padding: 0 2rem;
+	}
+	.searchbox form {
+		width: calc(100%);
+	}
+	.district_status {
+		font-size: 1rem;
+	}
+	.main-blocks {
+		width: 50%;
+	}
+	div.bottom-footer {
+		text-align: center;
+		padding-bottom: 4rem;
+	}
+	.bottom-footer .legal-content li:first-child:after {
+		content: "";
+		padding-left: 0;
+	}
+	div.col-lg-4.dot-four {
+		width: 100%;
+	}
+	.calendar-days {
+		height: 100%;
+	}
+	.nutrients-hack table > tbody > tr > td {
+		margin: 0;
+		padding: 0;
+		font-size: .6rem;
+		font-weight: normal;
+	}
+	select.custom-select {
+		margin: .5rem;
+		font-size: 1.4rem;
+		padding: .5rem;
+		width: 25rem;
+	}
+	.custom-select {
+		padding: .5rem;
+		font-size: 1.4rem;
+		width: 30rem;
+	}
+	.custom-submit {
+		padding: .5rem;
+		font-size: 1.4rem;
+	}
+	.row.staff-hack {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.bus-status div {
+		border: none;
+		padding: 0 2rem;
+	}
+	.bus-status {
+		border: 1px solid #F0F1F1;
+	}
+	.nav-tabs a {
+		height: 5.5rem;
+		width: 100%;
+	}
+	.athletics .nav-tabs {
+		padding: 0;
+	}
+	.nav-tabs li {
+		padding: 1rem 0 0 0;
+		width: 25%;
+	}
+	.nav > li > a {
+		padding: 1rem .5rem;
+	}
+}
+/******************* Collapse medium screens*************************/
+@media(min-width: 767px) and (max-width: 1000px) {
+	a img.main_logo {
+		padding-top: 2.5rem;
+		height: 7rem;
+	}
+	.main-buttons a:link, .main-buttons a:visited {
+		padding: .5rem;
+		margin: 0 1rem;
+		max-width: 12rem;
+	}
+	.district-status span {
+		font-size: 1.6rem;
+	}
+	.carousel {
+		max-width: 100%;
+	}
+	.blog-rows {
+		max-width: 100%;
+		flex-direction: row;
+	}
+	.deadlines, .news-events {
+		font-size: 1.2rem;
+	}
+	button.contrast, button.contrast_back {
+		padding: 0 2.2rem 0 2.2rem;
+		font-size: 1.2rem;
+	}
+	.amp-lab-launch {
+		font-size: 5rem;
+	}
+	.amp-lab-background {
+		height: 30rem;
+		background-size: cover;
+		background-size: auto;
+		background-repeat: no-repeat;
+		margin-bottom: 2rem;
+	}
+	.social-media {
+		padding: 3rem 2rem 0 2rem;
+		width: 40%;
+	}
+	.green-date {
+		width: 20%;
+	}
+	.main-blocks {
+		width: 25%;
+	}
+
+	.staff-lookup {
+		padding: 1rem 1rem;
+	}
+	.top-nav div {
+		font-size: 1.2rem;
+		padding: 0 1rem;
+	}
+	div.ct-language {
+		padding-top: .6rem;
+	}
+}
+@media(min-width: 1001px) and (max-width: 1200px) {
+	div.dropdown.ct-language:hover, div.dropdown.ct-language:focus {
+		width: 10%;
+	}
+	.school-logo a img {
+		height: 5rem;
+	}
+	.district-status span {
+		font-size: 1.8rem;
+	}
+	.carousel {
+		max-width: 70%;
+	}
+	.blog-rows {
+		max-width: 30%;
+	}
+	.green-date {
+		width: 15%;
+	}
+	.calendars {
+		padding: 0 2rem;
+	}
+	.deadlines {
+		min-height: 22rem;
+	}
+	.news-events, .deadlines {
+		padding: 1rem 2rem;
+	}
+	.main-blocks {
+		width: 25%;
+	}
+	.social-media {
+		width: 40%;
+	}
+	.slick-slider {
+		width: 60%;
+	}
+	.top-nav div {
+		font-size: 1.4rem;
+		padding: 0 1rem;
+	}
+	div.ct-language {
+		padding-top: .6rem;
+	}
+	.school-information .school-map-details, .school-information .school-map  {
+		width: 50%;
+	}
+	.school-information .school-building, .school-information .school-building img {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+	.searchbox form {
+		width: calc(100% - 60px);
+	}
+	.green-background.buttons {
+		padding: .5rem;
+		margin: 1rem .2rem;
+	}
+	.searchbox {
+		width: 45%;
+	}
+	.district-status span {
+		font-size: 2.2rem;
+	}
+	.news-events ul, .deadlines ul {
+		padding-left: 1.5rem;
+		padding-right: 0;
+	}
+	.news-events li, .deadlines li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.blog-rows {
+		max-width: 30%;
+	}
+	.custom-select {
+		padding: .5rem;
+		font-size: 1.4rem;
+		width: 25rem;
+	}
+	div.ct-language {
+		padding-top: .3rem;
+	}
+	.custom-select select {
+		font-size: 1.4rem;
+		padding: .2rem 1rem;
+		width: 37.8;
+		*width: 25rem;
+	}
+	select.custom-select {
+		margin: 2rem;
+		font-size: 1.6rem;
+		height: 5rem;
+	}
+	.custom-submit {
+		padding: 1rem;
+		font-size: 2rem;
+	}
+}

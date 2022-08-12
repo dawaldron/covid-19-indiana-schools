@@ -1,0 +1,1 @@
+$(function(){$(".submittable").on("change",function(){return $("#change_filter_form form").submit(),!1})});

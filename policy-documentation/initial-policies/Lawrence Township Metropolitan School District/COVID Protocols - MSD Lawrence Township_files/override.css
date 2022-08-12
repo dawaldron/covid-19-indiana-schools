@@ -1,0 +1,109 @@
+@media (min-width: 992px) {
+
+.NavMenu_d_lg_flex {
+
+	display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+}
+
+.st-announcements .container {
+    background: transparent;
+}
+
+.st-quicklinks .container {
+    background: transparent;
+
+}
+
+.st-menuWrapper .container {
+	background: transparent;
+
+}
+
+.st-utilityBar .container {
+	background: transparent;
+	
+}
+
+.owl-wrapper { 
+	z-index: 1;
+ }
+
+ .skyward a:hover {
+    background-color: transparent!important;
+}
+
+
+/*Interior Fixes*/
+
+
+.st-pageFooter .row {
+    display: flex;
+}
+
+header.st-pageHeader .row {
+    display: flex;
+}
+
+.container {         
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+   @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    .d-none {
+   display: none !important;
+}
+@media (min-width: 992px) {
+   .d-lg-flex {
+       display: -webkit-flex !important;
+       display: -ms-flexbox !important;
+       display: flex !important;
+   }
+}
+
+/*Header logo text styles*/
+
+.HeaderLogoWrapper {
+  display: flex;
+    align-items: center;
+}
+
+.HeaderLogoWrapper .header-logo-text {
+  margin-left: 15px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.HeaderLogoWrapper .header-logo-text a {
+  color: black;
+}
+
+.HeaderLogoWrapper .header-logo-text a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+
+.hideAfter:after { display: none !important; }
+.hideAfter ul { display: none !important; }  
+.hideAfter li { display: none !important; }
+
+}

@@ -1,0 +1,81 @@
+.edlio .page .width-constraint {
+  display: flex;
+  width: 100%; }
+
+.edlio .page .block {
+  display: block;
+  flex: 0 0 auto; }
+  .edlio .page .block.layout {
+    flex: 1 1 auto; }
+  .edlio .page .block.component.rich-text strong {
+    font-weight: 600; }
+  .edlio .page .block.component.rich-text em {
+    font-style: italic; }
+  .edlio .page .block.component.rich-text sub {
+    font-size: .8em;
+    vertical-align: sub; }
+  .edlio .page .block.component.rich-text sup {
+    font-size: .8em;
+    vertical-align: super; }
+
+.edlio .page.vertically-oriented .width-constraint {
+  flex-direction: column; }
+
+.edlio .page.horizontally-oriented .width-constraint {
+  flex-direction: row; }
+
+.edlio .page.legacy.right-aligned .main {
+  order: -1; }
+
+.edlio .page.legacy.right-aligned .sidebar {
+  order: 99; }
+
+.edlio .page.legacy.left-aligned .main {
+  order: 99; }
+
+.edlio .page.legacy.left-aligned .sidebar {
+  order: -1; }
+
+.edlio .page.legacy.full-width .main {
+  order: 0; }
+
+.edlio .page.legacy.full-width .sidebar {
+  display: none !important; }
+
+.edlio .page.legacy.hide-nav .sidebar nav {
+  display: none !important; }
+
+.edlio .page .rich-text strong {
+  font-weight: bold; }
+
+.edlio .page .rich-text em {
+  font-style: italic; }
+
+.edlio .page .rich-text h2,
+.edlio .page .rich-text h3 {
+  font-weight: bold; }
+
+.edlio .page .rich-text p {
+  margin-bottom: 1em; }
+
+.edlio .page .rich-text ul,
+.edlio .page .rich-text ol {
+  margin-bottom: 1em; }
+  .edlio .page .rich-text ul li,
+  .edlio .page .rich-text ol li {
+    margin-left: 1.236em; }
+
+.edlio .page .rich-text ul {
+  list-style: disc; }
+
+.edlio .page .rich-text ol {
+  list-style: decimal; }
+
+.edlio .page .rich-text table {
+  width: 100%; }
+
+.edlio .page .rich-text img {
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=../../../maps/global/public/css/site-pack.css.map */

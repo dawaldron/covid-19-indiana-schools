@@ -1,0 +1,129 @@
+﻿i.fa.google-drive {
+	background: url('https://cdn.schoolpointe.com/images/social/google-drive.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.pinwheel {
+	background: url('https://cdn.schoolpointe.com/images/social/pinwheel-black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.letstalk {
+	background: url('https://cdn.schoolpointe.com/images/social/letstalk.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.progress-book {
+	background: url('https://cdn.schoolpointe.com/images/social/progress-book-icon.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.skyward {
+	background: url('https://cdn.schoolpointe.com/images/social/skyward-black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.edmodo {
+	background: url('https://cdn.schoolpointe.com/images/social/edmodo-black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.powerschool,
+i.socialLink.powerschool {
+	background: url('https://cdn.schoolpointe.com/images/social/powerschool-black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.infinite-campus {
+	background: url('https://cdn.schoolpointe.com/images/social/infinite-campus.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.lms {
+	background: url('https://cdn.schoolpointe.com/images/social/LMS-Black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+i.fa.outlook {
+	background: url('https://cdn.schoolpointe.com/images/social/outlook-black.png') no-repeat center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+
+.powerschool-return-student-registration {
+	background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/powerschool-returning-student-registrations.png') no-repeat top;
+	background-size: 100%;
+	width: 80px;
+	display: block;
+	height: 40px;
+	margin-top: 7px;
+}
+
+.powerschool-new-student-registration {
+	background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/powerschool-new-student-registrations.png') no-repeat top;
+	background-size: 100%;
+	width: 80px;
+	display: block;
+	height: 40px;
+	margin-top: 7px;
+}
+
+i.fa.adaReporting,
+.fa.adaReporting {
+	display: inline-block;
+	background: url('https://cdn.schoolpointe.com/images/social/ADA-Reporting.png') no-repeat top;
+	background-size: contain;
+	width: 52px;
+	height: 40px;
+}
+
+i.fa.edgenuity,
+.fa.edgenuity {
+	display: inline-block;
+	background: url('https://cdn.schoolpointe.com/images/social/Edgenuity.png') no-repeat top;
+	background-size: contain;
+	width: 52px;
+	height: 40px;
+}
+
+i.fa.canvas,
+.fa.canvas {
+	width: 70px;
+	height: 17px;
+	background: url('https://cdn.schoolpointe.com/images/social/canvas-transparent.png') no-repeat center;
+	background-size: contain;
+}
+
+i.fa.schoolPay,
+.fa.schoolPay {
+	width: 70px;
+	height: 17px;
+	background: url('https://cdn.schoolpointe.com/images/social/SchoolPayLogo NewPalRed.png') no-repeat center;
+	background-size: contain;
+}
+.fab.harmony {
+	width: 40px;
+	height: 40px;
+	background: url('https://cdn.schoolpointe.com/images/social/H3.png') no-repeat center;
+	background-size: contain;
+	display:inline-block;
+}

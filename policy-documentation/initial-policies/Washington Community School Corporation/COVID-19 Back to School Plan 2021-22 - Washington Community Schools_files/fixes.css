@@ -1,0 +1,494 @@
+﻿/* /news Standard Fix */
+#news-list {
+	padding: 0;
+}
+
+#news-list .article.row {
+	padding: 0 0 15px 0;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#news-list .article.row .news-title {
+	color: #000;
+	font-size: 22px;
+}
+
+#news-list .article.row .news-image {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 0 15px 15px 0;
+}
+
+#news-list .article.row .news-image img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#news-list .article.row .news-post-date {
+	display: inline-block;
+	width: 1px;
+	height: 0px;
+	overflow: hidden;
+}
+
+#news-list .article.row .view-all-link-container {
+	display: none;
+}
+
+/* Default Side Nav / Athletics Nav */
+ul.side-nav.sf-vertical {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.side-nav.sf-vertical > li {
+	display: block;
+	padding: 4px 0;
+	margin: 0;
+	line-height: 100%;
+}
+
+ul.side-nav.sf-vertical > li {
+	line-height: 100%;
+}
+
+/* Month Calendar Fix */
+#site-body #calendar-wrap {
+	width: 1170px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+	margin: 20px auto !important;
+}
+
+@media only screen and (max-width: 1199px) {
+	#site-body #calendar-wrap {
+		width: 970px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#site-body #calendar-wrap {
+		width: 780px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#site-body #calendar-wrap {
+		width: 100% !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+/* Week Calendar Fix */
+.monthCalendar .monthCalendarTitle {
+	color: #fff;
+	/* background-color: #000000 !important; Main Color */
+}
+
+.monthCalendar .monthCalendarNextPrev a {
+	color: #fff !important;
+}
+
+.calendarWeekDayTable .calendarDayHeader {
+	background-color: transparent;
+}
+
+.monthCalendarTitle td {
+	background-color: transparent !important;
+}
+
+.calendarDayHeader .dayHeaderLabel {
+	color: #000;
+}
+
+.monthCalendarDayHeader {
+	text-align: center;
+}
+
+/* ADA Fixes */
+/* Google Translate */
+#google_translate_element .goog-te-gadget,
+#google_translate_element .goog-logo-link {
+	color: #fff;
+}
+
+#google_translate_element .goog-te-gadget select {
+	color: #000;
+}
+
+/* Link Colors */
+a {
+	color: #3279B2;
+}
+
+a:hover, a:focus {
+	color: #23517a;
+}
+
+/* Obscure */
+.obscure {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* sr-only for Automatic ADA Checks */
+.sr-only {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Athletics Jump To Sport */
+#athleticsJumptoSport {
+	margin: 20px 0;
+}
+
+#athleticsJumptoSport p,
+#athleticsJumptoSport select {
+	margin: 0;
+}
+
+/* Admin Departments Fix */
+.admin-dept {
+	float: left;
+	width: 48%;
+	min-height: 120px;
+	padding: 15px;
+	margin: 1%;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 6px;
+}
+
+.clr {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.bg-internal .headerM {
+	margin-top: 20px;
+}
+
+#boardMemebersHeader {
+	margin-top: 0;
+}
+
+.wrap-mobileMenu .table {
+    display: table;
+    padding: 15px;
+    margin: 0;
+}
+
+.wrap-mobileMenu .cell {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap-mobileMenu .cell.name {
+    width: 100%;
+}
+
+#divSBack > input[type=submit] {
+    color: #000;
+}
+
+.feature-content-image img {
+    max-width: 100%;
+}
+
+.newsimagesingle {
+	float: left;
+	width: 300px;
+	max-width: 100%;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.newsimagesingle > img {
+	max-width: 100%;
+}
+
+a#skip-link:focus {
+	display: block;
+	position: relative !important;
+	width: auto;
+	height: auto;
+	padding: 15px;
+	color: #000;
+	background-color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	text-indent: 0;
+	clip: initial;
+}
+
+.gutterMiddle ul {
+	padding-left: 40px
+}
+
+/* Department Gallery Fixes */
+body .deptSlideShow {
+	max-height: none;
+}
+
+.deptSlideShow .nivo-directionNav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	z-index: 100;
+}
+
+.deptSlideShow .nivo-directionNav a.nivo-prevNav,
+.deptSlideShow .nivo-directionNav a.nivo-nextNav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	line-height: 25px;
+}
+
+.deptSlideShow .nivo-directionNav a.nivo-prevNav {
+	left: -30px;
+}
+
+.deptSlideShow .nivo-directionNav a.nivo-nextNav {
+	right: -30px;
+}
+
+.deptSlideShow .nivoSlider {
+	overflow: visible;
+}
+
+.deptSlideShow .nivoSlider img {
+	max-height: 500px !important;
+	object-fit: contain;
+	object-position: center;
+	background-color: #fff;
+}
+
+.deptSlideShow .nivo-controlNav a {
+	display: inline-block;
+	margin: 2px;
+}
+
+.sliderImage {
+	height: 100%;
+}
+
+.wrap-authorInfo {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.wrap-authorInfo table {
+	width: 100%;
+}
+
+.wrap-authorInfo td + td {
+	width: 100%;
+	padding-left: 20px;
+}
+
+.authorImage {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.wrap-authorInfo hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a.SchoolPointeCMS:focus {
+	outline: 2px dotted #fff;
+	outline-offset: -8px;
+}
+
+a.editbutton.buttonedit:focus {
+	outline: 2px dotted #000;
+	outline-offset: -4px;
+}
+
+a.editbutton.buttonedit.btn-danger-button:focus {
+	outline-color: #fff;
+}
+
+a.loginHeader-signOut:focus {
+	outline: 2px dotted #fff;
+	outline-offset: 4px;
+}
+
+a:focus,
+a.dropdown-toggle:focus,
+a.navbar-toggle:focus {
+	outline: 2px dotted;
+	outline-offset: 4px;
+}
+
+.IntranetEventWrapper #upcoming-events ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.IntranetEventWrapper #upcoming-events ul li {
+	display: block;
+	padding: 0 0 10px 0;
+}
+
+.IntranetEventWrapper #upcoming-events ul .event-link {
+	display: block;
+}
+
+.IntranetEventWrapper #upcoming-events ul .event-link a {
+	color: #000;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+.IntranetEventWrapper #upcoming-events ul .event-date {
+	display: block;
+}
+
+.IntranetEventWrapper #upcoming-events ul .event-time {
+	display: block;
+}
+
+.IntranetEventWrapper #upcoming-events ul .event-location {
+	display: block;
+}
+
+.IntranetEventWrapper > footer a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.IntranetEventWrapper > footer a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+#divSBack > ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#divSBack > ul > li {
+	padding: 4px 0;
+	margin: 0;
+}
+
+#divSBack > ul > li > a {
+	display: block;
+	padding: 10px 15px;
+	color: #000;
+	border: 1px solid #000;
+	border-left: 5px solid #111820;
+}
+
+#divSBack > input[type='submit'] {
+	margin-top: 10px;
+}
+
+#mobileNavs {
+	padding: 0 15px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#mobileNavs > nav {
+	padding: 0;
+}
+
+#mobileNavs > nav:first-child {
+	padding-top: 15px;
+}
+
+#mobileNavs > nav:last-child {
+	padding-bottom: 15px;
+}
+
+#mobileNavs > nav > ul {
+	display: block;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	list-style: none;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#mobileNavs > nav:last-child > ul {
+	padding: 0;
+	margin: 0;
+	border-bottom: none;
+}
+
+#mobileNavs > ul {
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	list-style: none;
+}
+
+#mobileNavs > ul:first-child {
+	padding-top: 15px;
+}
+
+#mobileNavs > ul:last-child {
+	padding-bottom: 15px;
+}
+
+#mobileNavs > ul > li,
+#mobileNavs > nav > ul > li {
+	padding: 4px 0;
+	line-height: 100%;
+}
+
+#mobileNavs > ul > li > a,
+#mobileNavs > nav > ul > li > a {
+	line-height: 100%;
+}
+
+iframe,
+.wrap-content img {
+	max-width: 100%;
+}
+
+.cycle-pager .page:before {
+	position: relative;
+	bottom: -3px;
+}
+
+.adminDeptDescription img {
+	max-width: 100%;
+}

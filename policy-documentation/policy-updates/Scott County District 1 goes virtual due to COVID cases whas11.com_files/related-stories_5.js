@@ -1,0 +1,2 @@
+define("related-stories",["module","page","utils"],function(t,e,i){const a={name:t.id,class:"."+t.id};i.broadcastNoJQ(a.name,"loaded"),i.createModuleNoJQ(a.name,function(t){const e=this;this.el=t,this.module=a,this.init=function(){e.broadcast("init"),e.broadcast("ready")}})});
+//# sourceMappingURL=related-stories_5.8.4.js.map

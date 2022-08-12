@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/jsonMap ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/has ../../core/accessorSupport/ensureType ../../core/Logger ../../core/accessorSupport/decorators/subclass ./colorRamps ../../symbols/Symbol".split(" "),function(k,b,c,a,e,n,p,q,l,f,m){c=new c.JSONMap({classBreaksDef:"class-breaks-definition",uniqueValueDef:"unique-value-definition"});a=function(g){function h(){var d=g.apply(this,
+arguments)||this;d.baseSymbol=null;d.colorRamp=null;d.type=null;return d}k._inheritsLoose(h,g);return h}(a.JSONSupport);b.__decorate([e.property({type:m,json:{write:!0}})],a.prototype,"baseSymbol",void 0);b.__decorate([e.property({types:f.types,json:{read:{reader:f.fromJSON},write:!0}})],a.prototype,"colorRamp",void 0);b.__decorate([e.property({json:{read:c.read,write:c.write}})],a.prototype,"type",void 0);return a=b.__decorate([l.subclass("esri.rest.support.ClassificationDefinition")],a)});

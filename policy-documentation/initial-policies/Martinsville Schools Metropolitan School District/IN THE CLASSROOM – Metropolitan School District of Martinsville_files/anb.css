@@ -1,0 +1,230 @@
+.delay {
+	animation: 0!important;
+	display:none!important;
+}
+
+.anb p {
+    margin: 0;
+}
+
+.anb-close {
+	cursor: pointer;
+}
+
+.anb {
+	position: relative;
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+
+.anb-class-success {
+    padding: 25px 30px 20px;
+	font-size: 15px;
+    margin-top: 15px;
+	line-height: 1.4;
+	border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: default;
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+	color: #ffffff;
+    background-color: #37c1aa;
+}
+
+.anb-class-info {
+    padding: 25px 30px 20px;
+	font-size: 15px;
+    margin-top: 15px;
+	line-height: 1.4;
+	border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: default;
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+	color: #ffffff;
+	background-color: #3473c1;
+}
+
+.anb-class-warning {
+    padding: 25px 30px 20px;
+	font-size: 15px;
+    margin-top: 15px;
+	line-height: 1.4;
+	border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: default;
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+	color: #ffffff;
+	background-color: #ffee9e;
+}
+
+.anb-class-danger {
+    padding: 25px 30px 20px;
+	font-size: 15px;
+    margin-top: 15px;
+	line-height: 1.4;
+	border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: default;
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+	color: #ffffff;
+	background-color: #d64f62;
+}
+
+span[class^='close-anb'], span[class*='close-anb'] {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+	text-align: center;
+	opacity: 1!important;
+}
+
+.close-anb-danger, .close-anb-warning, .close-anb-info, .close-anb-success {
+    position: absolute!important;
+    float: right!important;
+    top: 5px!important;
+    right: 5px!important;
+    cursor: pointer!important;
+    outline: none!important;
+	font-size: 15px!important;
+    line-height: 15px!important;
+    width: 15px!important;
+}
+
+.anb-fade-out {
+	opacity: 0!important;
+}
+
+#anb-default-location {
+    position: fixed;
+    width: 350px;
+	height: auto;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+}
+
+.anb-animation-default {
+	-webkit-animation: animation-bounce-right-default 0.7s ease-in-out both;
+	animation: animation-bounce-right-default 0.7s ease-in-out both;
+}
+@keyframes animation-bounce-right-default {
+	0% {
+		transform: translate(500px,-0px);
+	}
+	60% {
+		transform: translateX(-30px);
+	}
+	80% {
+		transform: translateX(10px);
+	}
+	90% {
+		transform: translateX(-5px);
+	}
+	95% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translate(0px,0px);
+	}
+}
+
+@media (min-width: 1200px) {
+	.anb-desktop-widescreen {
+
+	}
+	.anb-desktop-tablet {
+
+	}
+	.anb-tablet-mobile {
+		display: none;
+	}
+	.anb-tablet {
+		display: none;
+	}
+	.anb-mobile {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.anb-desktop-widescreen {
+
+	}
+	.anb-desktop-tablet {
+
+	}
+	.anb-tablet-mobile {
+		display: none;
+	}
+	.anb-tablet {
+		display: none;
+	}
+	.anb-mobile {
+		display: none;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.anb-desktop-widescreen {
+
+	}
+	.anb-desktop-tablet {
+
+	}
+	.anb-tablet-mobile {
+		display: none;
+	}
+	.anb-tablet {
+		display: none;
+	}
+	.anb-mobile {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.anb-desktop-widescreen {
+		display: none;
+	}
+	.anb-desktop-tablet {
+		display: none;
+	}
+	.anb-tablet-mobile {
+
+	}
+	.anb-tablet {
+
+	}
+	.anb-mobile {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.anb-desktop-widescreen {
+		display: none;
+	}
+	.anb-desktop-tablet {
+		display: none;
+	}
+	.anb-tablet-mobile {
+
+	}
+	.anb-tablet {
+		display: none;
+	}
+	.anb-mobile {
+
+	}
+}

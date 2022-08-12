@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* CSS Document */
+/*------------------------------------------------------------------
+Copyright: © 2017 Envisionwise
+Company Website: http://www.envisionwise.com
+
+[Table of Contents]
+Defaults
+Utilities
+Text
+Buttons
+Bootstrap Overrides
+Links
+Zones
+Headers / Title Bars
+Menu/Listen Live
+Scrolling Text
+Flash Gallery
+Banner SlideShow
+Custom Modules
+Footer
+-------------------------------------------------------------------*/
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto:400,700");
+/* ============================= Default ====================== */
+body {
+  background: #000000 url(/images/custombg.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/custombg.jpg", sizingMethod="scale");
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/custombg.jpg', sizingMethod='scale')";
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ============================= Utilities ====================== */
+.br-1 {
+  border-right: 1px solid #333;
+}
+
+/* ============================= Text ====================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", serif;
+}
+
+/* ============================= Buttons ====================== */
+.btn-primary,
+.btn-station,
+input.btn-station {
+  background: #39b54a;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active,
+.btn-station:focus,
+.btn-station:hover,
+.btn-station:active,
+input.btn-station:focus,
+input.btn-station:hover,
+input.btn-station:active {
+  background: #277b32;
+  color: #fff;
+  border: 1px solid #6ad078;
+}
+
+.btn-listen {
+  background: #39b54a;
+  color: #298235;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.btn-listen:hover, .btn-listen:focus {
+  background: #57ca67;
+  color: #000;
+  border-color: transparent;
+}
+
+/* ============================= Bootstrap Overrides ====================== */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* ============================= Links ====================== */
+a {
+  color: #39b54a;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: #277b32;
+  text-decoration: none;
+}
+
+/* ============================= Theme/Zones ====================== */
+.content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fff;
+}
+
+@media (min-width: 786px) {
+  .content {
+    padding-bottom: 10px;
+  }
+}
+.stack {
+  background-color: #fff;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 10px;
+}
+.stack img {
+  padding: 0;
+}
+
+.subheader {
+  background: #000;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.jock-wrapper {
+  background: #e4e4e4;
+}
+
+.poll-inner-bar {
+  background: #21672a;
+}
+
+.stack-override .stack {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+.stack-override .stack p {
+  margin-bottom: 0;
+}
+
+/* ============================= Headings / Title Bars ====================== */
+.header-row-container {
+  background: #fff;
+}
+
+.header-text {
+  position: relative;
+}
+.header-text::after {
+  content: "";
+  display: block;
+  background: rgba(57, 181, 74, 0.4);
+  height: 10px;
+  position: absolute;
+  width: 100%;
+  top: 1.5rem;
+  z-index: 100;
+}
+.header-text h2 {
+  color: #000;
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1000;
+}
+
+/* ============================= Top Bar ====================== */
+.top-bar {
+  border-top: 2px solid #39b54a;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.module-keyword {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ============================= Social Icons ====================== */
+.social-links {
+  padding: 5px 0;
+  font-size: 1.26rem;
+  text-align: center;
+}
+.social-links a {
+  color: #39b54a;
+}
+.social-links a:focus, .social-links a:active, .social-links a:hover {
+  color: #277b32;
+}
+
+/* ============================= Member Login ====================== */
+.member-nav .user-nav {
+  background: #fff;
+}
+.member-nav .btn {
+  background: #39b54a;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 0;
+}
+.member-nav .btn:hover, .member-nav .btn:focus {
+  background: #277b32;
+  color: #efefef;
+  border-color: #6ad078;
+}
+
+/* ============================= Header ====================== */
+.header-bg {
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.header-ad {
+  margin-top: 30px;
+}
+
+.ad-row {
+  background: #fff;
+}
+
+/* ============================= Menu/Listen Live ====================== */
+.navbar-custom {
+  background: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 3px solid #000;
+  font-family: "Roboto", serif;
+}
+@media (min-width: 992px) {
+  .navbar-custom {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.navbar-custom .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-custom .navbar-nav > li.toggle {
+  padding-right: 2.5em;
+}
+@media (min-width: 992px) {
+  .navbar-custom .navbar-nav > li.toggle {
+    padding-right: 0;
+  }
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-custom .navbar-nav > li > a.nav-link {
+  padding: 0.5rem 1.2rem;
+}
+.navbar-custom .navbar-nav > li > a.active, .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
+  background: #39b54a;
+  color: #fff;
+}
+.navbar-custom .sm-toggle::after {
+  line-height: 1;
+}
+.navbar-custom .dropdown-menu {
+  background: #39b54a;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 95%;
+  box-shadow: unset;
+  z-index: 1200;
+}
+.navbar-custom .dropdown-menu > li {
+  border-bottom: 1px solid #fff;
+}
+.navbar-custom .dropdown-menu > li:last-child {
+  border-bottom: none;
+}
+.navbar-custom .dropdown-menu > li > a {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 15px 20px;
+}
+.navbar-custom .dropdown-menu > li > a:focus, .navbar-custom .dropdown-menu > li > a:hover {
+  background: #2d8e3a;
+  color: #fff;
+}
+.navbar-custom .dropdown-menu .dropdown-menu {
+  left: 60%;
+  top: 70%;
+}
+.navbar-custom .mobile-toggle {
+  border-radius: 0;
+  padding: 5px 5px;
+}
+
+.navbar-toggler {
+  background-color: #bbb;
+  border: 1px solid #fff;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler:focus {
+  background-color: #999;
+  border-color: #fff;
+}
+.navbar-toggler:hover .navbar-toggler-icon, .navbar-toggler:active .navbar-toggler-icon, .navbar-toggler:focus .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-listen {
+  margin: 8px 0 8px 5px;
+}
+
+/* ============================= Ad Styles ========================== */
+#mobile-ads {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mobile-ads {
+    display: inline;
+  }
+}
+#env_rotating_lead {
+  height: 45px;
+}
+@media (min-width: 768px) {
+  #env_rotating_lead {
+    height: 90px;
+  }
+}
+
+/* ============================== Scrolling Text ====================== */
+.horizontal_scroller {
+  background: #fff;
+  color: #000;
+  padding-top: 3px;
+}
+
+.scrollingtext a:hover {
+  color: #39b54a;
+  text-decoration: none;
+}
+
+/* ============================= Flash Gallery ====================== */
+.flash-gallery {
+  margin-bottom: 10px;
+}
+.flash-gallery .caption-container {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(57, 181, 74, 0.8));
+  background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(57, 181, 74, 0.8));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(57, 181, 74, 0.8));
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.flash-thumb {
+  display: none;
+}
+
+/* ============================= Banner SlideShow ====================== */
+.banner {
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-top: 0;
+  }
+}
+#bannerslideshow {
+  max-height: 200px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* ============================= Custom Modules ====================== */
+.zone-9418 .stack,
+.zone-9419 .stack {
+  border-bottom: none;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .latest-news-home #stack-300983 {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .latest-news-home #stack-300983 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #stack-303928 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  #stack-303928 {
+    display: block;
+  }
+}
+
+.feed-2col-overlay .entry-header {
+  background: rgba(0, 0, 0, 0.5);
+}
+.feed-2col-overlay .entry-title a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(33, 33, 33, 0.5);
+}
+.feed-2col-overlay .entry-title a:hover, .feed-2col-overlay .entry-title a:focus, .feed-2col-overlay .entry-title a:active {
+  color: #ddd;
+}
+
+.feed .entry-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.feed .entry-title.feature {
+  font-size: 2rem;
+}
+.feed .description {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.featured {
+  border-bottom: 1px solid #333;
+}
+
+/* ============================= Footer ====================== */
+.footer {
+  background: #fff;
+  border-top: 4px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
+}
+.footer a {
+  color: #000;
+}
+.footer a:hover {
+  color: #39b54a;
+}
+.footer font {
+  color: #fff;
+}
+.footer .ad-row {
+  background: transparent;
+}
+.footer .copyright,
+.footer .admin-access {
+  font-size: 0.75em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer .copyright {
+    text-align: left;
+  }
+  .footer .admin-access {
+    text-align: right;
+  }
+}
+
+.footer-nav {
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=responsive_custom.css.map */

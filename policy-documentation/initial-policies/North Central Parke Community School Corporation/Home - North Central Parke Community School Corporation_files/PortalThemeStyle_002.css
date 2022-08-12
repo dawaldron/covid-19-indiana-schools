@@ -1,0 +1,68 @@
+.clear { clear: both }
+
+.clear span { display: none; }
+
+.eventPlaceHolder, .eventPlaceHolder:hover {
+ padding: 12px;
+ color: #fff;
+ margin-bottom: 0px;
+ display: block;
+}
+
+.event-date {
+ float: left;
+ width: 70%;
+}
+
+.ev-b-p {
+ border-right: 2px solid #000;
+}
+
+.time {
+ float: right;
+ width: 28%;
+ margin-top: 10px;
+}
+
+.day-text, .month, .day, .year { display: inline; }
+
+.info {
+ float: left;
+ width: 75%;
+}
+
+.full-date {
+ padding: 0px 10px 0px 0px;
+}
+
+.large-date {
+ font-size: 45px;
+ float: left;
+ width: 25%;
+ height: 53px;
+ display: inline-block;
+} 
+
+.name-of-event {
+ letter-spacing: 0.07em;
+ text-decoration: none;
+ padding: 3px 8px 0px 11px;
+ float: left;
+ font-size: 13px;
+ color: #ffffff;
+}
+
+.location {
+ font-size: 8pt;
+ padding: 2px 8px 0px 8px;
+ float: left;
+}
+
+.when-to-when {
+ width: 100%;
+ text-align: center !important;
+ font-size: 16px;
+ line-height: 16px;
+ letter-spacing: 0.08em;
+ padding: 0px 0px 0px 4px;
+}

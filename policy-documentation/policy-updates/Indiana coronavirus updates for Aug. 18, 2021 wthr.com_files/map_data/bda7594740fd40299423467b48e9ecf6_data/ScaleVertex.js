@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../core/arrayUtils ../../../../chunks/vec2 ../../../../chunks/vec2f64 ./UpdateVertices".split(" "),function(g,l,h,m,n,f){f=function(k){function e(a,b,d,p,q,r=0){a=k.call(this,a)||this;a.origin=b;a.axis1=d;a.factor1=p;a.factor2=q;a.accumulationType=r;a.axis2=m.set(n.create(),d[1],-d[0]);return a}l._inheritsLoose(e,k);var c=e.prototype;c.scale=function(a,b,d){this.helper.scale(a.pos,this.origin,this.axis1,b);this.helper.scale(a.pos,
+this.origin,this.axis2,d)};c.apply=function(a){this.scale(a,this.factor1,this.factor2)};c.undo=function(a){this.scale(a,1/this.factor1,1/this.factor2)};c.canAccumulate=function(a){return a instanceof e&&h.equals(this.origin,a.origin)&&h.equals(this.axis1,a.axis1)};c.accumulate=function(a,b){1===b.accumulationType?this.scale(a,b.factor1/this.factor1,b.factor2/this.factor2):this.scale(a,b.factor1,b.factor2)};c.accumulateParams=function(a){const b=1===a.accumulationType;this.factor1=b?a.factor1:this.factor1*
+a.factor1;this.factor2=b?a.factor2:this.factor2*a.factor2};return e}(f.PerVertexOperation);g.ScaleVertex=f;Object.defineProperty(g,"__esModule",{value:!0})});

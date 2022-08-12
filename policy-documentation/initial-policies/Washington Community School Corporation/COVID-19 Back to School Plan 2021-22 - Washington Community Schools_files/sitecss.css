@@ -1,0 +1,818 @@
+/* 2021-08-14T02:31:48.9372652Z */
+/* START /Customers/IN/WashingtonCmtySchs/css/IN_WashingtonCmtySchs.css */
+body {
+  font-family: niveau-grotesk, sans-serif;
+  background: url('') no-repeat top left;
+  background-size: cover;
+}
+.title,
+.headerM,
+.sTitle > a,
+.sectionHeader,
+.athleticsTitle,
+.LeftDistrict1 > h1,
+#middle2Column > span,
+#middle3Column > span,
+.athleticsEventsTitle,
+.SecondaryContentHeader,
+.content.clearfix > h1:first-child,
+.forms-links-employment > h1:first-child,
+.gutterHeaderText,
+.feature-content-title,
+.bg-internal h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-family: niveau-grotesk, sans-serif;
+  font-size: 30px;
+}
+#TopNav > ul {
+  display: block;
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+  text-align: center;
+}
+#TopNav > ul > li {
+  display: inline-block;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#TopNav > ul > li > a {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+#TopNav > ul > li > a > .wrap-icon {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+#TopNav > ul > li > a > .wrap-icon > img {
+  max-width: 100%;
+  max-height: 40px;
+}
+#TopNav > ul > li > a > .wrap-text {
+  display: block;
+  font-size: 14px;
+}
+#mobileNavs ul.dropdown-menu {
+  padding: 0;
+}
+#mobileNavs ul.dropdown-menu li a {
+  color: #000;
+}
+#LeftNav {
+  padding-bottom: 15px;
+}
+#LeftNav > ul {
+  display: block;
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+  text-align: left;
+}
+#LeftNav > ul > li {
+  display: inline-block;
+  padding: 5px 15px;
+  vertical-align: top;
+  width: 33.333333%;
+}
+#LeftNav > ul > li > a {
+  color: #fff;
+}
+#LeftNav > ul > li > a > img {
+  max-height: 40px;
+}
+#SideNav {
+  position: fixed;
+  top: 370px;
+  z-index: 200;
+  right: 0px;
+}
+#SideNav ul {
+  list-style: none;
+}
+#SideNav > ul > li {
+  display: table;
+  list-style: none;
+  padding: 5px;
+  line-height: 100%;
+  width: 170px;
+  height: 40px;
+  margin: 15px 0;
+  background: #000;
+  text-align: left;
+}
+#SideNav > ul > li > a {
+  display: table-cell;
+  color: #fff;
+  line-height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 991px) {
+  #SideNav {
+    display: none;
+  }
+}
+#SideNav .dropdown-menu {
+  left: -40px;
+}
+#MiddleNav > ul {
+  display: block;
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+  text-align: center;
+}
+#MiddleNav > ul > li {
+  display: inline-block;
+  padding: 30px 15px;
+  vertical-align: middle;
+  border-right: 1px solid #fff;
+  width: 33.33333%;
+}
+@media only screen and (max-width: 767px) {
+  #MiddleNav > ul > li {
+    width: 100%;
+  }
+}
+#MiddleNav > ul > li:last-of-type {
+  border-right: none;
+}
+#MiddleNav > ul > li > a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+#MiddleNav > ul > li > a > img {
+  max-height: 40px;
+}
+#MiddleNav > ul > li > a > svg {
+  margin: 0 10px;
+  font-size: 22px;
+}
+#VeryTopNav > ul {
+  display: block;
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+  text-align: left;
+}
+#VeryTopNav > ul > li {
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+#VeryTopNav > ul > li > a {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#VeryTopNav > ul > li > a > img {
+  max-height: 40px;
+}
+.bg-header0 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.bg-header0 {
+  background-color: #000;
+  padding: 15px 0;
+}
+.bg-header0 .HeaderText {
+  color: #fff;
+  font-weight: 700;
+  float: left;
+  font-size: 28px;
+}
+.bg-header0 .HeaderMotto {
+  color: #fff;
+  float: left;
+  font-size: 20px;
+  margin: 10px 0 0 20px;
+}
+.bg-header0 > .container > .row > div {
+  display: inline-block;
+  padding: 15px 0;
+  color: #fff;
+}
+.bg-header1 {
+  background-color: #fff;
+  position: relative;
+  padding: 5px 0;
+}
+a.logoHeader {
+  display: block;
+  height: 300px;
+  width: 100%;
+  color: transparent;
+  background-image: url('https://www.washingtoncmtyschs.in.schools.bz/userfiles/-33/My%20Files/Top_circle_logo.png?id=4969'), url('https://www.washingtoncmtyschs.in.schools.bz/userfiles/-33/My%20Files/Top_flag.png?id=4970');
+  background-size: 160px 160px, 80% 300px;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -70px;
+  z-index: 10;
+}
+.bg-body3 {
+  background: linear-gradient(to bottom, #000 25%, #cdcdcd 25%);
+  padding-top: 15px;
+}
+.bg-body3 > .container {
+  background-color: #fff;
+}
+.bg-body3 .sectionHeader {
+  text-align: center;
+  font-size: 22px;
+}
+.bg-body3 .newsHeader {
+  text-align: center;
+  padding-top: 20px;
+}
+.bg-body3 .newsHeader .newsLine {
+  width: 7%;
+  display: inline-block;
+  border-bottom: 2px solid #d1a954;
+  margin: 0 15px;
+}
+.bg-body3 .newsHeader .newsLogo {
+  width: 70px;
+}
+#galleryNav {
+  position: absolute;
+  z-index: 110;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.wrap-slideshow.slideshow {
+  overflow: unset;
+}
+.slideshow .caption {
+  padding: 0;
+  color: #000;
+}
+.slideshow .caption .captionTop {
+  background-color: rgba(205, 205, 205, 0.7);
+  padding: 15px 0;
+  font-weight: 700;
+}
+.slideshow .cycle-pager {
+  padding: 0 10px;
+  border-radius: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+}
+.slideshow .prevNext {
+  display: none;
+}
+.bg-body2 {
+  background-color: #e0e0e0;
+}
+.bg-body2 > .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 300px;
+}
+@media only screen and (max-width: 767px) {
+  .bg-body2 > .container {
+    position: relative;
+    height: unset;
+  }
+}
+.bg-body2 .feature-content {
+  background-color: rgba(233, 191, 101, 0.85);
+  padding: 30px 0;
+}
+.bg-body2 .feature-content-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 1px 0px #000;
+}
+.prevNewsFeature,
+.nextNewsFeature {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  color: #000;
+  background-color: #fff;
+  font-size: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  text-align: center;
+  line-height: 0;
+}
+.prevNewsFeature:hover,
+.nextNewsFeature:hover {
+  color: #000;
+}
+.prevNewsFeature {
+  left: 30px;
+  padding-right: 5px;
+}
+.nextNewsFeature {
+  right: 30px;
+  padding-left: 5px;
+}
+.news1 {
+  padding: 0 60px;
+  text-align: center;
+}
+.news1 > .article {
+  display: none;
+  width: 24%;
+  padding: 0px 10px;
+  margin-bottom: 25px;
+  position: relative;
+  vertical-align: top;
+}
+.news1 > .article.active {
+  display: inline-block;
+}
+@media only screen and (max-width: 991px) {
+  .news1 > .article {
+    width: 49%;
+  }
+  .bg-body6 .container .grid1x1 {
+    width: 50%;
+  }
+  .bg-body7 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .news1 > .article {
+    width: 100%;
+  }
+}
+.news1 > .article > .wrap-newsTitle {
+  margin-bottom: 10px;
+}
+.news1 > .article > .wrap-newsTitle > a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.news1 > .article > .wrap-newsImage {
+  margin-bottom: 10px;
+}
+.news1 > .article > .wrap-newsImage > a {
+  display: block;
+  padding: 4px;
+  background-color: #fff;
+}
+.news1 > .article > .wrap-newsImage > a > img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+.news1 > .article > .wrap-newsSubheader {
+  margin-bottom: 35px;
+}
+.news1 > .article > .wrap-newsReadMore {
+  text-align: right;
+}
+.news1 > .article > .wrap-newsReadMore > a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.wrap-viewAllNews {
+  display: none;
+}
+.events5 > ul {
+  display: block;
+  padding: 0;
+  margin: 0 -8px;
+  list-style: none;
+  word-spacing: -10px;
+  white-space: nowrap;
+}
+.events5 > ul > li {
+  display: inline-block;
+  width: 16.666667%;
+  padding: 0 8px;
+  margin: 0;
+  list-style: none;
+  word-spacing: normal;
+  white-space: normal;
+  float: left;
+}
+.events5 > ul > li > .inner {
+  padding: 15px 0;
+  color: #000;
+  text-align: center;
+}
+.events5 > ul > li > .inner > .wrap-eventDate {
+  background-color: #fff;
+  min-height: 140px;
+  margin-bottom: 15px;
+}
+.events5 > ul > li > .inner > .wrap-eventDate > .wrap-eventDateMonth {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.events5 > ul > li > .inner > .wrap-eventDate > .wrap-eventDateMonth > hr {
+  border-top: 1px solid #d1a954;
+  width: 40%;
+  margin: 3px auto;
+}
+.events5 > ul > li > .inner > .wrap-eventDate > .wrap-eventDateNumber {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.events5 > ul > li > .inner > .wrap-eventInfo {
+  text-align: left;
+}
+.events5 > ul > li > .inner > .wrap-eventInfo > .wrap-eventTitle {
+  max-height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.events5 > ul > li > .inner > .wrap-eventInfo > .wrap-eventTitle > a {
+  color: #fff;
+  font-weight: 600;
+}
+.events5 > ul > li > .inner > .wrap-eventInfo > .wrap-startTime {
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+}
+.events5 > ul > li > .inner > .wrap-eventInfo > .wrap-readMore > a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .events5 > ul > li {
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px;
+  }
+  .events5 > ul > li.active {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrap-events {
+    padding: 50px 0 0 0;
+  }
+  .wrap-events .prev-events {
+    top: 0;
+    left: 50%;
+    transform: translateX(-40px);
+  }
+  .wrap-events .next-events {
+    top: 0;
+    right: 50%;
+    transform: translateX(40px);
+  }
+  .events5 > ul > li {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .events5 > ul > li.active {
+    display: block;
+  }
+}
+.viewAllEvents {
+  text-align: center;
+  margin: 25px 0;
+}
+.viewAllEvents a {
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+.bg-body4 {
+  background-color: #cdcdcd;
+}
+.bg-body4 > .container {
+  background-color: #d1a954;
+}
+.bg-body5 {
+  background-color: #cdcdcd;
+}
+.bg-body5 > .container {
+  background-color: #000;
+  padding: 0 30px 20px;
+}
+.bg-body5 .sectionHeader {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+.bg-body5 .eventsHeader {
+  text-align: center;
+  padding-top: 20px;
+}
+.bg-body5 .eventsHeader .eventLine {
+  width: 7%;
+  display: inline-block;
+  border-bottom: 2px solid #d1a954;
+  margin: 0 15px;
+}
+.bg-body5 .eventsHeader .eventsLogo {
+  width: 70px;
+}
+.bg-body6 {
+  background-color: #cdcdcd;
+}
+.bg-body6 > .container {
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  position: relative;
+}
+.bg-body6 img.middleCircle {
+  height: 240px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bg-body6 .grid1x1 {
+  width: 20%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.bg-body6 .feature-content .feature-content-body {
+  padding: 30px;
+}
+.bg-body6 .box4 .feature-content .feature-content-body {
+  padding: 0px;
+}
+.bg-body6 .box7 .ucGalleryCategories,
+.bg-body6 .box7 .ucGalleryCategory,
+.bg-body6 .box7 .ucGalleryCategoryImage {
+  height: 100%;
+  width: 100%;
+}
+.bg-body6 .box7 .ucGalleryCategory {
+  display: none;
+}
+.bg-body6 .box7 .ucGalleryCategory.active {
+  display: block;
+}
+.bg-body6 .box7 .ucGalleryCategoryImage {
+  display: none;
+}
+.bg-body6 .box7 .ucGalleryCategoryImage.active {
+  display: block;
+}
+.bg-body6 .box7 .ucGalleryCategoryImage img {
+  height: 100%;
+  width: 100%;
+}
+.bg-body6 .feature-content .feature-content-body .feature-image-poster {
+  width: 100%;
+  max-height: 150px;
+}
+.bg-body6 .box1,
+.bg-body6 .box3,
+.bg-body6 .box5 {
+  background-color: #d1a954;
+}
+.bg-body6 .box2,
+.bg-body6 .box4,
+.bg-body6 .box7,
+.bg-body6 .box9 {
+  background-color: #fff;
+}
+.bg-body6 .box6,
+.bg-body6 .box8,
+.bg-body6 .box10 {
+  background-color: #000;
+  color: #fff;
+}
+.bg-body6 .box8 .feature-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.bg-body7 {
+  background-color: #cdcdcd;
+}
+.bg-body7 > .container {
+  background-color: #000;
+  color: #fff;
+}
+.bg-body7 .feature-content-title {
+  color: #fff;
+  text-align: center;
+}
+.bg-body8 {
+  background: linear-gradient(to right, #000, #d1a954, #000);
+  height: 10px;
+}
+#site-foot {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+#site-foot a {
+  color: #fff;
+}
+#site-foot .dropdown-menu a {
+  color: #000;
+}
+.bg-footer1 {
+  text-align: left;
+  padding-top: 50px;
+}
+.bg-footer1 .footerLogo {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 116px;
+  margin: auto;
+  float: left;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  z-index: 4;
+  background-image: url('https://www.washingtoncmtyschs.in.schools.bz/userfiles/-33/My%20Files/Footer_logo_circle.png?id=4964');
+}
+.bg-footer1 .footerName {
+  font-size: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  height: 0px;
+}
+.bg-footer1 .footerLogoWrapper {
+  width: 100%;
+  float: left;
+}
+.bg-footer1 .footerName .firstWords {
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+.bg-footer1 .footerLine {
+  width: 70%;
+  border-top: 2px solid #d1a954;
+  float: left;
+}
+.bg-footer1 .addressPhoneWrapper {
+  float: left;
+  width: 100%;
+}
+.bg-footer2 {
+  padding-bottom: 15px;
+}
+.wrap-socialFooter {
+  text-align: left;
+}
+.search-box {
+  margin-bottom: 10px;
+}
+.wrap-socialFooter a {
+  font-size: 20px;
+  padding: 5px;
+}
+.wrap-socialFooter a:first-of-type {
+  padding-left: 0;
+}
+#MobileHeader {
+  background-color: #000;
+}
+.wrap-mobileMenu a {
+  color: #fff;
+}
+#mobileNavs .icomoon-IC-Icon {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#mobileNavs .sr-only {
+  display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: initial;
+  color: inherit;
+  background-color: transparent;
+  overflow: visible;
+  clip: initial;
+  border: none;
+}
+#mobileNavs h5,
+#mobileNavs hr {
+  display: none;
+}
+#mobileNavs a {
+  color: #fff;
+}
+#MobileHeader #mobileNavs ul {
+  list-style: none;
+  padding: 15px;
+}
+#quicklinks > ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#quicklinks > ul > li {
+  padding: 4px 0;
+  margin: 0;
+}
+#quicklinks > ul > li > a {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  border-left: 5px solid #d1a954;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+#quicklinks > ul > li > a:hover,
+#quicklinks > ul > li > a:focus {
+  border-left: 5px solid #000;
+  text-decoration: none;
+}
+.bg-internal {
+  padding: 130px 0;
+}
+i.skyward {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  background-image: url(https://cdn.schoolpointe.com/images/social/skyward-white.png);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: -0.45em;
+}
+.barAlert,
+body .loginBackground {
+  position: relative;
+  z-index: 100;
+}
+.alertdiv.alertBar.light .closeAlert {
+  color: #000;
+}
+.wrap-search-translate > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.wrap-search-translate > #google_translate_element {
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.goog-te-gadget .goog-te-combo {
+  height: 26px;
+  margin-top: 0px !important;
+}
+/* END /Customers/IN/WashingtonCmtySchs/css/IN_WashingtonCmtySchs.css */
+
+/* CustomCss schoolId: -1 */
+
+body.live_feed div.live-feed {
+  max-height: none;
+}
+i.fa.skyward {
+  background: url(https://cdn.schoolpointe.com/images/social/skyward-black.png) no-repeat center;
+  background-size: 90%;
+}

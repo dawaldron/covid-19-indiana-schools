@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".skip").click(function(t){var i="#"+this.href.split("#")[1];$(i).attr("tabindex",-1).on("blur focusout",function(){$(this).removeAttr("tabindex")}).focus()})});

@@ -1,0 +1,634 @@
+/* Wednesday 18th of August 2021 11:01:08 PM*/
+
+/* Wednesday 18th of August 2021 11:01:08 PM*/
+
+div#nextend-accordion-menu-399 {
+  transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+div#nextend-accordion-menu-399 {
+  overflow: hidden;
+}
+div#nextend-accordion-menu-399 div,
+div#nextend-accordion-menu-399 dl,
+div#nextend-accordion-menu-399 dt,
+div#nextend-accordion-menu-399 dd,
+div#nextend-accordion-menu-399 span,
+div#nextend-accordion-menu-399 a,
+div#nextend-accordion-menu-399 img,
+div#nextend-accordion-menu-399 h3 {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: none;
+  clear: none;
+  line-height: normal;
+  position: static;
+  list-style: none;
+}
+.dj_ie7 div#nextend-accordion-menu-399 div,
+.dj_ie7 div#nextend-accordion-menu-399 dl,
+.dj_ie7 div#nextend-accordion-menu-399 dt,
+.dj_ie7 div#nextend-accordion-menu-399 dd,
+.dj_ie7 div#nextend-accordion-menu-399 h3 {
+  width: 100%;
+}
+div#nextend-accordion-menu-399 span,
+div#nextend-accordion-menu-399 a,
+div#nextend-accordion-menu-399 img {
+  vertical-align: middle;
+}
+div#nextend-accordion-menu-399 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+div#nextend-accordion-menu-399 a,
+div#nextend-accordion-menu-399 a :focus,
+div#nextend-accordion-menu-399 a :active {
+  background: none;
+  outline: 0;
+  -moz-outline-style: none;
+}
+div#nextend-accordion-menu-399 img {
+  margin: 0 4px;
+}
+div#nextend-accordion-menu-399 dl.level1 dl {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+div#nextend-accordion-menu-399 dl.level1 dd {
+  display: block;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.opening,
+div#nextend-accordion-menu-399 dl.level1 dd.closing,
+div#nextend-accordion-menu-399 dl.level1 dd.opened {
+  display: block;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent {
+  perspective: 800px;
+  -webkit-perspective: 800px;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent > dl {
+  opacity: 0;
+  transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  -webkit-transform-origin: 0 0 0;
+  transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: translate3d(0px,0px,0px) scale3d(1.0,1.0,1.0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -ms-transform: translate3d(0px,0px,0px) scale3d(1.0,1.0,1.0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform: translate3d(0px,0px,0px) scale3d(1.0,1.0,1.0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opening > dl,
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opened > dl {
+  opacity: 1;
+  -webkit-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  transform: translate3d(0,0,0) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -ms-transform: translate3d(0,0,0) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform: translate3d(0,0,0) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.closing > dl {
+  -webkit-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opening.notransition > dl,
+div#nextend-accordion-menu-399 dl.level1 dd.parent.closing.notransition > dl {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opening {
+  -webkit-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.closing {
+  -webkit-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -moz-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  -o-transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.60s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opening.notransition,
+div#nextend-accordion-menu-399 dl.level1 dd.parent.closing.notransition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opened {
+  height: auto;
+}
+div#nextend-accordion-menu-399 dl.level1 dd.parent.opened > dl {
+  position: relative;
+}
+div#nextend-accordion-menu-399 .nextend-productnum {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  margin: -1px 5px 0 5px;
+  min-width: 8px;
+  padding-left: 8px !important;
+  padding: 0 8px;
+  text-align: center !important;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 9px 9px 9px 9px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.dj_ie6 div#nextend-accordion-menu-399 span.nextend-productnum,
+.dj_ie7 div#nextend-accordion-menu-399 span.nextend-productnum {
+  float: none;
+  display: inline;
+  margin: 0 10px;
+}
+.dj_ie6 div#nextend-accordion-menu-399 span.nextend-productnum,
+.dj_ie7 div#nextend-accordion-menu-399 span.nextend-productnum,
+.dj_ie8 div#nextend-accordion-menu-399 span.nextend-productnum {
+  border: 1px solid #ffffff;
+}
+div#nextend-accordion-menu-399.noscript dl.level1 dl {
+  position: static;
+}
+div#nextend-accordion-menu-399.noscript dl.level1 dd.parent {
+  height: auto !important;
+  display: block;
+  visibility: visible;
+}
+div#nextend-accordion-menu-399 {
+  margin: 0px 0px 0px 0px;
+  overflow: visible;
+}
+div#nextend-accordion-menu-399 .nextend-accordion-menu-inner {
+  overflow: hidden;
+  width: 100%;
+}
+div#nextend-accordion-menu-399 .nextend-productnum {
+  line-height: normal !important;
+  font-size: 11px !important;
+  padding-top: 1px;
+  line-height: 17px !important;
+  border: 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: rgba(0,0,0,0.02);
+}
+div#nextend-accordion-menu-399 dt.level1 .nextend-productnum {
+  margin-top: 7px;
+}
+div#nextend-accordion-menu-399 .nextend-accordion-menu-inner-container {
+  overflow: hidden;
+  position: relative;
+}
+div#nextend-accordion-menu-399 dl,
+div#nextend-accordion-menu-399 dt,
+div#nextend-accordion-menu-399 dd {
+  display: block;
+  position: relative;
+}
+div#nextend-accordion-menu-399 div div.title {
+  min-height: 36px;
+  background: #ededed;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ededed),color-stop(1,#ededed));
+  background: -ms-linear-gradient(bottom,#ededed,#ededed);
+  background: -moz-linear-gradient(center bottom,#ededed 0%,#ededed 100%);
+  background: -o-linear-gradient(#ededed,#ededed);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ededed', GradientType=0);
+}
+div#nextend-accordion-menu-399 div div.title h3 {
+  margin: 0;
+  padding-top: 8px !important;
+  padding-bottom: 7px !important;
+  min-height: 26px;
+  border: 1px solid #afafaf;
+  border-color: RGBA(175,175,175,0.38);
+  -webkit-box-shadow: inset 0 0 1px RGBA(255,255,255,0.5);
+  -moz-box-shadow: inset 0 0 1px RGBA(255,255,255,0.5);
+  box-shadow: inset 0 0 1px RGBA(255,255,255,0.5);
+  background: transparent;
+  color: #7b7b7b;font-size:24px;text-shadow: none;font-family: 'Avenir',Arial;line-height: 39px;font-weight: bold;font-style: normal;text-decoration: none;text-align: center;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dt.level1 {
+  border: 1px solid #afafaf;
+  border-color: RGBA(175,175,175,0.38);
+  border-width: 0 1px 1px 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+}
+div#nextend-accordion-menu-399 dt.level1.first {
+  border-top-width: 1px;
+}
+div#nextend-accordion-menu-399 dt.level1:HOVER,
+div#nextend-accordion-menu-399 dt.level1.active,
+div#nextend-accordion-menu-399 dt.level1.opened,
+div#nextend-accordion-menu-399 dt.level1.opening {
+  border-bottom-color: rgba(175,175,175,0.7);
+}
+div#nextend-accordion-menu-399 dl.level2 dt {
+  border: 1px solid #afafaf;
+  border-color: RGBA(175,175,175,0.38);
+  border-width: 0 1px 0 1px;
+}
+div#nextend-accordion-menu-399 dl.level2 dt.first {
+  -webkit-box-shadow: 0 5px 2px -2px rgba(175,175,175,0.2) inset;
+  -moz-box-shadow: 0 5px 2px -2px rgba(175,175,175,0.2) inset;
+  box-shadow: 0 5px 2px -2px rgba(175,175,175,0.2) inset;
+}
+div#nextend-accordion-menu-399 dl.level2 dt.last {
+  margin-bottom: 0;
+  border-bottom-width: 1px;
+}
+div#nextend-accordion-menu-399 dt .inner {
+  display: block;
+}
+div#nextend-accordion-menu-399.noscript dl.level1 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplus.png);
+}
+div#nextend-accordion-menu-399 dl.level1 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/plus/lightplus.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+div#nextend-accordion-menu-399 dl.level1 dt.parent.opened .inner,
+div#nextend-accordion-menu-399 dl.level1 dt.parent.opening .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplus.png);
+}
+div#nextend-accordion-menu-399 dl.level1 .nextend-productnum {
+  margin-right: 5px;
+}
+div#nextend-accordion-menu-399 dl.level1 dt {
+  background: none repeat 0 0;
+}
+div#nextend-accordion-menu-399 dl.level1 dt span {
+  color: #888888;font-size:14px;text-shadow: none;font-family: 'AvenirLTStd',Arial;line-height: 30px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dl.level1 dt a {
+  padding-left: 0px !important;
+}
+div#nextend-accordion-menu-399 dl.level1 dt a,
+div#nextend-accordion-menu-399 dl.level1 dt a span {
+  color: #888888;font-size:14px;text-shadow: none;font-family: 'AvenirLTStd',Arial;line-height: 30px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dl.level1 dt,
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER,
+div#nextend-accordion-menu-399 dl.level1 dt.opening,
+div#nextend-accordion-menu-399 dl.level1 dt.opened,
+div#nextend-accordion-menu-399 dl.level1 dt.active {
+  background: none;
+  filter: none;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#fcfcfc),color-stop(1,#fcfcfc));
+  background: -ms-linear-gradient(bottom,#fcfcfc,#fcfcfc);
+  background: -moz-linear-gradient(center bottom,#fcfcfc 0%,#fcfcfc 100%);
+  background: -o-linear-gradient(#fcfcfc,#fcfcfc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#fcfcfc', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level1 dt.opening,
+div#nextend-accordion-menu-399 dl.level1 dt.opened {
+  background: #5a8433;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#5a8433),color-stop(1,#5a8433));
+  background: -ms-linear-gradient(bottom,#5a8433,#5a8433);
+  background: -moz-linear-gradient(center bottom,#5a8433 0%,#5a8433 100%);
+  background: -o-linear-gradient(#5a8433,#5a8433);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8433', endColorstr='#5a8433', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level1 dt.opening span.inner span,
+div#nextend-accordion-menu-399 dl.level1 dt.opening span.inner span span,
+div#nextend-accordion-menu-399 dl.level1 dt.opening a,
+div#nextend-accordion-menu-399 dl.level1 dt.opening a span,
+div#nextend-accordion-menu-399 dl.level1 dt.opened span.inner span,
+div#nextend-accordion-menu-399 dl.level1 dt.opened span.inner span span,
+div#nextend-accordion-menu-399 dl.level1 dt.opened a,
+div#nextend-accordion-menu-399 dl.level1 dt.opened a span {
+  color: #ffffff;font-size:14px;text-shadow: none;font-family: 'AvenirLTStd',Arial;line-height: 30px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dl.level1 dt.active {
+  background: #5a8433;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#5a8433),color-stop(1,#5a8433));
+  background: -ms-linear-gradient(bottom,#5a8433,#5a8433);
+  background: -moz-linear-gradient(center bottom,#5a8433 0%,#5a8433 100%);
+  background: -o-linear-gradient(#5a8433,#5a8433);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8433', endColorstr='#5a8433', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level1 dt.active span.inner span,
+div#nextend-accordion-menu-399 dl.level1 dt.active span.inner span span,
+div#nextend-accordion-menu-399 dl.level1 dt.active a,
+div#nextend-accordion-menu-399 dl.level1 dt.active a span {
+  color: #ffffff;font-size:14px;text-shadow: none;font-family: 'AvenirLTStd',Arial;line-height: 30px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER {
+  background: #5a8433;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#5a8433),color-stop(1,#5a8433));
+  background: -ms-linear-gradient(bottom,#5a8433,#5a8433);
+  background: -moz-linear-gradient(center bottom,#5a8433 0%,#5a8433 100%);
+  background: -o-linear-gradient(#5a8433,#5a8433);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8433', endColorstr='#5a8433', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER span.inner span,
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER span.inner span span,
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER a,
+div#nextend-accordion-menu-399 dl.level1 dt:HOVER a span {
+  color: #ffffff;font-size:14px;text-shadow: none;font-family: 'AvenirLTStd',Arial;line-height: 30px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;-moz-transition: padding-left 0.4s ease;-webkit-transition: padding-left 0.4s ease;-o-transition: padding-left 0.4s ease;transition: padding-left 0.4s ease;padding-left: 0px;
+}
+div#nextend-accordion-menu-399 dl.level1 .inner {
+  padding: 5px 0px 3px 20px ;
+  margin: 0px 5px 0px 5px ;
+}
+div#nextend-accordion-menu-399.noscript dl.level2 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level2 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/plus/lightplusmini.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+div#nextend-accordion-menu-399 dl.level2 dt.parent.opened .inner,
+div#nextend-accordion-menu-399 dl.level2 dt.parent.opening .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level2 .nextend-productnum {
+  margin-right: 5px;
+}
+div#nextend-accordion-menu-399 dl.level2 dt {
+  background: none repeat 0 0;
+}
+div#nextend-accordion-menu-399 dl.level2 dt span {
+  color: #888888;font-size:13px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 18px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level2 dt a {
+  padding-left: 0px !important;
+}
+div#nextend-accordion-menu-399 dl.level2 dt a,
+div#nextend-accordion-menu-399 dl.level2 dt a span {
+  color: #888888;font-size:13px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 18px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level2 dt,
+div#nextend-accordion-menu-399 dl.level2 dt:HOVER,
+div#nextend-accordion-menu-399 dl.level2 dt.opening,
+div#nextend-accordion-menu-399 dl.level2 dt.opened,
+div#nextend-accordion-menu-399 dl.level2 dt.active {
+  background: none;
+  filter: none;
+  background: #ffffff;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ffffff),color-stop(1,#ffffff));
+  background: -ms-linear-gradient(bottom,#ffffff,#ffffff);
+  background: -moz-linear-gradient(center bottom,#ffffff 0%,#ffffff 100%);
+  background: -o-linear-gradient(#ffffff,#ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level2 dt.opening span.inner span,
+div#nextend-accordion-menu-399 dl.level2 dt.opening span.inner span span,
+div#nextend-accordion-menu-399 dl.level2 dt.opening a,
+div#nextend-accordion-menu-399 dl.level2 dt.opening a span,
+div#nextend-accordion-menu-399 dl.level2 dt.opened span.inner span,
+div#nextend-accordion-menu-399 dl.level2 dt.opened span.inner span span,
+div#nextend-accordion-menu-399 dl.level2 dt.opened a,
+div#nextend-accordion-menu-399 dl.level2 dt.opened a span {
+  color: #888888;font-size:13px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 18px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level2 dt.active span.inner span,
+div#nextend-accordion-menu-399 dl.level2 dt.active span.inner span span,
+div#nextend-accordion-menu-399 dl.level2 dt.active a,
+div#nextend-accordion-menu-399 dl.level2 dt.active a span {
+  color: #888888;font-size:13px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 18px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level2 dt:HOVER span.inner span,
+div#nextend-accordion-menu-399 dl.level2 dt:HOVER span.inner span span,
+div#nextend-accordion-menu-399 dl.level2 dt:HOVER a,
+div#nextend-accordion-menu-399 dl.level2 dt:HOVER a span {
+  color: #888888;font-size:13px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 18px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level2 .inner {
+  padding: 5px 0px 5px 20px ;
+  margin: 0px 6px 0px 6px ;
+}
+div#nextend-accordion-menu-399.noscript dl.level3 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level3 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/plus/lightplusmini.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+div#nextend-accordion-menu-399 dl.level3 dt.parent.opened .inner,
+div#nextend-accordion-menu-399 dl.level3 dt.parent.opening .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level3 .nextend-productnum {
+  margin-right: 5px;
+}
+div#nextend-accordion-menu-399 dl.level3 dt {
+  background: none repeat 0 0;
+}
+div#nextend-accordion-menu-399 dl.level3 dt span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level3 dt a {
+  padding-left: 0px !important;
+}
+div#nextend-accordion-menu-399 dl.level3 dt a,
+div#nextend-accordion-menu-399 dl.level3 dt a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level3 dt,
+div#nextend-accordion-menu-399 dl.level3 dt:HOVER,
+div#nextend-accordion-menu-399 dl.level3 dt.opening,
+div#nextend-accordion-menu-399 dl.level3 dt.opened,
+div#nextend-accordion-menu-399 dl.level3 dt.active {
+  background: none;
+  filter: none;
+  background: #fafafa;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#fafafa),color-stop(1,#fafafa));
+  background: -ms-linear-gradient(bottom,#fafafa,#fafafa);
+  background: -moz-linear-gradient(center bottom,#fafafa 0%,#fafafa 100%);
+  background: -o-linear-gradient(#fafafa,#fafafa);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#fafafa', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level3 dt.opening span.inner span,
+div#nextend-accordion-menu-399 dl.level3 dt.opening span.inner span span,
+div#nextend-accordion-menu-399 dl.level3 dt.opening a,
+div#nextend-accordion-menu-399 dl.level3 dt.opening a span,
+div#nextend-accordion-menu-399 dl.level3 dt.opened span.inner span,
+div#nextend-accordion-menu-399 dl.level3 dt.opened span.inner span span,
+div#nextend-accordion-menu-399 dl.level3 dt.opened a,
+div#nextend-accordion-menu-399 dl.level3 dt.opened a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level3 dt.active span.inner span,
+div#nextend-accordion-menu-399 dl.level3 dt.active span.inner span span,
+div#nextend-accordion-menu-399 dl.level3 dt.active a,
+div#nextend-accordion-menu-399 dl.level3 dt.active a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level3 dt:HOVER span.inner span,
+div#nextend-accordion-menu-399 dl.level3 dt:HOVER span.inner span span,
+div#nextend-accordion-menu-399 dl.level3 dt:HOVER a,
+div#nextend-accordion-menu-399 dl.level3 dt:HOVER a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level3 .inner {
+  padding: 5px 0px 5px 35px ;
+  margin: 0px 6px 0px 6px ;
+}
+div#nextend-accordion-menu-399.noscript dl.level4 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level4 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/plus/lightplusmini.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+div#nextend-accordion-menu-399 dl.level4 dt.parent.opened .inner,
+div#nextend-accordion-menu-399 dl.level4 dt.parent.opening .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level4 .nextend-productnum {
+  margin-right: 5px;
+}
+div#nextend-accordion-menu-399 dl.level4 dt {
+  background: none repeat 0 0;
+}
+div#nextend-accordion-menu-399 dl.level4 dt span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level4 dt a {
+  padding-left: 0px !important;
+}
+div#nextend-accordion-menu-399 dl.level4 dt a,
+div#nextend-accordion-menu-399 dl.level4 dt a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level4 dt,
+div#nextend-accordion-menu-399 dl.level4 dt:HOVER,
+div#nextend-accordion-menu-399 dl.level4 dt.opening,
+div#nextend-accordion-menu-399 dl.level4 dt.opened,
+div#nextend-accordion-menu-399 dl.level4 dt.active {
+  background: none;
+  filter: none;
+  background: #f0f0f0;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#f0f0f0),color-stop(1,#f0f0f0));
+  background: -ms-linear-gradient(bottom,#f0f0f0,#f0f0f0);
+  background: -moz-linear-gradient(center bottom,#f0f0f0 0%,#f0f0f0 100%);
+  background: -o-linear-gradient(#f0f0f0,#f0f0f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level4 dt.opening span.inner span,
+div#nextend-accordion-menu-399 dl.level4 dt.opening span.inner span span,
+div#nextend-accordion-menu-399 dl.level4 dt.opening a,
+div#nextend-accordion-menu-399 dl.level4 dt.opening a span,
+div#nextend-accordion-menu-399 dl.level4 dt.opened span.inner span,
+div#nextend-accordion-menu-399 dl.level4 dt.opened span.inner span span,
+div#nextend-accordion-menu-399 dl.level4 dt.opened a,
+div#nextend-accordion-menu-399 dl.level4 dt.opened a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level4 dt.active span.inner span,
+div#nextend-accordion-menu-399 dl.level4 dt.active span.inner span span,
+div#nextend-accordion-menu-399 dl.level4 dt.active a,
+div#nextend-accordion-menu-399 dl.level4 dt.active a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level4 dt:HOVER span.inner span,
+div#nextend-accordion-menu-399 dl.level4 dt:HOVER span.inner span span,
+div#nextend-accordion-menu-399 dl.level4 dt:HOVER a,
+div#nextend-accordion-menu-399 dl.level4 dt:HOVER a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level4 .inner {
+  padding: 4px 0px 4px 50px ;
+  margin: 0px 6px 0px 6px ;
+}
+div#nextend-accordion-menu-399.noscript dl.level5 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level5 dt.parent .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/plus/lightplusmini.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+div#nextend-accordion-menu-399 dl.level5 dt.parent.opened .inner,
+div#nextend-accordion-menu-399 dl.level5 dt.parent.opening .inner {
+  background-image: url(https://www.gws.k12.in.us/libraries/nextend/assets/accordionmenu/images/bold/minus/lightplusmini.png);
+}
+div#nextend-accordion-menu-399 dl.level5 .nextend-productnum {
+  margin-right: 5px;
+}
+div#nextend-accordion-menu-399 dl.level5 dt {
+  background: none repeat 0 0;
+}
+div#nextend-accordion-menu-399 dl.level5 dt span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level5 dt a {
+  padding-left: 0px !important;
+}
+div#nextend-accordion-menu-399 dl.level5 dt a,
+div#nextend-accordion-menu-399 dl.level5 dt a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level5 dt,
+div#nextend-accordion-menu-399 dl.level5 dt:HOVER,
+div#nextend-accordion-menu-399 dl.level5 dt.opening,
+div#nextend-accordion-menu-399 dl.level5 dt.opened,
+div#nextend-accordion-menu-399 dl.level5 dt.active {
+  background: none;
+  filter: none;
+  background: #f0f0f0;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#f0f0f0),color-stop(1,#f0f0f0));
+  background: -ms-linear-gradient(bottom,#f0f0f0,#f0f0f0);
+  background: -moz-linear-gradient(center bottom,#f0f0f0 0%,#f0f0f0 100%);
+  background: -o-linear-gradient(#f0f0f0,#f0f0f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
+}
+div#nextend-accordion-menu-399 dl.level5 dt.opening span.inner span,
+div#nextend-accordion-menu-399 dl.level5 dt.opening span.inner span span,
+div#nextend-accordion-menu-399 dl.level5 dt.opening a,
+div#nextend-accordion-menu-399 dl.level5 dt.opening a span,
+div#nextend-accordion-menu-399 dl.level5 dt.opened span.inner span,
+div#nextend-accordion-menu-399 dl.level5 dt.opened span.inner span span,
+div#nextend-accordion-menu-399 dl.level5 dt.opened a,
+div#nextend-accordion-menu-399 dl.level5 dt.opened a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level5 dt.active span.inner span,
+div#nextend-accordion-menu-399 dl.level5 dt.active span.inner span span,
+div#nextend-accordion-menu-399 dl.level5 dt.active a,
+div#nextend-accordion-menu-399 dl.level5 dt.active a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level5 dt:HOVER span.inner span,
+div#nextend-accordion-menu-399 dl.level5 dt:HOVER span.inner span span,
+div#nextend-accordion-menu-399 dl.level5 dt:HOVER a,
+div#nextend-accordion-menu-399 dl.level5 dt:HOVER a span {
+  color: #888888;font-size:12px;text-shadow: 0px 1px 1px RGBA(255,255,255,1);font-family: 'Quattrocento Sans',Arial;line-height: 16px;font-weight: bold;font-style: normal;text-decoration: none;text-align: left;
+}
+div#nextend-accordion-menu-399 dl.level5 .inner {
+  padding: 3px 0px 3px 65px ;
+  margin: 0px 6px 0px 6px ;
+}

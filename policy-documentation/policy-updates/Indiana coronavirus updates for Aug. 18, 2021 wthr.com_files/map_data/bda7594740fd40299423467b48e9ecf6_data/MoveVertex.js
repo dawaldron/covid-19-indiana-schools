@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","./UpdateVertices"],function(h,l,e){e=function(k){function d(a,b,f,g){a=k.call(this,a)||this;a.dx=b;a.dy=f;a.dz=g;return a}l._inheritsLoose(d,k);var c=d.prototype;c.move=function(a,b,f,g){this.helper.addDelta(a.pos,b,f,g)};c.apply=function(a){this.move(a,this.dx,this.dy,this.dz)};c.undo=function(a){this.move(a,-this.dx,-this.dy,-this.dz)};c.canAccumulate=function(a){return a instanceof d};c.accumulate=function(a,b){this.move(a,b.dx,
+b.dy,b.dz)};c.accumulateParams=function(a){this.dx+=a.dx;this.dy+=a.dy;this.dz+=a.dz};return d}(e.PerVertexOperation);h.MoveVertex=e;Object.defineProperty(h,"__esModule",{value:!0})});

@@ -1,0 +1,57 @@
+/*
+SchoolPointe Common CSS
+*/
+
+.video-player video, .videoplayer video {
+    max-width: 100%;
+}
+
+.obscure {
+    text-indent: -9999px;
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+}
+.powerschool-return-student-registration{
+    background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/powerschool-returning-student-registrations.png') no-repeat top;
+    background-size: 100%;
+    width: 80px;
+    display: block;
+    height: 40px;
+    margin-top: 7px;
+}
+.powerschool-new-student-registration{
+    background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/powerschool-new-student-registrations.png') no-repeat top;
+    background-size: 100%;
+    width: 80px;
+    display: block;
+    height: 40px;
+    margin-top: 7px;
+}
+.fa.schoology{
+    background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/map-logo-2.png') no-repeat top;
+    background-size: 100%;
+}
+.fa.canvas{
+    background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/social/canvas-transparent.png') no-repeat top;
+    background-size: 100%;
+}
+
+.adminDeptTitle {
+	font-size: 14px;
+	font-family: 'arial', sans-serif;
+	font-weight: bold;
+}
+
+.adminDeptDescription {
+	font-size: 11px;
+}
+.schoolpointe-google-classroom{
+    background: url('https://s3.amazonaws.com/cdn.schoolpointe.com/images/googleclassroom.png') no-repeat top;
+    background-size: 100%;
+    width: 40px;
+    display: block;
+    height: 40px;
+    margin-top: 7px;
+}

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../core/has ../../../../core/Logger ../snappingUtils ./SnappingHint".split(" "),function(d,h,e,k,f,l){k.getLogger("esri.views.interactive.snapping.hints.LineSnappingHint");e=function(g){function c(a,m,n,p=!0,q=!0){var b=g.call(this)||this;b.type=a;b.lineStart=m;b.lineEnd=n;b.fadeLeft=p;b.fadeRight=q;return b}h._inheritsLoose(c,g);c.prototype.equals=function(a){return a instanceof c?this.type===a.type&&f.objectEqual(this.lineStart,
+a.lineStart)&&f.objectEqual(this.lineEnd,a.lineEnd)&&this.fadeLeft===a.fadeLeft&&this.fadeRight===a.fadeRight:!1};return c}(l.SnappingHint);d.LineSnappingHint=e;Object.defineProperty(d,"__esModule",{value:!0})});

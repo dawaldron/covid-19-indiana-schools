@@ -1,0 +1,304 @@
+@media (max-width: 959px) {
+	body {
+			margin-bottom: 90px;
+	}
+	#accessibility-links.fixed {
+    bottom: 110px;
+	}
+}
+
+.social-wall ul.uk-tab {
+    display: none;
+}
+
+.shortcuticons .parent:hover .parent-highlight {
+    background-color: rgb(136 136 136 / 25%);
+    border-radius: 15px;
+}
+
+.shortcuticons .uk-card.uk-card-default.parent:hover .parent-highlight {
+    background-color: rgb(136 136 136 / 25%);
+    border-radius: 15px;
+}
+
+a.tm-logo img.logo2 {
+    float: left;
+    margin-right: 15px;
+    max-height: 85px;
+}
+
+a.tm-logo.uk-navbar-brand.tm-navbar-left {
+    color: #fff;
+    white-space: nowrap;
+}
+
+a.tm-logo.uk-navbar-brand.tm-navbar-left span.primary,
+.uk-navbar-brand-text span.primary { 
+	color: #000; font-size: 24px; font-weight: 600;
+}
+
+a.tm-logo.uk-navbar-brand.tm-navbar-left span.secondary,
+.uk-navbar-brand-text span.secondary { 
+	color: #000; font-size: 16px; font-weight: 600;
+}
+
+@media (max-width:959px){
+	img.mobile-logo.uk-float-left {
+    margin-right: 10px;
+	}
+	a.tm-logo.uk-navbar-brand.tm-navbar-left span.primary,
+	.uk-navbar-brand-text span.primary { 
+		font-size: 21px; font-weight: 600;
+	}
+
+	a.tm-logo.uk-navbar-brand.tm-navbar-left span.secondary,
+	.uk-navbar-brand-text span.secondary { 
+		font-size: 14px; font-weight: 600;
+	}
+	.uk-navbar-container { border-top: 5px solid #a32929;  }
+}
+
+body.blank div.tm-main, body.hidehere div.tm-main  {
+    display:none;
+}
+
+.com-dpcalendar-calendar__list .dp-calendar__links {
+    margin-top: 0px !important;
+}
+
+@media (max-width:969px) and (min-width:960px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 6px;
+	}
+}
+@media (max-width:979px) and (min-width:970px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 7px;
+	}
+}
+@media (max-width:989px) and (min-width:980px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 8px;
+	}
+}
+@media (max-width:1024px) and (min-width:990px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 9px;
+	}
+}
+@media (max-width:1099px) and (min-width:1025px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 10px;
+	}
+}
+@media (max-width:1199px) and (min-width:1100px) {
+	.uk-navbar-nav>li>a {
+		padding: 0 12px;
+	}
+}
+
+div.uk-navbar-toggle {
+    padding: 0 15px 0 10px;
+}
+
+@media (max-width:959px){
+	.uk-slider-items>* {
+		max-width: calc(-35px + 100vw);
+	}
+}
+
+@media (max-width:960px) and (min-width:500px) {
+	.uk-slider-items>* {
+		max-width: calc(-35px + 100vw);
+	}
+}
+
+@media (min-width:960px){
+	.uk-navbar-brand-text {
+			line-height: 24px;
+			margin-top: 10px;
+	}
+}
+
+/*
+a.tm-logo.uk-navbar-brand.tm-navbar-left {
+    position: relative;
+    top: 3px;
+}
+@media (min-width:500px) {
+	div.uk-navbar-item .uk-margin-remove-last-child.custom.jmoddiv {
+			width: 310px;
+	}
+}
+*/
+
+
+@media (max-width: 959px){
+.uk-navbar-center .uk-navbar-item .uk-margin-remove-last-child.custom {
+    width: 210px;
+}
+}
+
+.tm-toolbar-default {
+    color: #ffffff;
+}
+
+
+.mod-dpcalendar-upcoming .uk-card-default.uk-card-hover:hover {
+/*    background-color: #f1efed; */
+    background-color: rgb(136 136 136 / 10%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 12%);
+}
+
+.mod-dpcalendar-upcoming .uk-card-default {
+    background: #fff;
+    color: #777;
+}
+
+.shortcuticons .uk-card-default.uk-card-hover:hover {
+    background-color: #f1efed;
+}
+
+.shortcuticons .uk-card-default {
+    background: #fff;
+    color: #777;
+}
+
+.footer-shortcut-icons {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 20;
+    background: #880000;
+    height: 90px;
+}
+
+.footer-shortcut-icons .shortcut-icon {
+    color: #fff;
+    font-size: 2em;
+}
+
+.tm-header :not(.uk-sticky-below)>.uk-navbar-container {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.footer-shortcut-icons > div {
+    padding-left: 0;
+}
+
+.footer-shortcut-icons .shortcut-text {
+    color: #fff;
+}
+
+.footer-shortcut-icons .uk-margin {
+    margin-top: 10px!important;
+}
+
+.uk-navbar-nav > li {
+    border-bottom: 5px solid rgba(0,0,0,0);
+}
+
+.uk-navbar-nav > li:hover {
+    border-bottom: 5px solid #aa1b24;
+}
+
+.uk-navbar-toggle { color: #a32929; }
+.uk-navbar-toggle.uk-open, .uk-navbar-toggle:focus, .uk-navbar-toggle:hover { color: #721c1c; }
+
+.slideshow.uk-section-default.uk-section {
+    background-color: #f1f1f1;
+}
+
+.slideshow.uk-section-default.uk-section .sp-slides-container {
+    border-top: 5px solid #FFF;
+    border-bottom: 5px solid #FFF;
+}
+
+.slideshow.uk-section-default.uk-section .sp-image-container {
+    border-left: 5px solid #fff;
+}
+
+#eb.eb-mod * {
+    line-height: 26px;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #2c68e1;
+    background-image: linear-gradient(#bdbfc1,#d2d3d4);
+}
+
+.uk-text-bold, strong {
+    font-weight: 600;
+}
+
+@media (max-width:959px) and (min-width:768px) {
+	.uk-navbar-center .uk-navbar-item .uk-margin-remove-last-child.custom {
+		width: auto;
+		white-space: nowrap;
+	}
+	/*
+	a.tm-logo.uk-navbar-brand.tm-navbar-left span.primary,
+	.uk-navbar-brand-text span.primary { 
+		color: #000; font-size: 24px; font-weight: 600;
+	}
+
+	a.tm-logo.uk-navbar-brand.tm-navbar-left span.secondary,
+	.uk-navbar-brand-text span.secondary { 
+		display: none;
+	}
+	*/
+}​
+
+.uk-navbar-dropbar {
+    background: rgb(255 255 255 / 98%);
+}
+
+@media (min-width:960px){
+	.tm-toolbar.tm-toolbar-default.uk-visible\@m .uk-container.uk-flex.uk-flex-middle.uk-flex-center {
+	    justify-content: flex-end;
+	}
+}
+
+.uk-navbar-dropbar-slide {
+	background-color: rgba(255,255,255,.98);
+}
+
+hr.mission-statement {
+    margin-top: 40px;
+}
+
+
+.uk-input, 
+.uk-select:not([multiple]):not([size]), 
+.uneditable-input:not([class*=uk-]), 
+input[type=color]:not([class*=uk-]), 
+input[type=date]:not([class*=uk-]),
+input[type=datetime-local]:not([class*=uk-]), 
+input[type=datetime]:not([class*=uk-]), 
+input[type=email]:not([class*=uk-]), 
+input[type=month]:not([class*=uk-]), 
+input[type=number]:not([class*=uk-]), 
+input[type=password]:not([class*=uk-]), 
+input[type=search]:not([class*=uk-]), 
+input[type=tel]:not([class*=uk-]), 
+input[type=text]:not([class*=uk-]), 
+input[type=time]:not([class*=uk-]), 
+input[type=url]:not([class*=uk-]), 
+input[type=week]:not([class*=uk-]), 
+select:not([class*=uk-]):not([multiple]):not([size]) {
+    border: 1px solid #c1c1c1;
+}
+
+.uk-select[multiple], 
+.uk-select[size], 
+.uk-textarea, 
+select:not([class*=uk-])[multiple], 
+select:not([class*=uk-])[size], 
+textarea:not([class*=uk-]) {
+    border: 1px solid #c1c1c1;
+}
+
+
+

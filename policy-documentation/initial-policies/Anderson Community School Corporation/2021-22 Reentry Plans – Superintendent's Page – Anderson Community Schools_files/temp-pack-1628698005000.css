@@ -1,0 +1,27 @@
+.edlio .legacy.page .main {
+  flex: 1 1 auto; }
+
+.edlio .legacy.page .sidebar {
+  flex: 0 0 23.6%; }
+  .edlio .legacy.page .sidebar nav {
+    font-family: "futura-pt", sans-serif;
+    font-size: 16px;
+    background: salmon;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 7px;
+    text-decoration: none; }
+    .edlio .legacy.page .sidebar nav ul {
+      list-style: none;
+      padding: 5px 0; }
+      .edlio .legacy.page .sidebar nav ul li a {
+        display: block;
+        color: white;
+        margin-left: 10px; }
+      .edlio .legacy.page .sidebar nav ul li:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 7px;
+        text-decoration: underline;
+        background-color: white;
+        color: black; }
+        .edlio .legacy.page .sidebar nav ul li:hover a {
+          color: black; }
+
+/*# sourceMappingURL=../../../maps/global/public/css/temp-pack.css.map */

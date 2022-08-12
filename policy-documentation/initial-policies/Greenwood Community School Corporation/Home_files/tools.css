@@ -1,0 +1,256 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+
+@import url(../warp/css/tools.css);
+
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+.button-default,
+.mod-box-default .button-default {
+	position: relative;
+	height: 38px;
+	padding: 0 15px 0 27px;
+	margin-right: 20px;
+	background-color: #F5F5F5;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	line-height: 38px;
+}
+
+.button-default:hover {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-position: 0 -50px;
+	color: #FFF;
+}
+
+.button-default:before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -14px;
+	width: 14px;
+	height: 38px;
+	background-position: -14px 0;
+	background-repeat: no-repeat;
+}
+
+.mod-box-grey .button-default { background-color: #E0E0E0; }
+
+.button-primary {
+	height: 38px;
+	padding: 0 15px;
+	color: #FFF;
+	border-radius: 6px;
+	line-height: 38px;
+}
+
+.button-primary:hover { color: #fff; }
+
+
+/* Images and Objects (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+img.border-box { 
+	border-width: 1px;
+	border-style: solid; 
+	border-color: #F5F5F5; 
+}
+
+
+/* Lists and Tables (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Line */
+ul.line > li,
+.mod-box-default ul.line > li { 
+	border-top: 1px solid #EBEBEB;
+	margin-top: 10px;
+    padding-top: 10px;
+}
+
+.mod-box-grey ul.line > li { border-top-color: #E1E1E1; }
+
+ul.line > li:first-child { border: none; }
+
+/* Check */
+ul.check > li {
+	padding: 2px 0 2px 30px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+/* Zebra List and Table */
+table.zebra tbody, 
+table.zebra tfoot { font-size: 13px; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd,
+.mod-box-default ul.zebra > li.odd,
+.mod-box-default table.zebra tbody tr.odd { background-color: #F5F5F5; }
+
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd),
+.mod-box-default ul.zebra > li:nth-of-type(odd),
+.mod-box-default table.zebra tbody tr:nth-of-type(odd) { background: #F5F5F5; }
+
+table.zebra caption { color: #999; }
+
+.mod-box-grey ul.zebra > li.odd,
+.mod-box-grey table.zebra tbody tr.odd { background: #E0E0E0; }
+
+.mod-box-grey ul.zebra > li:nth-of-type(odd),
+.mod-box-grey table.zebra tbody tr:nth-of-type(odd) { background: #E0E0E0; }
+
+
+/* Definition Lists
+----------------------------------------------------------------------------------------------------*/
+
+dl.separator dt {	
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* border code because of RTL */
+dl.separator dd,
+.mod-box-default dl.separator dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #EBEBEB;
+}
+
+dl.separator dt:before,
+.mod-box-default dl.separator dt:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	width: 30px;
+	border-top: 1px solid #EBEBEB;
+}
+
+dl.separator dt:after {
+	content: "";
+	position:absolute;
+	top: -3px;
+	right: -3px;
+	width: 6px;
+	height: 6px;
+	border-radius:6px;
+}
+
+dl.separator dt:first-child:before,
+dl.separator dt:first-child:after { display: none; }
+
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+
+/* Inline Text Box */
+em.box { color: #FFF; }
+
+/* Dotted Horizontal Rule */
+hr.dotted { background: url(../images/tools/line_dotted.png) 0 0 repeat-x; }
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+.box-content { 
+	background-color: #F5F5F5;
+	border-radius: 8px;
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download { 	
+	background: #F5F5F5; 
+	border-radius: 6px;
+}
+
+.box-info { background: #ebf5fa url(../images/tools/box_info.png) 0 0 no-repeat; }
+
+.box-warning { background: #fff0eb url(../images/tools/box_warning.png) 0 0 no-repeat; }
+
+.box-hint { background: #fffae6 url(../images/tools/box_hint.png) 0 0 no-repeat; }
+
+.box-download { background: #faffe6 url(../images/tools/box_download.png) 0 0 no-repeat; }
+
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-icons {
+	display: block;
+	height: 130px;
+	background-color: #F5F5F5; 
+	background-image: url(../images/tools/social_icons.png);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	border-radius: 7px;
+}
+
+.social-icons.facebook { background-position: 50% -260px; }
+.social-icons.googleplus { background-position: 50% -520px; }
+.social-icons.rss { background-position: 50% -780px; }
+.social-icons.twitter:hover { background-position: 50% -130px; }
+.social-icons.facebook:hover { background-position: 50% -390px; }
+.social-icons.googleplus:hover { background-position: 50% -650px; }
+.social-icons.rss:hover { background-position: 50% -910px; }
+
+
+/* Contact Icons
+----------------------------------------------------------------------------------------------------*/
+
+.contact-icons { 
+	display: block;
+	height: 80px;
+	border-radius: 7px;
+	background-color: #F5F5F5;
+	background-image: url(../images/tools/contact_icons.png);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
+.contact-icons.map { background-position: 50% -90px; }
+
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+form.box fieldset { 
+	padding: 0 15px 5px;
+	border-radius: 6px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EBEBEB;
+}
+
+form.style input, 
+form.style textarea, 
+form.style select,
+form.style button { 
+	padding: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EBEBEB;
+	border-radius: 5px;
+}
+
+form.style button,
+form.style input[type="button"],
+form.style input[type="submit"] { background-color: #F0F0F0; }
+
+form.style button:hover,
+form.style input:hover[type="button"],
+form.style input:hover[type="submit"] { color: #FFF; }	
+

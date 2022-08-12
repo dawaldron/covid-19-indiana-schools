@@ -1,0 +1,120 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+a:hover {
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+
+
+/* Menu
+----------------------------------------------------------------------------------------------------*/
+
+.menu-sidebar a.level1 > span, 
+.menu-sidebar span.level1 > span {
+	 -moz-transition: margin 330ms ease-in-out 0s, padding 320ms ease-in-out 0s;
+ 	-webkit-transition: margin 330ms ease-in-out 0s, padding 320ms ease-in-out 0s;
+ 	-o-transition: margin 330ms ease-in-out 0s, padding 320ms ease-in-out 0s;
+ 	transition: margin 330ms ease-in-out 0s, padding 320ms ease-in-out 0s;
+}
+
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1,
+.menu-dropdown li.remain.active .level1,
+.menu-dropdown .dropdown-bg > div { 
+	-webkit-transition: background-color 0.1s ease-in-out;
+	-moz-transition: background-color 0.1s ease-in-out;
+	-o-transition: background-color 0.1s ease-in-out;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.menu-dropdown li.level2:hover,
+.menu-dropdown li.level2.parent > a:hover,
+.menu-dropdown li.level3:hover {
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+.button-default:hover:before { 
+	background-position: 0 0;
+	-moz-transition: all 200ms ease-in-out 0s; 
+	-webkit-transition: all 200ms ease-in-out 0s; 
+	-o-transition: all 200ms ease-in-out 0s; 
+	transition: all 200ms ease-in-out 0s; 
+}
+
+.button-primary:hover
+#system .item > .links a:hover,
+.wk-slideset-micasa > div .next:hover,
+.wk-slideset-micasa > div .prev:hover, 
+.social-icons:hover,
+.contact-icons:hover, 
+#totop-scroller:hover {
+	-webkit-transition: background-color 0.25s ease-in-out;
+	-moz-transition: background-color 0.25s ease-in-out;
+	-o-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+}
+
+form.style input,
+form.style select,
+form.style textarea,
+form.style button:hover,
+form.style input[type="button"]:hover,
+form.style input.button:hover,
+form.style #submit:hover {
+	-webkit-transition:
+		color 0.25s ease-in-out,
+		border-color 0.25s ease-in-out,
+		background 0.25s ease-in-out;
+	-moz-transition:
+		color 0.25s ease-in-out,
+		border-color 0.25s ease-in-out,
+		background 0.25s ease-in-out;
+	-o-transition:
+		color 0.25s ease-in-out,
+		border-color 0.25s ease-in-out,
+		background 0.25s ease-in-out;
+	transition:
+		color 0.25s ease-in-out,
+		border-color 0.25s ease-in-out,
+		background 0.25s ease-in-out;
+}
+
+
+.fader {
+	-moz-transition: opacity 0.25s linear 0s;
+	-webkit-transition: opacity 0.25s linear 0s;
+	-o-transition: opacity 0.25s linear 0s;
+	transition: opacity 0.25s linear 0s;
+}
+
+
+/* System 
+----------------------------------------------------------------------------------------------------*/
+
+#system .item > .links a:hover:before { 
+	background-position: 0 0; 
+	-moz-transition: all 200ms ease-in-out 0s; 
+	-webkit-transition: all 200ms ease-in-out 0s; 
+	-o-transition: all 200ms ease-in-out 0s; 
+	transition: all 200ms ease-in-out 0s; 
+}
+
+.searchbox .results li.result.selected { 
+	-webkit-transition: background-color 0.25s ease-in-out;
+	-moz-transition: background-color 0.25s ease-in-out;
+	-o-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+}
+

@@ -1,0 +1,127 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Background
+----------------------------------------------------------------------------------------------------*/
+
+body#page { background: #FFF url(../../images/background/fabric/fabric_bg.png) 0 0 repeat; }
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+hr { border-top-color: #D2D2D2; }
+
+pre { background: #E3E3E3; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#bottom-a:before,
+#bottom-b:before { border-top-color: #D2D2D2; }
+
+#totop-scroller { background-color: #E3E3E3; }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { background-color: #E3E3E3; }
+
+.menu-sidebar li.level1,
+.mod-box .module-title + .menu-sidebar li.level1:first-child { border-top-color: #D3D3D3; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box { border-color: #E3E3E3; }
+.mod-box-grey,
+.mod-headerbox-default .module-title { background-color: #E3E3E3; }
+
+.mod-headerline .module-title:before { border-top-color: #D2D2D2; }
+
+.grid-h .mod-line:before { border-color: #C6C6C6; }
+.grid-v .mod-line:before { border-top-color: #C6C6C6; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+.button-default { background-color: #E3E3E3; }
+.mod-box-grey .button-default { background-color: #D2D2D2; }
+
+img.border-box { border-color: #E3E3E3; }
+
+ul.line > li { border-top-color: #D2D2D2; }
+.mod-box-grey ul.line > li { border-color: #C6C6C6; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background-color: #E3E3E3; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background-color: #E3E3E3; }
+
+.mod-box-grey ul.zebra > li.odd,
+.mod-box-grey table.zebra tbody tr.odd { background: #D2D2D2; }
+.mod-box-grey ul.zebra > li:nth-of-type(odd),
+.mod-box-grey table.zebra tbody tr:nth-of-type(odd) { background: #D2D2D2; }
+
+dl.separator dd,
+dl.separator dt:before { border-color: #D2D2D2; }
+
+.box-content,
+.box-note,
+.social-icons,
+.contact-icons { background-color: #E3E3E3; }
+
+form.box fieldset,
+form.style input, 
+form.style textarea, 
+form.style select, 
+form.style button, 
+form.style input[type="button"] { border-color: #D2D2D2; }
+
+
+/* System-all
+----------------------------------------------------------------------------------------------------*/
+
+#system .item > .links a,
+#system .pagination a { background-color: #E3E3E3; }
+
+.searchbox { border-color: #E3E3E3; }
+
+#system .author-box,
+#system #comments .comment-head {
+	border-color: #D4D4D4;
+	background-color: #E3E3E3;
+}
+
+.comments-list > article { border-color: #E3E3E3; }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+#system .items .leading .item { border-bottom-color: #D2D2D2; }
+#system .items .item { border-top-color: #D2D2D2; }
+#system .item-list { border-top-color: #E3E3E3; }
+
+
+/* Widgetkit Slideset
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideset-micasa > div .next, 
+.wk-slideset-micasa > div .prev { background-color: #E3E3E3; }
+
+.wk-slideset-micasa ul.set li { border-color: #D2D2D2; }
+
+.wk-slideset-micasa .fader { opacity: 0.4; }
+.wk-slideset-micasa .fader:hover { opacity: 0.7; } 
+
+
+/* Widgetkit Slideshow
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-micasa .slides { border-color: #E3E3E3; }
+

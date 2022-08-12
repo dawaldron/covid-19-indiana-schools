@@ -1,0 +1,1343 @@
+/* 2021-08-14T12:28:33.5795354Z */
+/* START /Customers/IN/MerrillvilleCmtySchCorp/css/IN_MerrillvilleCmtySchCorp.css */
+* {
+    font-size: 100%;
+    line-height: 100%;
+    background-color: transparent;
+}
+
+a {
+    color: #4A2D7D;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.dropdown ul.dropdown-menu {
+    text-align: left;
+}
+
+.athleticsEventsTitle {
+    color: #4A2D7D;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#TopNav > ul > li > .dropdown-toggle {
+    padding: 10px 0;
+}
+
+#middle2Column, #middle3Column, h1.title, .sectionHeader, .SecondaryContentHeader,
+.secondaryContent h1, #quick-links h1 {
+    background: #4A2D7D;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding: 4px;
+}
+
+#site-body .panel.content .row {
+    margin: 0;
+}
+
+#site-body .content ul {
+    margin: 15px 0 15px 20px;
+}
+
+#site-body .maincontentsection {
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+/* Athletics Fixes */
+#athleticsJumptoSport, #athleticsEvents {
+    margin-top: 20px;
+}
+
+#athleticsJumptoSport p {
+    margin: 0;
+}
+
+#athleticsJumptoSport .DropDownBox {
+    margin: 0;
+}
+
+/* Board Fixes */
+ul.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list > li {
+    padding: 3px 0;
+    margin: 0;
+}
+
+ul.list > li > a {
+    color: #231F1E;
+}
+
+.headerM {
+    margin-top: 20px;
+}
+
+/* Calendar Week Fixes */
+.calendarDayHeader {
+    background-color: transparent;
+}
+
+.dayHeaderLabel {
+    color: #231F1E;
+}
+
+.monthCalendarTitle {
+    background-color: #465769 !important;
+}
+
+.monthCalendarDayHeader {
+    text-align: center;
+}
+
+/* Employment Fixes */
+
+.employmentcontainer h1 {
+    color: #465769;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Header */
+a.logo {
+    display: block;
+    float: left;
+    height: 90px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a.nameLink {
+    display: block;
+    float: left;
+    margin-top: 12px;
+}
+
+a.nameLink:hover {
+    text-decoration: none;
+}
+
+a.nameLink span.top {
+    display: block;
+    padding-top: 8px;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+a.nameLink span.bottom {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Mobile Nav */
+#mobileC {
+    background: #3D2668;
+}
+
+.wrap-nameExpand {
+    padding: 15px 0;
+}
+
+.mobileName {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.navbar-toggle {
+    margin: 0;
+    padding: 2px 7px;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+a.navbar-toggle i.fa {
+    color: #fff;
+}
+
+#MobileNavBar {
+    max-height: none;
+}
+
+#MobileNav {
+    padding: 15px 0;
+}
+
+#MobileNav ul li {
+    padding: 2px 0;
+}
+
+#MobileNav h2 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#MobileNav > ul > li > a,
+#MobileNav > ul > li > a > .caret {
+    color: #fff;
+    font-size: 20px;
+}
+
+#MobileNav .dropdown-menu {
+    background: none;
+    border: none;
+    box-shadow: none
+}
+
+#MobileNav .dropdown-menu li a {
+    color: white;
+    font-size: 20px;
+    padding: 0px 8px;
+    line-height: 100%;
+}
+
+#MobileNav .dropdown-menu li a:focus {
+    background-color: transparent;
+}
+
+#MobileNav .dropdown-menu li a:hover {
+    background: initial;
+}
+
+#MobileNav ul.dropdown-menu ul.dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+nav#VeryTopNav > ul > li {
+    float: left;
+    padding: 34px;
+    margin: 0;
+}
+
+
+nav#VeryTopNav > ul > li > a {
+    display: block;
+    font-weight: bold;
+}
+
+.search-box {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#head-SocialLinks {
+    text-align: right;
+    float: right;
+}
+
+#head-SocialLinks > a {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 35px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+#head-SocialLinks > a:last-child {
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+#head-SocialLinks > a > i.fa {
+    color: #47576A;
+    font-size: 24px;
+}
+
+#site-slideshow {
+    background-color: #000;
+}
+
+#slideshow {
+    position: relative;
+}
+
+.quickLinks h1 {
+    color: #465769;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.quickLinks > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quickLinks > ul > li {
+    display: block;
+    padding: 3px 0;
+}
+
+.quickLinks > ul > li > a {
+    color: #231F1E;
+    font-weight: bold;
+}
+
+
+/* Find Us */
+#site-foot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+
+#site-foot .address {
+    margin-bottom: 20px;
+}
+
+#site-foot .buildingName, #site-foot .buildingAddress, #site-foot .buildingPhone, #site-foot .buildingFax {
+    display: block;
+}
+
+#site-foot .buildingName {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home-name-link {
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+.home-name-link:hover,
+.home-name-link:active {
+    color: white;
+    text-decoration: none;
+}
+
+.formatted-title-row {
+    display: block;
+    font-size: 17px;
+    text-align: left;
+}
+
+.formatted-title-row:first-child {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header .tickerImpHide {
+    display: block !important;
+}
+
+header #newsTicker {
+    max-width: none;
+}
+
+.bg-header1 {
+    background: black;
+}
+
+header #newsTickerInner, header #newsTickerInner, header .tickerItem, header #newsTicker .tickerItem {
+    background: none;
+    color: white;
+    font-size: 17px;
+}
+
+#txtSearchBox {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+#txtSearchBox::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-box-go {
+    font-size: 16px;
+}
+
+#txtSearchBox {
+    max-width: 150px;
+}
+
+#txtSearchBox, .search-box-go {
+    color: white;
+}
+
+.fixed-left {
+    position: fixed;
+    z-index: 4;
+    top: 40%;
+    left: -5px;
+}
+
+.fixed-left > ul > li > a {
+    background: white;
+    display: block;
+    margin: 5px;
+    padding: 15px 9px;
+    padding: 15px 8px 15px 19px;
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid #4A2D7D;
+    border-right: 1px solid #4A2D7D;
+    border-top: 1px solid #4A2D7D;
+    padding-left: 18px;
+}
+
+.fixed-left .dropdown-menu {
+    left: 100%;
+    top: 0;
+}
+
+.fixed-left .dropdown {
+    position: static;
+}
+
+.bg-body1 .article {
+    width: 33%;
+    display: inline-block;
+    background: white;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+.bg-body1 .article, .bg-body1 .feature-content {
+    background: white;
+}
+
+.bg-body1 article {
+    overflow: hidden;
+    position: relative;
+    width: 23%;
+    float: left;
+    background: white;
+    padding: 5px 14px;
+    min-height: 400px;
+    max-height: 400px;
+    margin: 1%;
+    overflow-y: auto;
+}
+
+article img {
+    width: 100%;
+    padding: 5px 0;
+    height: 109px;
+}
+
+.bg-body1 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#332058+0,4a2d7d+100 */
+    background: rgb(51,32,88); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(51,32,88,1) 0%, rgba(74,45,125,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(51,32,88,1) 0%,rgba(74,45,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(51,32,88,1) 0%,rgba(74,45,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332058', endColorstr='#4a2d7d',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-body1 h2, .wrap-events h2 {
+    text-align: center;
+    color: white;
+}
+
+.bg-body1 h2 span, .wrap-events h2 span {
+    font-family: 'Bitter';
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+}
+
+.bg-body1 .view-all-news {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 13px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.bg-body2 .event-date {
+    width: 120px;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 10px;
+    float: none;
+}
+
+.bg-body2 .event-date .event-month, .bg-body2 .event-date .event-month2 {
+    background: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+
+.bg-body2 .event-date-number {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bg-body2 .upcoming-events-event {
+    width: 19%;
+    display: none;
+    float: left;
+    margin: 3%;
+    background-color: white;
+    height: 220px;
+}
+
+.bg-body2 .upcoming-events-event.active {
+    display: block;
+}
+
+#upcoming-events ul {
+    list-style: none;
+}
+
+.event-link {
+}
+
+.event-link, .event-location, .event-time, .event-link a {
+    clear: both;
+    text-align: center;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.bg-body2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg-body2 footer {
+    display: block;
+    clear: both;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.bg-body2 footer a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bg-body2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(63, 63, 63, 0.8);
+    z-index: 0;
+}
+
+.bg-body2 .wrap-events {
+    position: relative;
+    z-index: 1;
+}
+
+.wrap-events h2 span {
+    padding-bottom: 3px;
+}
+
+.bg-body3 {
+    background: white;
+    text-align: center;
+}
+
+.bg-body3 .feature-content-body {
+    font-size: 18px;
+}
+
+.bg-body3 .feature-content-body.content {
+    margin-top: 31px;
+}
+
+footer#site-foot {
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1d1335+0,4a2d7d+100 */
+    background: rgb(29,19,53); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(29,19,53,1) 0%, rgba(74,45,125,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(29,19,53,1) 0%,rgba(74,45,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(29,19,53,1) 0%,rgba(74,45,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1335', endColorstr='#4a2d7d',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-body3 .feature-content-title.title {
+    text-decoration: underline;
+}
+
+article .read-more-link {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    color: black;
+    text-decoration: underline;
+}
+
+.social-heading {
+    font-size: 20px;
+}
+
+#foot-SocialLinks i {
+    font-size: 30px;
+    color: white;
+    padding: 0 10px;
+}
+
+footer .address {
+    margin-top: 20px;
+}
+
+footer .address,
+footer .contact {
+    font-size: 17px;
+}
+
+.non-visible-fa {
+    visibility: hidden;
+}
+
+#copyrightNotice, #schoolpointe-branding {
+    display: inline-block;
+    color: black;
+    padding: 13px 40px;
+}
+
+#copyrightNotice *, #schoolpointe-branding * {
+    color: black;
+}
+
+@media only screen and (max-width: 1199px) {
+    nav #head-SocialLinks a, nav#head-SocialLinks a:last-child {
+        width: auto;
+        height: 90px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+    }
+
+    article .read-more-link {
+        position: static;
+    }
+
+    .bg-body2 .upcoming-events-event {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    a.logo {
+        display: none;
+    }
+
+    .bg-body1 article {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+
+    .fixed-left {
+        display: none;
+    }
+
+    .bg-body1 article {
+        width: 100%;
+    }
+
+    .bg-body2 .upcoming-events-event {
+        width: 100%;
+        float: none;
+    }
+
+    #upcoming-events ul {
+        padding: 0;
+    }
+
+    #site-foot {
+        text-align: center;
+    }
+
+    .bg-body1 article {
+        min-height: 0;
+        max-height: 500px;
+    }
+
+    article img {
+        float: left;
+        padding: 10px;
+        max-width: 100%;
+        width: 180px;
+        height: auto;
+    }
+}
+
+.bg-body3 .feature-content {
+    padding: 26px 0;
+}
+
+.article {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.article .news-title {
+    display: block;
+    font-size: 24px;
+}
+
+.news-image {
+    float: left;
+}
+
+.news-image img {
+    width: 200px;
+    height: auto;
+    padding: 10px 10px 10px 0;
+}
+
+.article .view-all {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.quickLinks h1 {
+    color: #4A2D7D;
+}
+
+#site-body {
+    padding-top: 20px;
+}
+
+body {
+    background: white url('/userfiles/-23/My Files/aXcusGL3Wr6zpccK-zJOy8.png?id=645');
+    min-height: 203px;
+}
+
+.school_home body .index body {
+    background: white;
+}
+
+.school_home body .index body {
+    display: none;
+}
+
+.BuildleftQuickLinks {
+    font-size: 20px;
+    color: #4A2D7D;
+}
+
+.admin-dept {
+    padding: 8px 0;
+}
+
+.news-post-date {
+    display: block;
+    padding: 4px 0;
+}
+
+.fixed-left .DepartmentNav {
+    display: none;
+}
+
+.fixed-left h5 {
+    display: none;
+}
+
+.panel .BuildleftQuickLinks {
+    display: none;
+}
+
+.panel {
+    border: none;
+}
+
+.fixed-left hr {
+    display: none;
+}
+
+#QuickLinks hr {
+    display: none;
+}
+
+#QuickLinks > ul > li > a {
+    font-size: 18px !important;
+    padding: 7px 0 !important;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .bg-body1 article {
+        min-height: 500px;
+        max-height: 500px;
+    }
+}
+
+#mobileC h1 {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .school_home header, .index header {
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 0px;
+        z-index: 2;
+    }
+}
+
+.search-box-go.fa.fa-search {
+    display: inline-block;
+    width: 0;
+}
+
+.home-name-link {
+    float: left;
+    min-height: 70px;
+    padding-top: 10px;
+    padding-left: 80px;
+    margin-top: 0px;
+    background-image: url('/userfiles/-23/My Files/only-logo.png?id=2');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#wrap-TopNav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+48,000000+100&0.65+44,0.65+61,0+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 44%, rgba(0,0,0,0.65) 48%, rgba(0,0,0,0.65) 61%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 44%,rgba(0,0,0,0.65) 48%,rgba(0,0,0,0.65) 61%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 44%,rgba(0,0,0,0.65) 48%,rgba(0,0,0,0.65) 61%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    padding-bottom: 70px;
+}
+
+#TopNav {
+    display: block;
+    float: right;
+}
+
+#TopNav > ul > li > a,
+#TopNav > ul > li > a > .caret {
+    color: #fff;
+}
+
+#TopNav > ul > li {
+    display: inline-block;
+    padding: 4px 12px;
+}
+
+.verticalSpacer {
+    display: block;
+    width: 100%;
+    height: 0px;
+}
+
+article h3 {
+    font-weight: bold;
+}
+
+body .caption {
+    bottom: 20px;
+    padding: 0 25%;
+}
+
+body .cycle-slide-active .captionBottom, body .cycle-slide-active .captionTop {
+    text-align: left;
+    padding: 8px 0;
+    padding-left: 40px;
+}
+
+body .cycle-slide-active .captionBottom {
+    font-size: 18px;
+}
+
+body .cycle-slide-active .captionTop {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.prev-next-selector {
+    background-color: #492C7B;
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 4px;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#nextEvent {
+    right: 0;
+}
+
+#prevEvent {
+    left: 0;
+}
+
+#upcoming-events .event-date {
+    border: none;
+}
+
+#TopNav ul > li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+body .cycle-slide-active .captionTop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.adminDeptDescription {
+    font-size: 14px;
+}
+
+body #QuickLinks > ul.DepartmentNav {
+    background: RGBA(74, 45, 125, 0.2);
+    margin: 0;
+    padding: 20px;
+}
+
+body #QuickLinks > ul.DepartmentNav > li > a {
+    display: block;
+    color: white;
+    padding: 10px !important;
+    margin: 2px 0;
+    color: black;
+}
+
+body #QuickLinks > ul.DepartmentNav > li > a:hover {
+    color: white;
+    background: #4A2D7D;
+}
+
+.feature-content h1.feature-content-title.title {
+    background: none;
+    color: black;
+}
+
+footer .home-name-link {
+    float: none;
+}
+
+footer .address, footer .contact {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+footer .feature-content h1.feature-content-title.title {
+    color: white;
+    visibility: hidden;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.skiptranslate.goog-te-gadget {
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.skiptranslate.goog-te-gadget select {
+    background: white;
+    width: 200px;
+}
+
+#wrap-TopNav h5, #TopNav .DepartmentNav, hr {
+    display: none;
+}
+
+ul.dropdown-menu ul.dropdown-menu {
+    top: 0px;
+    left: 100%;
+}
+
+#news-list .news-title {
+    color: #000;
+}
+
+.newsPanel .news-summary {
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gridNewsImgBg .news-title {
+    max-width: 100%;
+    height: 54px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-title {
+    color: #221F1F;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gridNewsImgBg .news-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.viewAll {
+    text-align: right;
+    color: #000;
+}
+
+.viewAll a {
+    color: #000;
+    padding-bottom: 13px;
+    font-size: 14px;
+    display: block;
+}
+
+.gridNewsImgBg .news-summary {
+    padding-top: 3px;
+}
+
+.newsReadMore {
+    position: absolute;
+    bottom: -1px;
+    right: 10px;
+    color: #221F1F;
+    font-weight: bold;
+}
+
+.newsPanel {
+    position: relative;
+    height: 305px;
+    padding: 10px 10px 40px 10px;
+    background-color: #f8f8f8;
+    border-bottom: 3px solid #E5E5E5;
+    overflow: hidden;
+}
+
+.bg-body1 .feature-content-body.content {
+    overflow: hidden;
+    position: relative;
+    background: white;
+    padding: 5px 14px;
+    min-height: 610px;
+    max-height: 610px;
+    margin: 1%;
+    overflow-y: auto;
+}
+
+#tabHead ul {
+    display: block;
+    width: 92%;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #ddd;
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+#tabHead ul li {
+    display: block;
+    float: left;
+    width: 31%;
+    padding: 1%;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#tabHead ul li.active {
+    height: 45px;
+    margin-top: -3px;
+    color: #36225D;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#tabHead ul li .fa {
+    padding-top: 7px;
+}
+
+.tabContent {
+    display: none;
+    padding: 0 10px 10px 10px;
+}
+
+.tabContent.active {
+    display: block;
+}
+
+section#calendar *,
+section#calendar > table.calendar > tbody > tr > td {
+    background-color: transparent !important;
+}
+
+section#calendar > table.calendar {
+    width: 100%;
+}
+
+section#calendar > table.calendar table.calendar > tbody > tr > td:nth-child(1),
+section#calendar > table.calendar table.calendar > tbody > tr > td:nth-child(3),
+section#calendar > table.calendar > tbody > tr:nth-child(2) > th {
+    text-align: center;
+}
+
+section#calendar > table.calendar table.calendar > tbody > tr > td:nth-child(1) a,
+section#calendar > table.calendar table.calendar > tbody > tr > td:nth-child(3) a {
+    color: #aaa !important;
+}
+
+section#calendar > table.calendar table.calendar > tbody > tr > td:nth-child(2) {
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section#calendar > table.calendar > tbody > tr:nth-child(2) > th {
+    color: #0f3168;
+    font-weight: 600;
+}
+
+section#calendar th,
+section#calendar td {
+    padding: 5px 0;
+}
+
+td.other-month a {
+    color: #aaa;
+}
+
+td.today a {
+    color: #8e1515;
+    font-weight: 600;
+}
+
+td.with-event a {
+    font-weight: 600;
+}
+
+td.this-month a,
+td.with-event a {
+    color: #000;
+}
+
+section#calendar footer a {
+    display: block;
+    float: right;
+    padding: 3px 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 3px solid #0f3168;
+    border-radius: 3px;
+}
+
+.newsGradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+50,f8f8f8+50,f8f8f8+100&0+0,1+50,1+100 */
+    background: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 50%, rgba(248,248,248,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%,rgba(248,248,248,1) 50%,rgba(248,248,248,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(248,248,248,0) 0%,rgba(248,248,248,1) 50%,rgba(248,248,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+}
+
+@media only screen and (max-width: 767px) {
+    body .caption {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    body .cycle-slide-active .captionTop,
+    body .cycle-slide-active .captionBottom {
+        font-size: 14px;
+    }
+
+    a.news-image {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .gridNewsImgBg {
+        background-color: #fff;
+    }
+
+    .gridNewsImgBg .news-image img {
+        max-width: none;
+    }
+
+    .gridNewsImgBg + .gridNewsImgBg {
+        margin-top: 15px;
+    }
+
+    .bg-body1 .row:nth-child(2) .panel {
+        background-color: #36225d;
+    }
+
+    a.newsReadMore {
+        bottom: 5px;
+    }
+
+    .bg-body2 .upcoming-events-event {
+        margin: 0 0 15px 0;
+    }
+
+    #prevEvent,
+    #nextEvent {
+        display: none;
+    }
+
+    .wrap-translate {
+        padding: 10px 0 5px 0;
+    }
+
+    .skiptranslate.goog-te-gadget {
+        float: none;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .wrap-search {
+        padding: 10px 0 0 0;
+    }
+
+    .search-box {
+        float: none;
+        padding-top: 0;
+        padding-right: 0;
+    }
+}
+
+
+.nav.navbar-nav.resources {
+    position: fixed !important;
+    right: 0;
+    top: 20%;
+    z-index: 99;
+}
+
+    .nav.navbar-nav.resources.scrolled > li > a {
+        min-width: 0;
+        max-width: 15px;
+        transition: .5s max-width ease-out, .25s padding ease-out;
+        background-color: initial !important;
+        text-indent:-9999px;
+    }
+
+        .nav.navbar-nav.resources.scrolled > li > a:hover, .nav.navbar-nav.resources.scrolled > li > a:focus {
+            min-width: 0;
+            max-width: 200px;
+            padding-left: 45px;
+            padding-right: 15px;
+            text-indent:0px;
+            transition: .5s max-width ease-out, .25s padding ease-out;
+        }
+
+ul.nav.navbar-nav.resources > li {
+    float: right;
+    clear: right;
+    margin-bottom: 2px;
+    margin-right: 0;
+    background-image: url('/userfiles/-2/My Files/arrow.png?id=4553');
+    background-size: cover;
+    padding: 4px 0;
+}
+
+.navbar-nav.resources > li > a {
+    padding: 10px 0 10px 30px;
+    background-color: initial !important;
+}
+
+ul.nav.navbar-nav.resources > li > a {
+    min-width: 200px;
+    color: @blue;
+    text-transform: uppercase;
+    font-size:14px;
+    text-align: center;
+    font-weight: 700;
+    transition: .5s max-width ease-out, .25s padding ease-out;
+}
+
+ul.nav.navbar-nav.resources .dropdown-menu{left:initial;right:100%;top:0px;}
+ul.nav.navbar-nav.resources .dropdown-menu li{margin-bottom:0px;float:none;}
+    ul.nav.navbar-nav.resources .dropdown-menu li a{font-size:14px;font-weight:normal;}
+    ul.nav.navbar-nav.resources .dropdown-menu li a:hover{color:blue;}
+/* END /Customers/IN/MerrillvilleCmtySchCorp/css/IN_MerrillvilleCmtySchCorp.css */
+
+
+/* CustomCss schoolId: -1 */
+
+.home-name-link {
+    background: url('/userfiles/-2/My Files/only-logo.png?id=572') left/auto no-repeat;
+    background-size: contain;
+}
+
+i.fa.skyward {
+    background: url(https://cdn.schoolpointe.com/images/social/skyward-white.png) no-repeat center;
+    background-size: 90%;
+    width: 40px;
+    height: 40px;
+}
+#foot-SocialLinks i{vertical-align:top;}
+@media (min-width: 768px) {
+    .modal-dialog{width:850px;}
+}
+.alertBar > div {max-width:100% !important;}
+.fixed-left > ul > li > a{padding:6px 8px 8px 19px;font-weight:bold;}
+.newsimagesingle{display:none !important;}
+#site-body .maincontentsection{padding:15px;}

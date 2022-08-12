@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../request ../../geometry/support/jsonUtils ../utils ../support/OffsetParameters ../../tasks/operations/offset".split(" "),function(d,g,h,k,e,l,m){function c(){c=g._asyncToGenerator(function*(b,a,f){a=l.from(a);const n=m.offsetToRESTParameters(a);b=e.parseUrl(b);const p=a.geometries[0].spatialReference;a=e.asValidOptions({...b.query,f:"json",...n},f);return h(b.path+"/offset",a).then(({data:q})=>(q.geometries||[]).map(r=>k.fromJSON(r).set({spatialReference:p})))});
+return c.apply(this,arguments)}d.offset=function(b,a,f){return c.apply(this,arguments)};Object.defineProperty(d,"__esModule",{value:!0})});

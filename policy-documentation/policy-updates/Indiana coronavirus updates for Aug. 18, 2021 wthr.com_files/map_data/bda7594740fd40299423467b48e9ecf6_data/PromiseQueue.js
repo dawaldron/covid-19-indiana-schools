@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.20/esri/copyright.txt for details.
+//>>built
+define(["../../chunks/_rollupPluginBabelHelpers","../../core/promiseUtils"],function(l,e){let k=function(f,d,a,b,c){this.resolve=f;this.reject=d;this.callback=a;this.signal=b;this.abortCallback=c};return function(){function f(){this._tasks=[]}var d=f.prototype;d.push=function(a,b,c){return new Promise((g,h)=>this._tasks.push(new k(g,h,a,b,c)))};d.unshift=function(a,b,c){return new Promise((g,h)=>this._tasks.unshift(new k(g,h,a,b,c)))};d.process=function(){if(0===this._tasks.length)return!1;const a=
+this._tasks.shift();try{const b=e.isAborted(a.signal);if(b&&!a.abortCallback)a.reject(e.createAbortError());else{const c=b?a.abortCallback(e.createAbortError()):a.callback();e.isPromise(c)?c.then(a.resolve,a.reject):a.resolve(c)}}catch(b){a.reject(b)}return!0};d.cancelAll=function(){const a=e.createAbortError();for(const b of this._tasks)if(b.abortCallback){const c=b.abortCallback(a);b.resolve(c)}else b.reject(a);this._tasks.length=0};l._createClass(f,[{key:"length",get:function(){return this._tasks.length}}]);
+return f}()});
